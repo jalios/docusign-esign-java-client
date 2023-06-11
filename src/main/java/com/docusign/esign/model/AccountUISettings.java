@@ -1,21 +1,13 @@
 package com.docusign.esign.model;
 
-import java.util.Objects;
-import java.util.Arrays;
-import com.docusign.esign.model.AdminMessage;
-import com.docusign.esign.model.AskAnAdmin;
-import com.docusign.esign.model.SettingsMetadata;
+import com.docusign.esign.override.swagger.Schema;
 import com.fasterxml.jackson.annotation.JsonProperty;
-import com.fasterxml.jackson.annotation.JsonCreator;
-import com.fasterxml.jackson.annotation.JsonValue;
-import io.swagger.v3.oas.annotations.media.Schema;
+import java.util.Objects;
 
-/**
- * An object that defines the options that are available to non-administrators in the UI..
- *
- */
-@Schema(description = "An object that defines the options that are available to non-administrators in the UI.")
-
+/** An object that defines the options that are available to non-administrators in the UI.. */
+@Schema(
+    description =
+        "An object that defines the options that are available to non-administrators in the UI.")
 public class AccountUISettings {
   @JsonProperty("adminMessage")
   private AdminMessage adminMessage = null;
@@ -113,12 +105,11 @@ public class AccountUISettings {
   @JsonProperty("uploadNewImageToSignOrInitialMetadata")
   private SettingsMetadata uploadNewImageToSignOrInitialMetadata = null;
 
-
   /**
    * adminMessage.
    *
    * @return AccountUISettings
-   **/
+   */
   public AccountUISettings adminMessage(AdminMessage adminMessage) {
     this.adminMessage = adminMessage;
     return this;
@@ -126,26 +117,24 @@ public class AccountUISettings {
 
   /**
    * .
+   *
    * @return adminMessage
-   **/
+   */
   @Schema(description = "")
   public AdminMessage getAdminMessage() {
     return adminMessage;
   }
 
-  /**
-   * setAdminMessage.
-   **/
+  /** setAdminMessage. */
   public void setAdminMessage(AdminMessage adminMessage) {
     this.adminMessage = adminMessage;
   }
-
 
   /**
    * allowUsersToEditSharedAccess.
    *
    * @return AccountUISettings
-   **/
+   */
   public AccountUISettings allowUsersToEditSharedAccess(String allowUsersToEditSharedAccess) {
     this.allowUsersToEditSharedAccess = allowUsersToEditSharedAccess;
     return this;
@@ -153,53 +142,51 @@ public class AccountUISettings {
 
   /**
    * .
+   *
    * @return allowUsersToEditSharedAccess
-   **/
+   */
   @Schema(description = "")
   public String getAllowUsersToEditSharedAccess() {
     return allowUsersToEditSharedAccess;
   }
 
-  /**
-   * setAllowUsersToEditSharedAccess.
-   **/
+  /** setAllowUsersToEditSharedAccess. */
   public void setAllowUsersToEditSharedAccess(String allowUsersToEditSharedAccess) {
     this.allowUsersToEditSharedAccess = allowUsersToEditSharedAccess;
   }
-
 
   /**
    * allowUsersToEditSharedAccessMetadata.
    *
    * @return AccountUISettings
-   **/
-  public AccountUISettings allowUsersToEditSharedAccessMetadata(SettingsMetadata allowUsersToEditSharedAccessMetadata) {
+   */
+  public AccountUISettings allowUsersToEditSharedAccessMetadata(
+      SettingsMetadata allowUsersToEditSharedAccessMetadata) {
     this.allowUsersToEditSharedAccessMetadata = allowUsersToEditSharedAccessMetadata;
     return this;
   }
 
   /**
    * .
+   *
    * @return allowUsersToEditSharedAccessMetadata
-   **/
+   */
   @Schema(description = "")
   public SettingsMetadata getAllowUsersToEditSharedAccessMetadata() {
     return allowUsersToEditSharedAccessMetadata;
   }
 
-  /**
-   * setAllowUsersToEditSharedAccessMetadata.
-   **/
-  public void setAllowUsersToEditSharedAccessMetadata(SettingsMetadata allowUsersToEditSharedAccessMetadata) {
+  /** setAllowUsersToEditSharedAccessMetadata. */
+  public void setAllowUsersToEditSharedAccessMetadata(
+      SettingsMetadata allowUsersToEditSharedAccessMetadata) {
     this.allowUsersToEditSharedAccessMetadata = allowUsersToEditSharedAccessMetadata;
   }
-
 
   /**
    * askAnAdmin.
    *
    * @return AccountUISettings
-   **/
+   */
   public AccountUISettings askAnAdmin(AskAnAdmin askAnAdmin) {
     this.askAnAdmin = askAnAdmin;
     return this;
@@ -207,26 +194,24 @@ public class AccountUISettings {
 
   /**
    * .
+   *
    * @return askAnAdmin
-   **/
+   */
   @Schema(description = "")
   public AskAnAdmin getAskAnAdmin() {
     return askAnAdmin;
   }
 
-  /**
-   * setAskAnAdmin.
-   **/
+  /** setAskAnAdmin. */
   public void setAskAnAdmin(AskAnAdmin askAnAdmin) {
     this.askAnAdmin = askAnAdmin;
   }
-
 
   /**
    * clickwrapSchemaVersion.
    *
    * @return AccountUISettings
-   **/
+   */
   public AccountUISettings clickwrapSchemaVersion(String clickwrapSchemaVersion) {
     this.clickwrapSchemaVersion = clickwrapSchemaVersion;
     return this;
@@ -234,53 +219,50 @@ public class AccountUISettings {
 
   /**
    * .
+   *
    * @return clickwrapSchemaVersion
-   **/
+   */
   @Schema(description = "")
   public String getClickwrapSchemaVersion() {
     return clickwrapSchemaVersion;
   }
 
-  /**
-   * setClickwrapSchemaVersion.
-   **/
+  /** setClickwrapSchemaVersion. */
   public void setClickwrapSchemaVersion(String clickwrapSchemaVersion) {
     this.clickwrapSchemaVersion = clickwrapSchemaVersion;
   }
-
 
   /**
    * clickwrapSchemaVersionMetadata.
    *
    * @return AccountUISettings
-   **/
-  public AccountUISettings clickwrapSchemaVersionMetadata(SettingsMetadata clickwrapSchemaVersionMetadata) {
+   */
+  public AccountUISettings clickwrapSchemaVersionMetadata(
+      SettingsMetadata clickwrapSchemaVersionMetadata) {
     this.clickwrapSchemaVersionMetadata = clickwrapSchemaVersionMetadata;
     return this;
   }
 
   /**
    * .
+   *
    * @return clickwrapSchemaVersionMetadata
-   **/
+   */
   @Schema(description = "")
   public SettingsMetadata getClickwrapSchemaVersionMetadata() {
     return clickwrapSchemaVersionMetadata;
   }
 
-  /**
-   * setClickwrapSchemaVersionMetadata.
-   **/
+  /** setClickwrapSchemaVersionMetadata. */
   public void setClickwrapSchemaVersionMetadata(SettingsMetadata clickwrapSchemaVersionMetadata) {
     this.clickwrapSchemaVersionMetadata = clickwrapSchemaVersionMetadata;
   }
-
 
   /**
    * enableAdminMessage.
    *
    * @return AccountUISettings
-   **/
+   */
   public AccountUISettings enableAdminMessage(String enableAdminMessage) {
     this.enableAdminMessage = enableAdminMessage;
     return this;
@@ -288,26 +270,24 @@ public class AccountUISettings {
 
   /**
    * .
+   *
    * @return enableAdminMessage
-   **/
+   */
   @Schema(description = "")
   public String getEnableAdminMessage() {
     return enableAdminMessage;
   }
 
-  /**
-   * setEnableAdminMessage.
-   **/
+  /** setEnableAdminMessage. */
   public void setEnableAdminMessage(String enableAdminMessage) {
     this.enableAdminMessage = enableAdminMessage;
   }
-
 
   /**
    * enableAdminMessageMetadata.
    *
    * @return AccountUISettings
-   **/
+   */
   public AccountUISettings enableAdminMessageMetadata(SettingsMetadata enableAdminMessageMetadata) {
     this.enableAdminMessageMetadata = enableAdminMessageMetadata;
     return this;
@@ -315,80 +295,80 @@ public class AccountUISettings {
 
   /**
    * .
+   *
    * @return enableAdminMessageMetadata
-   **/
+   */
   @Schema(description = "")
   public SettingsMetadata getEnableAdminMessageMetadata() {
     return enableAdminMessageMetadata;
   }
 
-  /**
-   * setEnableAdminMessageMetadata.
-   **/
+  /** setEnableAdminMessageMetadata. */
   public void setEnableAdminMessageMetadata(SettingsMetadata enableAdminMessageMetadata) {
     this.enableAdminMessageMetadata = enableAdminMessageMetadata;
   }
-
 
   /**
    * enableEasySignCanUseMultiTemplateApply.
    *
    * @return AccountUISettings
-   **/
-  public AccountUISettings enableEasySignCanUseMultiTemplateApply(String enableEasySignCanUseMultiTemplateApply) {
+   */
+  public AccountUISettings enableEasySignCanUseMultiTemplateApply(
+      String enableEasySignCanUseMultiTemplateApply) {
     this.enableEasySignCanUseMultiTemplateApply = enableEasySignCanUseMultiTemplateApply;
     return this;
   }
 
   /**
    * .
+   *
    * @return enableEasySignCanUseMultiTemplateApply
-   **/
+   */
   @Schema(description = "")
   public String getEnableEasySignCanUseMultiTemplateApply() {
     return enableEasySignCanUseMultiTemplateApply;
   }
 
-  /**
-   * setEnableEasySignCanUseMultiTemplateApply.
-   **/
-  public void setEnableEasySignCanUseMultiTemplateApply(String enableEasySignCanUseMultiTemplateApply) {
+  /** setEnableEasySignCanUseMultiTemplateApply. */
+  public void setEnableEasySignCanUseMultiTemplateApply(
+      String enableEasySignCanUseMultiTemplateApply) {
     this.enableEasySignCanUseMultiTemplateApply = enableEasySignCanUseMultiTemplateApply;
   }
-
 
   /**
    * enableEasySignCanUseMultiTemplateApplyMetadata.
    *
    * @return AccountUISettings
-   **/
-  public AccountUISettings enableEasySignCanUseMultiTemplateApplyMetadata(SettingsMetadata enableEasySignCanUseMultiTemplateApplyMetadata) {
-    this.enableEasySignCanUseMultiTemplateApplyMetadata = enableEasySignCanUseMultiTemplateApplyMetadata;
+   */
+  public AccountUISettings enableEasySignCanUseMultiTemplateApplyMetadata(
+      SettingsMetadata enableEasySignCanUseMultiTemplateApplyMetadata) {
+    this.enableEasySignCanUseMultiTemplateApplyMetadata =
+        enableEasySignCanUseMultiTemplateApplyMetadata;
     return this;
   }
 
   /**
    * .
+   *
    * @return enableEasySignCanUseMultiTemplateApplyMetadata
-   **/
+   */
   @Schema(description = "")
   public SettingsMetadata getEnableEasySignCanUseMultiTemplateApplyMetadata() {
     return enableEasySignCanUseMultiTemplateApplyMetadata;
   }
 
-  /**
-   * setEnableEasySignCanUseMultiTemplateApplyMetadata.
-   **/
-  public void setEnableEasySignCanUseMultiTemplateApplyMetadata(SettingsMetadata enableEasySignCanUseMultiTemplateApplyMetadata) {
-    this.enableEasySignCanUseMultiTemplateApplyMetadata = enableEasySignCanUseMultiTemplateApplyMetadata;
+  /** setEnableEasySignCanUseMultiTemplateApplyMetadata. */
+  public void setEnableEasySignCanUseMultiTemplateApplyMetadata(
+      SettingsMetadata enableEasySignCanUseMultiTemplateApplyMetadata) {
+    this.enableEasySignCanUseMultiTemplateApplyMetadata =
+        enableEasySignCanUseMultiTemplateApplyMetadata;
   }
-
 
   /**
    * enableEasySignTemplateUpload.
    *
    * @return AccountUISettings
-   **/
+   */
   public AccountUISettings enableEasySignTemplateUpload(String enableEasySignTemplateUpload) {
     this.enableEasySignTemplateUpload = enableEasySignTemplateUpload;
     return this;
@@ -396,53 +376,51 @@ public class AccountUISettings {
 
   /**
    * .
+   *
    * @return enableEasySignTemplateUpload
-   **/
+   */
   @Schema(description = "")
   public String getEnableEasySignTemplateUpload() {
     return enableEasySignTemplateUpload;
   }
 
-  /**
-   * setEnableEasySignTemplateUpload.
-   **/
+  /** setEnableEasySignTemplateUpload. */
   public void setEnableEasySignTemplateUpload(String enableEasySignTemplateUpload) {
     this.enableEasySignTemplateUpload = enableEasySignTemplateUpload;
   }
-
 
   /**
    * enableEasySignTemplateUploadMetadata.
    *
    * @return AccountUISettings
-   **/
-  public AccountUISettings enableEasySignTemplateUploadMetadata(SettingsMetadata enableEasySignTemplateUploadMetadata) {
+   */
+  public AccountUISettings enableEasySignTemplateUploadMetadata(
+      SettingsMetadata enableEasySignTemplateUploadMetadata) {
     this.enableEasySignTemplateUploadMetadata = enableEasySignTemplateUploadMetadata;
     return this;
   }
 
   /**
    * .
+   *
    * @return enableEasySignTemplateUploadMetadata
-   **/
+   */
   @Schema(description = "")
   public SettingsMetadata getEnableEasySignTemplateUploadMetadata() {
     return enableEasySignTemplateUploadMetadata;
   }
 
-  /**
-   * setEnableEasySignTemplateUploadMetadata.
-   **/
-  public void setEnableEasySignTemplateUploadMetadata(SettingsMetadata enableEasySignTemplateUploadMetadata) {
+  /** setEnableEasySignTemplateUploadMetadata. */
+  public void setEnableEasySignTemplateUploadMetadata(
+      SettingsMetadata enableEasySignTemplateUploadMetadata) {
     this.enableEasySignTemplateUploadMetadata = enableEasySignTemplateUploadMetadata;
   }
-
 
   /**
    * enableEnvelopeCopyWithData.
    *
    * @return AccountUISettings
-   **/
+   */
   public AccountUISettings enableEnvelopeCopyWithData(String enableEnvelopeCopyWithData) {
     this.enableEnvelopeCopyWithData = enableEnvelopeCopyWithData;
     return this;
@@ -450,53 +428,51 @@ public class AccountUISettings {
 
   /**
    * .
+   *
    * @return enableEnvelopeCopyWithData
-   **/
+   */
   @Schema(description = "")
   public String getEnableEnvelopeCopyWithData() {
     return enableEnvelopeCopyWithData;
   }
 
-  /**
-   * setEnableEnvelopeCopyWithData.
-   **/
+  /** setEnableEnvelopeCopyWithData. */
   public void setEnableEnvelopeCopyWithData(String enableEnvelopeCopyWithData) {
     this.enableEnvelopeCopyWithData = enableEnvelopeCopyWithData;
   }
-
 
   /**
    * enableEnvelopeCopyWithDataMetadata.
    *
    * @return AccountUISettings
-   **/
-  public AccountUISettings enableEnvelopeCopyWithDataMetadata(SettingsMetadata enableEnvelopeCopyWithDataMetadata) {
+   */
+  public AccountUISettings enableEnvelopeCopyWithDataMetadata(
+      SettingsMetadata enableEnvelopeCopyWithDataMetadata) {
     this.enableEnvelopeCopyWithDataMetadata = enableEnvelopeCopyWithDataMetadata;
     return this;
   }
 
   /**
    * .
+   *
    * @return enableEnvelopeCopyWithDataMetadata
-   **/
+   */
   @Schema(description = "")
   public SettingsMetadata getEnableEnvelopeCopyWithDataMetadata() {
     return enableEnvelopeCopyWithDataMetadata;
   }
 
-  /**
-   * setEnableEnvelopeCopyWithDataMetadata.
-   **/
-  public void setEnableEnvelopeCopyWithDataMetadata(SettingsMetadata enableEnvelopeCopyWithDataMetadata) {
+  /** setEnableEnvelopeCopyWithDataMetadata. */
+  public void setEnableEnvelopeCopyWithDataMetadata(
+      SettingsMetadata enableEnvelopeCopyWithDataMetadata) {
     this.enableEnvelopeCopyWithDataMetadata = enableEnvelopeCopyWithDataMetadata;
   }
-
 
   /**
    * enableLegacySendflowLink.
    *
    * @return AccountUISettings
-   **/
+   */
   public AccountUISettings enableLegacySendflowLink(String enableLegacySendflowLink) {
     this.enableLegacySendflowLink = enableLegacySendflowLink;
     return this;
@@ -504,53 +480,51 @@ public class AccountUISettings {
 
   /**
    * .
+   *
    * @return enableLegacySendflowLink
-   **/
+   */
   @Schema(description = "")
   public String getEnableLegacySendflowLink() {
     return enableLegacySendflowLink;
   }
 
-  /**
-   * setEnableLegacySendflowLink.
-   **/
+  /** setEnableLegacySendflowLink. */
   public void setEnableLegacySendflowLink(String enableLegacySendflowLink) {
     this.enableLegacySendflowLink = enableLegacySendflowLink;
   }
-
 
   /**
    * enableLegacySendflowLinkMetadata.
    *
    * @return AccountUISettings
-   **/
-  public AccountUISettings enableLegacySendflowLinkMetadata(SettingsMetadata enableLegacySendflowLinkMetadata) {
+   */
+  public AccountUISettings enableLegacySendflowLinkMetadata(
+      SettingsMetadata enableLegacySendflowLinkMetadata) {
     this.enableLegacySendflowLinkMetadata = enableLegacySendflowLinkMetadata;
     return this;
   }
 
   /**
    * .
+   *
    * @return enableLegacySendflowLinkMetadata
-   **/
+   */
   @Schema(description = "")
   public SettingsMetadata getEnableLegacySendflowLinkMetadata() {
     return enableLegacySendflowLinkMetadata;
   }
 
-  /**
-   * setEnableLegacySendflowLinkMetadata.
-   **/
-  public void setEnableLegacySendflowLinkMetadata(SettingsMetadata enableLegacySendflowLinkMetadata) {
+  /** setEnableLegacySendflowLinkMetadata. */
+  public void setEnableLegacySendflowLinkMetadata(
+      SettingsMetadata enableLegacySendflowLinkMetadata) {
     this.enableLegacySendflowLinkMetadata = enableLegacySendflowLinkMetadata;
   }
-
 
   /**
    * hasExternalLinkedAccounts.
    *
    * @return AccountUISettings
-   **/
+   */
   public AccountUISettings hasExternalLinkedAccounts(String hasExternalLinkedAccounts) {
     this.hasExternalLinkedAccounts = hasExternalLinkedAccounts;
     return this;
@@ -558,53 +532,51 @@ public class AccountUISettings {
 
   /**
    * .
+   *
    * @return hasExternalLinkedAccounts
-   **/
+   */
   @Schema(description = "")
   public String getHasExternalLinkedAccounts() {
     return hasExternalLinkedAccounts;
   }
 
-  /**
-   * setHasExternalLinkedAccounts.
-   **/
+  /** setHasExternalLinkedAccounts. */
   public void setHasExternalLinkedAccounts(String hasExternalLinkedAccounts) {
     this.hasExternalLinkedAccounts = hasExternalLinkedAccounts;
   }
-
 
   /**
    * hasExternalLinkedAccountsMetadata.
    *
    * @return AccountUISettings
-   **/
-  public AccountUISettings hasExternalLinkedAccountsMetadata(SettingsMetadata hasExternalLinkedAccountsMetadata) {
+   */
+  public AccountUISettings hasExternalLinkedAccountsMetadata(
+      SettingsMetadata hasExternalLinkedAccountsMetadata) {
     this.hasExternalLinkedAccountsMetadata = hasExternalLinkedAccountsMetadata;
     return this;
   }
 
   /**
    * .
+   *
    * @return hasExternalLinkedAccountsMetadata
-   **/
+   */
   @Schema(description = "")
   public SettingsMetadata getHasExternalLinkedAccountsMetadata() {
     return hasExternalLinkedAccountsMetadata;
   }
 
-  /**
-   * setHasExternalLinkedAccountsMetadata.
-   **/
-  public void setHasExternalLinkedAccountsMetadata(SettingsMetadata hasExternalLinkedAccountsMetadata) {
+  /** setHasExternalLinkedAccountsMetadata. */
+  public void setHasExternalLinkedAccountsMetadata(
+      SettingsMetadata hasExternalLinkedAccountsMetadata) {
     this.hasExternalLinkedAccountsMetadata = hasExternalLinkedAccountsMetadata;
   }
-
 
   /**
    * hideSendAnEnvelope.
    *
    * @return AccountUISettings
-   **/
+   */
   public AccountUISettings hideSendAnEnvelope(String hideSendAnEnvelope) {
     this.hideSendAnEnvelope = hideSendAnEnvelope;
     return this;
@@ -612,26 +584,24 @@ public class AccountUISettings {
 
   /**
    * .
+   *
    * @return hideSendAnEnvelope
-   **/
+   */
   @Schema(description = "")
   public String getHideSendAnEnvelope() {
     return hideSendAnEnvelope;
   }
 
-  /**
-   * setHideSendAnEnvelope.
-   **/
+  /** setHideSendAnEnvelope. */
   public void setHideSendAnEnvelope(String hideSendAnEnvelope) {
     this.hideSendAnEnvelope = hideSendAnEnvelope;
   }
-
 
   /**
    * hideSendAnEnvelopeMetadata.
    *
    * @return AccountUISettings
-   **/
+   */
   public AccountUISettings hideSendAnEnvelopeMetadata(SettingsMetadata hideSendAnEnvelopeMetadata) {
     this.hideSendAnEnvelopeMetadata = hideSendAnEnvelopeMetadata;
     return this;
@@ -639,26 +609,24 @@ public class AccountUISettings {
 
   /**
    * .
+   *
    * @return hideSendAnEnvelopeMetadata
-   **/
+   */
   @Schema(description = "")
   public SettingsMetadata getHideSendAnEnvelopeMetadata() {
     return hideSendAnEnvelopeMetadata;
   }
 
-  /**
-   * setHideSendAnEnvelopeMetadata.
-   **/
+  /** setHideSendAnEnvelopeMetadata. */
   public void setHideSendAnEnvelopeMetadata(SettingsMetadata hideSendAnEnvelopeMetadata) {
     this.hideSendAnEnvelopeMetadata = hideSendAnEnvelopeMetadata;
   }
-
 
   /**
    * hideUseATemplate.
    *
    * @return AccountUISettings
-   **/
+   */
   public AccountUISettings hideUseATemplate(String hideUseATemplate) {
     this.hideUseATemplate = hideUseATemplate;
     return this;
@@ -666,26 +634,24 @@ public class AccountUISettings {
 
   /**
    * .
+   *
    * @return hideUseATemplate
-   **/
+   */
   @Schema(description = "")
   public String getHideUseATemplate() {
     return hideUseATemplate;
   }
 
-  /**
-   * setHideUseATemplate.
-   **/
+  /** setHideUseATemplate. */
   public void setHideUseATemplate(String hideUseATemplate) {
     this.hideUseATemplate = hideUseATemplate;
   }
-
 
   /**
    * hideUseATemplateInPrepare.
    *
    * @return AccountUISettings
-   **/
+   */
   public AccountUISettings hideUseATemplateInPrepare(String hideUseATemplateInPrepare) {
     this.hideUseATemplateInPrepare = hideUseATemplateInPrepare;
     return this;
@@ -693,53 +659,51 @@ public class AccountUISettings {
 
   /**
    * .
+   *
    * @return hideUseATemplateInPrepare
-   **/
+   */
   @Schema(description = "")
   public String getHideUseATemplateInPrepare() {
     return hideUseATemplateInPrepare;
   }
 
-  /**
-   * setHideUseATemplateInPrepare.
-   **/
+  /** setHideUseATemplateInPrepare. */
   public void setHideUseATemplateInPrepare(String hideUseATemplateInPrepare) {
     this.hideUseATemplateInPrepare = hideUseATemplateInPrepare;
   }
-
 
   /**
    * hideUseATemplateInPrepareMetadata.
    *
    * @return AccountUISettings
-   **/
-  public AccountUISettings hideUseATemplateInPrepareMetadata(SettingsMetadata hideUseATemplateInPrepareMetadata) {
+   */
+  public AccountUISettings hideUseATemplateInPrepareMetadata(
+      SettingsMetadata hideUseATemplateInPrepareMetadata) {
     this.hideUseATemplateInPrepareMetadata = hideUseATemplateInPrepareMetadata;
     return this;
   }
 
   /**
    * .
+   *
    * @return hideUseATemplateInPrepareMetadata
-   **/
+   */
   @Schema(description = "")
   public SettingsMetadata getHideUseATemplateInPrepareMetadata() {
     return hideUseATemplateInPrepareMetadata;
   }
 
-  /**
-   * setHideUseATemplateInPrepareMetadata.
-   **/
-  public void setHideUseATemplateInPrepareMetadata(SettingsMetadata hideUseATemplateInPrepareMetadata) {
+  /** setHideUseATemplateInPrepareMetadata. */
+  public void setHideUseATemplateInPrepareMetadata(
+      SettingsMetadata hideUseATemplateInPrepareMetadata) {
     this.hideUseATemplateInPrepareMetadata = hideUseATemplateInPrepareMetadata;
   }
-
 
   /**
    * hideUseATemplateMetadata.
    *
    * @return AccountUISettings
-   **/
+   */
   public AccountUISettings hideUseATemplateMetadata(SettingsMetadata hideUseATemplateMetadata) {
     this.hideUseATemplateMetadata = hideUseATemplateMetadata;
     return this;
@@ -747,26 +711,24 @@ public class AccountUISettings {
 
   /**
    * .
+   *
    * @return hideUseATemplateMetadata
-   **/
+   */
   @Schema(description = "")
   public SettingsMetadata getHideUseATemplateMetadata() {
     return hideUseATemplateMetadata;
   }
 
-  /**
-   * setHideUseATemplateMetadata.
-   **/
+  /** setHideUseATemplateMetadata. */
   public void setHideUseATemplateMetadata(SettingsMetadata hideUseATemplateMetadata) {
     this.hideUseATemplateMetadata = hideUseATemplateMetadata;
   }
-
 
   /**
    * orderBasedRecipientIdGeneration.
    *
    * @return AccountUISettings
-   **/
+   */
   public AccountUISettings orderBasedRecipientIdGeneration(String orderBasedRecipientIdGeneration) {
     this.orderBasedRecipientIdGeneration = orderBasedRecipientIdGeneration;
     return this;
@@ -774,53 +736,51 @@ public class AccountUISettings {
 
   /**
    * .
+   *
    * @return orderBasedRecipientIdGeneration
-   **/
+   */
   @Schema(description = "")
   public String getOrderBasedRecipientIdGeneration() {
     return orderBasedRecipientIdGeneration;
   }
 
-  /**
-   * setOrderBasedRecipientIdGeneration.
-   **/
+  /** setOrderBasedRecipientIdGeneration. */
   public void setOrderBasedRecipientIdGeneration(String orderBasedRecipientIdGeneration) {
     this.orderBasedRecipientIdGeneration = orderBasedRecipientIdGeneration;
   }
-
 
   /**
    * orderBasedRecipientIdGenerationMetadata.
    *
    * @return AccountUISettings
-   **/
-  public AccountUISettings orderBasedRecipientIdGenerationMetadata(SettingsMetadata orderBasedRecipientIdGenerationMetadata) {
+   */
+  public AccountUISettings orderBasedRecipientIdGenerationMetadata(
+      SettingsMetadata orderBasedRecipientIdGenerationMetadata) {
     this.orderBasedRecipientIdGenerationMetadata = orderBasedRecipientIdGenerationMetadata;
     return this;
   }
 
   /**
    * .
+   *
    * @return orderBasedRecipientIdGenerationMetadata
-   **/
+   */
   @Schema(description = "")
   public SettingsMetadata getOrderBasedRecipientIdGenerationMetadata() {
     return orderBasedRecipientIdGenerationMetadata;
   }
 
-  /**
-   * setOrderBasedRecipientIdGenerationMetadata.
-   **/
-  public void setOrderBasedRecipientIdGenerationMetadata(SettingsMetadata orderBasedRecipientIdGenerationMetadata) {
+  /** setOrderBasedRecipientIdGenerationMetadata. */
+  public void setOrderBasedRecipientIdGenerationMetadata(
+      SettingsMetadata orderBasedRecipientIdGenerationMetadata) {
     this.orderBasedRecipientIdGenerationMetadata = orderBasedRecipientIdGenerationMetadata;
   }
-
 
   /**
    * removeEnvelopeForwarding.
    *
    * @return AccountUISettings
-   **/
+   */
   public AccountUISettings removeEnvelopeForwarding(String removeEnvelopeForwarding) {
     this.removeEnvelopeForwarding = removeEnvelopeForwarding;
     return this;
@@ -828,53 +788,51 @@ public class AccountUISettings {
 
   /**
    * .
+   *
    * @return removeEnvelopeForwarding
-   **/
+   */
   @Schema(description = "")
   public String getRemoveEnvelopeForwarding() {
     return removeEnvelopeForwarding;
   }
 
-  /**
-   * setRemoveEnvelopeForwarding.
-   **/
+  /** setRemoveEnvelopeForwarding. */
   public void setRemoveEnvelopeForwarding(String removeEnvelopeForwarding) {
     this.removeEnvelopeForwarding = removeEnvelopeForwarding;
   }
-
 
   /**
    * removeEnvelopeForwardingMetadata.
    *
    * @return AccountUISettings
-   **/
-  public AccountUISettings removeEnvelopeForwardingMetadata(SettingsMetadata removeEnvelopeForwardingMetadata) {
+   */
+  public AccountUISettings removeEnvelopeForwardingMetadata(
+      SettingsMetadata removeEnvelopeForwardingMetadata) {
     this.removeEnvelopeForwardingMetadata = removeEnvelopeForwardingMetadata;
     return this;
   }
 
   /**
    * .
+   *
    * @return removeEnvelopeForwardingMetadata
-   **/
+   */
   @Schema(description = "")
   public SettingsMetadata getRemoveEnvelopeForwardingMetadata() {
     return removeEnvelopeForwardingMetadata;
   }
 
-  /**
-   * setRemoveEnvelopeForwardingMetadata.
-   **/
-  public void setRemoveEnvelopeForwardingMetadata(SettingsMetadata removeEnvelopeForwardingMetadata) {
+  /** setRemoveEnvelopeForwardingMetadata. */
+  public void setRemoveEnvelopeForwardingMetadata(
+      SettingsMetadata removeEnvelopeForwardingMetadata) {
     this.removeEnvelopeForwardingMetadata = removeEnvelopeForwardingMetadata;
   }
-
 
   /**
    * shouldRedactAccessCode.
    *
    * @return AccountUISettings
-   **/
+   */
   public AccountUISettings shouldRedactAccessCode(String shouldRedactAccessCode) {
     this.shouldRedactAccessCode = shouldRedactAccessCode;
     return this;
@@ -882,53 +840,50 @@ public class AccountUISettings {
 
   /**
    * .
+   *
    * @return shouldRedactAccessCode
-   **/
+   */
   @Schema(description = "")
   public String getShouldRedactAccessCode() {
     return shouldRedactAccessCode;
   }
 
-  /**
-   * setShouldRedactAccessCode.
-   **/
+  /** setShouldRedactAccessCode. */
   public void setShouldRedactAccessCode(String shouldRedactAccessCode) {
     this.shouldRedactAccessCode = shouldRedactAccessCode;
   }
-
 
   /**
    * shouldRedactAccessCodeMetadata.
    *
    * @return AccountUISettings
-   **/
-  public AccountUISettings shouldRedactAccessCodeMetadata(SettingsMetadata shouldRedactAccessCodeMetadata) {
+   */
+  public AccountUISettings shouldRedactAccessCodeMetadata(
+      SettingsMetadata shouldRedactAccessCodeMetadata) {
     this.shouldRedactAccessCodeMetadata = shouldRedactAccessCodeMetadata;
     return this;
   }
 
   /**
    * .
+   *
    * @return shouldRedactAccessCodeMetadata
-   **/
+   */
   @Schema(description = "")
   public SettingsMetadata getShouldRedactAccessCodeMetadata() {
     return shouldRedactAccessCodeMetadata;
   }
 
-  /**
-   * setShouldRedactAccessCodeMetadata.
-   **/
+  /** setShouldRedactAccessCodeMetadata. */
   public void setShouldRedactAccessCodeMetadata(SettingsMetadata shouldRedactAccessCodeMetadata) {
     this.shouldRedactAccessCodeMetadata = shouldRedactAccessCodeMetadata;
   }
-
 
   /**
    * uploadNewImageToSignOrInitial.
    *
    * @return AccountUISettings
-   **/
+   */
   public AccountUISettings uploadNewImageToSignOrInitial(String uploadNewImageToSignOrInitial) {
     this.uploadNewImageToSignOrInitial = uploadNewImageToSignOrInitial;
     return this;
@@ -936,47 +891,45 @@ public class AccountUISettings {
 
   /**
    * .
+   *
    * @return uploadNewImageToSignOrInitial
-   **/
+   */
   @Schema(description = "")
   public String getUploadNewImageToSignOrInitial() {
     return uploadNewImageToSignOrInitial;
   }
 
-  /**
-   * setUploadNewImageToSignOrInitial.
-   **/
+  /** setUploadNewImageToSignOrInitial. */
   public void setUploadNewImageToSignOrInitial(String uploadNewImageToSignOrInitial) {
     this.uploadNewImageToSignOrInitial = uploadNewImageToSignOrInitial;
   }
-
 
   /**
    * uploadNewImageToSignOrInitialMetadata.
    *
    * @return AccountUISettings
-   **/
-  public AccountUISettings uploadNewImageToSignOrInitialMetadata(SettingsMetadata uploadNewImageToSignOrInitialMetadata) {
+   */
+  public AccountUISettings uploadNewImageToSignOrInitialMetadata(
+      SettingsMetadata uploadNewImageToSignOrInitialMetadata) {
     this.uploadNewImageToSignOrInitialMetadata = uploadNewImageToSignOrInitialMetadata;
     return this;
   }
 
   /**
    * .
+   *
    * @return uploadNewImageToSignOrInitialMetadata
-   **/
+   */
   @Schema(description = "")
   public SettingsMetadata getUploadNewImageToSignOrInitialMetadata() {
     return uploadNewImageToSignOrInitialMetadata;
   }
 
-  /**
-   * setUploadNewImageToSignOrInitialMetadata.
-   **/
-  public void setUploadNewImageToSignOrInitialMetadata(SettingsMetadata uploadNewImageToSignOrInitialMetadata) {
+  /** setUploadNewImageToSignOrInitialMetadata. */
+  public void setUploadNewImageToSignOrInitialMetadata(
+      SettingsMetadata uploadNewImageToSignOrInitialMetadata) {
     this.uploadNewImageToSignOrInitialMetadata = uploadNewImageToSignOrInitialMetadata;
   }
-
 
   /**
    * Compares objects.
@@ -992,96 +945,209 @@ public class AccountUISettings {
       return false;
     }
     AccountUISettings accountUISettings = (AccountUISettings) o;
-    return Objects.equals(this.adminMessage, accountUISettings.adminMessage) &&
-        Objects.equals(this.allowUsersToEditSharedAccess, accountUISettings.allowUsersToEditSharedAccess) &&
-        Objects.equals(this.allowUsersToEditSharedAccessMetadata, accountUISettings.allowUsersToEditSharedAccessMetadata) &&
-        Objects.equals(this.askAnAdmin, accountUISettings.askAnAdmin) &&
-        Objects.equals(this.clickwrapSchemaVersion, accountUISettings.clickwrapSchemaVersion) &&
-        Objects.equals(this.clickwrapSchemaVersionMetadata, accountUISettings.clickwrapSchemaVersionMetadata) &&
-        Objects.equals(this.enableAdminMessage, accountUISettings.enableAdminMessage) &&
-        Objects.equals(this.enableAdminMessageMetadata, accountUISettings.enableAdminMessageMetadata) &&
-        Objects.equals(this.enableEasySignCanUseMultiTemplateApply, accountUISettings.enableEasySignCanUseMultiTemplateApply) &&
-        Objects.equals(this.enableEasySignCanUseMultiTemplateApplyMetadata, accountUISettings.enableEasySignCanUseMultiTemplateApplyMetadata) &&
-        Objects.equals(this.enableEasySignTemplateUpload, accountUISettings.enableEasySignTemplateUpload) &&
-        Objects.equals(this.enableEasySignTemplateUploadMetadata, accountUISettings.enableEasySignTemplateUploadMetadata) &&
-        Objects.equals(this.enableEnvelopeCopyWithData, accountUISettings.enableEnvelopeCopyWithData) &&
-        Objects.equals(this.enableEnvelopeCopyWithDataMetadata, accountUISettings.enableEnvelopeCopyWithDataMetadata) &&
-        Objects.equals(this.enableLegacySendflowLink, accountUISettings.enableLegacySendflowLink) &&
-        Objects.equals(this.enableLegacySendflowLinkMetadata, accountUISettings.enableLegacySendflowLinkMetadata) &&
-        Objects.equals(this.hasExternalLinkedAccounts, accountUISettings.hasExternalLinkedAccounts) &&
-        Objects.equals(this.hasExternalLinkedAccountsMetadata, accountUISettings.hasExternalLinkedAccountsMetadata) &&
-        Objects.equals(this.hideSendAnEnvelope, accountUISettings.hideSendAnEnvelope) &&
-        Objects.equals(this.hideSendAnEnvelopeMetadata, accountUISettings.hideSendAnEnvelopeMetadata) &&
-        Objects.equals(this.hideUseATemplate, accountUISettings.hideUseATemplate) &&
-        Objects.equals(this.hideUseATemplateInPrepare, accountUISettings.hideUseATemplateInPrepare) &&
-        Objects.equals(this.hideUseATemplateInPrepareMetadata, accountUISettings.hideUseATemplateInPrepareMetadata) &&
-        Objects.equals(this.hideUseATemplateMetadata, accountUISettings.hideUseATemplateMetadata) &&
-        Objects.equals(this.orderBasedRecipientIdGeneration, accountUISettings.orderBasedRecipientIdGeneration) &&
-        Objects.equals(this.orderBasedRecipientIdGenerationMetadata, accountUISettings.orderBasedRecipientIdGenerationMetadata) &&
-        Objects.equals(this.removeEnvelopeForwarding, accountUISettings.removeEnvelopeForwarding) &&
-        Objects.equals(this.removeEnvelopeForwardingMetadata, accountUISettings.removeEnvelopeForwardingMetadata) &&
-        Objects.equals(this.shouldRedactAccessCode, accountUISettings.shouldRedactAccessCode) &&
-        Objects.equals(this.shouldRedactAccessCodeMetadata, accountUISettings.shouldRedactAccessCodeMetadata) &&
-        Objects.equals(this.uploadNewImageToSignOrInitial, accountUISettings.uploadNewImageToSignOrInitial) &&
-        Objects.equals(this.uploadNewImageToSignOrInitialMetadata, accountUISettings.uploadNewImageToSignOrInitialMetadata);
+    return Objects.equals(this.adminMessage, accountUISettings.adminMessage)
+        && Objects.equals(
+            this.allowUsersToEditSharedAccess, accountUISettings.allowUsersToEditSharedAccess)
+        && Objects.equals(
+            this.allowUsersToEditSharedAccessMetadata,
+            accountUISettings.allowUsersToEditSharedAccessMetadata)
+        && Objects.equals(this.askAnAdmin, accountUISettings.askAnAdmin)
+        && Objects.equals(this.clickwrapSchemaVersion, accountUISettings.clickwrapSchemaVersion)
+        && Objects.equals(
+            this.clickwrapSchemaVersionMetadata, accountUISettings.clickwrapSchemaVersionMetadata)
+        && Objects.equals(this.enableAdminMessage, accountUISettings.enableAdminMessage)
+        && Objects.equals(
+            this.enableAdminMessageMetadata, accountUISettings.enableAdminMessageMetadata)
+        && Objects.equals(
+            this.enableEasySignCanUseMultiTemplateApply,
+            accountUISettings.enableEasySignCanUseMultiTemplateApply)
+        && Objects.equals(
+            this.enableEasySignCanUseMultiTemplateApplyMetadata,
+            accountUISettings.enableEasySignCanUseMultiTemplateApplyMetadata)
+        && Objects.equals(
+            this.enableEasySignTemplateUpload, accountUISettings.enableEasySignTemplateUpload)
+        && Objects.equals(
+            this.enableEasySignTemplateUploadMetadata,
+            accountUISettings.enableEasySignTemplateUploadMetadata)
+        && Objects.equals(
+            this.enableEnvelopeCopyWithData, accountUISettings.enableEnvelopeCopyWithData)
+        && Objects.equals(
+            this.enableEnvelopeCopyWithDataMetadata,
+            accountUISettings.enableEnvelopeCopyWithDataMetadata)
+        && Objects.equals(this.enableLegacySendflowLink, accountUISettings.enableLegacySendflowLink)
+        && Objects.equals(
+            this.enableLegacySendflowLinkMetadata,
+            accountUISettings.enableLegacySendflowLinkMetadata)
+        && Objects.equals(
+            this.hasExternalLinkedAccounts, accountUISettings.hasExternalLinkedAccounts)
+        && Objects.equals(
+            this.hasExternalLinkedAccountsMetadata,
+            accountUISettings.hasExternalLinkedAccountsMetadata)
+        && Objects.equals(this.hideSendAnEnvelope, accountUISettings.hideSendAnEnvelope)
+        && Objects.equals(
+            this.hideSendAnEnvelopeMetadata, accountUISettings.hideSendAnEnvelopeMetadata)
+        && Objects.equals(this.hideUseATemplate, accountUISettings.hideUseATemplate)
+        && Objects.equals(
+            this.hideUseATemplateInPrepare, accountUISettings.hideUseATemplateInPrepare)
+        && Objects.equals(
+            this.hideUseATemplateInPrepareMetadata,
+            accountUISettings.hideUseATemplateInPrepareMetadata)
+        && Objects.equals(this.hideUseATemplateMetadata, accountUISettings.hideUseATemplateMetadata)
+        && Objects.equals(
+            this.orderBasedRecipientIdGeneration, accountUISettings.orderBasedRecipientIdGeneration)
+        && Objects.equals(
+            this.orderBasedRecipientIdGenerationMetadata,
+            accountUISettings.orderBasedRecipientIdGenerationMetadata)
+        && Objects.equals(this.removeEnvelopeForwarding, accountUISettings.removeEnvelopeForwarding)
+        && Objects.equals(
+            this.removeEnvelopeForwardingMetadata,
+            accountUISettings.removeEnvelopeForwardingMetadata)
+        && Objects.equals(this.shouldRedactAccessCode, accountUISettings.shouldRedactAccessCode)
+        && Objects.equals(
+            this.shouldRedactAccessCodeMetadata, accountUISettings.shouldRedactAccessCodeMetadata)
+        && Objects.equals(
+            this.uploadNewImageToSignOrInitial, accountUISettings.uploadNewImageToSignOrInitial)
+        && Objects.equals(
+            this.uploadNewImageToSignOrInitialMetadata,
+            accountUISettings.uploadNewImageToSignOrInitialMetadata);
   }
 
-  /**
-   * Returns the HashCode.
-   */
+  /** Returns the HashCode. */
   @Override
   public int hashCode() {
-    return Objects.hash(adminMessage, allowUsersToEditSharedAccess, allowUsersToEditSharedAccessMetadata, askAnAdmin, clickwrapSchemaVersion, clickwrapSchemaVersionMetadata, enableAdminMessage, enableAdminMessageMetadata, enableEasySignCanUseMultiTemplateApply, enableEasySignCanUseMultiTemplateApplyMetadata, enableEasySignTemplateUpload, enableEasySignTemplateUploadMetadata, enableEnvelopeCopyWithData, enableEnvelopeCopyWithDataMetadata, enableLegacySendflowLink, enableLegacySendflowLinkMetadata, hasExternalLinkedAccounts, hasExternalLinkedAccountsMetadata, hideSendAnEnvelope, hideSendAnEnvelopeMetadata, hideUseATemplate, hideUseATemplateInPrepare, hideUseATemplateInPrepareMetadata, hideUseATemplateMetadata, orderBasedRecipientIdGeneration, orderBasedRecipientIdGenerationMetadata, removeEnvelopeForwarding, removeEnvelopeForwardingMetadata, shouldRedactAccessCode, shouldRedactAccessCodeMetadata, uploadNewImageToSignOrInitial, uploadNewImageToSignOrInitialMetadata);
+    return Objects.hash(
+        adminMessage,
+        allowUsersToEditSharedAccess,
+        allowUsersToEditSharedAccessMetadata,
+        askAnAdmin,
+        clickwrapSchemaVersion,
+        clickwrapSchemaVersionMetadata,
+        enableAdminMessage,
+        enableAdminMessageMetadata,
+        enableEasySignCanUseMultiTemplateApply,
+        enableEasySignCanUseMultiTemplateApplyMetadata,
+        enableEasySignTemplateUpload,
+        enableEasySignTemplateUploadMetadata,
+        enableEnvelopeCopyWithData,
+        enableEnvelopeCopyWithDataMetadata,
+        enableLegacySendflowLink,
+        enableLegacySendflowLinkMetadata,
+        hasExternalLinkedAccounts,
+        hasExternalLinkedAccountsMetadata,
+        hideSendAnEnvelope,
+        hideSendAnEnvelopeMetadata,
+        hideUseATemplate,
+        hideUseATemplateInPrepare,
+        hideUseATemplateInPrepareMetadata,
+        hideUseATemplateMetadata,
+        orderBasedRecipientIdGeneration,
+        orderBasedRecipientIdGenerationMetadata,
+        removeEnvelopeForwarding,
+        removeEnvelopeForwardingMetadata,
+        shouldRedactAccessCode,
+        shouldRedactAccessCodeMetadata,
+        uploadNewImageToSignOrInitial,
+        uploadNewImageToSignOrInitialMetadata);
   }
 
-
-  /**
-   * Converts the given object to string.
-   */
+  /** Converts the given object to string. */
   @Override
   public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class AccountUISettings {\n");
-    
+
     sb.append("    adminMessage: ").append(toIndentedString(adminMessage)).append("\n");
-    sb.append("    allowUsersToEditSharedAccess: ").append(toIndentedString(allowUsersToEditSharedAccess)).append("\n");
-    sb.append("    allowUsersToEditSharedAccessMetadata: ").append(toIndentedString(allowUsersToEditSharedAccessMetadata)).append("\n");
+    sb.append("    allowUsersToEditSharedAccess: ")
+        .append(toIndentedString(allowUsersToEditSharedAccess))
+        .append("\n");
+    sb.append("    allowUsersToEditSharedAccessMetadata: ")
+        .append(toIndentedString(allowUsersToEditSharedAccessMetadata))
+        .append("\n");
     sb.append("    askAnAdmin: ").append(toIndentedString(askAnAdmin)).append("\n");
-    sb.append("    clickwrapSchemaVersion: ").append(toIndentedString(clickwrapSchemaVersion)).append("\n");
-    sb.append("    clickwrapSchemaVersionMetadata: ").append(toIndentedString(clickwrapSchemaVersionMetadata)).append("\n");
+    sb.append("    clickwrapSchemaVersion: ")
+        .append(toIndentedString(clickwrapSchemaVersion))
+        .append("\n");
+    sb.append("    clickwrapSchemaVersionMetadata: ")
+        .append(toIndentedString(clickwrapSchemaVersionMetadata))
+        .append("\n");
     sb.append("    enableAdminMessage: ").append(toIndentedString(enableAdminMessage)).append("\n");
-    sb.append("    enableAdminMessageMetadata: ").append(toIndentedString(enableAdminMessageMetadata)).append("\n");
-    sb.append("    enableEasySignCanUseMultiTemplateApply: ").append(toIndentedString(enableEasySignCanUseMultiTemplateApply)).append("\n");
-    sb.append("    enableEasySignCanUseMultiTemplateApplyMetadata: ").append(toIndentedString(enableEasySignCanUseMultiTemplateApplyMetadata)).append("\n");
-    sb.append("    enableEasySignTemplateUpload: ").append(toIndentedString(enableEasySignTemplateUpload)).append("\n");
-    sb.append("    enableEasySignTemplateUploadMetadata: ").append(toIndentedString(enableEasySignTemplateUploadMetadata)).append("\n");
-    sb.append("    enableEnvelopeCopyWithData: ").append(toIndentedString(enableEnvelopeCopyWithData)).append("\n");
-    sb.append("    enableEnvelopeCopyWithDataMetadata: ").append(toIndentedString(enableEnvelopeCopyWithDataMetadata)).append("\n");
-    sb.append("    enableLegacySendflowLink: ").append(toIndentedString(enableLegacySendflowLink)).append("\n");
-    sb.append("    enableLegacySendflowLinkMetadata: ").append(toIndentedString(enableLegacySendflowLinkMetadata)).append("\n");
-    sb.append("    hasExternalLinkedAccounts: ").append(toIndentedString(hasExternalLinkedAccounts)).append("\n");
-    sb.append("    hasExternalLinkedAccountsMetadata: ").append(toIndentedString(hasExternalLinkedAccountsMetadata)).append("\n");
+    sb.append("    enableAdminMessageMetadata: ")
+        .append(toIndentedString(enableAdminMessageMetadata))
+        .append("\n");
+    sb.append("    enableEasySignCanUseMultiTemplateApply: ")
+        .append(toIndentedString(enableEasySignCanUseMultiTemplateApply))
+        .append("\n");
+    sb.append("    enableEasySignCanUseMultiTemplateApplyMetadata: ")
+        .append(toIndentedString(enableEasySignCanUseMultiTemplateApplyMetadata))
+        .append("\n");
+    sb.append("    enableEasySignTemplateUpload: ")
+        .append(toIndentedString(enableEasySignTemplateUpload))
+        .append("\n");
+    sb.append("    enableEasySignTemplateUploadMetadata: ")
+        .append(toIndentedString(enableEasySignTemplateUploadMetadata))
+        .append("\n");
+    sb.append("    enableEnvelopeCopyWithData: ")
+        .append(toIndentedString(enableEnvelopeCopyWithData))
+        .append("\n");
+    sb.append("    enableEnvelopeCopyWithDataMetadata: ")
+        .append(toIndentedString(enableEnvelopeCopyWithDataMetadata))
+        .append("\n");
+    sb.append("    enableLegacySendflowLink: ")
+        .append(toIndentedString(enableLegacySendflowLink))
+        .append("\n");
+    sb.append("    enableLegacySendflowLinkMetadata: ")
+        .append(toIndentedString(enableLegacySendflowLinkMetadata))
+        .append("\n");
+    sb.append("    hasExternalLinkedAccounts: ")
+        .append(toIndentedString(hasExternalLinkedAccounts))
+        .append("\n");
+    sb.append("    hasExternalLinkedAccountsMetadata: ")
+        .append(toIndentedString(hasExternalLinkedAccountsMetadata))
+        .append("\n");
     sb.append("    hideSendAnEnvelope: ").append(toIndentedString(hideSendAnEnvelope)).append("\n");
-    sb.append("    hideSendAnEnvelopeMetadata: ").append(toIndentedString(hideSendAnEnvelopeMetadata)).append("\n");
+    sb.append("    hideSendAnEnvelopeMetadata: ")
+        .append(toIndentedString(hideSendAnEnvelopeMetadata))
+        .append("\n");
     sb.append("    hideUseATemplate: ").append(toIndentedString(hideUseATemplate)).append("\n");
-    sb.append("    hideUseATemplateInPrepare: ").append(toIndentedString(hideUseATemplateInPrepare)).append("\n");
-    sb.append("    hideUseATemplateInPrepareMetadata: ").append(toIndentedString(hideUseATemplateInPrepareMetadata)).append("\n");
-    sb.append("    hideUseATemplateMetadata: ").append(toIndentedString(hideUseATemplateMetadata)).append("\n");
-    sb.append("    orderBasedRecipientIdGeneration: ").append(toIndentedString(orderBasedRecipientIdGeneration)).append("\n");
-    sb.append("    orderBasedRecipientIdGenerationMetadata: ").append(toIndentedString(orderBasedRecipientIdGenerationMetadata)).append("\n");
-    sb.append("    removeEnvelopeForwarding: ").append(toIndentedString(removeEnvelopeForwarding)).append("\n");
-    sb.append("    removeEnvelopeForwardingMetadata: ").append(toIndentedString(removeEnvelopeForwardingMetadata)).append("\n");
-    sb.append("    shouldRedactAccessCode: ").append(toIndentedString(shouldRedactAccessCode)).append("\n");
-    sb.append("    shouldRedactAccessCodeMetadata: ").append(toIndentedString(shouldRedactAccessCodeMetadata)).append("\n");
-    sb.append("    uploadNewImageToSignOrInitial: ").append(toIndentedString(uploadNewImageToSignOrInitial)).append("\n");
-    sb.append("    uploadNewImageToSignOrInitialMetadata: ").append(toIndentedString(uploadNewImageToSignOrInitialMetadata)).append("\n");
+    sb.append("    hideUseATemplateInPrepare: ")
+        .append(toIndentedString(hideUseATemplateInPrepare))
+        .append("\n");
+    sb.append("    hideUseATemplateInPrepareMetadata: ")
+        .append(toIndentedString(hideUseATemplateInPrepareMetadata))
+        .append("\n");
+    sb.append("    hideUseATemplateMetadata: ")
+        .append(toIndentedString(hideUseATemplateMetadata))
+        .append("\n");
+    sb.append("    orderBasedRecipientIdGeneration: ")
+        .append(toIndentedString(orderBasedRecipientIdGeneration))
+        .append("\n");
+    sb.append("    orderBasedRecipientIdGenerationMetadata: ")
+        .append(toIndentedString(orderBasedRecipientIdGenerationMetadata))
+        .append("\n");
+    sb.append("    removeEnvelopeForwarding: ")
+        .append(toIndentedString(removeEnvelopeForwarding))
+        .append("\n");
+    sb.append("    removeEnvelopeForwardingMetadata: ")
+        .append(toIndentedString(removeEnvelopeForwardingMetadata))
+        .append("\n");
+    sb.append("    shouldRedactAccessCode: ")
+        .append(toIndentedString(shouldRedactAccessCode))
+        .append("\n");
+    sb.append("    shouldRedactAccessCodeMetadata: ")
+        .append(toIndentedString(shouldRedactAccessCodeMetadata))
+        .append("\n");
+    sb.append("    uploadNewImageToSignOrInitial: ")
+        .append(toIndentedString(uploadNewImageToSignOrInitial))
+        .append("\n");
+    sb.append("    uploadNewImageToSignOrInitialMetadata: ")
+        .append(toIndentedString(uploadNewImageToSignOrInitialMetadata))
+        .append("\n");
     sb.append("}");
     return sb.toString();
   }
 
   /**
-   * Convert the given object to string with each line indented by 4 spaces
-   * (except the first line).
+   * Convert the given object to string with each line indented by 4 spaces (except the first line).
    */
   private String toIndentedString(java.lang.Object o) {
     if (o == null) {
@@ -1089,6 +1155,4 @@ public class AccountUISettings {
     }
     return o.toString().replace("\n", "\n    ");
   }
-
 }
-

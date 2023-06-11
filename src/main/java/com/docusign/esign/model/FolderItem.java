@@ -1,7 +1,7 @@
 package com.docusign.esign.model;
 
+import com.docusign.esign.override.swagger.Schema;
 import com.fasterxml.jackson.annotation.JsonProperty;
-import io.swagger.v3.oas.annotations.media.Schema;
 import java.util.Objects;
 
 /** FolderItem */
@@ -118,15 +118,16 @@ public class FolderItem {
   }
 
   /**
-   * An optional array of strings that allows the sender to provide custom data
-   * about the recipient.
-   * This information is returned in the envelope status but otherwise not used by
-   * DocuSign. Each
+   * An optional array of strings that allows the sender to provide custom data about the recipient.
+   * This information is returned in the envelope status but otherwise not used by DocuSign. Each
    * customField string can be a maximum of 100 characters.
    *
    * @return customFields
    */
-  @Schema(example = "null", description = "An optional array of strings that allows the sender to provide custom data about the recipient. This information is returned in the envelope status but otherwise not used by DocuSign. Each customField string can be a maximum of 100 characters.")
+  @Schema(
+      example = "null",
+      description =
+          "An optional array of strings that allows the sender to provide custom data about the recipient. This information is returned in the envelope status but otherwise not used by DocuSign. Each customField string can be a maximum of 100 characters.")
   public java.util.List<CustomFieldV2> getCustomFields() {
     return customFields;
   }
@@ -160,7 +161,9 @@ public class FolderItem {
    *
    * @return envelopeId
    */
-  @Schema(example = "null", description = "The envelope ID of the envelope status that failed to post.")
+  @Schema(
+      example = "null",
+      description = "The envelope ID of the envelope status that failed to post.")
   public String getEnvelopeId() {
     return envelopeId;
   }
@@ -175,12 +178,14 @@ public class FolderItem {
   }
 
   /**
-   * Contains a URI for an endpoint that you can use to retrieve the envelope or
-   * envelopes.
+   * Contains a URI for an endpoint that you can use to retrieve the envelope or envelopes.
    *
    * @return envelopeUri
    */
-  @Schema(example = "null", description = "Contains a URI for an endpoint that you can use to retrieve the envelope or envelopes.")
+  @Schema(
+      example = "null",
+      description =
+          "Contains a URI for an endpoint that you can use to retrieve the envelope or envelopes.")
   public String getEnvelopeUri() {
     return envelopeUri;
   }
@@ -199,7 +204,9 @@ public class FolderItem {
    *
    * @return is21CFRPart11
    */
-  @Schema(example = "null", description = "When set to **true**, indicates that this module is enabled on the account.")
+  @Schema(
+      example = "null",
+      description = "When set to **true**, indicates that this module is enabled on the account.")
   public String getIs21CFRPart11() {
     return is21CFRPart11;
   }
@@ -380,14 +387,15 @@ public class FolderItem {
   }
 
   /**
-   * Indicates the envelope status. Valid values are: * sent - The envelope is
-   * sent to the
-   * recipients. * created - The envelope is saved as a draft and can be modified
-   * and sent later.
+   * Indicates the envelope status. Valid values are: * sent - The envelope is sent to the
+   * recipients. * created - The envelope is saved as a draft and can be modified and sent later.
    *
    * @return status
    */
-  @Schema(example = "null", description = "Indicates the envelope status. Valid values are:  * sent - The envelope is sent to the recipients.  * created - The envelope is saved as a draft and can be modified and sent later.")
+  @Schema(
+      example = "null",
+      description =
+          "Indicates the envelope status. Valid values are:  * sent - The envelope is sent to the recipients.  * created - The envelope is saved as a draft and can be modified and sent later.")
   public String getStatus() {
     return status;
   }
@@ -417,12 +425,14 @@ public class FolderItem {
   }
 
   /**
-   * The unique identifier of the template. If this is not provided, DocuSign will
-   * generate a value.
+   * The unique identifier of the template. If this is not provided, DocuSign will generate a value.
    *
    * @return templateId
    */
-  @Schema(example = "null", description = "The unique identifier of the template. If this is not provided, DocuSign will generate a value. ")
+  @Schema(
+      example = "null",
+      description =
+          "The unique identifier of the template. If this is not provided, DocuSign will generate a value. ")
   public String getTemplateId() {
     return templateId;
   }
@@ -537,8 +547,7 @@ public class FolderItem {
   }
 
   /**
-   * Convert the given object to string with each line indented by 4 spaces
-   * (except the first line).
+   * Convert the given object to string with each line indented by 4 spaces (except the first line).
    */
   private String toIndentedString(java.lang.Object o) {
     if (o == null) {

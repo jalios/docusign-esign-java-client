@@ -1,7 +1,7 @@
 package com.docusign.esign.model;
 
+import com.docusign.esign.override.swagger.Schema;
 import com.fasterxml.jackson.annotation.JsonProperty;
-import io.swagger.v3.oas.annotations.media.Schema;
 import java.util.Objects;
 
 /** DisplayApplianceEnvelope */
@@ -121,7 +121,9 @@ public class DisplayApplianceEnvelope {
    *
    * @return envelopeId
    */
-  @Schema(example = "null", description = "The envelope ID of the envelope status that failed to post.")
+  @Schema(
+      example = "null",
+      description = "The envelope ID of the envelope status that failed to post.")
   public String getEnvelopeId() {
     return envelopeId;
   }
@@ -257,14 +259,15 @@ public class DisplayApplianceEnvelope {
   }
 
   /**
-   * Indicates the envelope status. Valid values are: * sent - The envelope is
-   * sent to the
-   * recipients. * created - The envelope is saved as a draft and can be modified
-   * and sent later.
+   * Indicates the envelope status. Valid values are: * sent - The envelope is sent to the
+   * recipients. * created - The envelope is saved as a draft and can be modified and sent later.
    *
    * @return status
    */
-  @Schema(example = "null", description = "Indicates the envelope status. Valid values are:  * sent - The envelope is sent to the recipients.  * created - The envelope is saved as a draft and can be modified and sent later.")
+  @Schema(
+      example = "null",
+      description =
+          "Indicates the envelope status. Valid values are:  * sent - The envelope is sent to the recipients.  * created - The envelope is saved as a draft and can be modified and sent later.")
   public String getStatus() {
     return status;
   }
@@ -374,8 +377,7 @@ public class DisplayApplianceEnvelope {
   }
 
   /**
-   * Convert the given object to string with each line indented by 4 spaces
-   * (except the first line).
+   * Convert the given object to string with each line indented by 4 spaces (except the first line).
    */
   private String toIndentedString(java.lang.Object o) {
     if (o == null) {

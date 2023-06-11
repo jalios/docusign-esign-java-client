@@ -1,18 +1,10 @@
 package com.docusign.esign.model;
 
-import java.util.Objects;
-import java.util.Arrays;
-import com.docusign.esign.model.ConditionalRecipientRuleFilter;
+import com.docusign.esign.override.swagger.Schema;
 import com.fasterxml.jackson.annotation.JsonProperty;
-import com.fasterxml.jackson.annotation.JsonCreator;
-import com.fasterxml.jackson.annotation.JsonValue;
-import io.swagger.v3.oas.annotations.media.Schema;
+import java.util.Objects;
 
-/**
- * ConditionalRecipientRuleCondition.
- *
- */
-
+/** ConditionalRecipientRuleCondition. */
 public class ConditionalRecipientRuleCondition {
   @JsonProperty("filters")
   private java.util.List<ConditionalRecipientRuleFilter> filters = null;
@@ -23,23 +15,24 @@ public class ConditionalRecipientRuleCondition {
   @JsonProperty("recipientLabel")
   private String recipientLabel = null;
 
-
   /**
    * filters.
    *
    * @return ConditionalRecipientRuleCondition
-   **/
-  public ConditionalRecipientRuleCondition filters(java.util.List<ConditionalRecipientRuleFilter> filters) {
+   */
+  public ConditionalRecipientRuleCondition filters(
+      java.util.List<ConditionalRecipientRuleFilter> filters) {
     this.filters = filters;
     return this;
   }
-  
+
   /**
    * addFiltersItem.
    *
    * @return ConditionalRecipientRuleCondition
-   **/
-  public ConditionalRecipientRuleCondition addFiltersItem(ConditionalRecipientRuleFilter filtersItem) {
+   */
+  public ConditionalRecipientRuleCondition addFiltersItem(
+      ConditionalRecipientRuleFilter filtersItem) {
     if (this.filters == null) {
       this.filters = new java.util.ArrayList<>();
     }
@@ -49,26 +42,24 @@ public class ConditionalRecipientRuleCondition {
 
   /**
    * .
+   *
    * @return filters
-   **/
+   */
   @Schema(description = "")
   public java.util.List<ConditionalRecipientRuleFilter> getFilters() {
     return filters;
   }
 
-  /**
-   * setFilters.
-   **/
+  /** setFilters. */
   public void setFilters(java.util.List<ConditionalRecipientRuleFilter> filters) {
     this.filters = filters;
   }
-
 
   /**
    * order.
    *
    * @return ConditionalRecipientRuleCondition
-   **/
+   */
   public ConditionalRecipientRuleCondition order(String order) {
     this.order = order;
     return this;
@@ -76,26 +67,24 @@ public class ConditionalRecipientRuleCondition {
 
   /**
    * .
+   *
    * @return order
-   **/
+   */
   @Schema(description = "")
   public String getOrder() {
     return order;
   }
 
-  /**
-   * setOrder.
-   **/
+  /** setOrder. */
   public void setOrder(String order) {
     this.order = order;
   }
-
 
   /**
    * recipientLabel.
    *
    * @return ConditionalRecipientRuleCondition
-   **/
+   */
   public ConditionalRecipientRuleCondition recipientLabel(String recipientLabel) {
     this.recipientLabel = recipientLabel;
     return this;
@@ -103,20 +92,18 @@ public class ConditionalRecipientRuleCondition {
 
   /**
    * .
+   *
    * @return recipientLabel
-   **/
+   */
   @Schema(description = "")
   public String getRecipientLabel() {
     return recipientLabel;
   }
 
-  /**
-   * setRecipientLabel.
-   **/
+  /** setRecipientLabel. */
   public void setRecipientLabel(String recipientLabel) {
     this.recipientLabel = recipientLabel;
   }
-
 
   /**
    * Compares objects.
@@ -131,29 +118,25 @@ public class ConditionalRecipientRuleCondition {
     if (o == null || getClass() != o.getClass()) {
       return false;
     }
-    ConditionalRecipientRuleCondition conditionalRecipientRuleCondition = (ConditionalRecipientRuleCondition) o;
-    return Objects.equals(this.filters, conditionalRecipientRuleCondition.filters) &&
-        Objects.equals(this.order, conditionalRecipientRuleCondition.order) &&
-        Objects.equals(this.recipientLabel, conditionalRecipientRuleCondition.recipientLabel);
+    ConditionalRecipientRuleCondition conditionalRecipientRuleCondition =
+        (ConditionalRecipientRuleCondition) o;
+    return Objects.equals(this.filters, conditionalRecipientRuleCondition.filters)
+        && Objects.equals(this.order, conditionalRecipientRuleCondition.order)
+        && Objects.equals(this.recipientLabel, conditionalRecipientRuleCondition.recipientLabel);
   }
 
-  /**
-   * Returns the HashCode.
-   */
+  /** Returns the HashCode. */
   @Override
   public int hashCode() {
     return Objects.hash(filters, order, recipientLabel);
   }
 
-
-  /**
-   * Converts the given object to string.
-   */
+  /** Converts the given object to string. */
   @Override
   public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class ConditionalRecipientRuleCondition {\n");
-    
+
     sb.append("    filters: ").append(toIndentedString(filters)).append("\n");
     sb.append("    order: ").append(toIndentedString(order)).append("\n");
     sb.append("    recipientLabel: ").append(toIndentedString(recipientLabel)).append("\n");
@@ -162,8 +145,7 @@ public class ConditionalRecipientRuleCondition {
   }
 
   /**
-   * Convert the given object to string with each line indented by 4 spaces
-   * (except the first line).
+   * Convert the given object to string with each line indented by 4 spaces (except the first line).
    */
   private String toIndentedString(java.lang.Object o) {
     if (o == null) {
@@ -171,6 +153,4 @@ public class ConditionalRecipientRuleCondition {
     }
     return o.toString().replace("\n", "\n    ");
   }
-
 }
-

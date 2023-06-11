@@ -1,7 +1,7 @@
 package com.docusign.esign.model;
 
+import com.docusign.esign.override.swagger.Schema;
 import com.fasterxml.jackson.annotation.JsonProperty;
-import io.swagger.v3.oas.annotations.media.Schema;
 import java.util.Objects;
 
 /** ConciergeQueryRequest */
@@ -106,7 +106,7 @@ public class ConciergeQueryRequest {
     }
     ConciergeQueryRequest conciergeQueryRequest = (ConciergeQueryRequest) o;
     return Objects.equals(
-        this.accountManagementRepCountry, conciergeQueryRequest.accountManagementRepCountry)
+            this.accountManagementRepCountry, conciergeQueryRequest.accountManagementRepCountry)
         && Objects.equals(this.contractCountry, conciergeQueryRequest.contractCountry)
         && Objects.equals(this.planId, conciergeQueryRequest.planId)
         && Objects.equals(this.region, conciergeQueryRequest.region)
@@ -136,8 +136,7 @@ public class ConciergeQueryRequest {
   }
 
   /**
-   * Convert the given object to string with each line indented by 4 spaces
-   * (except the first line).
+   * Convert the given object to string with each line indented by 4 spaces (except the first line).
    */
   private String toIndentedString(java.lang.Object o) {
     if (o == null) {

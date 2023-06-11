@@ -1,17 +1,10 @@
 package com.docusign.esign.model;
 
-import java.util.Objects;
-import java.util.Arrays;
+import com.docusign.esign.override.swagger.Schema;
 import com.fasterxml.jackson.annotation.JsonProperty;
-import com.fasterxml.jackson.annotation.JsonCreator;
-import com.fasterxml.jackson.annotation.JsonValue;
-import io.swagger.v3.oas.annotations.media.Schema;
+import java.util.Objects;
 
-/**
- * Comment.
- *
- */
-
+/** Comment. */
 public class Comment {
   @JsonProperty("envelopeId")
   private String envelopeId = null;
@@ -76,12 +69,11 @@ public class Comment {
   @JsonProperty("visibleTo")
   private java.util.List<String> visibleTo = null;
 
-
   /**
    * envelopeId.
    *
    * @return Comment
-   **/
+   */
   public Comment envelopeId(String envelopeId) {
     this.envelopeId = envelopeId;
     return this;
@@ -89,26 +81,24 @@ public class Comment {
 
   /**
    * The envelope ID of the envelope status that failed to post..
+   *
    * @return envelopeId
-   **/
+   */
   @Schema(description = "The envelope ID of the envelope status that failed to post.")
   public String getEnvelopeId() {
     return envelopeId;
   }
 
-  /**
-   * setEnvelopeId.
-   **/
+  /** setEnvelopeId. */
   public void setEnvelopeId(String envelopeId) {
     this.envelopeId = envelopeId;
   }
-
 
   /**
    * hmac.
    *
    * @return Comment
-   **/
+   */
   public Comment hmac(String hmac) {
     this.hmac = hmac;
     return this;
@@ -116,26 +106,24 @@ public class Comment {
 
   /**
    * .
+   *
    * @return hmac
-   **/
+   */
   @Schema(description = "")
   public String getHmac() {
     return hmac;
   }
 
-  /**
-   * setHmac.
-   **/
+  /** setHmac. */
   public void setHmac(String hmac) {
     this.hmac = hmac;
   }
-
 
   /**
    * id.
    *
    * @return Comment
-   **/
+   */
   public Comment id(String id) {
     this.id = id;
     return this;
@@ -143,36 +131,34 @@ public class Comment {
 
   /**
    * .
+   *
    * @return id
-   **/
+   */
   @Schema(description = "")
   public String getId() {
     return id;
   }
 
-  /**
-   * setId.
-   **/
+  /** setId. */
   public void setId(String id) {
     this.id = id;
   }
-
 
   /**
    * mentions.
    *
    * @return Comment
-   **/
+   */
   public Comment mentions(java.util.List<String> mentions) {
     this.mentions = mentions;
     return this;
   }
-  
+
   /**
    * addMentionsItem.
    *
    * @return Comment
-   **/
+   */
   public Comment addMentionsItem(String mentionsItem) {
     if (this.mentions == null) {
       this.mentions = new java.util.ArrayList<>();
@@ -183,26 +169,24 @@ public class Comment {
 
   /**
    * .
+   *
    * @return mentions
-   **/
+   */
   @Schema(description = "")
   public java.util.List<String> getMentions() {
     return mentions;
   }
 
-  /**
-   * setMentions.
-   **/
+  /** setMentions. */
   public void setMentions(java.util.List<String> mentions) {
     this.mentions = mentions;
   }
-
 
   /**
    * read.
    *
    * @return Comment
-   **/
+   */
   public Comment read(Boolean read) {
     this.read = read;
     return this;
@@ -210,26 +194,24 @@ public class Comment {
 
   /**
    * .
+   *
    * @return read
-   **/
+   */
   @Schema(description = "")
   public Boolean isRead() {
     return read;
   }
 
-  /**
-   * setRead.
-   **/
+  /** setRead. */
   public void setRead(Boolean read) {
     this.read = read;
   }
-
 
   /**
    * sentByEmail.
    *
    * @return Comment
-   **/
+   */
   public Comment sentByEmail(String sentByEmail) {
     this.sentByEmail = sentByEmail;
     return this;
@@ -237,26 +219,24 @@ public class Comment {
 
   /**
    * .
+   *
    * @return sentByEmail
-   **/
+   */
   @Schema(description = "")
   public String getSentByEmail() {
     return sentByEmail;
   }
 
-  /**
-   * setSentByEmail.
-   **/
+  /** setSentByEmail. */
   public void setSentByEmail(String sentByEmail) {
     this.sentByEmail = sentByEmail;
   }
-
 
   /**
    * sentByFullName.
    *
    * @return Comment
-   **/
+   */
   public Comment sentByFullName(String sentByFullName) {
     this.sentByFullName = sentByFullName;
     return this;
@@ -264,26 +244,24 @@ public class Comment {
 
   /**
    * .
+   *
    * @return sentByFullName
-   **/
+   */
   @Schema(description = "")
   public String getSentByFullName() {
     return sentByFullName;
   }
 
-  /**
-   * setSentByFullName.
-   **/
+  /** setSentByFullName. */
   public void setSentByFullName(String sentByFullName) {
     this.sentByFullName = sentByFullName;
   }
-
 
   /**
    * sentByImageId.
    *
    * @return Comment
-   **/
+   */
   public Comment sentByImageId(String sentByImageId) {
     this.sentByImageId = sentByImageId;
     return this;
@@ -291,26 +269,24 @@ public class Comment {
 
   /**
    * .
+   *
    * @return sentByImageId
-   **/
+   */
   @Schema(description = "")
   public String getSentByImageId() {
     return sentByImageId;
   }
 
-  /**
-   * setSentByImageId.
-   **/
+  /** setSentByImageId. */
   public void setSentByImageId(String sentByImageId) {
     this.sentByImageId = sentByImageId;
   }
-
 
   /**
    * sentByInitials.
    *
    * @return Comment
-   **/
+   */
   public Comment sentByInitials(String sentByInitials) {
     this.sentByInitials = sentByInitials;
     return this;
@@ -318,26 +294,24 @@ public class Comment {
 
   /**
    * .
+   *
    * @return sentByInitials
-   **/
+   */
   @Schema(description = "")
   public String getSentByInitials() {
     return sentByInitials;
   }
 
-  /**
-   * setSentByInitials.
-   **/
+  /** setSentByInitials. */
   public void setSentByInitials(String sentByInitials) {
     this.sentByInitials = sentByInitials;
   }
-
 
   /**
    * sentByRecipientId.
    *
    * @return Comment
-   **/
+   */
   public Comment sentByRecipientId(String sentByRecipientId) {
     this.sentByRecipientId = sentByRecipientId;
     return this;
@@ -345,26 +319,24 @@ public class Comment {
 
   /**
    * .
+   *
    * @return sentByRecipientId
-   **/
+   */
   @Schema(description = "")
   public String getSentByRecipientId() {
     return sentByRecipientId;
   }
 
-  /**
-   * setSentByRecipientId.
-   **/
+  /** setSentByRecipientId. */
   public void setSentByRecipientId(String sentByRecipientId) {
     this.sentByRecipientId = sentByRecipientId;
   }
-
 
   /**
    * sentByUserId.
    *
    * @return Comment
-   **/
+   */
   public Comment sentByUserId(String sentByUserId) {
     this.sentByUserId = sentByUserId;
     return this;
@@ -372,80 +344,79 @@ public class Comment {
 
   /**
    * .
+   *
    * @return sentByUserId
-   **/
+   */
   @Schema(description = "")
   public String getSentByUserId() {
     return sentByUserId;
   }
 
-  /**
-   * setSentByUserId.
-   **/
+  /** setSentByUserId. */
   public void setSentByUserId(String sentByUserId) {
     this.sentByUserId = sentByUserId;
   }
-
 
   /**
    * signingGroupId.
    *
    * @return Comment
-   **/
+   */
   public Comment signingGroupId(String signingGroupId) {
     this.signingGroupId = signingGroupId;
     return this;
   }
 
   /**
-   * When set to **true** and the feature is enabled in the sender's account, the signing recipient is required to draw signatures and initials at each signature/initial tab ( instead of adopting a signature/initial style or only drawing a signature/initial once)..
+   * When set to **true** and the feature is enabled in the sender's account, the signing recipient
+   * is required to draw signatures and initials at each signature/initial tab ( instead of adopting
+   * a signature/initial style or only drawing a signature/initial once)..
+   *
    * @return signingGroupId
-   **/
-  @Schema(description = "When set to **true** and the feature is enabled in the sender's account, the signing recipient is required to draw signatures and initials at each signature/initial tab ( instead of adopting a signature/initial style or only drawing a signature/initial once).")
+   */
+  @Schema(
+      description =
+          "When set to **true** and the feature is enabled in the sender's account, the signing recipient is required to draw signatures and initials at each signature/initial tab ( instead of adopting a signature/initial style or only drawing a signature/initial once).")
   public String getSigningGroupId() {
     return signingGroupId;
   }
 
-  /**
-   * setSigningGroupId.
-   **/
+  /** setSigningGroupId. */
   public void setSigningGroupId(String signingGroupId) {
     this.signingGroupId = signingGroupId;
   }
-
 
   /**
    * signingGroupName.
    *
    * @return Comment
-   **/
+   */
   public Comment signingGroupName(String signingGroupName) {
     this.signingGroupName = signingGroupName;
     return this;
   }
 
   /**
-   * The display name for the signing group.   Maximum Length: 100 characters. .
+   * The display name for the signing group. Maximum Length: 100 characters. .
+   *
    * @return signingGroupName
-   **/
-  @Schema(description = "The display name for the signing group.   Maximum Length: 100 characters. ")
+   */
+  @Schema(
+      description = "The display name for the signing group.   Maximum Length: 100 characters. ")
   public String getSigningGroupName() {
     return signingGroupName;
   }
 
-  /**
-   * setSigningGroupName.
-   **/
+  /** setSigningGroupName. */
   public void setSigningGroupName(String signingGroupName) {
     this.signingGroupName = signingGroupName;
   }
-
 
   /**
    * subject.
    *
    * @return Comment
-   **/
+   */
   public Comment subject(String subject) {
     this.subject = subject;
     return this;
@@ -453,53 +424,51 @@ public class Comment {
 
   /**
    * .
+   *
    * @return subject
-   **/
+   */
   @Schema(description = "")
   public String getSubject() {
     return subject;
   }
 
-  /**
-   * setSubject.
-   **/
+  /** setSubject. */
   public void setSubject(String subject) {
     this.subject = subject;
   }
-
 
   /**
    * tabId.
    *
    * @return Comment
-   **/
+   */
   public Comment tabId(String tabId) {
     this.tabId = tabId;
     return this;
   }
 
   /**
-   * The unique identifier for the tab. The tabid can be retrieved with the [ML:GET call].     .
+   * The unique identifier for the tab. The tabid can be retrieved with the [ML:GET call]. .
+   *
    * @return tabId
-   **/
-  @Schema(description = "The unique identifier for the tab. The tabid can be retrieved with the [ML:GET call].     ")
+   */
+  @Schema(
+      description =
+          "The unique identifier for the tab. The tabid can be retrieved with the [ML:GET call].     ")
   public String getTabId() {
     return tabId;
   }
 
-  /**
-   * setTabId.
-   **/
+  /** setTabId. */
   public void setTabId(String tabId) {
     this.tabId = tabId;
   }
-
 
   /**
    * text.
    *
    * @return Comment
-   **/
+   */
   public Comment text(String text) {
     this.text = text;
     return this;
@@ -507,26 +476,24 @@ public class Comment {
 
   /**
    * .
+   *
    * @return text
-   **/
+   */
   @Schema(description = "")
   public String getText() {
     return text;
   }
 
-  /**
-   * setText.
-   **/
+  /** setText. */
   public void setText(String text) {
     this.text = text;
   }
-
 
   /**
    * threadId.
    *
    * @return Comment
-   **/
+   */
   public Comment threadId(String threadId) {
     this.threadId = threadId;
     return this;
@@ -534,26 +501,24 @@ public class Comment {
 
   /**
    * .
+   *
    * @return threadId
-   **/
+   */
   @Schema(description = "")
   public String getThreadId() {
     return threadId;
   }
 
-  /**
-   * setThreadId.
-   **/
+  /** setThreadId. */
   public void setThreadId(String threadId) {
     this.threadId = threadId;
   }
-
 
   /**
    * threadOriginatorId.
    *
    * @return Comment
-   **/
+   */
   public Comment threadOriginatorId(String threadOriginatorId) {
     this.threadOriginatorId = threadOriginatorId;
     return this;
@@ -561,26 +526,24 @@ public class Comment {
 
   /**
    * .
+   *
    * @return threadOriginatorId
-   **/
+   */
   @Schema(description = "")
   public String getThreadOriginatorId() {
     return threadOriginatorId;
   }
 
-  /**
-   * setThreadOriginatorId.
-   **/
+  /** setThreadOriginatorId. */
   public void setThreadOriginatorId(String threadOriginatorId) {
     this.threadOriginatorId = threadOriginatorId;
   }
-
 
   /**
    * timestamp.
    *
    * @return Comment
-   **/
+   */
   public Comment timestamp(String timestamp) {
     this.timestamp = timestamp;
     return this;
@@ -588,26 +551,24 @@ public class Comment {
 
   /**
    * .
+   *
    * @return timestamp
-   **/
+   */
   @Schema(description = "")
   public String getTimestamp() {
     return timestamp;
   }
 
-  /**
-   * setTimestamp.
-   **/
+  /** setTimestamp. */
   public void setTimestamp(String timestamp) {
     this.timestamp = timestamp;
   }
-
 
   /**
    * timeStampFormatted.
    *
    * @return Comment
-   **/
+   */
   public Comment timeStampFormatted(String timeStampFormatted) {
     this.timeStampFormatted = timeStampFormatted;
     return this;
@@ -615,36 +576,34 @@ public class Comment {
 
   /**
    * .
+   *
    * @return timeStampFormatted
-   **/
+   */
   @Schema(description = "")
   public String getTimeStampFormatted() {
     return timeStampFormatted;
   }
 
-  /**
-   * setTimeStampFormatted.
-   **/
+  /** setTimeStampFormatted. */
   public void setTimeStampFormatted(String timeStampFormatted) {
     this.timeStampFormatted = timeStampFormatted;
   }
-
 
   /**
    * visibleTo.
    *
    * @return Comment
-   **/
+   */
   public Comment visibleTo(java.util.List<String> visibleTo) {
     this.visibleTo = visibleTo;
     return this;
   }
-  
+
   /**
    * addVisibleToItem.
    *
    * @return Comment
-   **/
+   */
   public Comment addVisibleToItem(String visibleToItem) {
     if (this.visibleTo == null) {
       this.visibleTo = new java.util.ArrayList<>();
@@ -655,20 +614,18 @@ public class Comment {
 
   /**
    * .
+   *
    * @return visibleTo
-   **/
+   */
   @Schema(description = "")
   public java.util.List<String> getVisibleTo() {
     return visibleTo;
   }
 
-  /**
-   * setVisibleTo.
-   **/
+  /** setVisibleTo. */
   public void setVisibleTo(java.util.List<String> visibleTo) {
     this.visibleTo = visibleTo;
   }
-
 
   /**
    * Compares objects.
@@ -684,46 +641,62 @@ public class Comment {
       return false;
     }
     Comment comment = (Comment) o;
-    return Objects.equals(this.envelopeId, comment.envelopeId) &&
-        Objects.equals(this.hmac, comment.hmac) &&
-        Objects.equals(this.id, comment.id) &&
-        Objects.equals(this.mentions, comment.mentions) &&
-        Objects.equals(this.read, comment.read) &&
-        Objects.equals(this.sentByEmail, comment.sentByEmail) &&
-        Objects.equals(this.sentByFullName, comment.sentByFullName) &&
-        Objects.equals(this.sentByImageId, comment.sentByImageId) &&
-        Objects.equals(this.sentByInitials, comment.sentByInitials) &&
-        Objects.equals(this.sentByRecipientId, comment.sentByRecipientId) &&
-        Objects.equals(this.sentByUserId, comment.sentByUserId) &&
-        Objects.equals(this.signingGroupId, comment.signingGroupId) &&
-        Objects.equals(this.signingGroupName, comment.signingGroupName) &&
-        Objects.equals(this.subject, comment.subject) &&
-        Objects.equals(this.tabId, comment.tabId) &&
-        Objects.equals(this.text, comment.text) &&
-        Objects.equals(this.threadId, comment.threadId) &&
-        Objects.equals(this.threadOriginatorId, comment.threadOriginatorId) &&
-        Objects.equals(this.timestamp, comment.timestamp) &&
-        Objects.equals(this.timeStampFormatted, comment.timeStampFormatted) &&
-        Objects.equals(this.visibleTo, comment.visibleTo);
+    return Objects.equals(this.envelopeId, comment.envelopeId)
+        && Objects.equals(this.hmac, comment.hmac)
+        && Objects.equals(this.id, comment.id)
+        && Objects.equals(this.mentions, comment.mentions)
+        && Objects.equals(this.read, comment.read)
+        && Objects.equals(this.sentByEmail, comment.sentByEmail)
+        && Objects.equals(this.sentByFullName, comment.sentByFullName)
+        && Objects.equals(this.sentByImageId, comment.sentByImageId)
+        && Objects.equals(this.sentByInitials, comment.sentByInitials)
+        && Objects.equals(this.sentByRecipientId, comment.sentByRecipientId)
+        && Objects.equals(this.sentByUserId, comment.sentByUserId)
+        && Objects.equals(this.signingGroupId, comment.signingGroupId)
+        && Objects.equals(this.signingGroupName, comment.signingGroupName)
+        && Objects.equals(this.subject, comment.subject)
+        && Objects.equals(this.tabId, comment.tabId)
+        && Objects.equals(this.text, comment.text)
+        && Objects.equals(this.threadId, comment.threadId)
+        && Objects.equals(this.threadOriginatorId, comment.threadOriginatorId)
+        && Objects.equals(this.timestamp, comment.timestamp)
+        && Objects.equals(this.timeStampFormatted, comment.timeStampFormatted)
+        && Objects.equals(this.visibleTo, comment.visibleTo);
   }
 
-  /**
-   * Returns the HashCode.
-   */
+  /** Returns the HashCode. */
   @Override
   public int hashCode() {
-    return Objects.hash(envelopeId, hmac, id, mentions, read, sentByEmail, sentByFullName, sentByImageId, sentByInitials, sentByRecipientId, sentByUserId, signingGroupId, signingGroupName, subject, tabId, text, threadId, threadOriginatorId, timestamp, timeStampFormatted, visibleTo);
+    return Objects.hash(
+        envelopeId,
+        hmac,
+        id,
+        mentions,
+        read,
+        sentByEmail,
+        sentByFullName,
+        sentByImageId,
+        sentByInitials,
+        sentByRecipientId,
+        sentByUserId,
+        signingGroupId,
+        signingGroupName,
+        subject,
+        tabId,
+        text,
+        threadId,
+        threadOriginatorId,
+        timestamp,
+        timeStampFormatted,
+        visibleTo);
   }
 
-
-  /**
-   * Converts the given object to string.
-   */
+  /** Converts the given object to string. */
   @Override
   public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class Comment {\n");
-    
+
     sb.append("    envelopeId: ").append(toIndentedString(envelopeId)).append("\n");
     sb.append("    hmac: ").append(toIndentedString(hmac)).append("\n");
     sb.append("    id: ").append(toIndentedString(id)).append("\n");
@@ -750,8 +723,7 @@ public class Comment {
   }
 
   /**
-   * Convert the given object to string with each line indented by 4 spaces
-   * (except the first line).
+   * Convert the given object to string with each line indented by 4 spaces (except the first line).
    */
   private String toIndentedString(java.lang.Object o) {
     if (o == null) {
@@ -759,6 +731,4 @@ public class Comment {
     }
     return o.toString().replace("\n", "\n    ");
   }
-
 }
-

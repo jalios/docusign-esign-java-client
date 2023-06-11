@@ -1,18 +1,10 @@
 package com.docusign.esign.model;
 
-import java.util.Objects;
-import java.util.Arrays;
-import com.docusign.esign.model.UserAuthorization;
+import com.docusign.esign.override.swagger.Schema;
 import com.fasterxml.jackson.annotation.JsonProperty;
-import com.fasterxml.jackson.annotation.JsonCreator;
-import com.fasterxml.jackson.annotation.JsonValue;
-import io.swagger.v3.oas.annotations.media.Schema;
+import java.util.Objects;
 
-/**
- * UserAuthorizationWithStatus.
- *
- */
-
+/** UserAuthorizationWithStatus. */
 public class UserAuthorizationWithStatus {
   @JsonProperty("authorization")
   private UserAuthorization authorization = null;
@@ -23,12 +15,11 @@ public class UserAuthorizationWithStatus {
   @JsonProperty("success")
   private String success = null;
 
-
   /**
    * authorization.
    *
    * @return UserAuthorizationWithStatus
-   **/
+   */
   public UserAuthorizationWithStatus authorization(UserAuthorization authorization) {
     this.authorization = authorization;
     return this;
@@ -36,26 +27,24 @@ public class UserAuthorizationWithStatus {
 
   /**
    * .
+   *
    * @return authorization
-   **/
+   */
   @Schema(description = "")
   public UserAuthorization getAuthorization() {
     return authorization;
   }
 
-  /**
-   * setAuthorization.
-   **/
+  /** setAuthorization. */
   public void setAuthorization(UserAuthorization authorization) {
     this.authorization = authorization;
   }
-
 
   /**
    * errorMessage.
    *
    * @return UserAuthorizationWithStatus
-   **/
+   */
   public UserAuthorizationWithStatus errorMessage(String errorMessage) {
     this.errorMessage = errorMessage;
     return this;
@@ -63,26 +52,24 @@ public class UserAuthorizationWithStatus {
 
   /**
    * .
+   *
    * @return errorMessage
-   **/
+   */
   @Schema(description = "")
   public String getErrorMessage() {
     return errorMessage;
   }
 
-  /**
-   * setErrorMessage.
-   **/
+  /** setErrorMessage. */
   public void setErrorMessage(String errorMessage) {
     this.errorMessage = errorMessage;
   }
-
 
   /**
    * success.
    *
    * @return UserAuthorizationWithStatus
-   **/
+   */
   public UserAuthorizationWithStatus success(String success) {
     this.success = success;
     return this;
@@ -90,20 +77,18 @@ public class UserAuthorizationWithStatus {
 
   /**
    * .
+   *
    * @return success
-   **/
+   */
   @Schema(description = "")
   public String getSuccess() {
     return success;
   }
 
-  /**
-   * setSuccess.
-   **/
+  /** setSuccess. */
   public void setSuccess(String success) {
     this.success = success;
   }
-
 
   /**
    * Compares objects.
@@ -119,28 +104,23 @@ public class UserAuthorizationWithStatus {
       return false;
     }
     UserAuthorizationWithStatus userAuthorizationWithStatus = (UserAuthorizationWithStatus) o;
-    return Objects.equals(this.authorization, userAuthorizationWithStatus.authorization) &&
-        Objects.equals(this.errorMessage, userAuthorizationWithStatus.errorMessage) &&
-        Objects.equals(this.success, userAuthorizationWithStatus.success);
+    return Objects.equals(this.authorization, userAuthorizationWithStatus.authorization)
+        && Objects.equals(this.errorMessage, userAuthorizationWithStatus.errorMessage)
+        && Objects.equals(this.success, userAuthorizationWithStatus.success);
   }
 
-  /**
-   * Returns the HashCode.
-   */
+  /** Returns the HashCode. */
   @Override
   public int hashCode() {
     return Objects.hash(authorization, errorMessage, success);
   }
 
-
-  /**
-   * Converts the given object to string.
-   */
+  /** Converts the given object to string. */
   @Override
   public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class UserAuthorizationWithStatus {\n");
-    
+
     sb.append("    authorization: ").append(toIndentedString(authorization)).append("\n");
     sb.append("    errorMessage: ").append(toIndentedString(errorMessage)).append("\n");
     sb.append("    success: ").append(toIndentedString(success)).append("\n");
@@ -149,8 +129,7 @@ public class UserAuthorizationWithStatus {
   }
 
   /**
-   * Convert the given object to string with each line indented by 4 spaces
-   * (except the first line).
+   * Convert the given object to string with each line indented by 4 spaces (except the first line).
    */
   private String toIndentedString(java.lang.Object o) {
     if (o == null) {
@@ -158,6 +137,4 @@ public class UserAuthorizationWithStatus {
     }
     return o.toString().replace("\n", "\n    ");
   }
-
 }
-

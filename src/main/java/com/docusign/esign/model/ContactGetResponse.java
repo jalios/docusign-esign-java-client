@@ -1,19 +1,13 @@
 package com.docusign.esign.model;
 
-import java.util.Objects;
-import java.util.Arrays;
-import com.docusign.esign.model.Contact;
+import com.docusign.esign.override.swagger.Schema;
 import com.fasterxml.jackson.annotation.JsonProperty;
-import com.fasterxml.jackson.annotation.JsonCreator;
-import com.fasterxml.jackson.annotation.JsonValue;
-import io.swagger.v3.oas.annotations.media.Schema;
+import java.util.Objects;
 
-/**
- * This response object contains information about the contacts associated with an account..
- *
- */
-@Schema(description = "This response object contains information about the contacts associated with an account.")
-
+/** This response object contains information about the contacts associated with an account.. */
+@Schema(
+    description =
+        "This response object contains information about the contacts associated with an account.")
 public class ContactGetResponse {
   @JsonProperty("contacts")
   private java.util.List<Contact> contacts = null;
@@ -36,22 +30,21 @@ public class ContactGetResponse {
   @JsonProperty("totalSetSize")
   private String totalSetSize = null;
 
-
   /**
    * contacts.
    *
    * @return ContactGetResponse
-   **/
+   */
   public ContactGetResponse contacts(java.util.List<Contact> contacts) {
     this.contacts = contacts;
     return this;
   }
-  
+
   /**
    * addContactsItem.
    *
    * @return ContactGetResponse
-   **/
+   */
   public ContactGetResponse addContactsItem(Contact contactsItem) {
     if (this.contacts == null) {
       this.contacts = new java.util.ArrayList<>();
@@ -62,26 +55,24 @@ public class ContactGetResponse {
 
   /**
    * .
+   *
    * @return contacts
-   **/
+   */
   @Schema(description = "")
   public java.util.List<Contact> getContacts() {
     return contacts;
   }
 
-  /**
-   * setContacts.
-   **/
+  /** setContacts. */
   public void setContacts(java.util.List<Contact> contacts) {
     this.contacts = contacts;
   }
-
 
   /**
    * endPosition.
    *
    * @return ContactGetResponse
-   **/
+   */
   public ContactGetResponse endPosition(String endPosition) {
     this.endPosition = endPosition;
     return this;
@@ -89,53 +80,52 @@ public class ContactGetResponse {
 
   /**
    * The last position in the result set. .
+   *
    * @return endPosition
-   **/
+   */
   @Schema(description = "The last position in the result set. ")
   public String getEndPosition() {
     return endPosition;
   }
 
-  /**
-   * setEndPosition.
-   **/
+  /** setEndPosition. */
   public void setEndPosition(String endPosition) {
     this.endPosition = endPosition;
   }
-
 
   /**
    * nextUri.
    *
    * @return ContactGetResponse
-   **/
+   */
   public ContactGetResponse nextUri(String nextUri) {
     this.nextUri = nextUri;
     return this;
   }
 
   /**
-   * The URI to the next chunk of records based on the search request. If the endPosition is the entire results of the search, this is null. .
+   * The URI to the next chunk of records based on the search request. If the endPosition is the
+   * entire results of the search, this is null. .
+   *
    * @return nextUri
-   **/
-  @Schema(description = "The URI to the next chunk of records based on the search request. If the endPosition is the entire results of the search, this is null. ")
+   */
+  @Schema(
+      description =
+          "The URI to the next chunk of records based on the search request. If the endPosition is the entire results of the search, this is null. ")
   public String getNextUri() {
     return nextUri;
   }
 
-  /**
-   * setNextUri.
-   **/
+  /** setNextUri. */
   public void setNextUri(String nextUri) {
     this.nextUri = nextUri;
   }
-
 
   /**
    * previousUri.
    *
    * @return ContactGetResponse
-   **/
+   */
   public ContactGetResponse previousUri(String previousUri) {
     this.previousUri = previousUri;
     return this;
@@ -143,26 +133,24 @@ public class ContactGetResponse {
 
   /**
    * The postal code for the billing address..
+   *
    * @return previousUri
-   **/
+   */
   @Schema(description = "The postal code for the billing address.")
   public String getPreviousUri() {
     return previousUri;
   }
 
-  /**
-   * setPreviousUri.
-   **/
+  /** setPreviousUri. */
   public void setPreviousUri(String previousUri) {
     this.previousUri = previousUri;
   }
-
 
   /**
    * resultSetSize.
    *
    * @return ContactGetResponse
-   **/
+   */
   public ContactGetResponse resultSetSize(String resultSetSize) {
     this.resultSetSize = resultSetSize;
     return this;
@@ -170,26 +158,24 @@ public class ContactGetResponse {
 
   /**
    * The number of results returned in this response. .
+   *
    * @return resultSetSize
-   **/
+   */
   @Schema(description = "The number of results returned in this response. ")
   public String getResultSetSize() {
     return resultSetSize;
   }
 
-  /**
-   * setResultSetSize.
-   **/
+  /** setResultSetSize. */
   public void setResultSetSize(String resultSetSize) {
     this.resultSetSize = resultSetSize;
   }
-
 
   /**
    * startPosition.
    *
    * @return ContactGetResponse
-   **/
+   */
   public ContactGetResponse startPosition(String startPosition) {
     this.startPosition = startPosition;
     return this;
@@ -197,47 +183,46 @@ public class ContactGetResponse {
 
   /**
    * Starting position of the current result set..
+   *
    * @return startPosition
-   **/
+   */
   @Schema(description = "Starting position of the current result set.")
   public String getStartPosition() {
     return startPosition;
   }
 
-  /**
-   * setStartPosition.
-   **/
+  /** setStartPosition. */
   public void setStartPosition(String startPosition) {
     this.startPosition = startPosition;
   }
-
 
   /**
    * totalSetSize.
    *
    * @return ContactGetResponse
-   **/
+   */
   public ContactGetResponse totalSetSize(String totalSetSize) {
     this.totalSetSize = totalSetSize;
     return this;
   }
 
   /**
-   * The total number of items available in the result set. This will always be greater than or equal to the value of the property returning the results in the in the response..
+   * The total number of items available in the result set. This will always be greater than or
+   * equal to the value of the property returning the results in the in the response..
+   *
    * @return totalSetSize
-   **/
-  @Schema(description = "The total number of items available in the result set. This will always be greater than or equal to the value of the property returning the results in the in the response.")
+   */
+  @Schema(
+      description =
+          "The total number of items available in the result set. This will always be greater than or equal to the value of the property returning the results in the in the response.")
   public String getTotalSetSize() {
     return totalSetSize;
   }
 
-  /**
-   * setTotalSetSize.
-   **/
+  /** setTotalSetSize. */
   public void setTotalSetSize(String totalSetSize) {
     this.totalSetSize = totalSetSize;
   }
-
 
   /**
    * Compares objects.
@@ -253,32 +238,28 @@ public class ContactGetResponse {
       return false;
     }
     ContactGetResponse contactGetResponse = (ContactGetResponse) o;
-    return Objects.equals(this.contacts, contactGetResponse.contacts) &&
-        Objects.equals(this.endPosition, contactGetResponse.endPosition) &&
-        Objects.equals(this.nextUri, contactGetResponse.nextUri) &&
-        Objects.equals(this.previousUri, contactGetResponse.previousUri) &&
-        Objects.equals(this.resultSetSize, contactGetResponse.resultSetSize) &&
-        Objects.equals(this.startPosition, contactGetResponse.startPosition) &&
-        Objects.equals(this.totalSetSize, contactGetResponse.totalSetSize);
+    return Objects.equals(this.contacts, contactGetResponse.contacts)
+        && Objects.equals(this.endPosition, contactGetResponse.endPosition)
+        && Objects.equals(this.nextUri, contactGetResponse.nextUri)
+        && Objects.equals(this.previousUri, contactGetResponse.previousUri)
+        && Objects.equals(this.resultSetSize, contactGetResponse.resultSetSize)
+        && Objects.equals(this.startPosition, contactGetResponse.startPosition)
+        && Objects.equals(this.totalSetSize, contactGetResponse.totalSetSize);
   }
 
-  /**
-   * Returns the HashCode.
-   */
+  /** Returns the HashCode. */
   @Override
   public int hashCode() {
-    return Objects.hash(contacts, endPosition, nextUri, previousUri, resultSetSize, startPosition, totalSetSize);
+    return Objects.hash(
+        contacts, endPosition, nextUri, previousUri, resultSetSize, startPosition, totalSetSize);
   }
 
-
-  /**
-   * Converts the given object to string.
-   */
+  /** Converts the given object to string. */
   @Override
   public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class ContactGetResponse {\n");
-    
+
     sb.append("    contacts: ").append(toIndentedString(contacts)).append("\n");
     sb.append("    endPosition: ").append(toIndentedString(endPosition)).append("\n");
     sb.append("    nextUri: ").append(toIndentedString(nextUri)).append("\n");
@@ -291,8 +272,7 @@ public class ContactGetResponse {
   }
 
   /**
-   * Convert the given object to string with each line indented by 4 spaces
-   * (except the first line).
+   * Convert the given object to string with each line indented by 4 spaces (except the first line).
    */
   private String toIndentedString(java.lang.Object o) {
     if (o == null) {
@@ -300,6 +280,4 @@ public class ContactGetResponse {
     }
     return o.toString().replace("\n", "\n    ");
   }
-
 }
-

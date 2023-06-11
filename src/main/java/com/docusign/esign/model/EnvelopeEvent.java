@@ -1,18 +1,11 @@
 package com.docusign.esign.model;
 
-import java.util.Objects;
-import java.util.Arrays;
+import com.docusign.esign.override.swagger.Schema;
 import com.fasterxml.jackson.annotation.JsonProperty;
-import com.fasterxml.jackson.annotation.JsonCreator;
-import com.fasterxml.jackson.annotation.JsonValue;
-import io.swagger.v3.oas.annotations.media.Schema;
+import java.util.Objects;
 
-/**
- * For which envelope events should your webhook be called?.
- *
- */
+/** For which envelope events should your webhook be called?. */
 @Schema(description = "For which envelope events should your webhook be called?")
-
 public class EnvelopeEvent {
   @JsonProperty("envelopeEventStatusCode")
   private String envelopeEventStatusCode = null;
@@ -20,12 +13,11 @@ public class EnvelopeEvent {
   @JsonProperty("includeDocuments")
   private String includeDocuments = null;
 
-
   /**
    * envelopeEventStatusCode.
    *
    * @return EnvelopeEvent
-   **/
+   */
   public EnvelopeEvent envelopeEventStatusCode(String envelopeEventStatusCode) {
     this.envelopeEventStatusCode = envelopeEventStatusCode;
     return this;
@@ -33,47 +25,48 @@ public class EnvelopeEvent {
 
   /**
    * he envelope status, this can be Sent, Delivered, Completed, Declined, or Voided..
+   *
    * @return envelopeEventStatusCode
-   **/
-  @Schema(description = "he envelope status, this can be Sent, Delivered, Completed, Declined, or Voided.")
+   */
+  @Schema(
+      description =
+          "he envelope status, this can be Sent, Delivered, Completed, Declined, or Voided.")
   public String getEnvelopeEventStatusCode() {
     return envelopeEventStatusCode;
   }
 
-  /**
-   * setEnvelopeEventStatusCode.
-   **/
+  /** setEnvelopeEventStatusCode. */
   public void setEnvelopeEventStatusCode(String envelopeEventStatusCode) {
     this.envelopeEventStatusCode = envelopeEventStatusCode;
   }
-
 
   /**
    * includeDocuments.
    *
    * @return EnvelopeEvent
-   **/
+   */
   public EnvelopeEvent includeDocuments(String includeDocuments) {
     this.includeDocuments = includeDocuments;
     return this;
   }
 
   /**
-   * When set to **true**, the PDF documents are included in the message along with the updated XML. .
+   * When set to **true**, the PDF documents are included in the message along with the updated XML.
+   * .
+   *
    * @return includeDocuments
-   **/
-  @Schema(description = "When set to **true**, the PDF documents are included in the message along with the updated XML. ")
+   */
+  @Schema(
+      description =
+          "When set to **true**, the PDF documents are included in the message along with the updated XML. ")
   public String getIncludeDocuments() {
     return includeDocuments;
   }
 
-  /**
-   * setIncludeDocuments.
-   **/
+  /** setIncludeDocuments. */
   public void setIncludeDocuments(String includeDocuments) {
     this.includeDocuments = includeDocuments;
   }
-
 
   /**
    * Compares objects.
@@ -89,36 +82,32 @@ public class EnvelopeEvent {
       return false;
     }
     EnvelopeEvent envelopeEvent = (EnvelopeEvent) o;
-    return Objects.equals(this.envelopeEventStatusCode, envelopeEvent.envelopeEventStatusCode) &&
-        Objects.equals(this.includeDocuments, envelopeEvent.includeDocuments);
+    return Objects.equals(this.envelopeEventStatusCode, envelopeEvent.envelopeEventStatusCode)
+        && Objects.equals(this.includeDocuments, envelopeEvent.includeDocuments);
   }
 
-  /**
-   * Returns the HashCode.
-   */
+  /** Returns the HashCode. */
   @Override
   public int hashCode() {
     return Objects.hash(envelopeEventStatusCode, includeDocuments);
   }
 
-
-  /**
-   * Converts the given object to string.
-   */
+  /** Converts the given object to string. */
   @Override
   public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class EnvelopeEvent {\n");
-    
-    sb.append("    envelopeEventStatusCode: ").append(toIndentedString(envelopeEventStatusCode)).append("\n");
+
+    sb.append("    envelopeEventStatusCode: ")
+        .append(toIndentedString(envelopeEventStatusCode))
+        .append("\n");
     sb.append("    includeDocuments: ").append(toIndentedString(includeDocuments)).append("\n");
     sb.append("}");
     return sb.toString();
   }
 
   /**
-   * Convert the given object to string with each line indented by 4 spaces
-   * (except the first line).
+   * Convert the given object to string with each line indented by 4 spaces (except the first line).
    */
   private String toIndentedString(java.lang.Object o) {
     if (o == null) {
@@ -126,6 +115,4 @@ public class EnvelopeEvent {
     }
     return o.toString().replace("\n", "\n    ");
   }
-
 }
-

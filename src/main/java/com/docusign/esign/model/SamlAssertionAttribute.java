@@ -1,7 +1,7 @@
 package com.docusign.esign.model;
 
+import com.docusign.esign.override.swagger.Schema;
 import com.fasterxml.jackson.annotation.JsonProperty;
-import io.swagger.v3.oas.annotations.media.Schema;
 import java.util.Objects;
 
 /** SamlAssertionAttribute */
@@ -62,7 +62,9 @@ public class SamlAssertionAttribute {
    *
    * @return originalValue
    */
-  @Schema(example = "null", description = "The initial value of the tab when it was sent to the recipient. ")
+  @Schema(
+      example = "null",
+      description = "The initial value of the tab when it was sent to the recipient. ")
   public String getOriginalValue() {
     return originalValue;
   }
@@ -81,7 +83,9 @@ public class SamlAssertionAttribute {
    *
    * @return value
    */
-  @Schema(example = "null", description = "The value associated with the named SAML assertion attribute")
+  @Schema(
+      example = "null",
+      description = "The value associated with the named SAML assertion attribute")
   public String getValue() {
     return value;
   }
@@ -124,8 +128,7 @@ public class SamlAssertionAttribute {
   }
 
   /**
-   * Convert the given object to string with each line indented by 4 spaces
-   * (except the first line).
+   * Convert the given object to string with each line indented by 4 spaces (except the first line).
    */
   private String toIndentedString(java.lang.Object o) {
     if (o == null) {

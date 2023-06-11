@@ -1,31 +1,10 @@
 package com.docusign.esign.model;
 
-import java.util.Objects;
-import java.util.Arrays;
-import com.docusign.esign.model.Attachment;
-import com.docusign.esign.model.CustomFields;
-import com.docusign.esign.model.Document;
-import com.docusign.esign.model.EmailSettings;
-import com.docusign.esign.model.EnvelopeCustomMetadata;
-import com.docusign.esign.model.EnvelopeDocument;
-import com.docusign.esign.model.EnvelopeMetadata;
-import com.docusign.esign.model.Folder;
-import com.docusign.esign.model.LockInformation;
-import com.docusign.esign.model.Notification;
-import com.docusign.esign.model.PowerForm;
-import com.docusign.esign.model.Recipients;
-import com.docusign.esign.model.UserInfo;
-import com.docusign.esign.model.Workflow;
+import com.docusign.esign.override.swagger.Schema;
 import com.fasterxml.jackson.annotation.JsonProperty;
-import com.fasterxml.jackson.annotation.JsonCreator;
-import com.fasterxml.jackson.annotation.JsonValue;
-import io.swagger.v3.oas.annotations.media.Schema;
+import java.util.Objects;
 
-/**
- * EnvelopeTemplate.
- *
- */
-
+/** EnvelopeTemplate. */
 public class EnvelopeTemplate {
   @JsonProperty("accessControlListBase64")
   private String accessControlListBase64 = null;
@@ -333,12 +312,11 @@ public class EnvelopeTemplate {
   @JsonProperty("workflow")
   private Workflow workflow = null;
 
-
   /**
    * accessControlListBase64.
    *
    * @return EnvelopeTemplate
-   **/
+   */
   public EnvelopeTemplate accessControlListBase64(String accessControlListBase64) {
     this.accessControlListBase64 = accessControlListBase64;
     return this;
@@ -346,26 +324,24 @@ public class EnvelopeTemplate {
 
   /**
    * .
+   *
    * @return accessControlListBase64
-   **/
+   */
   @Schema(description = "")
   public String getAccessControlListBase64() {
     return accessControlListBase64;
   }
 
-  /**
-   * setAccessControlListBase64.
-   **/
+  /** setAccessControlListBase64. */
   public void setAccessControlListBase64(String accessControlListBase64) {
     this.accessControlListBase64 = accessControlListBase64;
   }
-
 
   /**
    * allowComments.
    *
    * @return EnvelopeTemplate
-   **/
+   */
   public EnvelopeTemplate allowComments(String allowComments) {
     this.allowComments = allowComments;
     return this;
@@ -373,53 +349,52 @@ public class EnvelopeTemplate {
 
   /**
    * .
+   *
    * @return allowComments
-   **/
+   */
   @Schema(description = "")
   public String getAllowComments() {
     return allowComments;
   }
 
-  /**
-   * setAllowComments.
-   **/
+  /** setAllowComments. */
   public void setAllowComments(String allowComments) {
     this.allowComments = allowComments;
   }
-
 
   /**
    * allowMarkup.
    *
    * @return EnvelopeTemplate
-   **/
+   */
   public EnvelopeTemplate allowMarkup(String allowMarkup) {
     this.allowMarkup = allowMarkup;
     return this;
   }
 
   /**
-   * When set to **true**, Document Markup is enabled for envelope. Account must have Document Markup enabled to use this.
+   * When set to **true**, Document Markup is enabled for envelope. Account must have Document
+   * Markup enabled to use this.
+   *
    * @return allowMarkup
-   **/
-  @Schema(description = "When set to **true**, Document Markup is enabled for envelope. Account must have Document Markup enabled to use this")
+   */
+  @Schema(
+      description =
+          "When set to **true**, Document Markup is enabled for envelope. Account must have Document Markup enabled to use this")
   public String getAllowMarkup() {
     return allowMarkup;
   }
 
-  /**
-   * setAllowMarkup.
-   **/
+  /** setAllowMarkup. */
   public void setAllowMarkup(String allowMarkup) {
     this.allowMarkup = allowMarkup;
   }
-
 
   /**
    * allowReassign.
    *
    * @return EnvelopeTemplate
-   **/
+   */
   public EnvelopeTemplate allowReassign(String allowReassign) {
     this.allowReassign = allowReassign;
     return this;
@@ -427,26 +402,26 @@ public class EnvelopeTemplate {
 
   /**
    * When set to **true**, the recipient can redirect an envelope to a more appropriate recipient..
+   *
    * @return allowReassign
-   **/
-  @Schema(description = "When set to **true**, the recipient can redirect an envelope to a more appropriate recipient.")
+   */
+  @Schema(
+      description =
+          "When set to **true**, the recipient can redirect an envelope to a more appropriate recipient.")
   public String getAllowReassign() {
     return allowReassign;
   }
 
-  /**
-   * setAllowReassign.
-   **/
+  /** setAllowReassign. */
   public void setAllowReassign(String allowReassign) {
     this.allowReassign = allowReassign;
   }
-
 
   /**
    * allowViewHistory.
    *
    * @return EnvelopeTemplate
-   **/
+   */
   public EnvelopeTemplate allowViewHistory(String allowViewHistory) {
     this.allowViewHistory = allowViewHistory;
     return this;
@@ -454,26 +429,24 @@ public class EnvelopeTemplate {
 
   /**
    * .
+   *
    * @return allowViewHistory
-   **/
+   */
   @Schema(description = "")
   public String getAllowViewHistory() {
     return allowViewHistory;
   }
 
-  /**
-   * setAllowViewHistory.
-   **/
+  /** setAllowViewHistory. */
   public void setAllowViewHistory(String allowViewHistory) {
     this.allowViewHistory = allowViewHistory;
   }
-
 
   /**
    * anySigner.
    *
    * @return EnvelopeTemplate
-   **/
+   */
   public EnvelopeTemplate anySigner(String anySigner) {
     this.anySigner = anySigner;
     return this;
@@ -481,53 +454,53 @@ public class EnvelopeTemplate {
 
   /**
    * .
+   *
    * @return anySigner
-   **/
+   */
   @Schema(description = "")
   public String getAnySigner() {
     return anySigner;
   }
 
-  /**
-   * setAnySigner.
-   **/
+  /** setAnySigner. */
   public void setAnySigner(String anySigner) {
     this.anySigner = anySigner;
   }
-
 
   /**
    * asynchronous.
    *
    * @return EnvelopeTemplate
-   **/
+   */
   public EnvelopeTemplate asynchronous(String asynchronous) {
     this.asynchronous = asynchronous;
     return this;
   }
 
   /**
-   * When set to **true**, the envelope is queued for processing and the value of the `status` property is set to 'Processing'. Additionally, get status calls return 'Processing' until completed..
+   * When set to **true**, the envelope is queued for processing and the value of the `status`
+   * property is set to 'Processing'. Additionally, get status calls return 'Processing' until
+   * completed..
+   *
    * @return asynchronous
-   **/
-  @Schema(description = "When set to **true**, the envelope is queued for processing and the value of the `status` property is set to 'Processing'. Additionally, get status calls return 'Processing' until completed.")
+   */
+  @Schema(
+      description =
+          "When set to **true**, the envelope is queued for processing and the value of the `status` property is set to 'Processing'. Additionally, get status calls return 'Processing' until completed.")
   public String getAsynchronous() {
     return asynchronous;
   }
 
-  /**
-   * setAsynchronous.
-   **/
+  /** setAsynchronous. */
   public void setAsynchronous(String asynchronous) {
     this.asynchronous = asynchronous;
   }
-
 
   /**
    * attachmentsUri.
    *
    * @return EnvelopeTemplate
-   **/
+   */
   public EnvelopeTemplate attachmentsUri(String attachmentsUri) {
     this.attachmentsUri = attachmentsUri;
     return this;
@@ -535,53 +508,52 @@ public class EnvelopeTemplate {
 
   /**
    * .
+   *
    * @return attachmentsUri
-   **/
+   */
   @Schema(description = "")
   public String getAttachmentsUri() {
     return attachmentsUri;
   }
 
-  /**
-   * setAttachmentsUri.
-   **/
+  /** setAttachmentsUri. */
   public void setAttachmentsUri(String attachmentsUri) {
     this.attachmentsUri = attachmentsUri;
   }
-
 
   /**
    * authoritativeCopy.
    *
    * @return EnvelopeTemplate
-   **/
+   */
   public EnvelopeTemplate authoritativeCopy(String authoritativeCopy) {
     this.authoritativeCopy = authoritativeCopy;
     return this;
   }
 
   /**
-   * Specifies the Authoritative copy feature. If set to true the Authoritative copy feature is enabled..
+   * Specifies the Authoritative copy feature. If set to true the Authoritative copy feature is
+   * enabled..
+   *
    * @return authoritativeCopy
-   **/
-  @Schema(description = "Specifies the Authoritative copy feature. If set to true the Authoritative copy feature is enabled.")
+   */
+  @Schema(
+      description =
+          "Specifies the Authoritative copy feature. If set to true the Authoritative copy feature is enabled.")
   public String getAuthoritativeCopy() {
     return authoritativeCopy;
   }
 
-  /**
-   * setAuthoritativeCopy.
-   **/
+  /** setAuthoritativeCopy. */
   public void setAuthoritativeCopy(String authoritativeCopy) {
     this.authoritativeCopy = authoritativeCopy;
   }
-
 
   /**
    * authoritativeCopyDefault.
    *
    * @return EnvelopeTemplate
-   **/
+   */
   public EnvelopeTemplate authoritativeCopyDefault(String authoritativeCopyDefault) {
     this.authoritativeCopyDefault = authoritativeCopyDefault;
     return this;
@@ -589,26 +561,24 @@ public class EnvelopeTemplate {
 
   /**
    * .
+   *
    * @return authoritativeCopyDefault
-   **/
+   */
   @Schema(description = "")
   public String getAuthoritativeCopyDefault() {
     return authoritativeCopyDefault;
   }
 
-  /**
-   * setAuthoritativeCopyDefault.
-   **/
+  /** setAuthoritativeCopyDefault. */
   public void setAuthoritativeCopyDefault(String authoritativeCopyDefault) {
     this.authoritativeCopyDefault = authoritativeCopyDefault;
   }
-
 
   /**
    * autoMatch.
    *
    * @return EnvelopeTemplate
-   **/
+   */
   public EnvelopeTemplate autoMatch(String autoMatch) {
     this.autoMatch = autoMatch;
     return this;
@@ -616,26 +586,24 @@ public class EnvelopeTemplate {
 
   /**
    * .
+   *
    * @return autoMatch
-   **/
+   */
   @Schema(description = "")
   public String getAutoMatch() {
     return autoMatch;
   }
 
-  /**
-   * setAutoMatch.
-   **/
+  /** setAutoMatch. */
   public void setAutoMatch(String autoMatch) {
     this.autoMatch = autoMatch;
   }
-
 
   /**
    * autoMatchSpecifiedByUser.
    *
    * @return EnvelopeTemplate
-   **/
+   */
   public EnvelopeTemplate autoMatchSpecifiedByUser(String autoMatchSpecifiedByUser) {
     this.autoMatchSpecifiedByUser = autoMatchSpecifiedByUser;
     return this;
@@ -643,26 +611,24 @@ public class EnvelopeTemplate {
 
   /**
    * .
+   *
    * @return autoMatchSpecifiedByUser
-   **/
+   */
   @Schema(description = "")
   public String getAutoMatchSpecifiedByUser() {
     return autoMatchSpecifiedByUser;
   }
 
-  /**
-   * setAutoMatchSpecifiedByUser.
-   **/
+  /** setAutoMatchSpecifiedByUser. */
   public void setAutoMatchSpecifiedByUser(String autoMatchSpecifiedByUser) {
     this.autoMatchSpecifiedByUser = autoMatchSpecifiedByUser;
   }
-
 
   /**
    * autoNavigation.
    *
    * @return EnvelopeTemplate
-   **/
+   */
   public EnvelopeTemplate autoNavigation(String autoNavigation) {
     this.autoNavigation = autoNavigation;
     return this;
@@ -670,26 +636,24 @@ public class EnvelopeTemplate {
 
   /**
    * .
+   *
    * @return autoNavigation
-   **/
+   */
   @Schema(description = "")
   public String getAutoNavigation() {
     return autoNavigation;
   }
 
-  /**
-   * setAutoNavigation.
-   **/
+  /** setAutoNavigation. */
   public void setAutoNavigation(String autoNavigation) {
     this.autoNavigation = autoNavigation;
   }
-
 
   /**
    * brandId.
    *
    * @return EnvelopeTemplate
-   **/
+   */
   public EnvelopeTemplate brandId(String brandId) {
     this.brandId = brandId;
     return this;
@@ -697,26 +661,24 @@ public class EnvelopeTemplate {
 
   /**
    * .
+   *
    * @return brandId
-   **/
+   */
   @Schema(description = "")
   public String getBrandId() {
     return brandId;
   }
 
-  /**
-   * setBrandId.
-   **/
+  /** setBrandId. */
   public void setBrandId(String brandId) {
     this.brandId = brandId;
   }
-
 
   /**
    * brandLock.
    *
    * @return EnvelopeTemplate
-   **/
+   */
   public EnvelopeTemplate brandLock(String brandLock) {
     this.brandLock = brandLock;
     return this;
@@ -724,26 +686,24 @@ public class EnvelopeTemplate {
 
   /**
    * .
+   *
    * @return brandLock
-   **/
+   */
   @Schema(description = "")
   public String getBrandLock() {
     return brandLock;
   }
 
-  /**
-   * setBrandLock.
-   **/
+  /** setBrandLock. */
   public void setBrandLock(String brandLock) {
     this.brandLock = brandLock;
   }
-
 
   /**
    * burnDefaultTabData.
    *
    * @return EnvelopeTemplate
-   **/
+   */
   public EnvelopeTemplate burnDefaultTabData(String burnDefaultTabData) {
     this.burnDefaultTabData = burnDefaultTabData;
     return this;
@@ -751,26 +711,24 @@ public class EnvelopeTemplate {
 
   /**
    * .
+   *
    * @return burnDefaultTabData
-   **/
+   */
   @Schema(description = "")
   public String getBurnDefaultTabData() {
     return burnDefaultTabData;
   }
 
-  /**
-   * setBurnDefaultTabData.
-   **/
+  /** setBurnDefaultTabData. */
   public void setBurnDefaultTabData(String burnDefaultTabData) {
     this.burnDefaultTabData = burnDefaultTabData;
   }
-
 
   /**
    * certificateUri.
    *
    * @return EnvelopeTemplate
-   **/
+   */
   public EnvelopeTemplate certificateUri(String certificateUri) {
     this.certificateUri = certificateUri;
     return this;
@@ -778,26 +736,26 @@ public class EnvelopeTemplate {
 
   /**
    * Retrieves a URI for an endpoint that allows you to easily retrieve certificate information..
+   *
    * @return certificateUri
-   **/
-  @Schema(description = "Retrieves a URI for an endpoint that allows you to easily retrieve certificate information.")
+   */
+  @Schema(
+      description =
+          "Retrieves a URI for an endpoint that allows you to easily retrieve certificate information.")
   public String getCertificateUri() {
     return certificateUri;
   }
 
-  /**
-   * setCertificateUri.
-   **/
+  /** setCertificateUri. */
   public void setCertificateUri(String certificateUri) {
     this.certificateUri = certificateUri;
   }
-
 
   /**
    * completedDateTime.
    *
    * @return EnvelopeTemplate
-   **/
+   */
   public EnvelopeTemplate completedDateTime(String completedDateTime) {
     this.completedDateTime = completedDateTime;
     return this;
@@ -805,26 +763,24 @@ public class EnvelopeTemplate {
 
   /**
    * Specifies the date and time this item was completed..
+   *
    * @return completedDateTime
-   **/
+   */
   @Schema(description = "Specifies the date and time this item was completed.")
   public String getCompletedDateTime() {
     return completedDateTime;
   }
 
-  /**
-   * setCompletedDateTime.
-   **/
+  /** setCompletedDateTime. */
   public void setCompletedDateTime(String completedDateTime) {
     this.completedDateTime = completedDateTime;
   }
-
 
   /**
    * copyRecipientData.
    *
    * @return EnvelopeTemplate
-   **/
+   */
   public EnvelopeTemplate copyRecipientData(String copyRecipientData) {
     this.copyRecipientData = copyRecipientData;
     return this;
@@ -832,26 +788,24 @@ public class EnvelopeTemplate {
 
   /**
    * .
+   *
    * @return copyRecipientData
-   **/
+   */
   @Schema(description = "")
   public String getCopyRecipientData() {
     return copyRecipientData;
   }
 
-  /**
-   * setCopyRecipientData.
-   **/
+  /** setCopyRecipientData. */
   public void setCopyRecipientData(String copyRecipientData) {
     this.copyRecipientData = copyRecipientData;
   }
-
 
   /**
    * created.
    *
    * @return EnvelopeTemplate
-   **/
+   */
   public EnvelopeTemplate created(String created) {
     this.created = created;
     return this;
@@ -859,26 +813,24 @@ public class EnvelopeTemplate {
 
   /**
    * .
+   *
    * @return created
-   **/
+   */
   @Schema(description = "")
   public String getCreated() {
     return created;
   }
 
-  /**
-   * setCreated.
-   **/
+  /** setCreated. */
   public void setCreated(String created) {
     this.created = created;
   }
-
 
   /**
    * createdDateTime.
    *
    * @return EnvelopeTemplate
-   **/
+   */
   public EnvelopeTemplate createdDateTime(String createdDateTime) {
     this.createdDateTime = createdDateTime;
     return this;
@@ -886,53 +838,53 @@ public class EnvelopeTemplate {
 
   /**
    * Indicates the date and time the item was created..
+   *
    * @return createdDateTime
-   **/
+   */
   @Schema(description = "Indicates the date and time the item was created.")
   public String getCreatedDateTime() {
     return createdDateTime;
   }
 
-  /**
-   * setCreatedDateTime.
-   **/
+  /** setCreatedDateTime. */
   public void setCreatedDateTime(String createdDateTime) {
     this.createdDateTime = createdDateTime;
   }
-
 
   /**
    * customFields.
    *
    * @return EnvelopeTemplate
-   **/
+   */
   public EnvelopeTemplate customFields(CustomFields customFields) {
     this.customFields = customFields;
     return this;
   }
 
   /**
-   * An optional array of strings that allows the sender to provide custom data about the recipient. This information is returned in the envelope status but otherwise not used by DocuSign. Each customField string can be a maximum of 100 characters..
+   * An optional array of strings that allows the sender to provide custom data about the recipient.
+   * This information is returned in the envelope status but otherwise not used by DocuSign. Each
+   * customField string can be a maximum of 100 characters..
+   *
    * @return customFields
-   **/
-  @Schema(description = "An optional array of strings that allows the sender to provide custom data about the recipient. This information is returned in the envelope status but otherwise not used by DocuSign. Each customField string can be a maximum of 100 characters.")
+   */
+  @Schema(
+      description =
+          "An optional array of strings that allows the sender to provide custom data about the recipient. This information is returned in the envelope status but otherwise not used by DocuSign. Each customField string can be a maximum of 100 characters.")
   public CustomFields getCustomFields() {
     return customFields;
   }
 
-  /**
-   * setCustomFields.
-   **/
+  /** setCustomFields. */
   public void setCustomFields(CustomFields customFields) {
     this.customFields = customFields;
   }
-
 
   /**
    * customFieldsUri.
    *
    * @return EnvelopeTemplate
-   **/
+   */
   public EnvelopeTemplate customFieldsUri(String customFieldsUri) {
     this.customFieldsUri = customFieldsUri;
     return this;
@@ -940,26 +892,26 @@ public class EnvelopeTemplate {
 
   /**
    * Contains a URI for an endpoint that you can use to retrieve the custom fields..
+   *
    * @return customFieldsUri
-   **/
-  @Schema(description = "Contains a URI for an endpoint that you can use to retrieve the custom fields.")
+   */
+  @Schema(
+      description =
+          "Contains a URI for an endpoint that you can use to retrieve the custom fields.")
   public String getCustomFieldsUri() {
     return customFieldsUri;
   }
 
-  /**
-   * setCustomFieldsUri.
-   **/
+  /** setCustomFieldsUri. */
   public void setCustomFieldsUri(String customFieldsUri) {
     this.customFieldsUri = customFieldsUri;
   }
-
 
   /**
    * declinedDateTime.
    *
    * @return EnvelopeTemplate
-   **/
+   */
   public EnvelopeTemplate declinedDateTime(String declinedDateTime) {
     this.declinedDateTime = declinedDateTime;
     return this;
@@ -967,26 +919,24 @@ public class EnvelopeTemplate {
 
   /**
    * The date and time the recipient declined the document..
+   *
    * @return declinedDateTime
-   **/
+   */
   @Schema(description = "The date and time the recipient declined the document.")
   public String getDeclinedDateTime() {
     return declinedDateTime;
   }
 
-  /**
-   * setDeclinedDateTime.
-   **/
+  /** setDeclinedDateTime. */
   public void setDeclinedDateTime(String declinedDateTime) {
     this.declinedDateTime = declinedDateTime;
   }
-
 
   /**
    * deletedDateTime.
    *
    * @return EnvelopeTemplate
-   **/
+   */
   public EnvelopeTemplate deletedDateTime(String deletedDateTime) {
     this.deletedDateTime = deletedDateTime;
     return this;
@@ -994,26 +944,24 @@ public class EnvelopeTemplate {
 
   /**
    * Specifies the data and time the item was deleted..
+   *
    * @return deletedDateTime
-   **/
+   */
   @Schema(description = "Specifies the data and time the item was deleted.")
   public String getDeletedDateTime() {
     return deletedDateTime;
   }
 
-  /**
-   * setDeletedDateTime.
-   **/
+  /** setDeletedDateTime. */
   public void setDeletedDateTime(String deletedDateTime) {
     this.deletedDateTime = deletedDateTime;
   }
-
 
   /**
    * deliveredDateTime.
    *
    * @return EnvelopeTemplate
-   **/
+   */
   public EnvelopeTemplate deliveredDateTime(String deliveredDateTime) {
     this.deliveredDateTime = deliveredDateTime;
     return this;
@@ -1021,26 +969,24 @@ public class EnvelopeTemplate {
 
   /**
    * Reserved: For DocuSign use only..
+   *
    * @return deliveredDateTime
-   **/
+   */
   @Schema(description = "Reserved: For DocuSign use only.")
   public String getDeliveredDateTime() {
     return deliveredDateTime;
   }
 
-  /**
-   * setDeliveredDateTime.
-   **/
+  /** setDeliveredDateTime. */
   public void setDeliveredDateTime(String deliveredDateTime) {
     this.deliveredDateTime = deliveredDateTime;
   }
-
 
   /**
    * description.
    *
    * @return EnvelopeTemplate
-   **/
+   */
   public EnvelopeTemplate description(String description) {
     this.description = description;
     return this;
@@ -1048,26 +994,24 @@ public class EnvelopeTemplate {
 
   /**
    * .
+   *
    * @return description
-   **/
+   */
   @Schema(description = "")
   public String getDescription() {
     return description;
   }
 
-  /**
-   * setDescription.
-   **/
+  /** setDescription. */
   public void setDescription(String description) {
     this.description = description;
   }
-
 
   /**
    * disableResponsiveDocument.
    *
    * @return EnvelopeTemplate
-   **/
+   */
   public EnvelopeTemplate disableResponsiveDocument(String disableResponsiveDocument) {
     this.disableResponsiveDocument = disableResponsiveDocument;
     return this;
@@ -1075,26 +1019,24 @@ public class EnvelopeTemplate {
 
   /**
    * .
+   *
    * @return disableResponsiveDocument
-   **/
+   */
   @Schema(description = "")
   public String getDisableResponsiveDocument() {
     return disableResponsiveDocument;
   }
 
-  /**
-   * setDisableResponsiveDocument.
-   **/
+  /** setDisableResponsiveDocument. */
   public void setDisableResponsiveDocument(String disableResponsiveDocument) {
     this.disableResponsiveDocument = disableResponsiveDocument;
   }
-
 
   /**
    * documentBase64.
    *
    * @return EnvelopeTemplate
-   **/
+   */
   public EnvelopeTemplate documentBase64(String documentBase64) {
     this.documentBase64 = documentBase64;
     return this;
@@ -1102,36 +1044,34 @@ public class EnvelopeTemplate {
 
   /**
    * .
+   *
    * @return documentBase64
-   **/
+   */
   @Schema(description = "")
   public String getDocumentBase64() {
     return documentBase64;
   }
 
-  /**
-   * setDocumentBase64.
-   **/
+  /** setDocumentBase64. */
   public void setDocumentBase64(String documentBase64) {
     this.documentBase64 = documentBase64;
   }
-
 
   /**
    * documents.
    *
    * @return EnvelopeTemplate
-   **/
+   */
   public EnvelopeTemplate documents(java.util.List<Document> documents) {
     this.documents = documents;
     return this;
   }
-  
+
   /**
    * addDocumentsItem.
    *
    * @return EnvelopeTemplate
-   **/
+   */
   public EnvelopeTemplate addDocumentsItem(Document documentsItem) {
     if (this.documents == null) {
       this.documents = new java.util.ArrayList<>();
@@ -1142,26 +1082,24 @@ public class EnvelopeTemplate {
 
   /**
    * Complex element contains the details on the documents in the envelope..
+   *
    * @return documents
-   **/
+   */
   @Schema(description = "Complex element contains the details on the documents in the envelope.")
   public java.util.List<Document> getDocuments() {
     return documents;
   }
 
-  /**
-   * setDocuments.
-   **/
+  /** setDocuments. */
   public void setDocuments(java.util.List<Document> documents) {
     this.documents = documents;
   }
-
 
   /**
    * documentsCombinedUri.
    *
    * @return EnvelopeTemplate
-   **/
+   */
   public EnvelopeTemplate documentsCombinedUri(String documentsCombinedUri) {
     this.documentsCombinedUri = documentsCombinedUri;
     return this;
@@ -1169,26 +1107,24 @@ public class EnvelopeTemplate {
 
   /**
    * .
+   *
    * @return documentsCombinedUri
-   **/
+   */
   @Schema(description = "")
   public String getDocumentsCombinedUri() {
     return documentsCombinedUri;
   }
 
-  /**
-   * setDocumentsCombinedUri.
-   **/
+  /** setDocumentsCombinedUri. */
   public void setDocumentsCombinedUri(String documentsCombinedUri) {
     this.documentsCombinedUri = documentsCombinedUri;
   }
-
 
   /**
    * documentsUri.
    *
    * @return EnvelopeTemplate
-   **/
+   */
   public EnvelopeTemplate documentsUri(String documentsUri) {
     this.documentsUri = documentsUri;
     return this;
@@ -1196,26 +1132,25 @@ public class EnvelopeTemplate {
 
   /**
    * Contains a URI for an endpoint that you can use to retrieve the documents..
+   *
    * @return documentsUri
-   **/
-  @Schema(description = "Contains a URI for an endpoint that you can use to retrieve the documents.")
+   */
+  @Schema(
+      description = "Contains a URI for an endpoint that you can use to retrieve the documents.")
   public String getDocumentsUri() {
     return documentsUri;
   }
 
-  /**
-   * setDocumentsUri.
-   **/
+  /** setDocumentsUri. */
   public void setDocumentsUri(String documentsUri) {
     this.documentsUri = documentsUri;
   }
-
 
   /**
    * emailBlurb.
    *
    * @return EnvelopeTemplate
-   **/
+   */
   public EnvelopeTemplate emailBlurb(String emailBlurb) {
     this.emailBlurb = emailBlurb;
     return this;
@@ -1223,26 +1158,24 @@ public class EnvelopeTemplate {
 
   /**
    * .
+   *
    * @return emailBlurb
-   **/
+   */
   @Schema(description = "")
   public String getEmailBlurb() {
     return emailBlurb;
   }
 
-  /**
-   * setEmailBlurb.
-   **/
+  /** setEmailBlurb. */
   public void setEmailBlurb(String emailBlurb) {
     this.emailBlurb = emailBlurb;
   }
-
 
   /**
    * emailSettings.
    *
    * @return EnvelopeTemplate
-   **/
+   */
   public EnvelopeTemplate emailSettings(EmailSettings emailSettings) {
     this.emailSettings = emailSettings;
     return this;
@@ -1250,53 +1183,53 @@ public class EnvelopeTemplate {
 
   /**
    * A complex type that contains email settings..
+   *
    * @return emailSettings
-   **/
+   */
   @Schema(description = "A complex type that contains email settings.")
   public EmailSettings getEmailSettings() {
     return emailSettings;
   }
 
-  /**
-   * setEmailSettings.
-   **/
+  /** setEmailSettings. */
   public void setEmailSettings(EmailSettings emailSettings) {
     this.emailSettings = emailSettings;
   }
-
 
   /**
    * emailSubject.
    *
    * @return EnvelopeTemplate
-   **/
+   */
   public EnvelopeTemplate emailSubject(String emailSubject) {
     this.emailSubject = emailSubject;
     return this;
   }
 
   /**
-   * Specifies the subject of the email that is sent to all recipients.  See [ML:Template Email Subject Merge Fields] for information about adding merge field information to the email subject..
+   * Specifies the subject of the email that is sent to all recipients. See [ML:Template Email
+   * Subject Merge Fields] for information about adding merge field information to the email
+   * subject..
+   *
    * @return emailSubject
-   **/
-  @Schema(description = "Specifies the subject of the email that is sent to all recipients.  See [ML:Template Email Subject Merge Fields] for information about adding merge field information to the email subject.")
+   */
+  @Schema(
+      description =
+          "Specifies the subject of the email that is sent to all recipients.  See [ML:Template Email Subject Merge Fields] for information about adding merge field information to the email subject.")
   public String getEmailSubject() {
     return emailSubject;
   }
 
-  /**
-   * setEmailSubject.
-   **/
+  /** setEmailSubject. */
   public void setEmailSubject(String emailSubject) {
     this.emailSubject = emailSubject;
   }
-
 
   /**
    * enableWetSign.
    *
    * @return EnvelopeTemplate
-   **/
+   */
   public EnvelopeTemplate enableWetSign(String enableWetSign) {
     this.enableWetSign = enableWetSign;
     return this;
@@ -1304,63 +1237,69 @@ public class EnvelopeTemplate {
 
   /**
    * When set to **true**, the signer is allowed to print the document and sign it on paper..
+   *
    * @return enableWetSign
-   **/
-  @Schema(description = "When set to **true**, the signer is allowed to print the document and sign it on paper.")
+   */
+  @Schema(
+      description =
+          "When set to **true**, the signer is allowed to print the document and sign it on paper.")
   public String getEnableWetSign() {
     return enableWetSign;
   }
 
-  /**
-   * setEnableWetSign.
-   **/
+  /** setEnableWetSign. */
   public void setEnableWetSign(String enableWetSign) {
     this.enableWetSign = enableWetSign;
   }
-
 
   /**
    * enforceSignerVisibility.
    *
    * @return EnvelopeTemplate
-   **/
+   */
   public EnvelopeTemplate enforceSignerVisibility(String enforceSignerVisibility) {
     this.enforceSignerVisibility = enforceSignerVisibility;
     return this;
   }
 
   /**
-   * When set to **true**, documents with tabs can only be viewed by signers that have a tab on that document. Recipients that have an administrative role (Agent, Editor, or Intermediaries) or informational role (Certified Deliveries or Carbon Copies) can always see all the documents in an envelope, unless they are specifically excluded using this setting when an envelope is sent. Documents that do not have tabs are always visible to all recipients, unless they are specifically excluded using this setting when an envelope is sent.  Your account must have Document Visibility enabled to use this..
+   * When set to **true**, documents with tabs can only be viewed by signers that have a tab on that
+   * document. Recipients that have an administrative role (Agent, Editor, or Intermediaries) or
+   * informational role (Certified Deliveries or Carbon Copies) can always see all the documents in
+   * an envelope, unless they are specifically excluded using this setting when an envelope is sent.
+   * Documents that do not have tabs are always visible to all recipients, unless they are
+   * specifically excluded using this setting when an envelope is sent. Your account must have
+   * Document Visibility enabled to use this..
+   *
    * @return enforceSignerVisibility
-   **/
-  @Schema(description = "When set to **true**, documents with tabs can only be viewed by signers that have a tab on that document. Recipients that have an administrative role (Agent, Editor, or Intermediaries) or informational role (Certified Deliveries or Carbon Copies) can always see all the documents in an envelope, unless they are specifically excluded using this setting when an envelope is sent. Documents that do not have tabs are always visible to all recipients, unless they are specifically excluded using this setting when an envelope is sent.  Your account must have Document Visibility enabled to use this.")
+   */
+  @Schema(
+      description =
+          "When set to **true**, documents with tabs can only be viewed by signers that have a tab on that document. Recipients that have an administrative role (Agent, Editor, or Intermediaries) or informational role (Certified Deliveries or Carbon Copies) can always see all the documents in an envelope, unless they are specifically excluded using this setting when an envelope is sent. Documents that do not have tabs are always visible to all recipients, unless they are specifically excluded using this setting when an envelope is sent.  Your account must have Document Visibility enabled to use this.")
   public String getEnforceSignerVisibility() {
     return enforceSignerVisibility;
   }
 
-  /**
-   * setEnforceSignerVisibility.
-   **/
+  /** setEnforceSignerVisibility. */
   public void setEnforceSignerVisibility(String enforceSignerVisibility) {
     this.enforceSignerVisibility = enforceSignerVisibility;
   }
-
 
   /**
    * envelopeAttachments.
    *
    * @return EnvelopeTemplate
-   **/
+   */
   public EnvelopeTemplate envelopeAttachments(java.util.List<Attachment> envelopeAttachments) {
     this.envelopeAttachments = envelopeAttachments;
     return this;
   }
-  
+
   /**
    * addEnvelopeAttachmentsItem.
    *
    * @return EnvelopeTemplate
-   **/
+   */
   public EnvelopeTemplate addEnvelopeAttachmentsItem(Attachment envelopeAttachmentsItem) {
     if (this.envelopeAttachments == null) {
       this.envelopeAttachments = new java.util.ArrayList<>();
@@ -1371,26 +1310,24 @@ public class EnvelopeTemplate {
 
   /**
    * .
+   *
    * @return envelopeAttachments
-   **/
+   */
   @Schema(description = "")
   public java.util.List<Attachment> getEnvelopeAttachments() {
     return envelopeAttachments;
   }
 
-  /**
-   * setEnvelopeAttachments.
-   **/
+  /** setEnvelopeAttachments. */
   public void setEnvelopeAttachments(java.util.List<Attachment> envelopeAttachments) {
     this.envelopeAttachments = envelopeAttachments;
   }
-
 
   /**
    * envelopeCustomMetadata.
    *
    * @return EnvelopeTemplate
-   **/
+   */
   public EnvelopeTemplate envelopeCustomMetadata(EnvelopeCustomMetadata envelopeCustomMetadata) {
     this.envelopeCustomMetadata = envelopeCustomMetadata;
     return this;
@@ -1398,36 +1335,34 @@ public class EnvelopeTemplate {
 
   /**
    * .
+   *
    * @return envelopeCustomMetadata
-   **/
+   */
   @Schema(description = "")
   public EnvelopeCustomMetadata getEnvelopeCustomMetadata() {
     return envelopeCustomMetadata;
   }
 
-  /**
-   * setEnvelopeCustomMetadata.
-   **/
+  /** setEnvelopeCustomMetadata. */
   public void setEnvelopeCustomMetadata(EnvelopeCustomMetadata envelopeCustomMetadata) {
     this.envelopeCustomMetadata = envelopeCustomMetadata;
   }
-
 
   /**
    * envelopeDocuments.
    *
    * @return EnvelopeTemplate
-   **/
+   */
   public EnvelopeTemplate envelopeDocuments(java.util.List<EnvelopeDocument> envelopeDocuments) {
     this.envelopeDocuments = envelopeDocuments;
     return this;
   }
-  
+
   /**
    * addEnvelopeDocumentsItem.
    *
    * @return EnvelopeTemplate
-   **/
+   */
   public EnvelopeTemplate addEnvelopeDocumentsItem(EnvelopeDocument envelopeDocumentsItem) {
     if (this.envelopeDocuments == null) {
       this.envelopeDocuments = new java.util.ArrayList<>();
@@ -1438,26 +1373,24 @@ public class EnvelopeTemplate {
 
   /**
    * .
+   *
    * @return envelopeDocuments
-   **/
+   */
   @Schema(description = "")
   public java.util.List<EnvelopeDocument> getEnvelopeDocuments() {
     return envelopeDocuments;
   }
 
-  /**
-   * setEnvelopeDocuments.
-   **/
+  /** setEnvelopeDocuments. */
   public void setEnvelopeDocuments(java.util.List<EnvelopeDocument> envelopeDocuments) {
     this.envelopeDocuments = envelopeDocuments;
   }
-
 
   /**
    * envelopeId.
    *
    * @return EnvelopeTemplate
-   **/
+   */
   public EnvelopeTemplate envelopeId(String envelopeId) {
     this.envelopeId = envelopeId;
     return this;
@@ -1465,26 +1398,24 @@ public class EnvelopeTemplate {
 
   /**
    * The envelope ID of the envelope status that failed to post..
+   *
    * @return envelopeId
-   **/
+   */
   @Schema(description = "The envelope ID of the envelope status that failed to post.")
   public String getEnvelopeId() {
     return envelopeId;
   }
 
-  /**
-   * setEnvelopeId.
-   **/
+  /** setEnvelopeId. */
   public void setEnvelopeId(String envelopeId) {
     this.envelopeId = envelopeId;
   }
-
 
   /**
    * envelopeIdStamping.
    *
    * @return EnvelopeTemplate
-   **/
+   */
   public EnvelopeTemplate envelopeIdStamping(String envelopeIdStamping) {
     this.envelopeIdStamping = envelopeIdStamping;
     return this;
@@ -1492,26 +1423,24 @@ public class EnvelopeTemplate {
 
   /**
    * When set to **true**, Envelope ID Stamping is enabled..
+   *
    * @return envelopeIdStamping
-   **/
+   */
   @Schema(description = "When set to **true**, Envelope ID Stamping is enabled.")
   public String getEnvelopeIdStamping() {
     return envelopeIdStamping;
   }
 
-  /**
-   * setEnvelopeIdStamping.
-   **/
+  /** setEnvelopeIdStamping. */
   public void setEnvelopeIdStamping(String envelopeIdStamping) {
     this.envelopeIdStamping = envelopeIdStamping;
   }
-
 
   /**
    * envelopeLocation.
    *
    * @return EnvelopeTemplate
-   **/
+   */
   public EnvelopeTemplate envelopeLocation(String envelopeLocation) {
     this.envelopeLocation = envelopeLocation;
     return this;
@@ -1519,53 +1448,52 @@ public class EnvelopeTemplate {
 
   /**
    * .
+   *
    * @return envelopeLocation
-   **/
+   */
   @Schema(description = "")
   public String getEnvelopeLocation() {
     return envelopeLocation;
   }
 
-  /**
-   * setEnvelopeLocation.
-   **/
+  /** setEnvelopeLocation. */
   public void setEnvelopeLocation(String envelopeLocation) {
     this.envelopeLocation = envelopeLocation;
   }
-
 
   /**
    * envelopeMetadata.
    *
    * @return EnvelopeTemplate
-   **/
+   */
   public EnvelopeTemplate envelopeMetadata(EnvelopeMetadata envelopeMetadata) {
     this.envelopeMetadata = envelopeMetadata;
     return this;
   }
 
   /**
-   * Provides information about the features and services that are enabled for the envelope, including the Correct feature, the Advanced Correct feature, and DocuSign eNotary service..
+   * Provides information about the features and services that are enabled for the envelope,
+   * including the Correct feature, the Advanced Correct feature, and DocuSign eNotary service..
+   *
    * @return envelopeMetadata
-   **/
-  @Schema(description = "Provides information about the features and services that are enabled for the envelope, including the Correct feature, the Advanced Correct feature, and DocuSign eNotary service.")
+   */
+  @Schema(
+      description =
+          "Provides information about the features and services that are enabled for the envelope, including the Correct feature, the Advanced Correct feature, and DocuSign eNotary service.")
   public EnvelopeMetadata getEnvelopeMetadata() {
     return envelopeMetadata;
   }
 
-  /**
-   * setEnvelopeMetadata.
-   **/
+  /** setEnvelopeMetadata. */
   public void setEnvelopeMetadata(EnvelopeMetadata envelopeMetadata) {
     this.envelopeMetadata = envelopeMetadata;
   }
-
 
   /**
    * envelopeUri.
    *
    * @return EnvelopeTemplate
-   **/
+   */
   public EnvelopeTemplate envelopeUri(String envelopeUri) {
     this.envelopeUri = envelopeUri;
     return this;
@@ -1573,26 +1501,26 @@ public class EnvelopeTemplate {
 
   /**
    * Contains a URI for an endpoint that you can use to retrieve the envelope or envelopes..
+   *
    * @return envelopeUri
-   **/
-  @Schema(description = "Contains a URI for an endpoint that you can use to retrieve the envelope or envelopes.")
+   */
+  @Schema(
+      description =
+          "Contains a URI for an endpoint that you can use to retrieve the envelope or envelopes.")
   public String getEnvelopeUri() {
     return envelopeUri;
   }
 
-  /**
-   * setEnvelopeUri.
-   **/
+  /** setEnvelopeUri. */
   public void setEnvelopeUri(String envelopeUri) {
     this.envelopeUri = envelopeUri;
   }
-
 
   /**
    * expireAfter.
    *
    * @return EnvelopeTemplate
-   **/
+   */
   public EnvelopeTemplate expireAfter(String expireAfter) {
     this.expireAfter = expireAfter;
     return this;
@@ -1600,26 +1528,24 @@ public class EnvelopeTemplate {
 
   /**
    * .
+   *
    * @return expireAfter
-   **/
+   */
   @Schema(description = "")
   public String getExpireAfter() {
     return expireAfter;
   }
 
-  /**
-   * setExpireAfter.
-   **/
+  /** setExpireAfter. */
   public void setExpireAfter(String expireAfter) {
     this.expireAfter = expireAfter;
   }
-
 
   /**
    * expireDateTime.
    *
    * @return EnvelopeTemplate
-   **/
+   */
   public EnvelopeTemplate expireDateTime(String expireDateTime) {
     this.expireDateTime = expireDateTime;
     return this;
@@ -1627,26 +1553,24 @@ public class EnvelopeTemplate {
 
   /**
    * .
+   *
    * @return expireDateTime
-   **/
+   */
   @Schema(description = "")
   public String getExpireDateTime() {
     return expireDateTime;
   }
 
-  /**
-   * setExpireDateTime.
-   **/
+  /** setExpireDateTime. */
   public void setExpireDateTime(String expireDateTime) {
     this.expireDateTime = expireDateTime;
   }
-
 
   /**
    * expireEnabled.
    *
    * @return EnvelopeTemplate
-   **/
+   */
   public EnvelopeTemplate expireEnabled(String expireEnabled) {
     this.expireEnabled = expireEnabled;
     return this;
@@ -1654,26 +1578,24 @@ public class EnvelopeTemplate {
 
   /**
    * .
+   *
    * @return expireEnabled
-   **/
+   */
   @Schema(description = "")
   public String getExpireEnabled() {
     return expireEnabled;
   }
 
-  /**
-   * setExpireEnabled.
-   **/
+  /** setExpireEnabled. */
   public void setExpireEnabled(String expireEnabled) {
     this.expireEnabled = expireEnabled;
   }
-
 
   /**
    * externalEnvelopeId.
    *
    * @return EnvelopeTemplate
-   **/
+   */
   public EnvelopeTemplate externalEnvelopeId(String externalEnvelopeId) {
     this.externalEnvelopeId = externalEnvelopeId;
     return this;
@@ -1681,26 +1603,24 @@ public class EnvelopeTemplate {
 
   /**
    * .
+   *
    * @return externalEnvelopeId
-   **/
+   */
   @Schema(description = "")
   public String getExternalEnvelopeId() {
     return externalEnvelopeId;
   }
 
-  /**
-   * setExternalEnvelopeId.
-   **/
+  /** setExternalEnvelopeId. */
   public void setExternalEnvelopeId(String externalEnvelopeId) {
     this.externalEnvelopeId = externalEnvelopeId;
   }
-
 
   /**
    * favoritedByMe.
    *
    * @return EnvelopeTemplate
-   **/
+   */
   public EnvelopeTemplate favoritedByMe(String favoritedByMe) {
     this.favoritedByMe = favoritedByMe;
     return this;
@@ -1708,26 +1628,24 @@ public class EnvelopeTemplate {
 
   /**
    * .
+   *
    * @return favoritedByMe
-   **/
+   */
   @Schema(description = "")
   public String getFavoritedByMe() {
     return favoritedByMe;
   }
 
-  /**
-   * setFavoritedByMe.
-   **/
+  /** setFavoritedByMe. */
   public void setFavoritedByMe(String favoritedByMe) {
     this.favoritedByMe = favoritedByMe;
   }
-
 
   /**
    * folderId.
    *
    * @return EnvelopeTemplate
-   **/
+   */
   public EnvelopeTemplate folderId(String folderId) {
     this.folderId = folderId;
     return this;
@@ -1735,36 +1653,34 @@ public class EnvelopeTemplate {
 
   /**
    * .
+   *
    * @return folderId
-   **/
+   */
   @Schema(description = "")
   public String getFolderId() {
     return folderId;
   }
 
-  /**
-   * setFolderId.
-   **/
+  /** setFolderId. */
   public void setFolderId(String folderId) {
     this.folderId = folderId;
   }
-
 
   /**
    * folderIds.
    *
    * @return EnvelopeTemplate
-   **/
+   */
   public EnvelopeTemplate folderIds(java.util.List<String> folderIds) {
     this.folderIds = folderIds;
     return this;
   }
-  
+
   /**
    * addFolderIdsItem.
    *
    * @return EnvelopeTemplate
-   **/
+   */
   public EnvelopeTemplate addFolderIdsItem(String folderIdsItem) {
     if (this.folderIds == null) {
       this.folderIds = new java.util.ArrayList<>();
@@ -1775,26 +1691,24 @@ public class EnvelopeTemplate {
 
   /**
    * .
+   *
    * @return folderIds
-   **/
+   */
   @Schema(description = "")
   public java.util.List<String> getFolderIds() {
     return folderIds;
   }
 
-  /**
-   * setFolderIds.
-   **/
+  /** setFolderIds. */
   public void setFolderIds(java.util.List<String> folderIds) {
     this.folderIds = folderIds;
   }
-
 
   /**
    * folderName.
    *
    * @return EnvelopeTemplate
-   **/
+   */
   public EnvelopeTemplate folderName(String folderName) {
     this.folderName = folderName;
     return this;
@@ -1802,36 +1716,34 @@ public class EnvelopeTemplate {
 
   /**
    * .
+   *
    * @return folderName
-   **/
+   */
   @Schema(description = "")
   public String getFolderName() {
     return folderName;
   }
 
-  /**
-   * setFolderName.
-   **/
+  /** setFolderName. */
   public void setFolderName(String folderName) {
     this.folderName = folderName;
   }
-
 
   /**
    * folders.
    *
    * @return EnvelopeTemplate
-   **/
+   */
   public EnvelopeTemplate folders(java.util.List<Folder> folders) {
     this.folders = folders;
     return this;
   }
-  
+
   /**
    * addFoldersItem.
    *
    * @return EnvelopeTemplate
-   **/
+   */
   public EnvelopeTemplate addFoldersItem(Folder foldersItem) {
     if (this.folders == null) {
       this.folders = new java.util.ArrayList<>();
@@ -1842,26 +1754,24 @@ public class EnvelopeTemplate {
 
   /**
    * .
+   *
    * @return folders
-   **/
+   */
   @Schema(description = "")
   public java.util.List<Folder> getFolders() {
     return folders;
   }
 
-  /**
-   * setFolders.
-   **/
+  /** setFolders. */
   public void setFolders(java.util.List<Folder> folders) {
     this.folders = folders;
   }
-
 
   /**
    * hasComments.
    *
    * @return EnvelopeTemplate
-   **/
+   */
   public EnvelopeTemplate hasComments(String hasComments) {
     this.hasComments = hasComments;
     return this;
@@ -1869,26 +1779,24 @@ public class EnvelopeTemplate {
 
   /**
    * .
+   *
    * @return hasComments
-   **/
+   */
   @Schema(description = "")
   public String getHasComments() {
     return hasComments;
   }
 
-  /**
-   * setHasComments.
-   **/
+  /** setHasComments. */
   public void setHasComments(String hasComments) {
     this.hasComments = hasComments;
   }
-
 
   /**
    * hasFormDataChanged.
    *
    * @return EnvelopeTemplate
-   **/
+   */
   public EnvelopeTemplate hasFormDataChanged(String hasFormDataChanged) {
     this.hasFormDataChanged = hasFormDataChanged;
     return this;
@@ -1896,26 +1804,24 @@ public class EnvelopeTemplate {
 
   /**
    * .
+   *
    * @return hasFormDataChanged
-   **/
+   */
   @Schema(description = "")
   public String getHasFormDataChanged() {
     return hasFormDataChanged;
   }
 
-  /**
-   * setHasFormDataChanged.
-   **/
+  /** setHasFormDataChanged. */
   public void setHasFormDataChanged(String hasFormDataChanged) {
     this.hasFormDataChanged = hasFormDataChanged;
   }
-
 
   /**
    * hasWavFile.
    *
    * @return EnvelopeTemplate
-   **/
+   */
   public EnvelopeTemplate hasWavFile(String hasWavFile) {
     this.hasWavFile = hasWavFile;
     return this;
@@ -1923,26 +1829,24 @@ public class EnvelopeTemplate {
 
   /**
    * .
+   *
    * @return hasWavFile
-   **/
+   */
   @Schema(description = "")
   public String getHasWavFile() {
     return hasWavFile;
   }
 
-  /**
-   * setHasWavFile.
-   **/
+  /** setHasWavFile. */
   public void setHasWavFile(String hasWavFile) {
     this.hasWavFile = hasWavFile;
   }
-
 
   /**
    * holder.
    *
    * @return EnvelopeTemplate
-   **/
+   */
   public EnvelopeTemplate holder(String holder) {
     this.holder = holder;
     return this;
@@ -1950,26 +1854,24 @@ public class EnvelopeTemplate {
 
   /**
    * .
+   *
    * @return holder
-   **/
+   */
   @Schema(description = "")
   public String getHolder() {
     return holder;
   }
 
-  /**
-   * setHolder.
-   **/
+  /** setHolder. */
   public void setHolder(String holder) {
     this.holder = holder;
   }
-
 
   /**
    * initialSentDateTime.
    *
    * @return EnvelopeTemplate
-   **/
+   */
   public EnvelopeTemplate initialSentDateTime(String initialSentDateTime) {
     this.initialSentDateTime = initialSentDateTime;
     return this;
@@ -1977,26 +1879,24 @@ public class EnvelopeTemplate {
 
   /**
    * .
+   *
    * @return initialSentDateTime
-   **/
+   */
   @Schema(description = "")
   public String getInitialSentDateTime() {
     return initialSentDateTime;
   }
 
-  /**
-   * setInitialSentDateTime.
-   **/
+  /** setInitialSentDateTime. */
   public void setInitialSentDateTime(String initialSentDateTime) {
     this.initialSentDateTime = initialSentDateTime;
   }
-
 
   /**
    * is21CFRPart11.
    *
    * @return EnvelopeTemplate
-   **/
+   */
   public EnvelopeTemplate is21CFRPart11(String is21CFRPart11) {
     this.is21CFRPart11 = is21CFRPart11;
     return this;
@@ -2004,26 +1904,25 @@ public class EnvelopeTemplate {
 
   /**
    * When set to **true**, indicates that this module is enabled on the account..
+   *
    * @return is21CFRPart11
-   **/
-  @Schema(description = "When set to **true**, indicates that this module is enabled on the account.")
+   */
+  @Schema(
+      description = "When set to **true**, indicates that this module is enabled on the account.")
   public String getIs21CFRPart11() {
     return is21CFRPart11;
   }
 
-  /**
-   * setIs21CFRPart11.
-   **/
+  /** setIs21CFRPart11. */
   public void setIs21CFRPart11(String is21CFRPart11) {
     this.is21CFRPart11 = is21CFRPart11;
   }
-
 
   /**
    * isDocGenTemplate.
    *
    * @return EnvelopeTemplate
-   **/
+   */
   public EnvelopeTemplate isDocGenTemplate(String isDocGenTemplate) {
     this.isDocGenTemplate = isDocGenTemplate;
     return this;
@@ -2031,26 +1930,24 @@ public class EnvelopeTemplate {
 
   /**
    * .
+   *
    * @return isDocGenTemplate
-   **/
+   */
   @Schema(description = "")
   public String getIsDocGenTemplate() {
     return isDocGenTemplate;
   }
 
-  /**
-   * setIsDocGenTemplate.
-   **/
+  /** setIsDocGenTemplate. */
   public void setIsDocGenTemplate(String isDocGenTemplate) {
     this.isDocGenTemplate = isDocGenTemplate;
   }
-
 
   /**
    * isDynamicEnvelope.
    *
    * @return EnvelopeTemplate
-   **/
+   */
   public EnvelopeTemplate isDynamicEnvelope(String isDynamicEnvelope) {
     this.isDynamicEnvelope = isDynamicEnvelope;
     return this;
@@ -2058,26 +1955,24 @@ public class EnvelopeTemplate {
 
   /**
    * .
+   *
    * @return isDynamicEnvelope
-   **/
+   */
   @Schema(description = "")
   public String getIsDynamicEnvelope() {
     return isDynamicEnvelope;
   }
 
-  /**
-   * setIsDynamicEnvelope.
-   **/
+  /** setIsDynamicEnvelope. */
   public void setIsDynamicEnvelope(String isDynamicEnvelope) {
     this.isDynamicEnvelope = isDynamicEnvelope;
   }
-
 
   /**
    * isSignatureProviderEnvelope.
    *
    * @return EnvelopeTemplate
-   **/
+   */
   public EnvelopeTemplate isSignatureProviderEnvelope(String isSignatureProviderEnvelope) {
     this.isSignatureProviderEnvelope = isSignatureProviderEnvelope;
     return this;
@@ -2085,26 +1980,24 @@ public class EnvelopeTemplate {
 
   /**
    * .
+   *
    * @return isSignatureProviderEnvelope
-   **/
+   */
   @Schema(description = "")
   public String getIsSignatureProviderEnvelope() {
     return isSignatureProviderEnvelope;
   }
 
-  /**
-   * setIsSignatureProviderEnvelope.
-   **/
+  /** setIsSignatureProviderEnvelope. */
   public void setIsSignatureProviderEnvelope(String isSignatureProviderEnvelope) {
     this.isSignatureProviderEnvelope = isSignatureProviderEnvelope;
   }
-
 
   /**
    * lastModified.
    *
    * @return EnvelopeTemplate
-   **/
+   */
   public EnvelopeTemplate lastModified(String lastModified) {
     this.lastModified = lastModified;
     return this;
@@ -2112,26 +2005,24 @@ public class EnvelopeTemplate {
 
   /**
    * .
+   *
    * @return lastModified
-   **/
+   */
   @Schema(description = "")
   public String getLastModified() {
     return lastModified;
   }
 
-  /**
-   * setLastModified.
-   **/
+  /** setLastModified. */
   public void setLastModified(String lastModified) {
     this.lastModified = lastModified;
   }
-
 
   /**
    * lastModifiedBy.
    *
    * @return EnvelopeTemplate
-   **/
+   */
   public EnvelopeTemplate lastModifiedBy(UserInfo lastModifiedBy) {
     this.lastModifiedBy = lastModifiedBy;
     return this;
@@ -2139,26 +2030,24 @@ public class EnvelopeTemplate {
 
   /**
    * .
+   *
    * @return lastModifiedBy
-   **/
+   */
   @Schema(description = "")
   public UserInfo getLastModifiedBy() {
     return lastModifiedBy;
   }
 
-  /**
-   * setLastModifiedBy.
-   **/
+  /** setLastModifiedBy. */
   public void setLastModifiedBy(UserInfo lastModifiedBy) {
     this.lastModifiedBy = lastModifiedBy;
   }
-
 
   /**
    * lastModifiedDateTime.
    *
    * @return EnvelopeTemplate
-   **/
+   */
   public EnvelopeTemplate lastModifiedDateTime(String lastModifiedDateTime) {
     this.lastModifiedDateTime = lastModifiedDateTime;
     return this;
@@ -2166,26 +2055,24 @@ public class EnvelopeTemplate {
 
   /**
    * The date and time the item was last modified..
+   *
    * @return lastModifiedDateTime
-   **/
+   */
   @Schema(description = "The date and time the item was last modified.")
   public String getLastModifiedDateTime() {
     return lastModifiedDateTime;
   }
 
-  /**
-   * setLastModifiedDateTime.
-   **/
+  /** setLastModifiedDateTime. */
   public void setLastModifiedDateTime(String lastModifiedDateTime) {
     this.lastModifiedDateTime = lastModifiedDateTime;
   }
-
 
   /**
    * lastUsed.
    *
    * @return EnvelopeTemplate
-   **/
+   */
   public EnvelopeTemplate lastUsed(String lastUsed) {
     this.lastUsed = lastUsed;
     return this;
@@ -2193,26 +2080,24 @@ public class EnvelopeTemplate {
 
   /**
    * .
+   *
    * @return lastUsed
-   **/
+   */
   @Schema(description = "")
   public String getLastUsed() {
     return lastUsed;
   }
 
-  /**
-   * setLastUsed.
-   **/
+  /** setLastUsed. */
   public void setLastUsed(String lastUsed) {
     this.lastUsed = lastUsed;
   }
-
 
   /**
    * location.
    *
    * @return EnvelopeTemplate
-   **/
+   */
   public EnvelopeTemplate location(String location) {
     this.location = location;
     return this;
@@ -2220,26 +2105,24 @@ public class EnvelopeTemplate {
 
   /**
    * .
+   *
    * @return location
-   **/
+   */
   @Schema(description = "")
   public String getLocation() {
     return location;
   }
 
-  /**
-   * setLocation.
-   **/
+  /** setLocation. */
   public void setLocation(String location) {
     this.location = location;
   }
-
 
   /**
    * lockInformation.
    *
    * @return EnvelopeTemplate
-   **/
+   */
   public EnvelopeTemplate lockInformation(LockInformation lockInformation) {
     this.lockInformation = lockInformation;
     return this;
@@ -2247,53 +2130,55 @@ public class EnvelopeTemplate {
 
   /**
    * Provides lock information about an envelope that a user has locked..
+   *
    * @return lockInformation
-   **/
+   */
   @Schema(description = "Provides lock information about an envelope that a user has locked.")
   public LockInformation getLockInformation() {
     return lockInformation;
   }
 
-  /**
-   * setLockInformation.
-   **/
+  /** setLockInformation. */
   public void setLockInformation(LockInformation lockInformation) {
     this.lockInformation = lockInformation;
   }
-
 
   /**
    * messageLock.
    *
    * @return EnvelopeTemplate
-   **/
+   */
   public EnvelopeTemplate messageLock(String messageLock) {
     this.messageLock = messageLock;
     return this;
   }
 
   /**
-   * When set to **true**, prevents senders from changing the contents of `emailBlurb` and `emailSubject` properties for the envelope.   Additionally, this prevents users from making changes to the contents of `emailBlurb` and `emailSubject` properties when correcting envelopes.   However, if the `messageLock` node is set to true**** and the `emailSubject` property is empty, senders and correctors are able to add a subject to the envelope..
+   * When set to **true**, prevents senders from changing the contents of `emailBlurb` and
+   * `emailSubject` properties for the envelope. Additionally, this prevents users from making
+   * changes to the contents of `emailBlurb` and `emailSubject` properties when correcting
+   * envelopes. However, if the `messageLock` node is set to true**** and the `emailSubject`
+   * property is empty, senders and correctors are able to add a subject to the envelope..
+   *
    * @return messageLock
-   **/
-  @Schema(description = "When set to **true**, prevents senders from changing the contents of `emailBlurb` and `emailSubject` properties for the envelope.   Additionally, this prevents users from making changes to the contents of `emailBlurb` and `emailSubject` properties when correcting envelopes.   However, if the `messageLock` node is set to true**** and the `emailSubject` property is empty, senders and correctors are able to add a subject to the envelope.")
+   */
+  @Schema(
+      description =
+          "When set to **true**, prevents senders from changing the contents of `emailBlurb` and `emailSubject` properties for the envelope.   Additionally, this prevents users from making changes to the contents of `emailBlurb` and `emailSubject` properties when correcting envelopes.   However, if the `messageLock` node is set to true**** and the `emailSubject` property is empty, senders and correctors are able to add a subject to the envelope.")
   public String getMessageLock() {
     return messageLock;
   }
 
-  /**
-   * setMessageLock.
-   **/
+  /** setMessageLock. */
   public void setMessageLock(String messageLock) {
     this.messageLock = messageLock;
   }
-
 
   /**
    * name.
    *
    * @return EnvelopeTemplate
-   **/
+   */
   public EnvelopeTemplate name(String name) {
     this.name = name;
     return this;
@@ -2301,26 +2186,24 @@ public class EnvelopeTemplate {
 
   /**
    * .
+   *
    * @return name
-   **/
+   */
   @Schema(description = "")
   public String getName() {
     return name;
   }
 
-  /**
-   * setName.
-   **/
+  /** setName. */
   public void setName(String name) {
     this.name = name;
   }
-
 
   /**
    * newPassword.
    *
    * @return EnvelopeTemplate
-   **/
+   */
   public EnvelopeTemplate newPassword(String newPassword) {
     this.newPassword = newPassword;
     return this;
@@ -2328,26 +2211,24 @@ public class EnvelopeTemplate {
 
   /**
    * .
+   *
    * @return newPassword
-   **/
+   */
   @Schema(description = "")
   public String getNewPassword() {
     return newPassword;
   }
 
-  /**
-   * setNewPassword.
-   **/
+  /** setNewPassword. */
   public void setNewPassword(String newPassword) {
     this.newPassword = newPassword;
   }
-
 
   /**
    * notification.
    *
    * @return EnvelopeTemplate
-   **/
+   */
   public EnvelopeTemplate notification(Notification notification) {
     this.notification = notification;
     return this;
@@ -2355,26 +2236,24 @@ public class EnvelopeTemplate {
 
   /**
    * .
+   *
    * @return notification
-   **/
+   */
   @Schema(description = "")
   public Notification getNotification() {
     return notification;
   }
 
-  /**
-   * setNotification.
-   **/
+  /** setNotification. */
   public void setNotification(Notification notification) {
     this.notification = notification;
   }
-
 
   /**
    * notificationUri.
    *
    * @return EnvelopeTemplate
-   **/
+   */
   public EnvelopeTemplate notificationUri(String notificationUri) {
     this.notificationUri = notificationUri;
     return this;
@@ -2382,26 +2261,26 @@ public class EnvelopeTemplate {
 
   /**
    * Contains a URI for an endpoint that you can use to retrieve the notifications..
+   *
    * @return notificationUri
-   **/
-  @Schema(description = "Contains a URI for an endpoint that you can use to retrieve the notifications.")
+   */
+  @Schema(
+      description =
+          "Contains a URI for an endpoint that you can use to retrieve the notifications.")
   public String getNotificationUri() {
     return notificationUri;
   }
 
-  /**
-   * setNotificationUri.
-   **/
+  /** setNotificationUri. */
   public void setNotificationUri(String notificationUri) {
     this.notificationUri = notificationUri;
   }
-
 
   /**
    * owner.
    *
    * @return EnvelopeTemplate
-   **/
+   */
   public EnvelopeTemplate owner(UserInfo owner) {
     this.owner = owner;
     return this;
@@ -2409,26 +2288,24 @@ public class EnvelopeTemplate {
 
   /**
    * .
+   *
    * @return owner
-   **/
+   */
   @Schema(description = "")
   public UserInfo getOwner() {
     return owner;
   }
 
-  /**
-   * setOwner.
-   **/
+  /** setOwner. */
   public void setOwner(UserInfo owner) {
     this.owner = owner;
   }
-
 
   /**
    * pageCount.
    *
    * @return EnvelopeTemplate
-   **/
+   */
   public EnvelopeTemplate pageCount(String pageCount) {
     this.pageCount = pageCount;
     return this;
@@ -2436,26 +2313,24 @@ public class EnvelopeTemplate {
 
   /**
    * .
+   *
    * @return pageCount
-   **/
+   */
   @Schema(description = "")
   public String getPageCount() {
     return pageCount;
   }
 
-  /**
-   * setPageCount.
-   **/
+  /** setPageCount. */
   public void setPageCount(String pageCount) {
     this.pageCount = pageCount;
   }
-
 
   /**
    * password.
    *
    * @return EnvelopeTemplate
-   **/
+   */
   public EnvelopeTemplate password(String password) {
     this.password = password;
     return this;
@@ -2463,26 +2338,24 @@ public class EnvelopeTemplate {
 
   /**
    * .
+   *
    * @return password
-   **/
+   */
   @Schema(description = "")
   public String getPassword() {
     return password;
   }
 
-  /**
-   * setPassword.
-   **/
+  /** setPassword. */
   public void setPassword(String password) {
     this.password = password;
   }
-
 
   /**
    * passwordProtected.
    *
    * @return EnvelopeTemplate
-   **/
+   */
   public EnvelopeTemplate passwordProtected(String passwordProtected) {
     this.passwordProtected = passwordProtected;
     return this;
@@ -2490,26 +2363,24 @@ public class EnvelopeTemplate {
 
   /**
    * .
+   *
    * @return passwordProtected
-   **/
+   */
   @Schema(description = "")
   public String getPasswordProtected() {
     return passwordProtected;
   }
 
-  /**
-   * setPasswordProtected.
-   **/
+  /** setPasswordProtected. */
   public void setPasswordProtected(String passwordProtected) {
     this.passwordProtected = passwordProtected;
   }
-
 
   /**
    * powerForm.
    *
    * @return EnvelopeTemplate
-   **/
+   */
   public EnvelopeTemplate powerForm(PowerForm powerForm) {
     this.powerForm = powerForm;
     return this;
@@ -2517,36 +2388,34 @@ public class EnvelopeTemplate {
 
   /**
    * Information about any PowerForms that are included in the envelope..
+   *
    * @return powerForm
-   **/
+   */
   @Schema(description = "Information about any PowerForms that are included in the envelope.")
   public PowerForm getPowerForm() {
     return powerForm;
   }
 
-  /**
-   * setPowerForm.
-   **/
+  /** setPowerForm. */
   public void setPowerForm(PowerForm powerForm) {
     this.powerForm = powerForm;
   }
-
 
   /**
    * powerForms.
    *
    * @return EnvelopeTemplate
-   **/
+   */
   public EnvelopeTemplate powerForms(java.util.List<PowerForm> powerForms) {
     this.powerForms = powerForms;
     return this;
   }
-  
+
   /**
    * addPowerFormsItem.
    *
    * @return EnvelopeTemplate
-   **/
+   */
   public EnvelopeTemplate addPowerFormsItem(PowerForm powerFormsItem) {
     if (this.powerForms == null) {
       this.powerForms = new java.util.ArrayList<>();
@@ -2557,26 +2426,24 @@ public class EnvelopeTemplate {
 
   /**
    * .
+   *
    * @return powerForms
-   **/
+   */
   @Schema(description = "")
   public java.util.List<PowerForm> getPowerForms() {
     return powerForms;
   }
 
-  /**
-   * setPowerForms.
-   **/
+  /** setPowerForms. */
   public void setPowerForms(java.util.List<PowerForm> powerForms) {
     this.powerForms = powerForms;
   }
-
 
   /**
    * purgeCompletedDate.
    *
    * @return EnvelopeTemplate
-   **/
+   */
   public EnvelopeTemplate purgeCompletedDate(String purgeCompletedDate) {
     this.purgeCompletedDate = purgeCompletedDate;
     return this;
@@ -2584,26 +2451,24 @@ public class EnvelopeTemplate {
 
   /**
    * .
+   *
    * @return purgeCompletedDate
-   **/
+   */
   @Schema(description = "")
   public String getPurgeCompletedDate() {
     return purgeCompletedDate;
   }
 
-  /**
-   * setPurgeCompletedDate.
-   **/
+  /** setPurgeCompletedDate. */
   public void setPurgeCompletedDate(String purgeCompletedDate) {
     this.purgeCompletedDate = purgeCompletedDate;
   }
-
 
   /**
    * purgeRequestDate.
    *
    * @return EnvelopeTemplate
-   **/
+   */
   public EnvelopeTemplate purgeRequestDate(String purgeRequestDate) {
     this.purgeRequestDate = purgeRequestDate;
     return this;
@@ -2611,26 +2476,24 @@ public class EnvelopeTemplate {
 
   /**
    * .
+   *
    * @return purgeRequestDate
-   **/
+   */
   @Schema(description = "")
   public String getPurgeRequestDate() {
     return purgeRequestDate;
   }
 
-  /**
-   * setPurgeRequestDate.
-   **/
+  /** setPurgeRequestDate. */
   public void setPurgeRequestDate(String purgeRequestDate) {
     this.purgeRequestDate = purgeRequestDate;
   }
-
 
   /**
    * purgeState.
    *
    * @return EnvelopeTemplate
-   **/
+   */
   public EnvelopeTemplate purgeState(String purgeState) {
     this.purgeState = purgeState;
     return this;
@@ -2638,26 +2501,24 @@ public class EnvelopeTemplate {
 
   /**
    * .
+   *
    * @return purgeState
-   **/
+   */
   @Schema(description = "")
   public String getPurgeState() {
     return purgeState;
   }
 
-  /**
-   * setPurgeState.
-   **/
+  /** setPurgeState. */
   public void setPurgeState(String purgeState) {
     this.purgeState = purgeState;
   }
-
 
   /**
    * recipients.
    *
    * @return EnvelopeTemplate
-   **/
+   */
   public EnvelopeTemplate recipients(Recipients recipients) {
     this.recipients = recipients;
     return this;
@@ -2665,53 +2526,52 @@ public class EnvelopeTemplate {
 
   /**
    * An array of powerform recipients..
+   *
    * @return recipients
-   **/
+   */
   @Schema(description = "An array of powerform recipients.")
   public Recipients getRecipients() {
     return recipients;
   }
 
-  /**
-   * setRecipients.
-   **/
+  /** setRecipients. */
   public void setRecipients(Recipients recipients) {
     this.recipients = recipients;
   }
-
 
   /**
    * recipientsLock.
    *
    * @return EnvelopeTemplate
-   **/
+   */
   public EnvelopeTemplate recipientsLock(String recipientsLock) {
     this.recipientsLock = recipientsLock;
     return this;
   }
 
   /**
-   * When set to **true**, prevents senders from changing, correcting, or deleting the recipient information for the envelope..
+   * When set to **true**, prevents senders from changing, correcting, or deleting the recipient
+   * information for the envelope..
+   *
    * @return recipientsLock
-   **/
-  @Schema(description = "When set to **true**, prevents senders from changing, correcting, or deleting the recipient information for the envelope.")
+   */
+  @Schema(
+      description =
+          "When set to **true**, prevents senders from changing, correcting, or deleting the recipient information for the envelope.")
   public String getRecipientsLock() {
     return recipientsLock;
   }
 
-  /**
-   * setRecipientsLock.
-   **/
+  /** setRecipientsLock. */
   public void setRecipientsLock(String recipientsLock) {
     this.recipientsLock = recipientsLock;
   }
-
 
   /**
    * recipientsUri.
    *
    * @return EnvelopeTemplate
-   **/
+   */
   public EnvelopeTemplate recipientsUri(String recipientsUri) {
     this.recipientsUri = recipientsUri;
     return this;
@@ -2719,26 +2579,25 @@ public class EnvelopeTemplate {
 
   /**
    * Contains a URI for an endpoint that you can use to retrieve the recipients..
+   *
    * @return recipientsUri
-   **/
-  @Schema(description = "Contains a URI for an endpoint that you can use to retrieve the recipients.")
+   */
+  @Schema(
+      description = "Contains a URI for an endpoint that you can use to retrieve the recipients.")
   public String getRecipientsUri() {
     return recipientsUri;
   }
 
-  /**
-   * setRecipientsUri.
-   **/
+  /** setRecipientsUri. */
   public void setRecipientsUri(String recipientsUri) {
     this.recipientsUri = recipientsUri;
   }
-
 
   /**
    * sender.
    *
    * @return EnvelopeTemplate
-   **/
+   */
   public EnvelopeTemplate sender(UserInfo sender) {
     this.sender = sender;
     return this;
@@ -2746,26 +2605,24 @@ public class EnvelopeTemplate {
 
   /**
    * Information about the sender of the envelope..
+   *
    * @return sender
-   **/
+   */
   @Schema(description = "Information about the sender of the envelope.")
   public UserInfo getSender() {
     return sender;
   }
 
-  /**
-   * setSender.
-   **/
+  /** setSender. */
   public void setSender(UserInfo sender) {
     this.sender = sender;
   }
-
 
   /**
    * sentDateTime.
    *
    * @return EnvelopeTemplate
-   **/
+   */
   public EnvelopeTemplate sentDateTime(String sentDateTime) {
     this.sentDateTime = sentDateTime;
     return this;
@@ -2773,26 +2630,24 @@ public class EnvelopeTemplate {
 
   /**
    * The date and time the envelope was sent..
+   *
    * @return sentDateTime
-   **/
+   */
   @Schema(description = "The date and time the envelope was sent.")
   public String getSentDateTime() {
     return sentDateTime;
   }
 
-  /**
-   * setSentDateTime.
-   **/
+  /** setSentDateTime. */
   public void setSentDateTime(String sentDateTime) {
     this.sentDateTime = sentDateTime;
   }
-
 
   /**
    * shared.
    *
    * @return EnvelopeTemplate
-   **/
+   */
   public EnvelopeTemplate shared(String shared) {
     this.shared = shared;
     return this;
@@ -2800,26 +2655,24 @@ public class EnvelopeTemplate {
 
   /**
    * When set to **true**, this custom tab is shared..
+   *
    * @return shared
-   **/
+   */
   @Schema(description = "When set to **true**, this custom tab is shared.")
   public String getShared() {
     return shared;
   }
 
-  /**
-   * setShared.
-   **/
+  /** setShared. */
   public void setShared(String shared) {
     this.shared = shared;
   }
-
 
   /**
    * signerCanSignOnMobile.
    *
    * @return EnvelopeTemplate
-   **/
+   */
   public EnvelopeTemplate signerCanSignOnMobile(String signerCanSignOnMobile) {
     this.signerCanSignOnMobile = signerCanSignOnMobile;
     return this;
@@ -2827,80 +2680,80 @@ public class EnvelopeTemplate {
 
   /**
    * .
+   *
    * @return signerCanSignOnMobile
-   **/
+   */
   @Schema(description = "")
   public String getSignerCanSignOnMobile() {
     return signerCanSignOnMobile;
   }
 
-  /**
-   * setSignerCanSignOnMobile.
-   **/
+  /** setSignerCanSignOnMobile. */
   public void setSignerCanSignOnMobile(String signerCanSignOnMobile) {
     this.signerCanSignOnMobile = signerCanSignOnMobile;
   }
-
 
   /**
    * signingLocation.
    *
    * @return EnvelopeTemplate
-   **/
+   */
   public EnvelopeTemplate signingLocation(String signingLocation) {
     this.signingLocation = signingLocation;
     return this;
   }
 
   /**
-   * Specifies the physical location where the signing takes place. It can have two enumeration values; InPerson and Online. The default value is Online..
+   * Specifies the physical location where the signing takes place. It can have two enumeration
+   * values; InPerson and Online. The default value is Online..
+   *
    * @return signingLocation
-   **/
-  @Schema(description = "Specifies the physical location where the signing takes place. It can have two enumeration values; InPerson and Online. The default value is Online.")
+   */
+  @Schema(
+      description =
+          "Specifies the physical location where the signing takes place. It can have two enumeration values; InPerson and Online. The default value is Online.")
   public String getSigningLocation() {
     return signingLocation;
   }
 
-  /**
-   * setSigningLocation.
-   **/
+  /** setSigningLocation. */
   public void setSigningLocation(String signingLocation) {
     this.signingLocation = signingLocation;
   }
-
 
   /**
    * status.
    *
    * @return EnvelopeTemplate
-   **/
+   */
   public EnvelopeTemplate status(String status) {
     this.status = status;
     return this;
   }
 
   /**
-   * Indicates the envelope status. Valid values are:  * sent - The envelope is sent to the recipients.  * created - The envelope is saved as a draft and can be modified and sent later..
+   * Indicates the envelope status. Valid values are: * sent - The envelope is sent to the
+   * recipients. * created - The envelope is saved as a draft and can be modified and sent later..
+   *
    * @return status
-   **/
-  @Schema(description = "Indicates the envelope status. Valid values are:  * sent - The envelope is sent to the recipients.  * created - The envelope is saved as a draft and can be modified and sent later.")
+   */
+  @Schema(
+      description =
+          "Indicates the envelope status. Valid values are:  * sent - The envelope is sent to the recipients.  * created - The envelope is saved as a draft and can be modified and sent later.")
   public String getStatus() {
     return status;
   }
 
-  /**
-   * setStatus.
-   **/
+  /** setStatus. */
   public void setStatus(String status) {
     this.status = status;
   }
-
 
   /**
    * statusChangedDateTime.
    *
    * @return EnvelopeTemplate
-   **/
+   */
   public EnvelopeTemplate statusChangedDateTime(String statusChangedDateTime) {
     this.statusChangedDateTime = statusChangedDateTime;
     return this;
@@ -2908,26 +2761,24 @@ public class EnvelopeTemplate {
 
   /**
    * The data and time the status changed..
+   *
    * @return statusChangedDateTime
-   **/
+   */
   @Schema(description = "The data and time the status changed.")
   public String getStatusChangedDateTime() {
     return statusChangedDateTime;
   }
 
-  /**
-   * setStatusChangedDateTime.
-   **/
+  /** setStatusChangedDateTime. */
   public void setStatusChangedDateTime(String statusChangedDateTime) {
     this.statusChangedDateTime = statusChangedDateTime;
   }
-
 
   /**
    * statusDateTime.
    *
    * @return EnvelopeTemplate
-   **/
+   */
   public EnvelopeTemplate statusDateTime(String statusDateTime) {
     this.statusDateTime = statusDateTime;
     return this;
@@ -2935,53 +2786,52 @@ public class EnvelopeTemplate {
 
   /**
    * .
+   *
    * @return statusDateTime
-   **/
+   */
   @Schema(description = "")
   public String getStatusDateTime() {
     return statusDateTime;
   }
 
-  /**
-   * setStatusDateTime.
-   **/
+  /** setStatusDateTime. */
   public void setStatusDateTime(String statusDateTime) {
     this.statusDateTime = statusDateTime;
   }
-
 
   /**
    * templateId.
    *
    * @return EnvelopeTemplate
-   **/
+   */
   public EnvelopeTemplate templateId(String templateId) {
     this.templateId = templateId;
     return this;
   }
 
   /**
-   * The unique identifier of the template. If this is not provided, DocuSign will generate a value. .
+   * The unique identifier of the template. If this is not provided, DocuSign will generate a value.
+   * .
+   *
    * @return templateId
-   **/
-  @Schema(description = "The unique identifier of the template. If this is not provided, DocuSign will generate a value. ")
+   */
+  @Schema(
+      description =
+          "The unique identifier of the template. If this is not provided, DocuSign will generate a value. ")
   public String getTemplateId() {
     return templateId;
   }
 
-  /**
-   * setTemplateId.
-   **/
+  /** setTemplateId. */
   public void setTemplateId(String templateId) {
     this.templateId = templateId;
   }
-
 
   /**
    * templatesUri.
    *
    * @return EnvelopeTemplate
-   **/
+   */
   public EnvelopeTemplate templatesUri(String templatesUri) {
     this.templatesUri = templatesUri;
     return this;
@@ -2989,53 +2839,56 @@ public class EnvelopeTemplate {
 
   /**
    * Contains a URI for an endpoint which you can use to retrieve the templates..
+   *
    * @return templatesUri
-   **/
-  @Schema(description = "Contains a URI for an endpoint which you can use to retrieve the templates.")
+   */
+  @Schema(
+      description = "Contains a URI for an endpoint which you can use to retrieve the templates.")
   public String getTemplatesUri() {
     return templatesUri;
   }
 
-  /**
-   * setTemplatesUri.
-   **/
+  /** setTemplatesUri. */
   public void setTemplatesUri(String templatesUri) {
     this.templatesUri = templatesUri;
   }
-
 
   /**
    * transactionId.
    *
    * @return EnvelopeTemplate
-   **/
+   */
   public EnvelopeTemplate transactionId(String transactionId) {
     this.transactionId = transactionId;
     return this;
   }
 
   /**
-   *  Used to identify an envelope. The id is a sender-generated value and is valid in the DocuSign system for 7 days. It is recommended that a transaction ID is used for offline signing to ensure that an envelope is not sent multiple times. The `transactionId` property can be used determine an envelope's status (i.e. was it created or not) in cases where the internet connection was lost before the envelope status was returned..
+   * Used to identify an envelope. The id is a sender-generated value and is valid in the DocuSign
+   * system for 7 days. It is recommended that a transaction ID is used for offline signing to
+   * ensure that an envelope is not sent multiple times. The `transactionId` property can be used
+   * determine an envelope's status (i.e. was it created or not) in cases where the internet
+   * connection was lost before the envelope status was returned..
+   *
    * @return transactionId
-   **/
-  @Schema(description = " Used to identify an envelope. The id is a sender-generated value and is valid in the DocuSign system for 7 days. It is recommended that a transaction ID is used for offline signing to ensure that an envelope is not sent multiple times. The `transactionId` property can be used determine an envelope's status (i.e. was it created or not) in cases where the internet connection was lost before the envelope status was returned.")
+   */
+  @Schema(
+      description =
+          " Used to identify an envelope. The id is a sender-generated value and is valid in the DocuSign system for 7 days. It is recommended that a transaction ID is used for offline signing to ensure that an envelope is not sent multiple times. The `transactionId` property can be used determine an envelope's status (i.e. was it created or not) in cases where the internet connection was lost before the envelope status was returned.")
   public String getTransactionId() {
     return transactionId;
   }
 
-  /**
-   * setTransactionId.
-   **/
+  /** setTransactionId. */
   public void setTransactionId(String transactionId) {
     this.transactionId = transactionId;
   }
-
 
   /**
    * uri.
    *
    * @return EnvelopeTemplate
-   **/
+   */
   public EnvelopeTemplate uri(String uri) {
     this.uri = uri;
     return this;
@@ -3043,53 +2896,56 @@ public class EnvelopeTemplate {
 
   /**
    * .
+   *
    * @return uri
-   **/
+   */
   @Schema(description = "")
   public String getUri() {
     return uri;
   }
 
-  /**
-   * setUri.
-   **/
+  /** setUri. */
   public void setUri(String uri) {
     this.uri = uri;
   }
-
 
   /**
    * useDisclosure.
    *
    * @return EnvelopeTemplate
-   **/
+   */
   public EnvelopeTemplate useDisclosure(String useDisclosure) {
     this.useDisclosure = useDisclosure;
     return this;
   }
 
   /**
-   * When set to **true**, the disclosure is shown to recipients in accordance with the account's Electronic Record and Signature Disclosure frequency setting. When set to **false**, the Electronic Record and Signature Disclosure is not shown to any envelope recipients.   If the `useDisclosure` property is not set, then the account's normal disclosure setting is used and the value of the `useDisclosure` property is not returned in responses when getting envelope information..
+   * When set to **true**, the disclosure is shown to recipients in accordance with the account's
+   * Electronic Record and Signature Disclosure frequency setting. When set to **false**, the
+   * Electronic Record and Signature Disclosure is not shown to any envelope recipients. If the
+   * `useDisclosure` property is not set, then the account's normal disclosure setting is used and
+   * the value of the `useDisclosure` property is not returned in responses when getting envelope
+   * information..
+   *
    * @return useDisclosure
-   **/
-  @Schema(description = "When set to **true**, the disclosure is shown to recipients in accordance with the account's Electronic Record and Signature Disclosure frequency setting. When set to **false**, the Electronic Record and Signature Disclosure is not shown to any envelope recipients.   If the `useDisclosure` property is not set, then the account's normal disclosure setting is used and the value of the `useDisclosure` property is not returned in responses when getting envelope information.")
+   */
+  @Schema(
+      description =
+          "When set to **true**, the disclosure is shown to recipients in accordance with the account's Electronic Record and Signature Disclosure frequency setting. When set to **false**, the Electronic Record and Signature Disclosure is not shown to any envelope recipients.   If the `useDisclosure` property is not set, then the account's normal disclosure setting is used and the value of the `useDisclosure` property is not returned in responses when getting envelope information.")
   public String getUseDisclosure() {
     return useDisclosure;
   }
 
-  /**
-   * setUseDisclosure.
-   **/
+  /** setUseDisclosure. */
   public void setUseDisclosure(String useDisclosure) {
     this.useDisclosure = useDisclosure;
   }
-
 
   /**
    * voidedDateTime.
    *
    * @return EnvelopeTemplate
-   **/
+   */
   public EnvelopeTemplate voidedDateTime(String voidedDateTime) {
     this.voidedDateTime = voidedDateTime;
     return this;
@@ -3097,26 +2953,24 @@ public class EnvelopeTemplate {
 
   /**
    * The date and time the envelope or template was voided..
+   *
    * @return voidedDateTime
-   **/
+   */
   @Schema(description = "The date and time the envelope or template was voided.")
   public String getVoidedDateTime() {
     return voidedDateTime;
   }
 
-  /**
-   * setVoidedDateTime.
-   **/
+  /** setVoidedDateTime. */
   public void setVoidedDateTime(String voidedDateTime) {
     this.voidedDateTime = voidedDateTime;
   }
-
 
   /**
    * voidedReason.
    *
    * @return EnvelopeTemplate
-   **/
+   */
   public EnvelopeTemplate voidedReason(String voidedReason) {
     this.voidedReason = voidedReason;
     return this;
@@ -3124,26 +2978,24 @@ public class EnvelopeTemplate {
 
   /**
    * The reason the envelope or template was voided..
+   *
    * @return voidedReason
-   **/
+   */
   @Schema(description = "The reason the envelope or template was voided.")
   public String getVoidedReason() {
     return voidedReason;
   }
 
-  /**
-   * setVoidedReason.
-   **/
+  /** setVoidedReason. */
   public void setVoidedReason(String voidedReason) {
     this.voidedReason = voidedReason;
   }
-
 
   /**
    * workflow.
    *
    * @return EnvelopeTemplate
-   **/
+   */
   public EnvelopeTemplate workflow(Workflow workflow) {
     this.workflow = workflow;
     return this;
@@ -3151,20 +3003,18 @@ public class EnvelopeTemplate {
 
   /**
    * .
+   *
    * @return workflow
-   **/
+   */
   @Schema(description = "")
   public Workflow getWorkflow() {
     return workflow;
   }
 
-  /**
-   * setWorkflow.
-   **/
+  /** setWorkflow. */
   public void setWorkflow(Workflow workflow) {
     this.workflow = workflow;
   }
-
 
   /**
    * Compares objects.
@@ -3180,128 +3030,229 @@ public class EnvelopeTemplate {
       return false;
     }
     EnvelopeTemplate envelopeTemplate = (EnvelopeTemplate) o;
-    return Objects.equals(this.accessControlListBase64, envelopeTemplate.accessControlListBase64) &&
-        Objects.equals(this.allowComments, envelopeTemplate.allowComments) &&
-        Objects.equals(this.allowMarkup, envelopeTemplate.allowMarkup) &&
-        Objects.equals(this.allowReassign, envelopeTemplate.allowReassign) &&
-        Objects.equals(this.allowViewHistory, envelopeTemplate.allowViewHistory) &&
-        Objects.equals(this.anySigner, envelopeTemplate.anySigner) &&
-        Objects.equals(this.asynchronous, envelopeTemplate.asynchronous) &&
-        Objects.equals(this.attachmentsUri, envelopeTemplate.attachmentsUri) &&
-        Objects.equals(this.authoritativeCopy, envelopeTemplate.authoritativeCopy) &&
-        Objects.equals(this.authoritativeCopyDefault, envelopeTemplate.authoritativeCopyDefault) &&
-        Objects.equals(this.autoMatch, envelopeTemplate.autoMatch) &&
-        Objects.equals(this.autoMatchSpecifiedByUser, envelopeTemplate.autoMatchSpecifiedByUser) &&
-        Objects.equals(this.autoNavigation, envelopeTemplate.autoNavigation) &&
-        Objects.equals(this.brandId, envelopeTemplate.brandId) &&
-        Objects.equals(this.brandLock, envelopeTemplate.brandLock) &&
-        Objects.equals(this.burnDefaultTabData, envelopeTemplate.burnDefaultTabData) &&
-        Objects.equals(this.certificateUri, envelopeTemplate.certificateUri) &&
-        Objects.equals(this.completedDateTime, envelopeTemplate.completedDateTime) &&
-        Objects.equals(this.copyRecipientData, envelopeTemplate.copyRecipientData) &&
-        Objects.equals(this.created, envelopeTemplate.created) &&
-        Objects.equals(this.createdDateTime, envelopeTemplate.createdDateTime) &&
-        Objects.equals(this.customFields, envelopeTemplate.customFields) &&
-        Objects.equals(this.customFieldsUri, envelopeTemplate.customFieldsUri) &&
-        Objects.equals(this.declinedDateTime, envelopeTemplate.declinedDateTime) &&
-        Objects.equals(this.deletedDateTime, envelopeTemplate.deletedDateTime) &&
-        Objects.equals(this.deliveredDateTime, envelopeTemplate.deliveredDateTime) &&
-        Objects.equals(this.description, envelopeTemplate.description) &&
-        Objects.equals(this.disableResponsiveDocument, envelopeTemplate.disableResponsiveDocument) &&
-        Objects.equals(this.documentBase64, envelopeTemplate.documentBase64) &&
-        Objects.equals(this.documents, envelopeTemplate.documents) &&
-        Objects.equals(this.documentsCombinedUri, envelopeTemplate.documentsCombinedUri) &&
-        Objects.equals(this.documentsUri, envelopeTemplate.documentsUri) &&
-        Objects.equals(this.emailBlurb, envelopeTemplate.emailBlurb) &&
-        Objects.equals(this.emailSettings, envelopeTemplate.emailSettings) &&
-        Objects.equals(this.emailSubject, envelopeTemplate.emailSubject) &&
-        Objects.equals(this.enableWetSign, envelopeTemplate.enableWetSign) &&
-        Objects.equals(this.enforceSignerVisibility, envelopeTemplate.enforceSignerVisibility) &&
-        Objects.equals(this.envelopeAttachments, envelopeTemplate.envelopeAttachments) &&
-        Objects.equals(this.envelopeCustomMetadata, envelopeTemplate.envelopeCustomMetadata) &&
-        Objects.equals(this.envelopeDocuments, envelopeTemplate.envelopeDocuments) &&
-        Objects.equals(this.envelopeId, envelopeTemplate.envelopeId) &&
-        Objects.equals(this.envelopeIdStamping, envelopeTemplate.envelopeIdStamping) &&
-        Objects.equals(this.envelopeLocation, envelopeTemplate.envelopeLocation) &&
-        Objects.equals(this.envelopeMetadata, envelopeTemplate.envelopeMetadata) &&
-        Objects.equals(this.envelopeUri, envelopeTemplate.envelopeUri) &&
-        Objects.equals(this.expireAfter, envelopeTemplate.expireAfter) &&
-        Objects.equals(this.expireDateTime, envelopeTemplate.expireDateTime) &&
-        Objects.equals(this.expireEnabled, envelopeTemplate.expireEnabled) &&
-        Objects.equals(this.externalEnvelopeId, envelopeTemplate.externalEnvelopeId) &&
-        Objects.equals(this.favoritedByMe, envelopeTemplate.favoritedByMe) &&
-        Objects.equals(this.folderId, envelopeTemplate.folderId) &&
-        Objects.equals(this.folderIds, envelopeTemplate.folderIds) &&
-        Objects.equals(this.folderName, envelopeTemplate.folderName) &&
-        Objects.equals(this.folders, envelopeTemplate.folders) &&
-        Objects.equals(this.hasComments, envelopeTemplate.hasComments) &&
-        Objects.equals(this.hasFormDataChanged, envelopeTemplate.hasFormDataChanged) &&
-        Objects.equals(this.hasWavFile, envelopeTemplate.hasWavFile) &&
-        Objects.equals(this.holder, envelopeTemplate.holder) &&
-        Objects.equals(this.initialSentDateTime, envelopeTemplate.initialSentDateTime) &&
-        Objects.equals(this.is21CFRPart11, envelopeTemplate.is21CFRPart11) &&
-        Objects.equals(this.isDocGenTemplate, envelopeTemplate.isDocGenTemplate) &&
-        Objects.equals(this.isDynamicEnvelope, envelopeTemplate.isDynamicEnvelope) &&
-        Objects.equals(this.isSignatureProviderEnvelope, envelopeTemplate.isSignatureProviderEnvelope) &&
-        Objects.equals(this.lastModified, envelopeTemplate.lastModified) &&
-        Objects.equals(this.lastModifiedBy, envelopeTemplate.lastModifiedBy) &&
-        Objects.equals(this.lastModifiedDateTime, envelopeTemplate.lastModifiedDateTime) &&
-        Objects.equals(this.lastUsed, envelopeTemplate.lastUsed) &&
-        Objects.equals(this.location, envelopeTemplate.location) &&
-        Objects.equals(this.lockInformation, envelopeTemplate.lockInformation) &&
-        Objects.equals(this.messageLock, envelopeTemplate.messageLock) &&
-        Objects.equals(this.name, envelopeTemplate.name) &&
-        Objects.equals(this.newPassword, envelopeTemplate.newPassword) &&
-        Objects.equals(this.notification, envelopeTemplate.notification) &&
-        Objects.equals(this.notificationUri, envelopeTemplate.notificationUri) &&
-        Objects.equals(this.owner, envelopeTemplate.owner) &&
-        Objects.equals(this.pageCount, envelopeTemplate.pageCount) &&
-        Objects.equals(this.password, envelopeTemplate.password) &&
-        Objects.equals(this.passwordProtected, envelopeTemplate.passwordProtected) &&
-        Objects.equals(this.powerForm, envelopeTemplate.powerForm) &&
-        Objects.equals(this.powerForms, envelopeTemplate.powerForms) &&
-        Objects.equals(this.purgeCompletedDate, envelopeTemplate.purgeCompletedDate) &&
-        Objects.equals(this.purgeRequestDate, envelopeTemplate.purgeRequestDate) &&
-        Objects.equals(this.purgeState, envelopeTemplate.purgeState) &&
-        Objects.equals(this.recipients, envelopeTemplate.recipients) &&
-        Objects.equals(this.recipientsLock, envelopeTemplate.recipientsLock) &&
-        Objects.equals(this.recipientsUri, envelopeTemplate.recipientsUri) &&
-        Objects.equals(this.sender, envelopeTemplate.sender) &&
-        Objects.equals(this.sentDateTime, envelopeTemplate.sentDateTime) &&
-        Objects.equals(this.shared, envelopeTemplate.shared) &&
-        Objects.equals(this.signerCanSignOnMobile, envelopeTemplate.signerCanSignOnMobile) &&
-        Objects.equals(this.signingLocation, envelopeTemplate.signingLocation) &&
-        Objects.equals(this.status, envelopeTemplate.status) &&
-        Objects.equals(this.statusChangedDateTime, envelopeTemplate.statusChangedDateTime) &&
-        Objects.equals(this.statusDateTime, envelopeTemplate.statusDateTime) &&
-        Objects.equals(this.templateId, envelopeTemplate.templateId) &&
-        Objects.equals(this.templatesUri, envelopeTemplate.templatesUri) &&
-        Objects.equals(this.transactionId, envelopeTemplate.transactionId) &&
-        Objects.equals(this.uri, envelopeTemplate.uri) &&
-        Objects.equals(this.useDisclosure, envelopeTemplate.useDisclosure) &&
-        Objects.equals(this.voidedDateTime, envelopeTemplate.voidedDateTime) &&
-        Objects.equals(this.voidedReason, envelopeTemplate.voidedReason) &&
-        Objects.equals(this.workflow, envelopeTemplate.workflow);
+    return Objects.equals(this.accessControlListBase64, envelopeTemplate.accessControlListBase64)
+        && Objects.equals(this.allowComments, envelopeTemplate.allowComments)
+        && Objects.equals(this.allowMarkup, envelopeTemplate.allowMarkup)
+        && Objects.equals(this.allowReassign, envelopeTemplate.allowReassign)
+        && Objects.equals(this.allowViewHistory, envelopeTemplate.allowViewHistory)
+        && Objects.equals(this.anySigner, envelopeTemplate.anySigner)
+        && Objects.equals(this.asynchronous, envelopeTemplate.asynchronous)
+        && Objects.equals(this.attachmentsUri, envelopeTemplate.attachmentsUri)
+        && Objects.equals(this.authoritativeCopy, envelopeTemplate.authoritativeCopy)
+        && Objects.equals(this.authoritativeCopyDefault, envelopeTemplate.authoritativeCopyDefault)
+        && Objects.equals(this.autoMatch, envelopeTemplate.autoMatch)
+        && Objects.equals(this.autoMatchSpecifiedByUser, envelopeTemplate.autoMatchSpecifiedByUser)
+        && Objects.equals(this.autoNavigation, envelopeTemplate.autoNavigation)
+        && Objects.equals(this.brandId, envelopeTemplate.brandId)
+        && Objects.equals(this.brandLock, envelopeTemplate.brandLock)
+        && Objects.equals(this.burnDefaultTabData, envelopeTemplate.burnDefaultTabData)
+        && Objects.equals(this.certificateUri, envelopeTemplate.certificateUri)
+        && Objects.equals(this.completedDateTime, envelopeTemplate.completedDateTime)
+        && Objects.equals(this.copyRecipientData, envelopeTemplate.copyRecipientData)
+        && Objects.equals(this.created, envelopeTemplate.created)
+        && Objects.equals(this.createdDateTime, envelopeTemplate.createdDateTime)
+        && Objects.equals(this.customFields, envelopeTemplate.customFields)
+        && Objects.equals(this.customFieldsUri, envelopeTemplate.customFieldsUri)
+        && Objects.equals(this.declinedDateTime, envelopeTemplate.declinedDateTime)
+        && Objects.equals(this.deletedDateTime, envelopeTemplate.deletedDateTime)
+        && Objects.equals(this.deliveredDateTime, envelopeTemplate.deliveredDateTime)
+        && Objects.equals(this.description, envelopeTemplate.description)
+        && Objects.equals(
+            this.disableResponsiveDocument, envelopeTemplate.disableResponsiveDocument)
+        && Objects.equals(this.documentBase64, envelopeTemplate.documentBase64)
+        && Objects.equals(this.documents, envelopeTemplate.documents)
+        && Objects.equals(this.documentsCombinedUri, envelopeTemplate.documentsCombinedUri)
+        && Objects.equals(this.documentsUri, envelopeTemplate.documentsUri)
+        && Objects.equals(this.emailBlurb, envelopeTemplate.emailBlurb)
+        && Objects.equals(this.emailSettings, envelopeTemplate.emailSettings)
+        && Objects.equals(this.emailSubject, envelopeTemplate.emailSubject)
+        && Objects.equals(this.enableWetSign, envelopeTemplate.enableWetSign)
+        && Objects.equals(this.enforceSignerVisibility, envelopeTemplate.enforceSignerVisibility)
+        && Objects.equals(this.envelopeAttachments, envelopeTemplate.envelopeAttachments)
+        && Objects.equals(this.envelopeCustomMetadata, envelopeTemplate.envelopeCustomMetadata)
+        && Objects.equals(this.envelopeDocuments, envelopeTemplate.envelopeDocuments)
+        && Objects.equals(this.envelopeId, envelopeTemplate.envelopeId)
+        && Objects.equals(this.envelopeIdStamping, envelopeTemplate.envelopeIdStamping)
+        && Objects.equals(this.envelopeLocation, envelopeTemplate.envelopeLocation)
+        && Objects.equals(this.envelopeMetadata, envelopeTemplate.envelopeMetadata)
+        && Objects.equals(this.envelopeUri, envelopeTemplate.envelopeUri)
+        && Objects.equals(this.expireAfter, envelopeTemplate.expireAfter)
+        && Objects.equals(this.expireDateTime, envelopeTemplate.expireDateTime)
+        && Objects.equals(this.expireEnabled, envelopeTemplate.expireEnabled)
+        && Objects.equals(this.externalEnvelopeId, envelopeTemplate.externalEnvelopeId)
+        && Objects.equals(this.favoritedByMe, envelopeTemplate.favoritedByMe)
+        && Objects.equals(this.folderId, envelopeTemplate.folderId)
+        && Objects.equals(this.folderIds, envelopeTemplate.folderIds)
+        && Objects.equals(this.folderName, envelopeTemplate.folderName)
+        && Objects.equals(this.folders, envelopeTemplate.folders)
+        && Objects.equals(this.hasComments, envelopeTemplate.hasComments)
+        && Objects.equals(this.hasFormDataChanged, envelopeTemplate.hasFormDataChanged)
+        && Objects.equals(this.hasWavFile, envelopeTemplate.hasWavFile)
+        && Objects.equals(this.holder, envelopeTemplate.holder)
+        && Objects.equals(this.initialSentDateTime, envelopeTemplate.initialSentDateTime)
+        && Objects.equals(this.is21CFRPart11, envelopeTemplate.is21CFRPart11)
+        && Objects.equals(this.isDocGenTemplate, envelopeTemplate.isDocGenTemplate)
+        && Objects.equals(this.isDynamicEnvelope, envelopeTemplate.isDynamicEnvelope)
+        && Objects.equals(
+            this.isSignatureProviderEnvelope, envelopeTemplate.isSignatureProviderEnvelope)
+        && Objects.equals(this.lastModified, envelopeTemplate.lastModified)
+        && Objects.equals(this.lastModifiedBy, envelopeTemplate.lastModifiedBy)
+        && Objects.equals(this.lastModifiedDateTime, envelopeTemplate.lastModifiedDateTime)
+        && Objects.equals(this.lastUsed, envelopeTemplate.lastUsed)
+        && Objects.equals(this.location, envelopeTemplate.location)
+        && Objects.equals(this.lockInformation, envelopeTemplate.lockInformation)
+        && Objects.equals(this.messageLock, envelopeTemplate.messageLock)
+        && Objects.equals(this.name, envelopeTemplate.name)
+        && Objects.equals(this.newPassword, envelopeTemplate.newPassword)
+        && Objects.equals(this.notification, envelopeTemplate.notification)
+        && Objects.equals(this.notificationUri, envelopeTemplate.notificationUri)
+        && Objects.equals(this.owner, envelopeTemplate.owner)
+        && Objects.equals(this.pageCount, envelopeTemplate.pageCount)
+        && Objects.equals(this.password, envelopeTemplate.password)
+        && Objects.equals(this.passwordProtected, envelopeTemplate.passwordProtected)
+        && Objects.equals(this.powerForm, envelopeTemplate.powerForm)
+        && Objects.equals(this.powerForms, envelopeTemplate.powerForms)
+        && Objects.equals(this.purgeCompletedDate, envelopeTemplate.purgeCompletedDate)
+        && Objects.equals(this.purgeRequestDate, envelopeTemplate.purgeRequestDate)
+        && Objects.equals(this.purgeState, envelopeTemplate.purgeState)
+        && Objects.equals(this.recipients, envelopeTemplate.recipients)
+        && Objects.equals(this.recipientsLock, envelopeTemplate.recipientsLock)
+        && Objects.equals(this.recipientsUri, envelopeTemplate.recipientsUri)
+        && Objects.equals(this.sender, envelopeTemplate.sender)
+        && Objects.equals(this.sentDateTime, envelopeTemplate.sentDateTime)
+        && Objects.equals(this.shared, envelopeTemplate.shared)
+        && Objects.equals(this.signerCanSignOnMobile, envelopeTemplate.signerCanSignOnMobile)
+        && Objects.equals(this.signingLocation, envelopeTemplate.signingLocation)
+        && Objects.equals(this.status, envelopeTemplate.status)
+        && Objects.equals(this.statusChangedDateTime, envelopeTemplate.statusChangedDateTime)
+        && Objects.equals(this.statusDateTime, envelopeTemplate.statusDateTime)
+        && Objects.equals(this.templateId, envelopeTemplate.templateId)
+        && Objects.equals(this.templatesUri, envelopeTemplate.templatesUri)
+        && Objects.equals(this.transactionId, envelopeTemplate.transactionId)
+        && Objects.equals(this.uri, envelopeTemplate.uri)
+        && Objects.equals(this.useDisclosure, envelopeTemplate.useDisclosure)
+        && Objects.equals(this.voidedDateTime, envelopeTemplate.voidedDateTime)
+        && Objects.equals(this.voidedReason, envelopeTemplate.voidedReason)
+        && Objects.equals(this.workflow, envelopeTemplate.workflow);
   }
 
-  /**
-   * Returns the HashCode.
-   */
+  /** Returns the HashCode. */
   @Override
   public int hashCode() {
-    return Objects.hash(accessControlListBase64, allowComments, allowMarkup, allowReassign, allowViewHistory, anySigner, asynchronous, attachmentsUri, authoritativeCopy, authoritativeCopyDefault, autoMatch, autoMatchSpecifiedByUser, autoNavigation, brandId, brandLock, burnDefaultTabData, certificateUri, completedDateTime, copyRecipientData, created, createdDateTime, customFields, customFieldsUri, declinedDateTime, deletedDateTime, deliveredDateTime, description, disableResponsiveDocument, documentBase64, documents, documentsCombinedUri, documentsUri, emailBlurb, emailSettings, emailSubject, enableWetSign, enforceSignerVisibility, envelopeAttachments, envelopeCustomMetadata, envelopeDocuments, envelopeId, envelopeIdStamping, envelopeLocation, envelopeMetadata, envelopeUri, expireAfter, expireDateTime, expireEnabled, externalEnvelopeId, favoritedByMe, folderId, folderIds, folderName, folders, hasComments, hasFormDataChanged, hasWavFile, holder, initialSentDateTime, is21CFRPart11, isDocGenTemplate, isDynamicEnvelope, isSignatureProviderEnvelope, lastModified, lastModifiedBy, lastModifiedDateTime, lastUsed, location, lockInformation, messageLock, name, newPassword, notification, notificationUri, owner, pageCount, password, passwordProtected, powerForm, powerForms, purgeCompletedDate, purgeRequestDate, purgeState, recipients, recipientsLock, recipientsUri, sender, sentDateTime, shared, signerCanSignOnMobile, signingLocation, status, statusChangedDateTime, statusDateTime, templateId, templatesUri, transactionId, uri, useDisclosure, voidedDateTime, voidedReason, workflow);
+    return Objects.hash(
+        accessControlListBase64,
+        allowComments,
+        allowMarkup,
+        allowReassign,
+        allowViewHistory,
+        anySigner,
+        asynchronous,
+        attachmentsUri,
+        authoritativeCopy,
+        authoritativeCopyDefault,
+        autoMatch,
+        autoMatchSpecifiedByUser,
+        autoNavigation,
+        brandId,
+        brandLock,
+        burnDefaultTabData,
+        certificateUri,
+        completedDateTime,
+        copyRecipientData,
+        created,
+        createdDateTime,
+        customFields,
+        customFieldsUri,
+        declinedDateTime,
+        deletedDateTime,
+        deliveredDateTime,
+        description,
+        disableResponsiveDocument,
+        documentBase64,
+        documents,
+        documentsCombinedUri,
+        documentsUri,
+        emailBlurb,
+        emailSettings,
+        emailSubject,
+        enableWetSign,
+        enforceSignerVisibility,
+        envelopeAttachments,
+        envelopeCustomMetadata,
+        envelopeDocuments,
+        envelopeId,
+        envelopeIdStamping,
+        envelopeLocation,
+        envelopeMetadata,
+        envelopeUri,
+        expireAfter,
+        expireDateTime,
+        expireEnabled,
+        externalEnvelopeId,
+        favoritedByMe,
+        folderId,
+        folderIds,
+        folderName,
+        folders,
+        hasComments,
+        hasFormDataChanged,
+        hasWavFile,
+        holder,
+        initialSentDateTime,
+        is21CFRPart11,
+        isDocGenTemplate,
+        isDynamicEnvelope,
+        isSignatureProviderEnvelope,
+        lastModified,
+        lastModifiedBy,
+        lastModifiedDateTime,
+        lastUsed,
+        location,
+        lockInformation,
+        messageLock,
+        name,
+        newPassword,
+        notification,
+        notificationUri,
+        owner,
+        pageCount,
+        password,
+        passwordProtected,
+        powerForm,
+        powerForms,
+        purgeCompletedDate,
+        purgeRequestDate,
+        purgeState,
+        recipients,
+        recipientsLock,
+        recipientsUri,
+        sender,
+        sentDateTime,
+        shared,
+        signerCanSignOnMobile,
+        signingLocation,
+        status,
+        statusChangedDateTime,
+        statusDateTime,
+        templateId,
+        templatesUri,
+        transactionId,
+        uri,
+        useDisclosure,
+        voidedDateTime,
+        voidedReason,
+        workflow);
   }
 
-
-  /**
-   * Converts the given object to string.
-   */
+  /** Converts the given object to string. */
   @Override
   public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class EnvelopeTemplate {\n");
-    
-    sb.append("    accessControlListBase64: ").append(toIndentedString(accessControlListBase64)).append("\n");
+
+    sb.append("    accessControlListBase64: ")
+        .append(toIndentedString(accessControlListBase64))
+        .append("\n");
     sb.append("    allowComments: ").append(toIndentedString(allowComments)).append("\n");
     sb.append("    allowMarkup: ").append(toIndentedString(allowMarkup)).append("\n");
     sb.append("    allowReassign: ").append(toIndentedString(allowReassign)).append("\n");
@@ -3310,9 +3261,13 @@ public class EnvelopeTemplate {
     sb.append("    asynchronous: ").append(toIndentedString(asynchronous)).append("\n");
     sb.append("    attachmentsUri: ").append(toIndentedString(attachmentsUri)).append("\n");
     sb.append("    authoritativeCopy: ").append(toIndentedString(authoritativeCopy)).append("\n");
-    sb.append("    authoritativeCopyDefault: ").append(toIndentedString(authoritativeCopyDefault)).append("\n");
+    sb.append("    authoritativeCopyDefault: ")
+        .append(toIndentedString(authoritativeCopyDefault))
+        .append("\n");
     sb.append("    autoMatch: ").append(toIndentedString(autoMatch)).append("\n");
-    sb.append("    autoMatchSpecifiedByUser: ").append(toIndentedString(autoMatchSpecifiedByUser)).append("\n");
+    sb.append("    autoMatchSpecifiedByUser: ")
+        .append(toIndentedString(autoMatchSpecifiedByUser))
+        .append("\n");
     sb.append("    autoNavigation: ").append(toIndentedString(autoNavigation)).append("\n");
     sb.append("    brandId: ").append(toIndentedString(brandId)).append("\n");
     sb.append("    brandLock: ").append(toIndentedString(brandLock)).append("\n");
@@ -3328,18 +3283,28 @@ public class EnvelopeTemplate {
     sb.append("    deletedDateTime: ").append(toIndentedString(deletedDateTime)).append("\n");
     sb.append("    deliveredDateTime: ").append(toIndentedString(deliveredDateTime)).append("\n");
     sb.append("    description: ").append(toIndentedString(description)).append("\n");
-    sb.append("    disableResponsiveDocument: ").append(toIndentedString(disableResponsiveDocument)).append("\n");
+    sb.append("    disableResponsiveDocument: ")
+        .append(toIndentedString(disableResponsiveDocument))
+        .append("\n");
     sb.append("    documentBase64: ").append(toIndentedString(documentBase64)).append("\n");
     sb.append("    documents: ").append(toIndentedString(documents)).append("\n");
-    sb.append("    documentsCombinedUri: ").append(toIndentedString(documentsCombinedUri)).append("\n");
+    sb.append("    documentsCombinedUri: ")
+        .append(toIndentedString(documentsCombinedUri))
+        .append("\n");
     sb.append("    documentsUri: ").append(toIndentedString(documentsUri)).append("\n");
     sb.append("    emailBlurb: ").append(toIndentedString(emailBlurb)).append("\n");
     sb.append("    emailSettings: ").append(toIndentedString(emailSettings)).append("\n");
     sb.append("    emailSubject: ").append(toIndentedString(emailSubject)).append("\n");
     sb.append("    enableWetSign: ").append(toIndentedString(enableWetSign)).append("\n");
-    sb.append("    enforceSignerVisibility: ").append(toIndentedString(enforceSignerVisibility)).append("\n");
-    sb.append("    envelopeAttachments: ").append(toIndentedString(envelopeAttachments)).append("\n");
-    sb.append("    envelopeCustomMetadata: ").append(toIndentedString(envelopeCustomMetadata)).append("\n");
+    sb.append("    enforceSignerVisibility: ")
+        .append(toIndentedString(enforceSignerVisibility))
+        .append("\n");
+    sb.append("    envelopeAttachments: ")
+        .append(toIndentedString(envelopeAttachments))
+        .append("\n");
+    sb.append("    envelopeCustomMetadata: ")
+        .append(toIndentedString(envelopeCustomMetadata))
+        .append("\n");
     sb.append("    envelopeDocuments: ").append(toIndentedString(envelopeDocuments)).append("\n");
     sb.append("    envelopeId: ").append(toIndentedString(envelopeId)).append("\n");
     sb.append("    envelopeIdStamping: ").append(toIndentedString(envelopeIdStamping)).append("\n");
@@ -3359,14 +3324,20 @@ public class EnvelopeTemplate {
     sb.append("    hasFormDataChanged: ").append(toIndentedString(hasFormDataChanged)).append("\n");
     sb.append("    hasWavFile: ").append(toIndentedString(hasWavFile)).append("\n");
     sb.append("    holder: ").append(toIndentedString(holder)).append("\n");
-    sb.append("    initialSentDateTime: ").append(toIndentedString(initialSentDateTime)).append("\n");
+    sb.append("    initialSentDateTime: ")
+        .append(toIndentedString(initialSentDateTime))
+        .append("\n");
     sb.append("    is21CFRPart11: ").append(toIndentedString(is21CFRPart11)).append("\n");
     sb.append("    isDocGenTemplate: ").append(toIndentedString(isDocGenTemplate)).append("\n");
     sb.append("    isDynamicEnvelope: ").append(toIndentedString(isDynamicEnvelope)).append("\n");
-    sb.append("    isSignatureProviderEnvelope: ").append(toIndentedString(isSignatureProviderEnvelope)).append("\n");
+    sb.append("    isSignatureProviderEnvelope: ")
+        .append(toIndentedString(isSignatureProviderEnvelope))
+        .append("\n");
     sb.append("    lastModified: ").append(toIndentedString(lastModified)).append("\n");
     sb.append("    lastModifiedBy: ").append(toIndentedString(lastModifiedBy)).append("\n");
-    sb.append("    lastModifiedDateTime: ").append(toIndentedString(lastModifiedDateTime)).append("\n");
+    sb.append("    lastModifiedDateTime: ")
+        .append(toIndentedString(lastModifiedDateTime))
+        .append("\n");
     sb.append("    lastUsed: ").append(toIndentedString(lastUsed)).append("\n");
     sb.append("    location: ").append(toIndentedString(location)).append("\n");
     sb.append("    lockInformation: ").append(toIndentedString(lockInformation)).append("\n");
@@ -3390,10 +3361,14 @@ public class EnvelopeTemplate {
     sb.append("    sender: ").append(toIndentedString(sender)).append("\n");
     sb.append("    sentDateTime: ").append(toIndentedString(sentDateTime)).append("\n");
     sb.append("    shared: ").append(toIndentedString(shared)).append("\n");
-    sb.append("    signerCanSignOnMobile: ").append(toIndentedString(signerCanSignOnMobile)).append("\n");
+    sb.append("    signerCanSignOnMobile: ")
+        .append(toIndentedString(signerCanSignOnMobile))
+        .append("\n");
     sb.append("    signingLocation: ").append(toIndentedString(signingLocation)).append("\n");
     sb.append("    status: ").append(toIndentedString(status)).append("\n");
-    sb.append("    statusChangedDateTime: ").append(toIndentedString(statusChangedDateTime)).append("\n");
+    sb.append("    statusChangedDateTime: ")
+        .append(toIndentedString(statusChangedDateTime))
+        .append("\n");
     sb.append("    statusDateTime: ").append(toIndentedString(statusDateTime)).append("\n");
     sb.append("    templateId: ").append(toIndentedString(templateId)).append("\n");
     sb.append("    templatesUri: ").append(toIndentedString(templatesUri)).append("\n");
@@ -3408,8 +3383,7 @@ public class EnvelopeTemplate {
   }
 
   /**
-   * Convert the given object to string with each line indented by 4 spaces
-   * (except the first line).
+   * Convert the given object to string with each line indented by 4 spaces (except the first line).
    */
   private String toIndentedString(java.lang.Object o) {
     if (o == null) {
@@ -3417,6 +3391,4 @@ public class EnvelopeTemplate {
     }
     return o.toString().replace("\n", "\n    ");
   }
-
 }
-

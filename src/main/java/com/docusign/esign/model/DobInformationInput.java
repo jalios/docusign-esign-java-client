@@ -1,18 +1,12 @@
 package com.docusign.esign.model;
 
-import java.util.Objects;
-import java.util.Arrays;
+import com.docusign.esign.override.swagger.Schema;
 import com.fasterxml.jackson.annotation.JsonProperty;
-import com.fasterxml.jackson.annotation.JsonCreator;
-import com.fasterxml.jackson.annotation.JsonValue;
-import io.swagger.v3.oas.annotations.media.Schema;
+import java.util.Objects;
 
-/**
- * Complex type containing:  * dateOfBirth * displayLevelCode * receiveInResponse.
- *
- */
-@Schema(description = "Complex type containing:  * dateOfBirth * displayLevelCode * receiveInResponse")
-
+/** Complex type containing: * dateOfBirth * displayLevelCode * receiveInResponse. */
+@Schema(
+    description = "Complex type containing:  * dateOfBirth * displayLevelCode * receiveInResponse")
 public class DobInformationInput {
   @JsonProperty("dateOfBirth")
   private String dateOfBirth = null;
@@ -23,12 +17,11 @@ public class DobInformationInput {
   @JsonProperty("receiveInResponse")
   private String receiveInResponse = null;
 
-
   /**
    * dateOfBirth.
    *
    * @return DobInformationInput
-   **/
+   */
   public DobInformationInput dateOfBirth(String dateOfBirth) {
     this.dateOfBirth = dateOfBirth;
     return this;
@@ -36,53 +29,52 @@ public class DobInformationInput {
 
   /**
    * Specifies the recipient's date, month, and year of birth..
+   *
    * @return dateOfBirth
-   **/
+   */
   @Schema(description = "Specifies the recipient's date, month, and year of birth.")
   public String getDateOfBirth() {
     return dateOfBirth;
   }
 
-  /**
-   * setDateOfBirth.
-   **/
+  /** setDateOfBirth. */
   public void setDateOfBirth(String dateOfBirth) {
     this.dateOfBirth = dateOfBirth;
   }
-
 
   /**
    * displayLevelCode.
    *
    * @return DobInformationInput
-   **/
+   */
   public DobInformationInput displayLevelCode(String displayLevelCode) {
     this.displayLevelCode = displayLevelCode;
     return this;
   }
 
   /**
-   * Specifies the display level for the recipient.  Valid values are:   * ReadOnly * Editable * DoNotDisplay.
+   * Specifies the display level for the recipient. Valid values are: * ReadOnly * Editable *
+   * DoNotDisplay.
+   *
    * @return displayLevelCode
-   **/
-  @Schema(description = "Specifies the display level for the recipient.  Valid values are:   * ReadOnly * Editable * DoNotDisplay")
+   */
+  @Schema(
+      description =
+          "Specifies the display level for the recipient.  Valid values are:   * ReadOnly * Editable * DoNotDisplay")
   public String getDisplayLevelCode() {
     return displayLevelCode;
   }
 
-  /**
-   * setDisplayLevelCode.
-   **/
+  /** setDisplayLevelCode. */
   public void setDisplayLevelCode(String displayLevelCode) {
     this.displayLevelCode = displayLevelCode;
   }
-
 
   /**
    * receiveInResponse.
    *
    * @return DobInformationInput
-   **/
+   */
   public DobInformationInput receiveInResponse(String receiveInResponse) {
     this.receiveInResponse = receiveInResponse;
     return this;
@@ -90,20 +82,19 @@ public class DobInformationInput {
 
   /**
    * When set to **true**, the information needs to be returned in the response..
+   *
    * @return receiveInResponse
-   **/
-  @Schema(description = "When set to **true**, the information needs to be returned in the response.")
+   */
+  @Schema(
+      description = "When set to **true**, the information needs to be returned in the response.")
   public String getReceiveInResponse() {
     return receiveInResponse;
   }
 
-  /**
-   * setReceiveInResponse.
-   **/
+  /** setReceiveInResponse. */
   public void setReceiveInResponse(String receiveInResponse) {
     this.receiveInResponse = receiveInResponse;
   }
-
 
   /**
    * Compares objects.
@@ -119,28 +110,23 @@ public class DobInformationInput {
       return false;
     }
     DobInformationInput dobInformationInput = (DobInformationInput) o;
-    return Objects.equals(this.dateOfBirth, dobInformationInput.dateOfBirth) &&
-        Objects.equals(this.displayLevelCode, dobInformationInput.displayLevelCode) &&
-        Objects.equals(this.receiveInResponse, dobInformationInput.receiveInResponse);
+    return Objects.equals(this.dateOfBirth, dobInformationInput.dateOfBirth)
+        && Objects.equals(this.displayLevelCode, dobInformationInput.displayLevelCode)
+        && Objects.equals(this.receiveInResponse, dobInformationInput.receiveInResponse);
   }
 
-  /**
-   * Returns the HashCode.
-   */
+  /** Returns the HashCode. */
   @Override
   public int hashCode() {
     return Objects.hash(dateOfBirth, displayLevelCode, receiveInResponse);
   }
 
-
-  /**
-   * Converts the given object to string.
-   */
+  /** Converts the given object to string. */
   @Override
   public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class DobInformationInput {\n");
-    
+
     sb.append("    dateOfBirth: ").append(toIndentedString(dateOfBirth)).append("\n");
     sb.append("    displayLevelCode: ").append(toIndentedString(displayLevelCode)).append("\n");
     sb.append("    receiveInResponse: ").append(toIndentedString(receiveInResponse)).append("\n");
@@ -149,8 +135,7 @@ public class DobInformationInput {
   }
 
   /**
-   * Convert the given object to string with each line indented by 4 spaces
-   * (except the first line).
+   * Convert the given object to string with each line indented by 4 spaces (except the first line).
    */
   private String toIndentedString(java.lang.Object o) {
     if (o == null) {
@@ -158,6 +143,4 @@ public class DobInformationInput {
     }
     return o.toString().replace("\n", "\n    ");
   }
-
 }
-

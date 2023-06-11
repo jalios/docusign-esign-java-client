@@ -1,7 +1,7 @@
 package com.docusign.esign.model;
 
+import com.docusign.esign.override.swagger.Schema;
 import com.fasterxml.jackson.annotation.JsonProperty;
-import io.swagger.v3.oas.annotations.media.Schema;
 import java.util.Objects;
 
 /** EnvelopeTemplateResult */
@@ -207,13 +207,15 @@ public class EnvelopeTemplateResult {
   }
 
   /**
-   * When set to **true**, Document Markup is enabled for envelope. Account must
-   * have Document
+   * When set to **true**, Document Markup is enabled for envelope. Account must have Document
    * Markup enabled to use this
    *
    * @return allowMarkup
    */
-  @Schema(example = "null", description = "When set to **true**, Document Markup is enabled for envelope. Account must have Document Markup enabled to use this")
+  @Schema(
+      example = "null",
+      description =
+          "When set to **true**, Document Markup is enabled for envelope. Account must have Document Markup enabled to use this")
   public String getAllowMarkup() {
     return allowMarkup;
   }
@@ -228,12 +230,14 @@ public class EnvelopeTemplateResult {
   }
 
   /**
-   * When set to **true**, the recipient can redirect an envelope to a more
-   * appropriate recipient.
+   * When set to **true**, the recipient can redirect an envelope to a more appropriate recipient.
    *
    * @return allowReassign
    */
-  @Schema(example = "null", description = "When set to **true**, the recipient can redirect an envelope to a more appropriate recipient.")
+  @Schema(
+      example = "null",
+      description =
+          "When set to **true**, the recipient can redirect an envelope to a more appropriate recipient.")
   public String getAllowReassign() {
     return allowReassign;
   }
@@ -263,15 +267,16 @@ public class EnvelopeTemplateResult {
   }
 
   /**
-   * When set to **true**, the envelope is queued for processing and the value of
-   * the `status`
-   * property is set to 'Processing'. Additionally, get status calls return
-   * 'Processing' until
+   * When set to **true**, the envelope is queued for processing and the value of the `status`
+   * property is set to 'Processing'. Additionally, get status calls return 'Processing' until
    * completed.
    *
    * @return asynchronous
    */
-  @Schema(example = "null", description = "When set to **true**, the envelope is queued for processing and the value of the `status` property is set to 'Processing'. Additionally, get status calls return 'Processing' until completed.")
+  @Schema(
+      example = "null",
+      description =
+          "When set to **true**, the envelope is queued for processing and the value of the `status` property is set to 'Processing'. Additionally, get status calls return 'Processing' until completed.")
   public String getAsynchronous() {
     return asynchronous;
   }
@@ -301,13 +306,15 @@ public class EnvelopeTemplateResult {
   }
 
   /**
-   * Specifies the Authoritative copy feature. If set to true the Authoritative
-   * copy feature is
+   * Specifies the Authoritative copy feature. If set to true the Authoritative copy feature is
    * enabled.
    *
    * @return authoritativeCopy
    */
-  @Schema(example = "null", description = "Specifies the Authoritative copy feature. If set to true the Authoritative copy feature is enabled.")
+  @Schema(
+      example = "null",
+      description =
+          "Specifies the Authoritative copy feature. If set to true the Authoritative copy feature is enabled.")
   public String getAuthoritativeCopy() {
     return authoritativeCopy;
   }
@@ -382,12 +389,14 @@ public class EnvelopeTemplateResult {
   }
 
   /**
-   * Retrieves a URI for an endpoint that allows you to easily retrieve
-   * certificate information.
+   * Retrieves a URI for an endpoint that allows you to easily retrieve certificate information.
    *
    * @return certificateUri
    */
-  @Schema(example = "null", description = "Retrieves a URI for an endpoint that allows you to easily retrieve certificate information.")
+  @Schema(
+      example = "null",
+      description =
+          "Retrieves a URI for an endpoint that allows you to easily retrieve certificate information.")
   public String getCertificateUri() {
     return certificateUri;
   }
@@ -474,12 +483,14 @@ public class EnvelopeTemplateResult {
   }
 
   /**
-   * Contains a URI for an endpoint that you can use to retrieve the custom
-   * fields.
+   * Contains a URI for an endpoint that you can use to retrieve the custom fields.
    *
    * @return customFieldsUri
    */
-  @Schema(example = "null", description = "Contains a URI for an endpoint that you can use to retrieve the custom fields.")
+  @Schema(
+      example = "null",
+      description =
+          "Contains a URI for an endpoint that you can use to retrieve the custom fields.")
   public String getCustomFieldsUri() {
     return customFieldsUri;
   }
@@ -575,7 +586,9 @@ public class EnvelopeTemplateResult {
    *
    * @return documents
    */
-  @Schema(example = "null", description = "Complex element contains the details on the documents in the envelope.")
+  @Schema(
+      example = "null",
+      description = "Complex element contains the details on the documents in the envelope.")
   public java.util.List<Document> getDocuments() {
     return documents;
   }
@@ -609,7 +622,9 @@ public class EnvelopeTemplateResult {
    *
    * @return documentsUri
    */
-  @Schema(example = "null", description = "Contains a URI for an endpoint that you can use to retrieve the documents.")
+  @Schema(
+      example = "null",
+      description = "Contains a URI for an endpoint that you can use to retrieve the documents.")
   public String getDocumentsUri() {
     return documentsUri;
   }
@@ -658,15 +673,16 @@ public class EnvelopeTemplateResult {
   }
 
   /**
-   * Specifies the subject of the email that is sent to all recipients. See
-   * [ML:Template Email
-   * Subject Merge Fields] for information about adding merge field information to
-   * the email
+   * Specifies the subject of the email that is sent to all recipients. See [ML:Template Email
+   * Subject Merge Fields] for information about adding merge field information to the email
    * subject.
    *
    * @return emailSubject
    */
-  @Schema(example = "null", description = "Specifies the subject of the email that is sent to all recipients.  See [ML:Template Email Subject Merge Fields] for information about adding merge field information to the email subject.")
+  @Schema(
+      example = "null",
+      description =
+          "Specifies the subject of the email that is sent to all recipients.  See [ML:Template Email Subject Merge Fields] for information about adding merge field information to the email subject.")
   public String getEmailSubject() {
     return emailSubject;
   }
@@ -681,12 +697,14 @@ public class EnvelopeTemplateResult {
   }
 
   /**
-   * When set to **true**, the signer is allowed to print the document and sign it
-   * on paper.
+   * When set to **true**, the signer is allowed to print the document and sign it on paper.
    *
    * @return enableWetSign
    */
-  @Schema(example = "null", description = "When set to **true**, the signer is allowed to print the document and sign it on paper.")
+  @Schema(
+      example = "null",
+      description =
+          "When set to **true**, the signer is allowed to print the document and sign it on paper.")
   public String getEnableWetSign() {
     return enableWetSign;
   }
@@ -701,23 +719,20 @@ public class EnvelopeTemplateResult {
   }
 
   /**
-   * When set to **true**, documents with tabs can only be viewed by signers that
-   * have a tab on that
-   * document. Recipients that have an administrative role (Agent, Editor, or
-   * Intermediaries) or
-   * informational role (Certified Deliveries or Carbon Copies) can always see all
-   * the documents in
-   * an envelope, unless they are specifically excluded using this setting when an
-   * envelope is sent.
-   * Documents that do not have tabs are always visible to all recipients, unless
-   * they are
-   * specifically excluded using this setting when an envelope is sent. Your
-   * account must have
+   * When set to **true**, documents with tabs can only be viewed by signers that have a tab on that
+   * document. Recipients that have an administrative role (Agent, Editor, or Intermediaries) or
+   * informational role (Certified Deliveries or Carbon Copies) can always see all the documents in
+   * an envelope, unless they are specifically excluded using this setting when an envelope is sent.
+   * Documents that do not have tabs are always visible to all recipients, unless they are
+   * specifically excluded using this setting when an envelope is sent. Your account must have
    * Document Visibility enabled to use this.
    *
    * @return enforceSignerVisibility
    */
-  @Schema(example = "null", description = "When set to **true**, documents with tabs can only be viewed by signers that have a tab on that document. Recipients that have an administrative role (Agent, Editor, or Intermediaries) or informational role (Certified Deliveries or Carbon Copies) can always see all the documents in an envelope, unless they are specifically excluded using this setting when an envelope is sent. Documents that do not have tabs are always visible to all recipients, unless they are specifically excluded using this setting when an envelope is sent.  Your account must have Document Visibility enabled to use this.")
+  @Schema(
+      example = "null",
+      description =
+          "When set to **true**, documents with tabs can only be viewed by signers that have a tab on that document. Recipients that have an administrative role (Agent, Editor, or Intermediaries) or informational role (Certified Deliveries or Carbon Copies) can always see all the documents in an envelope, unless they are specifically excluded using this setting when an envelope is sent. Documents that do not have tabs are always visible to all recipients, unless they are specifically excluded using this setting when an envelope is sent.  Your account must have Document Visibility enabled to use this.")
   public String getEnforceSignerVisibility() {
     return enforceSignerVisibility;
   }
@@ -736,7 +751,9 @@ public class EnvelopeTemplateResult {
    *
    * @return envelopeId
    */
-  @Schema(example = "null", description = "The envelope ID of the envelope status that failed to post.")
+  @Schema(
+      example = "null",
+      description = "The envelope ID of the envelope status that failed to post.")
   public String getEnvelopeId() {
     return envelopeId;
   }
@@ -770,12 +787,14 @@ public class EnvelopeTemplateResult {
   }
 
   /**
-   * Contains a URI for an endpoint that you can use to retrieve the envelope or
-   * envelopes.
+   * Contains a URI for an endpoint that you can use to retrieve the envelope or envelopes.
    *
    * @return envelopeUri
    */
-  @Schema(example = "null", description = "Contains a URI for an endpoint that you can use to retrieve the envelope or envelopes.")
+  @Schema(
+      example = "null",
+      description =
+          "Contains a URI for an endpoint that you can use to retrieve the envelope or envelopes.")
   public String getEnvelopeUri() {
     return envelopeUri;
   }
@@ -854,7 +873,9 @@ public class EnvelopeTemplateResult {
    *
    * @return is21CFRPart11
    */
-  @Schema(example = "null", description = "When set to **true**, indicates that this module is enabled on the account.")
+  @Schema(
+      example = "null",
+      description = "When set to **true**, indicates that this module is enabled on the account.")
   public String getIs21CFRPart11() {
     return is21CFRPart11;
   }
@@ -937,20 +958,18 @@ public class EnvelopeTemplateResult {
   }
 
   /**
-   * When set to **true**, prevents senders from changing the contents of
-   * `emailBlurb` and
-   * `emailSubject` properties for the envelope. Additionally, this prevents users
-   * from making
-   * changes to the contents of `emailBlurb` and `emailSubject` properties when
-   * correcting
-   * envelopes. However, if the `messageLock` node is set to true**** and the
-   * `emailSubject`
-   * property is empty, senders and correctors are able to add a subject to the
-   * envelope.
+   * When set to **true**, prevents senders from changing the contents of `emailBlurb` and
+   * `emailSubject` properties for the envelope. Additionally, this prevents users from making
+   * changes to the contents of `emailBlurb` and `emailSubject` properties when correcting
+   * envelopes. However, if the `messageLock` node is set to true**** and the `emailSubject`
+   * property is empty, senders and correctors are able to add a subject to the envelope.
    *
    * @return messageLock
    */
-  @Schema(example = "null", description = "When set to **true**, prevents senders from changing the contents of `emailBlurb` and `emailSubject` properties for the envelope.   Additionally, this prevents users from making changes to the contents of `emailBlurb` and `emailSubject` properties when correcting envelopes.   However, if the `messageLock` node is set to true**** and the `emailSubject` property is empty, senders and correctors are able to add a subject to the envelope.")
+  @Schema(
+      example = "null",
+      description =
+          "When set to **true**, prevents senders from changing the contents of `emailBlurb` and `emailSubject` properties for the envelope.   Additionally, this prevents users from making changes to the contents of `emailBlurb` and `emailSubject` properties when correcting envelopes.   However, if the `messageLock` node is set to true**** and the `emailSubject` property is empty, senders and correctors are able to add a subject to the envelope.")
   public String getMessageLock() {
     return messageLock;
   }
@@ -999,12 +1018,14 @@ public class EnvelopeTemplateResult {
   }
 
   /**
-   * Contains a URI for an endpoint that you can use to retrieve the
-   * notifications.
+   * Contains a URI for an endpoint that you can use to retrieve the notifications.
    *
    * @return notificationUri
    */
-  @Schema(example = "null", description = "Contains a URI for an endpoint that you can use to retrieve the notifications.")
+  @Schema(
+      example = "null",
+      description =
+          "Contains a URI for an endpoint that you can use to retrieve the notifications.")
   public String getNotificationUri() {
     return notificationUri;
   }
@@ -1117,13 +1138,15 @@ public class EnvelopeTemplateResult {
   }
 
   /**
-   * When set to **true**, prevents senders from changing, correcting, or deleting
-   * the recipient
+   * When set to **true**, prevents senders from changing, correcting, or deleting the recipient
    * information for the envelope.
    *
    * @return recipientsLock
    */
-  @Schema(example = "null", description = "When set to **true**, prevents senders from changing, correcting, or deleting the recipient information for the envelope.")
+  @Schema(
+      example = "null",
+      description =
+          "When set to **true**, prevents senders from changing, correcting, or deleting the recipient information for the envelope.")
   public String getRecipientsLock() {
     return recipientsLock;
   }
@@ -1142,7 +1165,9 @@ public class EnvelopeTemplateResult {
    *
    * @return recipientsUri
    */
-  @Schema(example = "null", description = "Contains a URI for an endpoint that you can use to retrieve the recipients.")
+  @Schema(
+      example = "null",
+      description = "Contains a URI for an endpoint that you can use to retrieve the recipients.")
   public String getRecipientsUri() {
     return recipientsUri;
   }
@@ -1210,13 +1235,15 @@ public class EnvelopeTemplateResult {
   }
 
   /**
-   * Specifies the physical location where the signing takes place. It can have
-   * two enumeration
+   * Specifies the physical location where the signing takes place. It can have two enumeration
    * values; InPerson and Online. The default value is Online.
    *
    * @return signingLocation
    */
-  @Schema(example = "null", description = "Specifies the physical location where the signing takes place. It can have two enumeration values; InPerson and Online. The default value is Online.")
+  @Schema(
+      example = "null",
+      description =
+          "Specifies the physical location where the signing takes place. It can have two enumeration values; InPerson and Online. The default value is Online.")
   public String getSigningLocation() {
     return signingLocation;
   }
@@ -1231,14 +1258,15 @@ public class EnvelopeTemplateResult {
   }
 
   /**
-   * Indicates the envelope status. Valid values are: * sent - The envelope is
-   * sent to the
-   * recipients. * created - The envelope is saved as a draft and can be modified
-   * and sent later.
+   * Indicates the envelope status. Valid values are: * sent - The envelope is sent to the
+   * recipients. * created - The envelope is saved as a draft and can be modified and sent later.
    *
    * @return status
    */
-  @Schema(example = "null", description = "Indicates the envelope status. Valid values are:  * sent - The envelope is sent to the recipients.  * created - The envelope is saved as a draft and can be modified and sent later.")
+  @Schema(
+      example = "null",
+      description =
+          "Indicates the envelope status. Valid values are:  * sent - The envelope is sent to the recipients.  * created - The envelope is saved as a draft and can be modified and sent later.")
   public String getStatus() {
     return status;
   }
@@ -1272,12 +1300,14 @@ public class EnvelopeTemplateResult {
   }
 
   /**
-   * The unique identifier of the template. If this is not provided, DocuSign will
-   * generate a value.
+   * The unique identifier of the template. If this is not provided, DocuSign will generate a value.
    *
    * @return templateId
    */
-  @Schema(example = "null", description = "The unique identifier of the template. If this is not provided, DocuSign will generate a value. ")
+  @Schema(
+      example = "null",
+      description =
+          "The unique identifier of the template. If this is not provided, DocuSign will generate a value. ")
   public String getTemplateId() {
     return templateId;
   }
@@ -1296,7 +1326,9 @@ public class EnvelopeTemplateResult {
    *
    * @return templatesUri
    */
-  @Schema(example = "null", description = "Contains a URI for an endpoint which you can use to retrieve the templates.")
+  @Schema(
+      example = "null",
+      description = "Contains a URI for an endpoint which you can use to retrieve the templates.")
   public String getTemplatesUri() {
     return templatesUri;
   }
@@ -1311,19 +1343,18 @@ public class EnvelopeTemplateResult {
   }
 
   /**
-   * Used to identify an envelope. The id is a sender-generated value and is valid
-   * in the DocuSign
-   * system for 7 days. It is recommended that a transaction ID is used for
-   * offline signing to
-   * ensure that an envelope is not sent multiple times. The `transactionId`
-   * property can be used
-   * determine an envelope's status (i.e. was it created or not) in cases where
-   * the internet
+   * Used to identify an envelope. The id is a sender-generated value and is valid in the DocuSign
+   * system for 7 days. It is recommended that a transaction ID is used for offline signing to
+   * ensure that an envelope is not sent multiple times. The `transactionId` property can be used
+   * determine an envelope's status (i.e. was it created or not) in cases where the internet
    * connection was lost before the envelope status was returned.
    *
    * @return transactionId
    */
-  @Schema(example = "null", description = " Used to identify an envelope. The id is a sender-generated value and is valid in the DocuSign system for 7 days. It is recommended that a transaction ID is used for offline signing to ensure that an envelope is not sent multiple times. The `transactionId` property can be used determine an envelope's status (i.e. was it created or not) in cases where the internet connection was lost before the envelope status was returned.")
+  @Schema(
+      example = "null",
+      description =
+          " Used to identify an envelope. The id is a sender-generated value and is valid in the DocuSign system for 7 days. It is recommended that a transaction ID is used for offline signing to ensure that an envelope is not sent multiple times. The `transactionId` property can be used determine an envelope's status (i.e. was it created or not) in cases where the internet connection was lost before the envelope status was returned.")
   public String getTransactionId() {
     return transactionId;
   }
@@ -1353,21 +1384,19 @@ public class EnvelopeTemplateResult {
   }
 
   /**
-   * When set to **true**, the disclosure is shown to recipients in accordance
-   * with the account's
-   * Electronic Record and Signature Disclosure frequency setting. When set to
-   * **false**, the
-   * Electronic Record and Signature Disclosure is not shown to any envelope
-   * recipients. If the
-   * `useDisclosure` property is not set, then the account's normal disclosure
-   * setting is used and
-   * the value of the `useDisclosure` property is not returned in responses when
-   * getting envelope
+   * When set to **true**, the disclosure is shown to recipients in accordance with the account's
+   * Electronic Record and Signature Disclosure frequency setting. When set to **false**, the
+   * Electronic Record and Signature Disclosure is not shown to any envelope recipients. If the
+   * `useDisclosure` property is not set, then the account's normal disclosure setting is used and
+   * the value of the `useDisclosure` property is not returned in responses when getting envelope
    * information.
    *
    * @return useDisclosure
    */
-  @Schema(example = "null", description = "When set to **true**, the disclosure is shown to recipients in accordance with the account's Electronic Record and Signature Disclosure frequency setting. When set to **false**, the Electronic Record and Signature Disclosure is not shown to any envelope recipients.   If the `useDisclosure` property is not set, then the account's normal disclosure setting is used and the value of the `useDisclosure` property is not returned in responses when getting envelope information.")
+  @Schema(
+      example = "null",
+      description =
+          "When set to **true**, the disclosure is shown to recipients in accordance with the account's Electronic Record and Signature Disclosure frequency setting. When set to **false**, the Electronic Record and Signature Disclosure is not shown to any envelope recipients.   If the `useDisclosure` property is not set, then the account's normal disclosure setting is used and the value of the `useDisclosure` property is not returned in responses when getting envelope information.")
   public String getUseDisclosure() {
     return useDisclosure;
   }
@@ -1654,8 +1683,7 @@ public class EnvelopeTemplateResult {
   }
 
   /**
-   * Convert the given object to string with each line indented by 4 spaces
-   * (except the first line).
+   * Convert the given object to string with each line indented by 4 spaces (except the first line).
    */
   private String toIndentedString(java.lang.Object o) {
     if (o == null) {

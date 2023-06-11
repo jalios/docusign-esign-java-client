@@ -1,21 +1,21 @@
 package com.docusign.esign.model;
 
+import com.docusign.esign.override.swagger.Schema;
 import com.fasterxml.jackson.annotation.JsonProperty;
-import io.swagger.v3.oas.annotations.media.Schema;
-import io.swagger.v3.oas.annotations.media.Schema;
 import java.util.Objects;
 
 /**
- * Contains the name/value pair information for the SAML assertion attributes: *
- * name - The name of
- * the SAML assertion attribute. * value - The value associated with the named
- * SAML assertion
+ * Contains the name/value pair information for the SAML assertion attributes: * name - The name of
+ * the SAML assertion attribute. * value - The value associated with the named SAML assertion
  * attribute. Your account must be set up to use SSO to use this.
  */
-@Schema(description = "Contains the name/value pair information for the SAML assertion attributes:  * name - The name of the SAML assertion attribute. * value - The value associated with the named SAML assertion attribute.   Your account must be set up to use SSO to use this.")
+@Schema(
+    description =
+        "Contains the name/value pair information for the SAML assertion attributes:  * name - The name of the SAML assertion attribute. * value - The value associated with the named SAML assertion attribute.   Your account must be set up to use SSO to use this.")
 public class RecipientSAMLAuthentication {
   @JsonProperty("samlAssertionAttributes")
-  private java.util.List<SamlAssertionAttribute> samlAssertionAttributes = new java.util.ArrayList<SamlAssertionAttribute>();
+  private java.util.List<SamlAssertionAttribute> samlAssertionAttributes =
+      new java.util.ArrayList<SamlAssertionAttribute>();
 
   public RecipientSAMLAuthentication samlAssertionAttributes(
       java.util.List<SamlAssertionAttribute> samlAssertionAttributes) {
@@ -71,8 +71,7 @@ public class RecipientSAMLAuthentication {
   }
 
   /**
-   * Convert the given object to string with each line indented by 4 spaces
-   * (except the first line).
+   * Convert the given object to string with each line indented by 4 spaces (except the first line).
    */
   private String toIndentedString(java.lang.Object o) {
     if (o == null) {

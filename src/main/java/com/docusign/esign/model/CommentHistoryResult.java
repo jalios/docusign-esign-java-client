@@ -1,18 +1,10 @@
 package com.docusign.esign.model;
 
-import java.util.Objects;
-import java.util.Arrays;
-import com.docusign.esign.model.Comment;
+import com.docusign.esign.override.swagger.Schema;
 import com.fasterxml.jackson.annotation.JsonProperty;
-import com.fasterxml.jackson.annotation.JsonCreator;
-import com.fasterxml.jackson.annotation.JsonValue;
-import io.swagger.v3.oas.annotations.media.Schema;
+import java.util.Objects;
 
-/**
- * CommentHistoryResult.
- *
- */
-
+/** CommentHistoryResult. */
 public class CommentHistoryResult {
   @JsonProperty("comments")
   private java.util.List<Comment> comments = null;
@@ -26,22 +18,21 @@ public class CommentHistoryResult {
   @JsonProperty("startTimetoken")
   private String startTimetoken = null;
 
-
   /**
    * comments.
    *
    * @return CommentHistoryResult
-   **/
+   */
   public CommentHistoryResult comments(java.util.List<Comment> comments) {
     this.comments = comments;
     return this;
   }
-  
+
   /**
    * addCommentsItem.
    *
    * @return CommentHistoryResult
-   **/
+   */
   public CommentHistoryResult addCommentsItem(Comment commentsItem) {
     if (this.comments == null) {
       this.comments = new java.util.ArrayList<>();
@@ -52,26 +43,24 @@ public class CommentHistoryResult {
 
   /**
    * .
+   *
    * @return comments
-   **/
+   */
   @Schema(description = "")
   public java.util.List<Comment> getComments() {
     return comments;
   }
 
-  /**
-   * setComments.
-   **/
+  /** setComments. */
   public void setComments(java.util.List<Comment> comments) {
     this.comments = comments;
   }
-
 
   /**
    * count.
    *
    * @return CommentHistoryResult
-   **/
+   */
   public CommentHistoryResult count(Integer count) {
     this.count = count;
     return this;
@@ -79,26 +68,24 @@ public class CommentHistoryResult {
 
   /**
    * .
+   *
    * @return count
-   **/
+   */
   @Schema(description = "")
   public Integer getCount() {
     return count;
   }
 
-  /**
-   * setCount.
-   **/
+  /** setCount. */
   public void setCount(Integer count) {
     this.count = count;
   }
-
 
   /**
    * endTimetoken.
    *
    * @return CommentHistoryResult
-   **/
+   */
   public CommentHistoryResult endTimetoken(String endTimetoken) {
     this.endTimetoken = endTimetoken;
     return this;
@@ -106,26 +93,24 @@ public class CommentHistoryResult {
 
   /**
    * .
+   *
    * @return endTimetoken
-   **/
+   */
   @Schema(description = "")
   public String getEndTimetoken() {
     return endTimetoken;
   }
 
-  /**
-   * setEndTimetoken.
-   **/
+  /** setEndTimetoken. */
   public void setEndTimetoken(String endTimetoken) {
     this.endTimetoken = endTimetoken;
   }
-
 
   /**
    * startTimetoken.
    *
    * @return CommentHistoryResult
-   **/
+   */
   public CommentHistoryResult startTimetoken(String startTimetoken) {
     this.startTimetoken = startTimetoken;
     return this;
@@ -133,20 +118,18 @@ public class CommentHistoryResult {
 
   /**
    * .
+   *
    * @return startTimetoken
-   **/
+   */
   @Schema(description = "")
   public String getStartTimetoken() {
     return startTimetoken;
   }
 
-  /**
-   * setStartTimetoken.
-   **/
+  /** setStartTimetoken. */
   public void setStartTimetoken(String startTimetoken) {
     this.startTimetoken = startTimetoken;
   }
-
 
   /**
    * Compares objects.
@@ -162,29 +145,24 @@ public class CommentHistoryResult {
       return false;
     }
     CommentHistoryResult commentHistoryResult = (CommentHistoryResult) o;
-    return Objects.equals(this.comments, commentHistoryResult.comments) &&
-        Objects.equals(this.count, commentHistoryResult.count) &&
-        Objects.equals(this.endTimetoken, commentHistoryResult.endTimetoken) &&
-        Objects.equals(this.startTimetoken, commentHistoryResult.startTimetoken);
+    return Objects.equals(this.comments, commentHistoryResult.comments)
+        && Objects.equals(this.count, commentHistoryResult.count)
+        && Objects.equals(this.endTimetoken, commentHistoryResult.endTimetoken)
+        && Objects.equals(this.startTimetoken, commentHistoryResult.startTimetoken);
   }
 
-  /**
-   * Returns the HashCode.
-   */
+  /** Returns the HashCode. */
   @Override
   public int hashCode() {
     return Objects.hash(comments, count, endTimetoken, startTimetoken);
   }
 
-
-  /**
-   * Converts the given object to string.
-   */
+  /** Converts the given object to string. */
   @Override
   public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class CommentHistoryResult {\n");
-    
+
     sb.append("    comments: ").append(toIndentedString(comments)).append("\n");
     sb.append("    count: ").append(toIndentedString(count)).append("\n");
     sb.append("    endTimetoken: ").append(toIndentedString(endTimetoken)).append("\n");
@@ -194,8 +172,7 @@ public class CommentHistoryResult {
   }
 
   /**
-   * Convert the given object to string with each line indented by 4 spaces
-   * (except the first line).
+   * Convert the given object to string with each line indented by 4 spaces (except the first line).
    */
   private String toIndentedString(java.lang.Object o) {
     if (o == null) {
@@ -203,6 +180,4 @@ public class CommentHistoryResult {
     }
     return o.toString().replace("\n", "\n    ");
   }
-
 }
-

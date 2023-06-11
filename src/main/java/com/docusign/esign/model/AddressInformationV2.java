@@ -1,7 +1,7 @@
 package com.docusign.esign.model;
 
+import com.docusign.esign.override.swagger.Schema;
 import com.fasterxml.jackson.annotation.JsonProperty;
-import io.swagger.v3.oas.annotations.media.Schema;
 import java.util.Objects;
 
 /** AddressInformationV2 */
@@ -40,7 +40,9 @@ public class AddressInformationV2 {
    *
    * @return address1
    */
-  @Schema(example = "null", description = "First Line of the address. Maximum length: 100 characters.")
+  @Schema(
+      example = "null",
+      description = "First Line of the address. Maximum length: 100 characters.")
   public String getAddress1() {
     return address1;
   }
@@ -59,7 +61,9 @@ public class AddressInformationV2 {
    *
    * @return address2
    */
-  @Schema(example = "null", description = "Second Line of the address. Maximum length: 100 characters.")
+  @Schema(
+      example = "null",
+      description = "Second Line of the address. Maximum length: 100 characters.")
   public String getAddress2() {
     return address2;
   }
@@ -208,8 +212,7 @@ public class AddressInformationV2 {
   }
 
   /**
-   * Convert the given object to string with each line indented by 4 spaces
-   * (except the first line).
+   * Convert the given object to string with each line indented by 4 spaces (except the first line).
    */
   private String toIndentedString(java.lang.Object o) {
     if (o == null) {

@@ -1,17 +1,10 @@
 package com.docusign.esign.model;
 
-import java.util.Objects;
-import java.util.Arrays;
+import com.docusign.esign.override.swagger.Schema;
 import com.fasterxml.jackson.annotation.JsonProperty;
-import com.fasterxml.jackson.annotation.JsonCreator;
-import com.fasterxml.jackson.annotation.JsonValue;
-import io.swagger.v3.oas.annotations.media.Schema;
+import java.util.Objects;
 
-/**
- * IdEvidenceResourceToken.
- *
- */
-
+/** IdEvidenceResourceToken. */
 public class IdEvidenceResourceToken {
   @JsonProperty("proofBaseURI")
   private String proofBaseURI = null;
@@ -19,12 +12,11 @@ public class IdEvidenceResourceToken {
   @JsonProperty("resourceToken")
   private String resourceToken = null;
 
-
   /**
    * proofBaseURI.
    *
    * @return IdEvidenceResourceToken
-   **/
+   */
   public IdEvidenceResourceToken proofBaseURI(String proofBaseURI) {
     this.proofBaseURI = proofBaseURI;
     return this;
@@ -32,26 +24,24 @@ public class IdEvidenceResourceToken {
 
   /**
    * .
+   *
    * @return proofBaseURI
-   **/
+   */
   @Schema(description = "")
   public String getProofBaseURI() {
     return proofBaseURI;
   }
 
-  /**
-   * setProofBaseURI.
-   **/
+  /** setProofBaseURI. */
   public void setProofBaseURI(String proofBaseURI) {
     this.proofBaseURI = proofBaseURI;
   }
-
 
   /**
    * resourceToken.
    *
    * @return IdEvidenceResourceToken
-   **/
+   */
   public IdEvidenceResourceToken resourceToken(String resourceToken) {
     this.resourceToken = resourceToken;
     return this;
@@ -59,20 +49,18 @@ public class IdEvidenceResourceToken {
 
   /**
    * .
+   *
    * @return resourceToken
-   **/
+   */
   @Schema(description = "")
   public String getResourceToken() {
     return resourceToken;
   }
 
-  /**
-   * setResourceToken.
-   **/
+  /** setResourceToken. */
   public void setResourceToken(String resourceToken) {
     this.resourceToken = resourceToken;
   }
-
 
   /**
    * Compares objects.
@@ -88,27 +76,22 @@ public class IdEvidenceResourceToken {
       return false;
     }
     IdEvidenceResourceToken idEvidenceResourceToken = (IdEvidenceResourceToken) o;
-    return Objects.equals(this.proofBaseURI, idEvidenceResourceToken.proofBaseURI) &&
-        Objects.equals(this.resourceToken, idEvidenceResourceToken.resourceToken);
+    return Objects.equals(this.proofBaseURI, idEvidenceResourceToken.proofBaseURI)
+        && Objects.equals(this.resourceToken, idEvidenceResourceToken.resourceToken);
   }
 
-  /**
-   * Returns the HashCode.
-   */
+  /** Returns the HashCode. */
   @Override
   public int hashCode() {
     return Objects.hash(proofBaseURI, resourceToken);
   }
 
-
-  /**
-   * Converts the given object to string.
-   */
+  /** Converts the given object to string. */
   @Override
   public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class IdEvidenceResourceToken {\n");
-    
+
     sb.append("    proofBaseURI: ").append(toIndentedString(proofBaseURI)).append("\n");
     sb.append("    resourceToken: ").append(toIndentedString(resourceToken)).append("\n");
     sb.append("}");
@@ -116,8 +99,7 @@ public class IdEvidenceResourceToken {
   }
 
   /**
-   * Convert the given object to string with each line indented by 4 spaces
-   * (except the first line).
+   * Convert the given object to string with each line indented by 4 spaces (except the first line).
    */
   private String toIndentedString(java.lang.Object o) {
     if (o == null) {
@@ -125,6 +107,4 @@ public class IdEvidenceResourceToken {
     }
     return o.toString().replace("\n", "\n    ");
   }
-
 }
-

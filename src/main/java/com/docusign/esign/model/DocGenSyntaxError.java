@@ -1,17 +1,10 @@
 package com.docusign.esign.model;
 
-import java.util.Objects;
-import java.util.Arrays;
+import com.docusign.esign.override.swagger.Schema;
 import com.fasterxml.jackson.annotation.JsonProperty;
-import com.fasterxml.jackson.annotation.JsonCreator;
-import com.fasterxml.jackson.annotation.JsonValue;
-import io.swagger.v3.oas.annotations.media.Schema;
+import java.util.Objects;
 
-/**
- * DocGenSyntaxError.
- *
- */
-
+/** DocGenSyntaxError. */
 public class DocGenSyntaxError {
   @JsonProperty("errorCode")
   private String errorCode = null;
@@ -22,12 +15,11 @@ public class DocGenSyntaxError {
   @JsonProperty("tagIdentifier")
   private String tagIdentifier = null;
 
-
   /**
    * errorCode.
    *
    * @return DocGenSyntaxError
-   **/
+   */
   public DocGenSyntaxError errorCode(String errorCode) {
     this.errorCode = errorCode;
     return this;
@@ -35,26 +27,24 @@ public class DocGenSyntaxError {
 
   /**
    * .
+   *
    * @return errorCode
-   **/
+   */
   @Schema(description = "")
   public String getErrorCode() {
     return errorCode;
   }
 
-  /**
-   * setErrorCode.
-   **/
+  /** setErrorCode. */
   public void setErrorCode(String errorCode) {
     this.errorCode = errorCode;
   }
-
 
   /**
    * message.
    *
    * @return DocGenSyntaxError
-   **/
+   */
   public DocGenSyntaxError message(String message) {
     this.message = message;
     return this;
@@ -62,26 +52,24 @@ public class DocGenSyntaxError {
 
   /**
    * .
+   *
    * @return message
-   **/
+   */
   @Schema(description = "")
   public String getMessage() {
     return message;
   }
 
-  /**
-   * setMessage.
-   **/
+  /** setMessage. */
   public void setMessage(String message) {
     this.message = message;
   }
-
 
   /**
    * tagIdentifier.
    *
    * @return DocGenSyntaxError
-   **/
+   */
   public DocGenSyntaxError tagIdentifier(String tagIdentifier) {
     this.tagIdentifier = tagIdentifier;
     return this;
@@ -89,20 +77,18 @@ public class DocGenSyntaxError {
 
   /**
    * .
+   *
    * @return tagIdentifier
-   **/
+   */
   @Schema(description = "")
   public String getTagIdentifier() {
     return tagIdentifier;
   }
 
-  /**
-   * setTagIdentifier.
-   **/
+  /** setTagIdentifier. */
   public void setTagIdentifier(String tagIdentifier) {
     this.tagIdentifier = tagIdentifier;
   }
-
 
   /**
    * Compares objects.
@@ -118,28 +104,23 @@ public class DocGenSyntaxError {
       return false;
     }
     DocGenSyntaxError docGenSyntaxError = (DocGenSyntaxError) o;
-    return Objects.equals(this.errorCode, docGenSyntaxError.errorCode) &&
-        Objects.equals(this.message, docGenSyntaxError.message) &&
-        Objects.equals(this.tagIdentifier, docGenSyntaxError.tagIdentifier);
+    return Objects.equals(this.errorCode, docGenSyntaxError.errorCode)
+        && Objects.equals(this.message, docGenSyntaxError.message)
+        && Objects.equals(this.tagIdentifier, docGenSyntaxError.tagIdentifier);
   }
 
-  /**
-   * Returns the HashCode.
-   */
+  /** Returns the HashCode. */
   @Override
   public int hashCode() {
     return Objects.hash(errorCode, message, tagIdentifier);
   }
 
-
-  /**
-   * Converts the given object to string.
-   */
+  /** Converts the given object to string. */
   @Override
   public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class DocGenSyntaxError {\n");
-    
+
     sb.append("    errorCode: ").append(toIndentedString(errorCode)).append("\n");
     sb.append("    message: ").append(toIndentedString(message)).append("\n");
     sb.append("    tagIdentifier: ").append(toIndentedString(tagIdentifier)).append("\n");
@@ -148,8 +129,7 @@ public class DocGenSyntaxError {
   }
 
   /**
-   * Convert the given object to string with each line indented by 4 spaces
-   * (except the first line).
+   * Convert the given object to string with each line indented by 4 spaces (except the first line).
    */
   private String toIndentedString(java.lang.Object o) {
     if (o == null) {
@@ -157,6 +137,4 @@ public class DocGenSyntaxError {
     }
     return o.toString().replace("\n", "\n    ");
   }
-
 }
-

@@ -4,7 +4,6 @@ import com.docusign.esign.client.ApiClient;
 import com.docusign.esign.client.ApiException;
 import com.docusign.esign.client.Configuration;
 import com.docusign.esign.client.Pair;
-import com.docusign.esign.model.*;
 
 /** DataFeedApi class. */
 public class DataFeedApi {

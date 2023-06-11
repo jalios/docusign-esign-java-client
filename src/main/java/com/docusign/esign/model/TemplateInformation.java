@@ -1,38 +1,29 @@
 package com.docusign.esign.model;
 
-import java.util.Objects;
-import java.util.Arrays;
-import com.docusign.esign.model.TemplateSummary;
+import com.docusign.esign.override.swagger.Schema;
 import com.fasterxml.jackson.annotation.JsonProperty;
-import com.fasterxml.jackson.annotation.JsonCreator;
-import com.fasterxml.jackson.annotation.JsonValue;
-import io.swagger.v3.oas.annotations.media.Schema;
+import java.util.Objects;
 
-/**
- * TemplateInformation.
- *
- */
-
+/** TemplateInformation. */
 public class TemplateInformation {
   @JsonProperty("templates")
   private java.util.List<TemplateSummary> templates = null;
-
 
   /**
    * templates.
    *
    * @return TemplateInformation
-   **/
+   */
   public TemplateInformation templates(java.util.List<TemplateSummary> templates) {
     this.templates = templates;
     return this;
   }
-  
+
   /**
    * addTemplatesItem.
    *
    * @return TemplateInformation
-   **/
+   */
   public TemplateInformation addTemplatesItem(TemplateSummary templatesItem) {
     if (this.templates == null) {
       this.templates = new java.util.ArrayList<>();
@@ -43,20 +34,18 @@ public class TemplateInformation {
 
   /**
    * .
+   *
    * @return templates
-   **/
+   */
   @Schema(description = "")
   public java.util.List<TemplateSummary> getTemplates() {
     return templates;
   }
 
-  /**
-   * setTemplates.
-   **/
+  /** setTemplates. */
   public void setTemplates(java.util.List<TemplateSummary> templates) {
     this.templates = templates;
   }
-
 
   /**
    * Compares objects.
@@ -75,31 +64,25 @@ public class TemplateInformation {
     return Objects.equals(this.templates, templateInformation.templates);
   }
 
-  /**
-   * Returns the HashCode.
-   */
+  /** Returns the HashCode. */
   @Override
   public int hashCode() {
     return Objects.hash(templates);
   }
 
-
-  /**
-   * Converts the given object to string.
-   */
+  /** Converts the given object to string. */
   @Override
   public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class TemplateInformation {\n");
-    
+
     sb.append("    templates: ").append(toIndentedString(templates)).append("\n");
     sb.append("}");
     return sb.toString();
   }
 
   /**
-   * Convert the given object to string with each line indented by 4 spaces
-   * (except the first line).
+   * Convert the given object to string with each line indented by 4 spaces (except the first line).
    */
   private String toIndentedString(java.lang.Object o) {
     if (o == null) {
@@ -107,6 +90,4 @@ public class TemplateInformation {
     }
     return o.toString().replace("\n", "\n    ");
   }
-
 }
-

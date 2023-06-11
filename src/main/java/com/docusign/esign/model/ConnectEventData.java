@@ -1,18 +1,17 @@
 package com.docusign.esign.model;
 
-import java.util.Objects;
-import java.util.Arrays;
+import com.docusign.esign.override.swagger.Schema;
 import com.fasterxml.jackson.annotation.JsonProperty;
-import com.fasterxml.jackson.annotation.JsonCreator;
-import com.fasterxml.jackson.annotation.JsonValue;
-import io.swagger.v3.oas.annotations.media.Schema;
+import java.util.Objects;
 
 /**
- * This object lets you choose the data format of your Connect response. For  more information about using this object, see [Connect webhooks with JSON notifications](https://www.docusign.com/blog/developers/connect-webhooks-json-notifications). .
- *
+ * This object lets you choose the data format of your Connect response. For more information about
+ * using this object, see [Connect webhooks with JSON
+ * notifications](https://www.docusign.com/blog/developers/connect-webhooks-json-notifications). .
  */
-@Schema(description = "This object lets you choose the data format of your Connect response. For  more information about using this object, see [Connect webhooks with JSON notifications](https://www.docusign.com/blog/developers/connect-webhooks-json-notifications). ")
-
+@Schema(
+    description =
+        "This object lets you choose the data format of your Connect response. For  more information about using this object, see [Connect webhooks with JSON notifications](https://www.docusign.com/blog/developers/connect-webhooks-json-notifications). ")
 public class ConnectEventData {
   @JsonProperty("format")
   private String format = null;
@@ -23,12 +22,11 @@ public class ConnectEventData {
   @JsonProperty("version")
   private String version = null;
 
-
   /**
    * format.
    *
    * @return ConnectEventData
-   **/
+   */
   public ConnectEventData format(String format) {
     this.format = format;
     return this;
@@ -36,36 +34,34 @@ public class ConnectEventData {
 
   /**
    * .
+   *
    * @return format
-   **/
+   */
   @Schema(description = "")
   public String getFormat() {
     return format;
   }
 
-  /**
-   * setFormat.
-   **/
+  /** setFormat. */
   public void setFormat(String format) {
     this.format = format;
   }
-
 
   /**
    * includeData.
    *
    * @return ConnectEventData
-   **/
+   */
   public ConnectEventData includeData(java.util.List<String> includeData) {
     this.includeData = includeData;
     return this;
   }
-  
+
   /**
    * addIncludeDataItem.
    *
    * @return ConnectEventData
-   **/
+   */
   public ConnectEventData addIncludeDataItem(String includeDataItem) {
     if (this.includeData == null) {
       this.includeData = new java.util.ArrayList<>();
@@ -76,26 +72,24 @@ public class ConnectEventData {
 
   /**
    * .
+   *
    * @return includeData
-   **/
+   */
   @Schema(description = "")
   public java.util.List<String> getIncludeData() {
     return includeData;
   }
 
-  /**
-   * setIncludeData.
-   **/
+  /** setIncludeData. */
   public void setIncludeData(java.util.List<String> includeData) {
     this.includeData = includeData;
   }
-
 
   /**
    * version.
    *
    * @return ConnectEventData
-   **/
+   */
   public ConnectEventData version(String version) {
     this.version = version;
     return this;
@@ -103,20 +97,18 @@ public class ConnectEventData {
 
   /**
    * .
+   *
    * @return version
-   **/
+   */
   @Schema(description = "")
   public String getVersion() {
     return version;
   }
 
-  /**
-   * setVersion.
-   **/
+  /** setVersion. */
   public void setVersion(String version) {
     this.version = version;
   }
-
 
   /**
    * Compares objects.
@@ -132,28 +124,23 @@ public class ConnectEventData {
       return false;
     }
     ConnectEventData connectEventData = (ConnectEventData) o;
-    return Objects.equals(this.format, connectEventData.format) &&
-        Objects.equals(this.includeData, connectEventData.includeData) &&
-        Objects.equals(this.version, connectEventData.version);
+    return Objects.equals(this.format, connectEventData.format)
+        && Objects.equals(this.includeData, connectEventData.includeData)
+        && Objects.equals(this.version, connectEventData.version);
   }
 
-  /**
-   * Returns the HashCode.
-   */
+  /** Returns the HashCode. */
   @Override
   public int hashCode() {
     return Objects.hash(format, includeData, version);
   }
 
-
-  /**
-   * Converts the given object to string.
-   */
+  /** Converts the given object to string. */
   @Override
   public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class ConnectEventData {\n");
-    
+
     sb.append("    format: ").append(toIndentedString(format)).append("\n");
     sb.append("    includeData: ").append(toIndentedString(includeData)).append("\n");
     sb.append("    version: ").append(toIndentedString(version)).append("\n");
@@ -162,8 +149,7 @@ public class ConnectEventData {
   }
 
   /**
-   * Convert the given object to string with each line indented by 4 spaces
-   * (except the first line).
+   * Convert the given object to string with each line indented by 4 spaces (except the first line).
    */
   private String toIndentedString(java.lang.Object o) {
     if (o == null) {
@@ -171,6 +157,4 @@ public class ConnectEventData {
     }
     return o.toString().replace("\n", "\n    ");
   }
-
 }
-

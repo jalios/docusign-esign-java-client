@@ -1,20 +1,11 @@
 package com.docusign.esign.model;
 
-import java.util.Objects;
-import java.util.Arrays;
-import com.docusign.esign.model.ErrorDetails;
-import com.docusign.esign.model.WorkspaceUser;
+import com.docusign.esign.override.swagger.Schema;
 import com.fasterxml.jackson.annotation.JsonProperty;
-import com.fasterxml.jackson.annotation.JsonCreator;
-import com.fasterxml.jackson.annotation.JsonValue;
-import io.swagger.v3.oas.annotations.media.Schema;
+import java.util.Objects;
 
-/**
- * Provides properties that describe user authorization to a workspace..
- *
- */
+/** Provides properties that describe user authorization to a workspace.. */
 @Schema(description = "Provides properties that describe user authorization to a workspace.")
-
 public class WorkspaceUserAuthorization {
   @JsonProperty("canDelete")
   private String canDelete = null;
@@ -49,12 +40,11 @@ public class WorkspaceUserAuthorization {
   @JsonProperty("workspaceUserInformation")
   private WorkspaceUser workspaceUserInformation = null;
 
-
   /**
    * canDelete.
    *
    * @return WorkspaceUserAuthorization
-   **/
+   */
   public WorkspaceUserAuthorization canDelete(String canDelete) {
     this.canDelete = canDelete;
     return this;
@@ -62,26 +52,24 @@ public class WorkspaceUserAuthorization {
 
   /**
    * .
+   *
    * @return canDelete
-   **/
+   */
   @Schema(description = "")
   public String getCanDelete() {
     return canDelete;
   }
 
-  /**
-   * setCanDelete.
-   **/
+  /** setCanDelete. */
   public void setCanDelete(String canDelete) {
     this.canDelete = canDelete;
   }
-
 
   /**
    * canMove.
    *
    * @return WorkspaceUserAuthorization
-   **/
+   */
   public WorkspaceUserAuthorization canMove(String canMove) {
     this.canMove = canMove;
     return this;
@@ -89,26 +77,24 @@ public class WorkspaceUserAuthorization {
 
   /**
    * .
+   *
    * @return canMove
-   **/
+   */
   @Schema(description = "")
   public String getCanMove() {
     return canMove;
   }
 
-  /**
-   * setCanMove.
-   **/
+  /** setCanMove. */
   public void setCanMove(String canMove) {
     this.canMove = canMove;
   }
-
 
   /**
    * canTransact.
    *
    * @return WorkspaceUserAuthorization
-   **/
+   */
   public WorkspaceUserAuthorization canTransact(String canTransact) {
     this.canTransact = canTransact;
     return this;
@@ -116,26 +102,24 @@ public class WorkspaceUserAuthorization {
 
   /**
    * .
+   *
    * @return canTransact
-   **/
+   */
   @Schema(description = "")
   public String getCanTransact() {
     return canTransact;
   }
 
-  /**
-   * setCanTransact.
-   **/
+  /** setCanTransact. */
   public void setCanTransact(String canTransact) {
     this.canTransact = canTransact;
   }
-
 
   /**
    * canView.
    *
    * @return WorkspaceUserAuthorization
-   **/
+   */
   public WorkspaceUserAuthorization canView(String canView) {
     this.canView = canView;
     return this;
@@ -143,26 +127,24 @@ public class WorkspaceUserAuthorization {
 
   /**
    * .
+   *
    * @return canView
-   **/
+   */
   @Schema(description = "")
   public String getCanView() {
     return canView;
   }
 
-  /**
-   * setCanView.
-   **/
+  /** setCanView. */
   public void setCanView(String canView) {
     this.canView = canView;
   }
-
 
   /**
    * created.
    *
    * @return WorkspaceUserAuthorization
-   **/
+   */
   public WorkspaceUserAuthorization created(String created) {
     this.created = created;
     return this;
@@ -170,26 +152,24 @@ public class WorkspaceUserAuthorization {
 
   /**
    * The UTC DateTime when the workspace user authorization was created..
+   *
    * @return created
-   **/
+   */
   @Schema(description = "The UTC DateTime when the workspace user authorization was created.")
   public String getCreated() {
     return created;
   }
 
-  /**
-   * setCreated.
-   **/
+  /** setCreated. */
   public void setCreated(String created) {
     this.created = created;
   }
-
 
   /**
    * createdById.
    *
    * @return WorkspaceUserAuthorization
-   **/
+   */
   public WorkspaceUserAuthorization createdById(String createdById) {
     this.createdById = createdById;
     return this;
@@ -197,26 +177,24 @@ public class WorkspaceUserAuthorization {
 
   /**
    * .
+   *
    * @return createdById
-   **/
+   */
   @Schema(description = "")
   public String getCreatedById() {
     return createdById;
   }
 
-  /**
-   * setCreatedById.
-   **/
+  /** setCreatedById. */
   public void setCreatedById(String createdById) {
     this.createdById = createdById;
   }
-
 
   /**
    * errorDetails.
    *
    * @return WorkspaceUserAuthorization
-   **/
+   */
   public WorkspaceUserAuthorization errorDetails(ErrorDetails errorDetails) {
     this.errorDetails = errorDetails;
     return this;
@@ -224,26 +202,24 @@ public class WorkspaceUserAuthorization {
 
   /**
    * Array or errors..
+   *
    * @return errorDetails
-   **/
+   */
   @Schema(description = "Array or errors.")
   public ErrorDetails getErrorDetails() {
     return errorDetails;
   }
 
-  /**
-   * setErrorDetails.
-   **/
+  /** setErrorDetails. */
   public void setErrorDetails(ErrorDetails errorDetails) {
     this.errorDetails = errorDetails;
   }
-
 
   /**
    * modified.
    *
    * @return WorkspaceUserAuthorization
-   **/
+   */
   public WorkspaceUserAuthorization modified(String modified) {
     this.modified = modified;
     return this;
@@ -251,26 +227,24 @@ public class WorkspaceUserAuthorization {
 
   /**
    * .
+   *
    * @return modified
-   **/
+   */
   @Schema(description = "")
   public String getModified() {
     return modified;
   }
 
-  /**
-   * setModified.
-   **/
+  /** setModified. */
   public void setModified(String modified) {
     this.modified = modified;
   }
-
 
   /**
    * modifiedById.
    *
    * @return WorkspaceUserAuthorization
-   **/
+   */
   public WorkspaceUserAuthorization modifiedById(String modifiedById) {
     this.modifiedById = modifiedById;
     return this;
@@ -278,26 +252,24 @@ public class WorkspaceUserAuthorization {
 
   /**
    * .
+   *
    * @return modifiedById
-   **/
+   */
   @Schema(description = "")
   public String getModifiedById() {
     return modifiedById;
   }
 
-  /**
-   * setModifiedById.
-   **/
+  /** setModifiedById. */
   public void setModifiedById(String modifiedById) {
     this.modifiedById = modifiedById;
   }
-
 
   /**
    * workspaceUserId.
    *
    * @return WorkspaceUserAuthorization
-   **/
+   */
   public WorkspaceUserAuthorization workspaceUserId(String workspaceUserId) {
     this.workspaceUserId = workspaceUserId;
     return this;
@@ -305,47 +277,44 @@ public class WorkspaceUserAuthorization {
 
   /**
    * .
+   *
    * @return workspaceUserId
-   **/
+   */
   @Schema(description = "")
   public String getWorkspaceUserId() {
     return workspaceUserId;
   }
 
-  /**
-   * setWorkspaceUserId.
-   **/
+  /** setWorkspaceUserId. */
   public void setWorkspaceUserId(String workspaceUserId) {
     this.workspaceUserId = workspaceUserId;
   }
-
 
   /**
    * workspaceUserInformation.
    *
    * @return WorkspaceUserAuthorization
-   **/
-  public WorkspaceUserAuthorization workspaceUserInformation(WorkspaceUser workspaceUserInformation) {
+   */
+  public WorkspaceUserAuthorization workspaceUserInformation(
+      WorkspaceUser workspaceUserInformation) {
     this.workspaceUserInformation = workspaceUserInformation;
     return this;
   }
 
   /**
    * An object that provides details about the workspace user..
+   *
    * @return workspaceUserInformation
-   **/
+   */
   @Schema(description = "An object that provides details about the workspace user.")
   public WorkspaceUser getWorkspaceUserInformation() {
     return workspaceUserInformation;
   }
 
-  /**
-   * setWorkspaceUserInformation.
-   **/
+  /** setWorkspaceUserInformation. */
   public void setWorkspaceUserInformation(WorkspaceUser workspaceUserInformation) {
     this.workspaceUserInformation = workspaceUserInformation;
   }
-
 
   /**
    * Compares objects.
@@ -361,36 +330,43 @@ public class WorkspaceUserAuthorization {
       return false;
     }
     WorkspaceUserAuthorization workspaceUserAuthorization = (WorkspaceUserAuthorization) o;
-    return Objects.equals(this.canDelete, workspaceUserAuthorization.canDelete) &&
-        Objects.equals(this.canMove, workspaceUserAuthorization.canMove) &&
-        Objects.equals(this.canTransact, workspaceUserAuthorization.canTransact) &&
-        Objects.equals(this.canView, workspaceUserAuthorization.canView) &&
-        Objects.equals(this.created, workspaceUserAuthorization.created) &&
-        Objects.equals(this.createdById, workspaceUserAuthorization.createdById) &&
-        Objects.equals(this.errorDetails, workspaceUserAuthorization.errorDetails) &&
-        Objects.equals(this.modified, workspaceUserAuthorization.modified) &&
-        Objects.equals(this.modifiedById, workspaceUserAuthorization.modifiedById) &&
-        Objects.equals(this.workspaceUserId, workspaceUserAuthorization.workspaceUserId) &&
-        Objects.equals(this.workspaceUserInformation, workspaceUserAuthorization.workspaceUserInformation);
+    return Objects.equals(this.canDelete, workspaceUserAuthorization.canDelete)
+        && Objects.equals(this.canMove, workspaceUserAuthorization.canMove)
+        && Objects.equals(this.canTransact, workspaceUserAuthorization.canTransact)
+        && Objects.equals(this.canView, workspaceUserAuthorization.canView)
+        && Objects.equals(this.created, workspaceUserAuthorization.created)
+        && Objects.equals(this.createdById, workspaceUserAuthorization.createdById)
+        && Objects.equals(this.errorDetails, workspaceUserAuthorization.errorDetails)
+        && Objects.equals(this.modified, workspaceUserAuthorization.modified)
+        && Objects.equals(this.modifiedById, workspaceUserAuthorization.modifiedById)
+        && Objects.equals(this.workspaceUserId, workspaceUserAuthorization.workspaceUserId)
+        && Objects.equals(
+            this.workspaceUserInformation, workspaceUserAuthorization.workspaceUserInformation);
   }
 
-  /**
-   * Returns the HashCode.
-   */
+  /** Returns the HashCode. */
   @Override
   public int hashCode() {
-    return Objects.hash(canDelete, canMove, canTransact, canView, created, createdById, errorDetails, modified, modifiedById, workspaceUserId, workspaceUserInformation);
+    return Objects.hash(
+        canDelete,
+        canMove,
+        canTransact,
+        canView,
+        created,
+        createdById,
+        errorDetails,
+        modified,
+        modifiedById,
+        workspaceUserId,
+        workspaceUserInformation);
   }
 
-
-  /**
-   * Converts the given object to string.
-   */
+  /** Converts the given object to string. */
   @Override
   public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class WorkspaceUserAuthorization {\n");
-    
+
     sb.append("    canDelete: ").append(toIndentedString(canDelete)).append("\n");
     sb.append("    canMove: ").append(toIndentedString(canMove)).append("\n");
     sb.append("    canTransact: ").append(toIndentedString(canTransact)).append("\n");
@@ -401,14 +377,15 @@ public class WorkspaceUserAuthorization {
     sb.append("    modified: ").append(toIndentedString(modified)).append("\n");
     sb.append("    modifiedById: ").append(toIndentedString(modifiedById)).append("\n");
     sb.append("    workspaceUserId: ").append(toIndentedString(workspaceUserId)).append("\n");
-    sb.append("    workspaceUserInformation: ").append(toIndentedString(workspaceUserInformation)).append("\n");
+    sb.append("    workspaceUserInformation: ")
+        .append(toIndentedString(workspaceUserInformation))
+        .append("\n");
     sb.append("}");
     return sb.toString();
   }
 
   /**
-   * Convert the given object to string with each line indented by 4 spaces
-   * (except the first line).
+   * Convert the given object to string with each line indented by 4 spaces (except the first line).
    */
   private String toIndentedString(java.lang.Object o) {
     if (o == null) {
@@ -416,6 +393,4 @@ public class WorkspaceUserAuthorization {
     }
     return o.toString().replace("\n", "\n    ");
   }
-
 }
-

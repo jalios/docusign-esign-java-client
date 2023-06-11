@@ -1,18 +1,11 @@
 package com.docusign.esign.model;
 
-import java.util.Objects;
-import java.util.Arrays;
+import com.docusign.esign.override.swagger.Schema;
 import com.fasterxml.jackson.annotation.JsonProperty;
-import com.fasterxml.jackson.annotation.JsonCreator;
-import com.fasterxml.jackson.annotation.JsonValue;
-import io.swagger.v3.oas.annotations.media.Schema;
+import java.util.Objects;
 
-/**
- * Summary status of a single batch..
- *
- */
+/** Summary status of a single batch.. */
 @Schema(description = "Summary status of a single batch.")
-
 public class BulkSendBatchSummary {
   @JsonProperty("action")
   private String action = null;
@@ -44,12 +37,11 @@ public class BulkSendBatchSummary {
   @JsonProperty("submittedDate")
   private String submittedDate = null;
 
-
   /**
    * action.
    *
    * @return BulkSendBatchSummary
-   **/
+   */
   public BulkSendBatchSummary action(String action) {
     this.action = action;
     return this;
@@ -57,26 +49,24 @@ public class BulkSendBatchSummary {
 
   /**
    * .
+   *
    * @return action
-   **/
+   */
   @Schema(description = "")
   public String getAction() {
     return action;
   }
 
-  /**
-   * setAction.
-   **/
+  /** setAction. */
   public void setAction(String action) {
     this.action = action;
   }
-
 
   /**
    * actionStatus.
    *
    * @return BulkSendBatchSummary
-   **/
+   */
   public BulkSendBatchSummary actionStatus(String actionStatus) {
     this.actionStatus = actionStatus;
     return this;
@@ -84,26 +74,24 @@ public class BulkSendBatchSummary {
 
   /**
    * .
+   *
    * @return actionStatus
-   **/
+   */
   @Schema(description = "")
   public String getActionStatus() {
     return actionStatus;
   }
 
-  /**
-   * setActionStatus.
-   **/
+  /** setActionStatus. */
   public void setActionStatus(String actionStatus) {
     this.actionStatus = actionStatus;
   }
-
 
   /**
    * batchId.
    *
    * @return BulkSendBatchSummary
-   **/
+   */
   public BulkSendBatchSummary batchId(String batchId) {
     this.batchId = batchId;
     return this;
@@ -111,26 +99,24 @@ public class BulkSendBatchSummary {
 
   /**
    * .
+   *
    * @return batchId
-   **/
+   */
   @Schema(description = "")
   public String getBatchId() {
     return batchId;
   }
 
-  /**
-   * setBatchId.
-   **/
+  /** setBatchId. */
   public void setBatchId(String batchId) {
     this.batchId = batchId;
   }
-
 
   /**
    * batchName.
    *
    * @return BulkSendBatchSummary
-   **/
+   */
   public BulkSendBatchSummary batchName(String batchName) {
     this.batchName = batchName;
     return this;
@@ -138,26 +124,24 @@ public class BulkSendBatchSummary {
 
   /**
    * .
+   *
    * @return batchName
-   **/
+   */
   @Schema(description = "")
   public String getBatchName() {
     return batchName;
   }
 
-  /**
-   * setBatchName.
-   **/
+  /** setBatchName. */
   public void setBatchName(String batchName) {
     this.batchName = batchName;
   }
-
 
   /**
    * batchSize.
    *
    * @return BulkSendBatchSummary
-   **/
+   */
   public BulkSendBatchSummary batchSize(String batchSize) {
     this.batchSize = batchSize;
     return this;
@@ -165,26 +149,24 @@ public class BulkSendBatchSummary {
 
   /**
    * .
+   *
    * @return batchSize
-   **/
+   */
   @Schema(description = "")
   public String getBatchSize() {
     return batchSize;
   }
 
-  /**
-   * setBatchSize.
-   **/
+  /** setBatchSize. */
   public void setBatchSize(String batchSize) {
     this.batchSize = batchSize;
   }
-
 
   /**
    * batchUri.
    *
    * @return BulkSendBatchSummary
-   **/
+   */
   public BulkSendBatchSummary batchUri(String batchUri) {
     this.batchUri = batchUri;
     return this;
@@ -192,26 +174,24 @@ public class BulkSendBatchSummary {
 
   /**
    * .
+   *
    * @return batchUri
-   **/
+   */
   @Schema(description = "")
   public String getBatchUri() {
     return batchUri;
   }
 
-  /**
-   * setBatchUri.
-   **/
+  /** setBatchUri. */
   public void setBatchUri(String batchUri) {
     this.batchUri = batchUri;
   }
-
 
   /**
    * failed.
    *
    * @return BulkSendBatchSummary
-   **/
+   */
   public BulkSendBatchSummary failed(String failed) {
     this.failed = failed;
     return this;
@@ -219,26 +199,24 @@ public class BulkSendBatchSummary {
 
   /**
    * .
+   *
    * @return failed
-   **/
+   */
   @Schema(description = "")
   public String getFailed() {
     return failed;
   }
 
-  /**
-   * setFailed.
-   **/
+  /** setFailed. */
   public void setFailed(String failed) {
     this.failed = failed;
   }
-
 
   /**
    * queued.
    *
    * @return BulkSendBatchSummary
-   **/
+   */
   public BulkSendBatchSummary queued(String queued) {
     this.queued = queued;
     return this;
@@ -246,26 +224,24 @@ public class BulkSendBatchSummary {
 
   /**
    * .
+   *
    * @return queued
-   **/
+   */
   @Schema(description = "")
   public String getQueued() {
     return queued;
   }
 
-  /**
-   * setQueued.
-   **/
+  /** setQueued. */
   public void setQueued(String queued) {
     this.queued = queued;
   }
-
 
   /**
    * sent.
    *
    * @return BulkSendBatchSummary
-   **/
+   */
   public BulkSendBatchSummary sent(String sent) {
     this.sent = sent;
     return this;
@@ -273,26 +249,24 @@ public class BulkSendBatchSummary {
 
   /**
    * .
+   *
    * @return sent
-   **/
+   */
   @Schema(description = "")
   public String getSent() {
     return sent;
   }
 
-  /**
-   * setSent.
-   **/
+  /** setSent. */
   public void setSent(String sent) {
     this.sent = sent;
   }
-
 
   /**
    * submittedDate.
    *
    * @return BulkSendBatchSummary
-   **/
+   */
   public BulkSendBatchSummary submittedDate(String submittedDate) {
     this.submittedDate = submittedDate;
     return this;
@@ -300,20 +274,18 @@ public class BulkSendBatchSummary {
 
   /**
    * .
+   *
    * @return submittedDate
-   **/
+   */
   @Schema(description = "")
   public String getSubmittedDate() {
     return submittedDate;
   }
 
-  /**
-   * setSubmittedDate.
-   **/
+  /** setSubmittedDate. */
   public void setSubmittedDate(String submittedDate) {
     this.submittedDate = submittedDate;
   }
-
 
   /**
    * Compares objects.
@@ -329,35 +301,40 @@ public class BulkSendBatchSummary {
       return false;
     }
     BulkSendBatchSummary bulkSendBatchSummary = (BulkSendBatchSummary) o;
-    return Objects.equals(this.action, bulkSendBatchSummary.action) &&
-        Objects.equals(this.actionStatus, bulkSendBatchSummary.actionStatus) &&
-        Objects.equals(this.batchId, bulkSendBatchSummary.batchId) &&
-        Objects.equals(this.batchName, bulkSendBatchSummary.batchName) &&
-        Objects.equals(this.batchSize, bulkSendBatchSummary.batchSize) &&
-        Objects.equals(this.batchUri, bulkSendBatchSummary.batchUri) &&
-        Objects.equals(this.failed, bulkSendBatchSummary.failed) &&
-        Objects.equals(this.queued, bulkSendBatchSummary.queued) &&
-        Objects.equals(this.sent, bulkSendBatchSummary.sent) &&
-        Objects.equals(this.submittedDate, bulkSendBatchSummary.submittedDate);
+    return Objects.equals(this.action, bulkSendBatchSummary.action)
+        && Objects.equals(this.actionStatus, bulkSendBatchSummary.actionStatus)
+        && Objects.equals(this.batchId, bulkSendBatchSummary.batchId)
+        && Objects.equals(this.batchName, bulkSendBatchSummary.batchName)
+        && Objects.equals(this.batchSize, bulkSendBatchSummary.batchSize)
+        && Objects.equals(this.batchUri, bulkSendBatchSummary.batchUri)
+        && Objects.equals(this.failed, bulkSendBatchSummary.failed)
+        && Objects.equals(this.queued, bulkSendBatchSummary.queued)
+        && Objects.equals(this.sent, bulkSendBatchSummary.sent)
+        && Objects.equals(this.submittedDate, bulkSendBatchSummary.submittedDate);
   }
 
-  /**
-   * Returns the HashCode.
-   */
+  /** Returns the HashCode. */
   @Override
   public int hashCode() {
-    return Objects.hash(action, actionStatus, batchId, batchName, batchSize, batchUri, failed, queued, sent, submittedDate);
+    return Objects.hash(
+        action,
+        actionStatus,
+        batchId,
+        batchName,
+        batchSize,
+        batchUri,
+        failed,
+        queued,
+        sent,
+        submittedDate);
   }
 
-
-  /**
-   * Converts the given object to string.
-   */
+  /** Converts the given object to string. */
   @Override
   public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class BulkSendBatchSummary {\n");
-    
+
     sb.append("    action: ").append(toIndentedString(action)).append("\n");
     sb.append("    actionStatus: ").append(toIndentedString(actionStatus)).append("\n");
     sb.append("    batchId: ").append(toIndentedString(batchId)).append("\n");
@@ -373,8 +350,7 @@ public class BulkSendBatchSummary {
   }
 
   /**
-   * Convert the given object to string with each line indented by 4 spaces
-   * (except the first line).
+   * Convert the given object to string with each line indented by 4 spaces (except the first line).
    */
   private String toIndentedString(java.lang.Object o) {
     if (o == null) {
@@ -382,6 +358,4 @@ public class BulkSendBatchSummary {
     }
     return o.toString().replace("\n", "\n    ");
   }
-
 }
-

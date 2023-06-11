@@ -1,19 +1,11 @@
 package com.docusign.esign.model;
 
-import java.util.Objects;
-import java.util.Arrays;
-import com.docusign.esign.model.Country;
+import com.docusign.esign.override.swagger.Schema;
 import com.fasterxml.jackson.annotation.JsonProperty;
-import com.fasterxml.jackson.annotation.JsonCreator;
-import com.fasterxml.jackson.annotation.JsonValue;
-import io.swagger.v3.oas.annotations.media.Schema;
+import java.util.Objects;
 
-/**
- * Contains information about an account address..
- *
- */
+/** Contains information about an account address.. */
 @Schema(description = "Contains information about an account address.")
-
 public class AccountAddress {
   @JsonProperty("address1")
   private String address1 = null;
@@ -51,12 +43,11 @@ public class AccountAddress {
   @JsonProperty("supportedCountries")
   private java.util.List<Country> supportedCountries = null;
 
-
   /**
    * address1.
    *
    * @return AccountAddress
-   **/
+   */
   public AccountAddress address1(String address1) {
     this.address1 = address1;
     return this;
@@ -64,26 +55,24 @@ public class AccountAddress {
 
   /**
    * First Line of the address. Maximum length: 100 characters..
+   *
    * @return address1
-   **/
+   */
   @Schema(description = "First Line of the address. Maximum length: 100 characters.")
   public String getAddress1() {
     return address1;
   }
 
-  /**
-   * setAddress1.
-   **/
+  /** setAddress1. */
   public void setAddress1(String address1) {
     this.address1 = address1;
   }
-
 
   /**
    * address2.
    *
    * @return AccountAddress
-   **/
+   */
   public AccountAddress address2(String address2) {
     this.address2 = address2;
     return this;
@@ -91,26 +80,24 @@ public class AccountAddress {
 
   /**
    * Second Line of the address. Maximum length: 100 characters..
+   *
    * @return address2
-   **/
+   */
   @Schema(description = "Second Line of the address. Maximum length: 100 characters.")
   public String getAddress2() {
     return address2;
   }
 
-  /**
-   * setAddress2.
-   **/
+  /** setAddress2. */
   public void setAddress2(String address2) {
     this.address2 = address2;
   }
-
 
   /**
    * city.
    *
    * @return AccountAddress
-   **/
+   */
   public AccountAddress city(String city) {
     this.city = city;
     return this;
@@ -118,26 +105,24 @@ public class AccountAddress {
 
   /**
    * The city value of the address..
+   *
    * @return city
-   **/
+   */
   @Schema(description = "The city value of the address.")
   public String getCity() {
     return city;
   }
 
-  /**
-   * setCity.
-   **/
+  /** setCity. */
   public void setCity(String city) {
     this.city = city;
   }
-
 
   /**
    * country.
    *
    * @return AccountAddress
-   **/
+   */
   public AccountAddress country(String country) {
     this.country = country;
     return this;
@@ -145,26 +130,24 @@ public class AccountAddress {
 
   /**
    * Specifies the country associated with the address..
+   *
    * @return country
-   **/
+   */
   @Schema(description = "Specifies the country associated with the address.")
   public String getCountry() {
     return country;
   }
 
-  /**
-   * setCountry.
-   **/
+  /** setCountry. */
   public void setCountry(String country) {
     this.country = country;
   }
-
 
   /**
    * email.
    *
    * @return AccountAddress
-   **/
+   */
   public AccountAddress email(String email) {
     this.email = email;
     return this;
@@ -172,26 +155,24 @@ public class AccountAddress {
 
   /**
    * .
+   *
    * @return email
-   **/
+   */
   @Schema(description = "")
   public String getEmail() {
     return email;
   }
 
-  /**
-   * setEmail.
-   **/
+  /** setEmail. */
   public void setEmail(String email) {
     this.email = email;
   }
-
 
   /**
    * fax.
    *
    * @return AccountAddress
-   **/
+   */
   public AccountAddress fax(String fax) {
     this.fax = fax;
     return this;
@@ -199,53 +180,49 @@ public class AccountAddress {
 
   /**
    * .
+   *
    * @return fax
-   **/
+   */
   @Schema(description = "")
   public String getFax() {
     return fax;
   }
 
-  /**
-   * setFax.
-   **/
+  /** setFax. */
   public void setFax(String fax) {
     this.fax = fax;
   }
-
 
   /**
    * firstName.
    *
    * @return AccountAddress
-   **/
+   */
   public AccountAddress firstName(String firstName) {
     this.firstName = firstName;
     return this;
   }
 
   /**
-   * The user's first name.  Maximum Length: 50 characters..
+   * The user's first name. Maximum Length: 50 characters..
+   *
    * @return firstName
-   **/
+   */
   @Schema(description = "The user's first name.  Maximum Length: 50 characters.")
   public String getFirstName() {
     return firstName;
   }
 
-  /**
-   * setFirstName.
-   **/
+  /** setFirstName. */
   public void setFirstName(String firstName) {
     this.firstName = firstName;
   }
-
 
   /**
    * lastName.
    *
    * @return AccountAddress
-   **/
+   */
   public AccountAddress lastName(String lastName) {
     this.lastName = lastName;
     return this;
@@ -253,26 +230,24 @@ public class AccountAddress {
 
   /**
    * .
+   *
    * @return lastName
-   **/
+   */
   @Schema(description = "")
   public String getLastName() {
     return lastName;
   }
 
-  /**
-   * setLastName.
-   **/
+  /** setLastName. */
   public void setLastName(String lastName) {
     this.lastName = lastName;
   }
-
 
   /**
    * phone.
    *
    * @return AccountAddress
-   **/
+   */
   public AccountAddress phone(String phone) {
     this.phone = phone;
     return this;
@@ -280,26 +255,24 @@ public class AccountAddress {
 
   /**
    * .
+   *
    * @return phone
-   **/
+   */
   @Schema(description = "")
   public String getPhone() {
     return phone;
   }
 
-  /**
-   * setPhone.
-   **/
+  /** setPhone. */
   public void setPhone(String phone) {
     this.phone = phone;
   }
-
 
   /**
    * postalCode.
    *
    * @return AccountAddress
-   **/
+   */
   public AccountAddress postalCode(String postalCode) {
     this.postalCode = postalCode;
     return this;
@@ -307,26 +280,24 @@ public class AccountAddress {
 
   /**
    * .
+   *
    * @return postalCode
-   **/
+   */
   @Schema(description = "")
   public String getPostalCode() {
     return postalCode;
   }
 
-  /**
-   * setPostalCode.
-   **/
+  /** setPostalCode. */
   public void setPostalCode(String postalCode) {
     this.postalCode = postalCode;
   }
-
 
   /**
    * state.
    *
    * @return AccountAddress
-   **/
+   */
   public AccountAddress state(String state) {
     this.state = state;
     return this;
@@ -334,36 +305,34 @@ public class AccountAddress {
 
   /**
    * The state or province associated with the address..
+   *
    * @return state
-   **/
+   */
   @Schema(description = "The state or province associated with the address.")
   public String getState() {
     return state;
   }
 
-  /**
-   * setState.
-   **/
+  /** setState. */
   public void setState(String state) {
     this.state = state;
   }
-
 
   /**
    * supportedCountries.
    *
    * @return AccountAddress
-   **/
+   */
   public AccountAddress supportedCountries(java.util.List<Country> supportedCountries) {
     this.supportedCountries = supportedCountries;
     return this;
   }
-  
+
   /**
    * addSupportedCountriesItem.
    *
    * @return AccountAddress
-   **/
+   */
   public AccountAddress addSupportedCountriesItem(Country supportedCountriesItem) {
     if (this.supportedCountries == null) {
       this.supportedCountries = new java.util.ArrayList<>();
@@ -374,20 +343,18 @@ public class AccountAddress {
 
   /**
    * Contains an array of countries supported by the billing plan..
+   *
    * @return supportedCountries
-   **/
+   */
   @Schema(description = "Contains an array of countries supported by the billing plan.")
   public java.util.List<Country> getSupportedCountries() {
     return supportedCountries;
   }
 
-  /**
-   * setSupportedCountries.
-   **/
+  /** setSupportedCountries. */
   public void setSupportedCountries(java.util.List<Country> supportedCountries) {
     this.supportedCountries = supportedCountries;
   }
-
 
   /**
    * Compares objects.
@@ -403,37 +370,44 @@ public class AccountAddress {
       return false;
     }
     AccountAddress accountAddress = (AccountAddress) o;
-    return Objects.equals(this.address1, accountAddress.address1) &&
-        Objects.equals(this.address2, accountAddress.address2) &&
-        Objects.equals(this.city, accountAddress.city) &&
-        Objects.equals(this.country, accountAddress.country) &&
-        Objects.equals(this.email, accountAddress.email) &&
-        Objects.equals(this.fax, accountAddress.fax) &&
-        Objects.equals(this.firstName, accountAddress.firstName) &&
-        Objects.equals(this.lastName, accountAddress.lastName) &&
-        Objects.equals(this.phone, accountAddress.phone) &&
-        Objects.equals(this.postalCode, accountAddress.postalCode) &&
-        Objects.equals(this.state, accountAddress.state) &&
-        Objects.equals(this.supportedCountries, accountAddress.supportedCountries);
+    return Objects.equals(this.address1, accountAddress.address1)
+        && Objects.equals(this.address2, accountAddress.address2)
+        && Objects.equals(this.city, accountAddress.city)
+        && Objects.equals(this.country, accountAddress.country)
+        && Objects.equals(this.email, accountAddress.email)
+        && Objects.equals(this.fax, accountAddress.fax)
+        && Objects.equals(this.firstName, accountAddress.firstName)
+        && Objects.equals(this.lastName, accountAddress.lastName)
+        && Objects.equals(this.phone, accountAddress.phone)
+        && Objects.equals(this.postalCode, accountAddress.postalCode)
+        && Objects.equals(this.state, accountAddress.state)
+        && Objects.equals(this.supportedCountries, accountAddress.supportedCountries);
   }
 
-  /**
-   * Returns the HashCode.
-   */
+  /** Returns the HashCode. */
   @Override
   public int hashCode() {
-    return Objects.hash(address1, address2, city, country, email, fax, firstName, lastName, phone, postalCode, state, supportedCountries);
+    return Objects.hash(
+        address1,
+        address2,
+        city,
+        country,
+        email,
+        fax,
+        firstName,
+        lastName,
+        phone,
+        postalCode,
+        state,
+        supportedCountries);
   }
 
-
-  /**
-   * Converts the given object to string.
-   */
+  /** Converts the given object to string. */
   @Override
   public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class AccountAddress {\n");
-    
+
     sb.append("    address1: ").append(toIndentedString(address1)).append("\n");
     sb.append("    address2: ").append(toIndentedString(address2)).append("\n");
     sb.append("    city: ").append(toIndentedString(city)).append("\n");
@@ -451,8 +425,7 @@ public class AccountAddress {
   }
 
   /**
-   * Convert the given object to string with each line indented by 4 spaces
-   * (except the first line).
+   * Convert the given object to string with each line indented by 4 spaces (except the first line).
    */
   private String toIndentedString(java.lang.Object o) {
     if (o == null) {
@@ -460,6 +433,4 @@ public class AccountAddress {
     }
     return o.toString().replace("\n", "\n    ");
   }
-
 }
-

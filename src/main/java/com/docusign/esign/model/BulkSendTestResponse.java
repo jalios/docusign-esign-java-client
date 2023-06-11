@@ -1,18 +1,11 @@
 package com.docusign.esign.model;
 
-import java.util.Objects;
-import java.util.Arrays;
+import com.docusign.esign.override.swagger.Schema;
 import com.fasterxml.jackson.annotation.JsonProperty;
-import com.fasterxml.jackson.annotation.JsonCreator;
-import com.fasterxml.jackson.annotation.JsonValue;
-import io.swagger.v3.oas.annotations.media.Schema;
+import java.util.Objects;
 
-/**
- * This object contains the results of a bulk send test..
- *
- */
+/** This object contains the results of a bulk send test.. */
 @Schema(description = "This object contains the results of a bulk send test.")
-
 public class BulkSendTestResponse {
   @JsonProperty("canBeSent")
   private Boolean canBeSent = null;
@@ -23,12 +16,11 @@ public class BulkSendTestResponse {
   @JsonProperty("validationErrors")
   private java.util.List<String> validationErrors = null;
 
-
   /**
    * canBeSent.
    *
    * @return BulkSendTestResponse
-   **/
+   */
   public BulkSendTestResponse canBeSent(Boolean canBeSent) {
     this.canBeSent = canBeSent;
     return this;
@@ -36,36 +28,35 @@ public class BulkSendTestResponse {
 
   /**
    * .
+   *
    * @return canBeSent
-   **/
+   */
   @Schema(description = "")
   public Boolean isCanBeSent() {
     return canBeSent;
   }
 
-  /**
-   * setCanBeSent.
-   **/
+  /** setCanBeSent. */
   public void setCanBeSent(Boolean canBeSent) {
     this.canBeSent = canBeSent;
   }
-
 
   /**
    * validationErrorDetails.
    *
    * @return BulkSendTestResponse
-   **/
-  public BulkSendTestResponse validationErrorDetails(java.util.List<String> validationErrorDetails) {
+   */
+  public BulkSendTestResponse validationErrorDetails(
+      java.util.List<String> validationErrorDetails) {
     this.validationErrorDetails = validationErrorDetails;
     return this;
   }
-  
+
   /**
    * addValidationErrorDetailsItem.
    *
    * @return BulkSendTestResponse
-   **/
+   */
   public BulkSendTestResponse addValidationErrorDetailsItem(String validationErrorDetailsItem) {
     if (this.validationErrorDetails == null) {
       this.validationErrorDetails = new java.util.ArrayList<>();
@@ -76,36 +67,34 @@ public class BulkSendTestResponse {
 
   /**
    * .
+   *
    * @return validationErrorDetails
-   **/
+   */
   @Schema(description = "")
   public java.util.List<String> getValidationErrorDetails() {
     return validationErrorDetails;
   }
 
-  /**
-   * setValidationErrorDetails.
-   **/
+  /** setValidationErrorDetails. */
   public void setValidationErrorDetails(java.util.List<String> validationErrorDetails) {
     this.validationErrorDetails = validationErrorDetails;
   }
-
 
   /**
    * validationErrors.
    *
    * @return BulkSendTestResponse
-   **/
+   */
   public BulkSendTestResponse validationErrors(java.util.List<String> validationErrors) {
     this.validationErrors = validationErrors;
     return this;
   }
-  
+
   /**
    * addValidationErrorsItem.
    *
    * @return BulkSendTestResponse
-   **/
+   */
   public BulkSendTestResponse addValidationErrorsItem(String validationErrorsItem) {
     if (this.validationErrors == null) {
       this.validationErrors = new java.util.ArrayList<>();
@@ -116,20 +105,18 @@ public class BulkSendTestResponse {
 
   /**
    * .
+   *
    * @return validationErrors
-   **/
+   */
   @Schema(description = "")
   public java.util.List<String> getValidationErrors() {
     return validationErrors;
   }
 
-  /**
-   * setValidationErrors.
-   **/
+  /** setValidationErrors. */
   public void setValidationErrors(java.util.List<String> validationErrors) {
     this.validationErrors = validationErrors;
   }
-
 
   /**
    * Compares objects.
@@ -145,38 +132,34 @@ public class BulkSendTestResponse {
       return false;
     }
     BulkSendTestResponse bulkSendTestResponse = (BulkSendTestResponse) o;
-    return Objects.equals(this.canBeSent, bulkSendTestResponse.canBeSent) &&
-        Objects.equals(this.validationErrorDetails, bulkSendTestResponse.validationErrorDetails) &&
-        Objects.equals(this.validationErrors, bulkSendTestResponse.validationErrors);
+    return Objects.equals(this.canBeSent, bulkSendTestResponse.canBeSent)
+        && Objects.equals(this.validationErrorDetails, bulkSendTestResponse.validationErrorDetails)
+        && Objects.equals(this.validationErrors, bulkSendTestResponse.validationErrors);
   }
 
-  /**
-   * Returns the HashCode.
-   */
+  /** Returns the HashCode. */
   @Override
   public int hashCode() {
     return Objects.hash(canBeSent, validationErrorDetails, validationErrors);
   }
 
-
-  /**
-   * Converts the given object to string.
-   */
+  /** Converts the given object to string. */
   @Override
   public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class BulkSendTestResponse {\n");
-    
+
     sb.append("    canBeSent: ").append(toIndentedString(canBeSent)).append("\n");
-    sb.append("    validationErrorDetails: ").append(toIndentedString(validationErrorDetails)).append("\n");
+    sb.append("    validationErrorDetails: ")
+        .append(toIndentedString(validationErrorDetails))
+        .append("\n");
     sb.append("    validationErrors: ").append(toIndentedString(validationErrors)).append("\n");
     sb.append("}");
     return sb.toString();
   }
 
   /**
-   * Convert the given object to string with each line indented by 4 spaces
-   * (except the first line).
+   * Convert the given object to string with each line indented by 4 spaces (except the first line).
    */
   private String toIndentedString(java.lang.Object o) {
     if (o == null) {
@@ -184,6 +167,4 @@ public class BulkSendTestResponse {
     }
     return o.toString().replace("\n", "\n    ");
   }
-
 }
-

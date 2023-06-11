@@ -1,19 +1,10 @@
 package com.docusign.esign.model;
 
-import java.util.Objects;
-import java.util.Arrays;
-import com.docusign.esign.model.Signer;
+import com.docusign.esign.override.swagger.Schema;
 import com.fasterxml.jackson.annotation.JsonProperty;
-import com.fasterxml.jackson.annotation.JsonCreator;
-import com.fasterxml.jackson.annotation.JsonValue;
-import io.swagger.v3.oas.annotations.media.Schema;
-import io.swagger.v3.oas.annotations.media.Schema;
+import java.util.Objects;
 
-/**
- * BulkRecipientsUpdateResponse.
- *
- */
-
+/** BulkRecipientsUpdateResponse. */
 public class BulkRecipientsUpdateResponse {
   @JsonProperty("signer")
   private Signer signer = null;
@@ -22,7 +13,7 @@ public class BulkRecipientsUpdateResponse {
    * signer.
    *
    * @return BulkRecipientsUpdateResponse
-   **/
+   */
   public BulkRecipientsUpdateResponse signer(Signer signer) {
     this.signer = signer;
     return this;
@@ -30,17 +21,15 @@ public class BulkRecipientsUpdateResponse {
 
   /**
    * .
-   * 
+   *
    * @return signer
-   **/
+   */
   @Schema(description = "")
   public Signer getSigner() {
     return signer;
   }
 
-  /**
-   * setSigner.
-   **/
+  /** setSigner. */
   public void setSigner(Signer signer) {
     this.signer = signer;
   }
@@ -62,17 +51,13 @@ public class BulkRecipientsUpdateResponse {
     return Objects.equals(this.signer, bulkRecipientsUpdateResponse.signer);
   }
 
-  /**
-   * Returns the HashCode.
-   */
+  /** Returns the HashCode. */
   @Override
   public int hashCode() {
     return Objects.hash(signer);
   }
 
-  /**
-   * Converts the given object to string.
-   */
+  /** Converts the given object to string. */
   @Override
   public String toString() {
     StringBuilder sb = new StringBuilder();
@@ -84,8 +69,7 @@ public class BulkRecipientsUpdateResponse {
   }
 
   /**
-   * Convert the given object to string with each line indented by 4 spaces
-   * (except the first line).
+   * Convert the given object to string with each line indented by 4 spaces (except the first line).
    */
   private String toIndentedString(java.lang.Object o) {
     if (o == null) {
@@ -93,5 +77,4 @@ public class BulkRecipientsUpdateResponse {
     }
     return o.toString().replace("\n", "\n    ");
   }
-
 }

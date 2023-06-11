@@ -1,17 +1,10 @@
 package com.docusign.esign.model;
 
-import java.util.Objects;
-import java.util.Arrays;
+import com.docusign.esign.override.swagger.Schema;
 import com.fasterxml.jackson.annotation.JsonProperty;
-import com.fasterxml.jackson.annotation.JsonCreator;
-import com.fasterxml.jackson.annotation.JsonValue;
-import io.swagger.v3.oas.annotations.media.Schema;
+import java.util.Objects;
 
-/**
- * LocalePolicyTab.
- *
- */
-
+/** LocalePolicyTab. */
 public class LocalePolicyTab {
   @JsonProperty("addressFormat")
   private String addressFormat = null;
@@ -55,12 +48,11 @@ public class LocalePolicyTab {
   @JsonProperty("useLongCurrencyFormat")
   private String useLongCurrencyFormat = null;
 
-
   /**
    * addressFormat.
    *
    * @return LocalePolicyTab
-   **/
+   */
   public LocalePolicyTab addressFormat(String addressFormat) {
     this.addressFormat = addressFormat;
     return this;
@@ -68,26 +60,24 @@ public class LocalePolicyTab {
 
   /**
    * .
+   *
    * @return addressFormat
-   **/
+   */
   @Schema(description = "")
   public String getAddressFormat() {
     return addressFormat;
   }
 
-  /**
-   * setAddressFormat.
-   **/
+  /** setAddressFormat. */
   public void setAddressFormat(String addressFormat) {
     this.addressFormat = addressFormat;
   }
-
 
   /**
    * calendarType.
    *
    * @return LocalePolicyTab
-   **/
+   */
   public LocalePolicyTab calendarType(String calendarType) {
     this.calendarType = calendarType;
     return this;
@@ -95,26 +85,24 @@ public class LocalePolicyTab {
 
   /**
    * .
+   *
    * @return calendarType
-   **/
+   */
   @Schema(description = "")
   public String getCalendarType() {
     return calendarType;
   }
 
-  /**
-   * setCalendarType.
-   **/
+  /** setCalendarType. */
   public void setCalendarType(String calendarType) {
     this.calendarType = calendarType;
   }
-
 
   /**
    * cultureName.
    *
    * @return LocalePolicyTab
-   **/
+   */
   public LocalePolicyTab cultureName(String cultureName) {
     this.cultureName = cultureName;
     return this;
@@ -122,26 +110,24 @@ public class LocalePolicyTab {
 
   /**
    * .
+   *
    * @return cultureName
-   **/
+   */
   @Schema(description = "")
   public String getCultureName() {
     return cultureName;
   }
 
-  /**
-   * setCultureName.
-   **/
+  /** setCultureName. */
   public void setCultureName(String cultureName) {
     this.cultureName = cultureName;
   }
-
 
   /**
    * currencyCode.
    *
    * @return LocalePolicyTab
-   **/
+   */
   public LocalePolicyTab currencyCode(String currencyCode) {
     this.currencyCode = currencyCode;
     return this;
@@ -149,26 +135,24 @@ public class LocalePolicyTab {
 
   /**
    * .
+   *
    * @return currencyCode
-   **/
+   */
   @Schema(description = "")
   public String getCurrencyCode() {
     return currencyCode;
   }
 
-  /**
-   * setCurrencyCode.
-   **/
+  /** setCurrencyCode. */
   public void setCurrencyCode(String currencyCode) {
     this.currencyCode = currencyCode;
   }
-
 
   /**
    * currencyNegativeFormat.
    *
    * @return LocalePolicyTab
-   **/
+   */
   public LocalePolicyTab currencyNegativeFormat(String currencyNegativeFormat) {
     this.currencyNegativeFormat = currencyNegativeFormat;
     return this;
@@ -176,26 +160,24 @@ public class LocalePolicyTab {
 
   /**
    * .
+   *
    * @return currencyNegativeFormat
-   **/
+   */
   @Schema(description = "")
   public String getCurrencyNegativeFormat() {
     return currencyNegativeFormat;
   }
 
-  /**
-   * setCurrencyNegativeFormat.
-   **/
+  /** setCurrencyNegativeFormat. */
   public void setCurrencyNegativeFormat(String currencyNegativeFormat) {
     this.currencyNegativeFormat = currencyNegativeFormat;
   }
-
 
   /**
    * currencyPositiveFormat.
    *
    * @return LocalePolicyTab
-   **/
+   */
   public LocalePolicyTab currencyPositiveFormat(String currencyPositiveFormat) {
     this.currencyPositiveFormat = currencyPositiveFormat;
     return this;
@@ -203,26 +185,24 @@ public class LocalePolicyTab {
 
   /**
    * .
+   *
    * @return currencyPositiveFormat
-   **/
+   */
   @Schema(description = "")
   public String getCurrencyPositiveFormat() {
     return currencyPositiveFormat;
   }
 
-  /**
-   * setCurrencyPositiveFormat.
-   **/
+  /** setCurrencyPositiveFormat. */
   public void setCurrencyPositiveFormat(String currencyPositiveFormat) {
     this.currencyPositiveFormat = currencyPositiveFormat;
   }
-
 
   /**
    * customDateFormat.
    *
    * @return LocalePolicyTab
-   **/
+   */
   public LocalePolicyTab customDateFormat(String customDateFormat) {
     this.customDateFormat = customDateFormat;
     return this;
@@ -230,26 +210,24 @@ public class LocalePolicyTab {
 
   /**
    * .
+   *
    * @return customDateFormat
-   **/
+   */
   @Schema(description = "")
   public String getCustomDateFormat() {
     return customDateFormat;
   }
 
-  /**
-   * setCustomDateFormat.
-   **/
+  /** setCustomDateFormat. */
   public void setCustomDateFormat(String customDateFormat) {
     this.customDateFormat = customDateFormat;
   }
-
 
   /**
    * customTimeFormat.
    *
    * @return LocalePolicyTab
-   **/
+   */
   public LocalePolicyTab customTimeFormat(String customTimeFormat) {
     this.customTimeFormat = customTimeFormat;
     return this;
@@ -257,26 +235,24 @@ public class LocalePolicyTab {
 
   /**
    * .
+   *
    * @return customTimeFormat
-   **/
+   */
   @Schema(description = "")
   public String getCustomTimeFormat() {
     return customTimeFormat;
   }
 
-  /**
-   * setCustomTimeFormat.
-   **/
+  /** setCustomTimeFormat. */
   public void setCustomTimeFormat(String customTimeFormat) {
     this.customTimeFormat = customTimeFormat;
   }
-
 
   /**
    * dateFormat.
    *
    * @return LocalePolicyTab
-   **/
+   */
   public LocalePolicyTab dateFormat(String dateFormat) {
     this.dateFormat = dateFormat;
     return this;
@@ -284,26 +260,24 @@ public class LocalePolicyTab {
 
   /**
    * .
+   *
    * @return dateFormat
-   **/
+   */
   @Schema(description = "")
   public String getDateFormat() {
     return dateFormat;
   }
 
-  /**
-   * setDateFormat.
-   **/
+  /** setDateFormat. */
   public void setDateFormat(String dateFormat) {
     this.dateFormat = dateFormat;
   }
-
 
   /**
    * initialFormat.
    *
    * @return LocalePolicyTab
-   **/
+   */
   public LocalePolicyTab initialFormat(String initialFormat) {
     this.initialFormat = initialFormat;
     return this;
@@ -311,26 +285,24 @@ public class LocalePolicyTab {
 
   /**
    * .
+   *
    * @return initialFormat
-   **/
+   */
   @Schema(description = "")
   public String getInitialFormat() {
     return initialFormat;
   }
 
-  /**
-   * setInitialFormat.
-   **/
+  /** setInitialFormat. */
   public void setInitialFormat(String initialFormat) {
     this.initialFormat = initialFormat;
   }
-
 
   /**
    * nameFormat.
    *
    * @return LocalePolicyTab
-   **/
+   */
   public LocalePolicyTab nameFormat(String nameFormat) {
     this.nameFormat = nameFormat;
     return this;
@@ -338,26 +310,24 @@ public class LocalePolicyTab {
 
   /**
    * .
+   *
    * @return nameFormat
-   **/
+   */
   @Schema(description = "")
   public String getNameFormat() {
     return nameFormat;
   }
 
-  /**
-   * setNameFormat.
-   **/
+  /** setNameFormat. */
   public void setNameFormat(String nameFormat) {
     this.nameFormat = nameFormat;
   }
-
 
   /**
    * timeFormat.
    *
    * @return LocalePolicyTab
-   **/
+   */
   public LocalePolicyTab timeFormat(String timeFormat) {
     this.timeFormat = timeFormat;
     return this;
@@ -365,26 +335,24 @@ public class LocalePolicyTab {
 
   /**
    * .
+   *
    * @return timeFormat
-   **/
+   */
   @Schema(description = "")
   public String getTimeFormat() {
     return timeFormat;
   }
 
-  /**
-   * setTimeFormat.
-   **/
+  /** setTimeFormat. */
   public void setTimeFormat(String timeFormat) {
     this.timeFormat = timeFormat;
   }
-
 
   /**
    * timeZone.
    *
    * @return LocalePolicyTab
-   **/
+   */
   public LocalePolicyTab timeZone(String timeZone) {
     this.timeZone = timeZone;
     return this;
@@ -392,26 +360,24 @@ public class LocalePolicyTab {
 
   /**
    * .
+   *
    * @return timeZone
-   **/
+   */
   @Schema(description = "")
   public String getTimeZone() {
     return timeZone;
   }
 
-  /**
-   * setTimeZone.
-   **/
+  /** setTimeZone. */
   public void setTimeZone(String timeZone) {
     this.timeZone = timeZone;
   }
-
 
   /**
    * useLongCurrencyFormat.
    *
    * @return LocalePolicyTab
-   **/
+   */
   public LocalePolicyTab useLongCurrencyFormat(String useLongCurrencyFormat) {
     this.useLongCurrencyFormat = useLongCurrencyFormat;
     return this;
@@ -419,20 +385,18 @@ public class LocalePolicyTab {
 
   /**
    * .
+   *
    * @return useLongCurrencyFormat
-   **/
+   */
   @Schema(description = "")
   public String getUseLongCurrencyFormat() {
     return useLongCurrencyFormat;
   }
 
-  /**
-   * setUseLongCurrencyFormat.
-   **/
+  /** setUseLongCurrencyFormat. */
   public void setUseLongCurrencyFormat(String useLongCurrencyFormat) {
     this.useLongCurrencyFormat = useLongCurrencyFormat;
   }
-
 
   /**
    * Compares objects.
@@ -448,45 +412,58 @@ public class LocalePolicyTab {
       return false;
     }
     LocalePolicyTab localePolicyTab = (LocalePolicyTab) o;
-    return Objects.equals(this.addressFormat, localePolicyTab.addressFormat) &&
-        Objects.equals(this.calendarType, localePolicyTab.calendarType) &&
-        Objects.equals(this.cultureName, localePolicyTab.cultureName) &&
-        Objects.equals(this.currencyCode, localePolicyTab.currencyCode) &&
-        Objects.equals(this.currencyNegativeFormat, localePolicyTab.currencyNegativeFormat) &&
-        Objects.equals(this.currencyPositiveFormat, localePolicyTab.currencyPositiveFormat) &&
-        Objects.equals(this.customDateFormat, localePolicyTab.customDateFormat) &&
-        Objects.equals(this.customTimeFormat, localePolicyTab.customTimeFormat) &&
-        Objects.equals(this.dateFormat, localePolicyTab.dateFormat) &&
-        Objects.equals(this.initialFormat, localePolicyTab.initialFormat) &&
-        Objects.equals(this.nameFormat, localePolicyTab.nameFormat) &&
-        Objects.equals(this.timeFormat, localePolicyTab.timeFormat) &&
-        Objects.equals(this.timeZone, localePolicyTab.timeZone) &&
-        Objects.equals(this.useLongCurrencyFormat, localePolicyTab.useLongCurrencyFormat);
+    return Objects.equals(this.addressFormat, localePolicyTab.addressFormat)
+        && Objects.equals(this.calendarType, localePolicyTab.calendarType)
+        && Objects.equals(this.cultureName, localePolicyTab.cultureName)
+        && Objects.equals(this.currencyCode, localePolicyTab.currencyCode)
+        && Objects.equals(this.currencyNegativeFormat, localePolicyTab.currencyNegativeFormat)
+        && Objects.equals(this.currencyPositiveFormat, localePolicyTab.currencyPositiveFormat)
+        && Objects.equals(this.customDateFormat, localePolicyTab.customDateFormat)
+        && Objects.equals(this.customTimeFormat, localePolicyTab.customTimeFormat)
+        && Objects.equals(this.dateFormat, localePolicyTab.dateFormat)
+        && Objects.equals(this.initialFormat, localePolicyTab.initialFormat)
+        && Objects.equals(this.nameFormat, localePolicyTab.nameFormat)
+        && Objects.equals(this.timeFormat, localePolicyTab.timeFormat)
+        && Objects.equals(this.timeZone, localePolicyTab.timeZone)
+        && Objects.equals(this.useLongCurrencyFormat, localePolicyTab.useLongCurrencyFormat);
   }
 
-  /**
-   * Returns the HashCode.
-   */
+  /** Returns the HashCode. */
   @Override
   public int hashCode() {
-    return Objects.hash(addressFormat, calendarType, cultureName, currencyCode, currencyNegativeFormat, currencyPositiveFormat, customDateFormat, customTimeFormat, dateFormat, initialFormat, nameFormat, timeFormat, timeZone, useLongCurrencyFormat);
+    return Objects.hash(
+        addressFormat,
+        calendarType,
+        cultureName,
+        currencyCode,
+        currencyNegativeFormat,
+        currencyPositiveFormat,
+        customDateFormat,
+        customTimeFormat,
+        dateFormat,
+        initialFormat,
+        nameFormat,
+        timeFormat,
+        timeZone,
+        useLongCurrencyFormat);
   }
 
-
-  /**
-   * Converts the given object to string.
-   */
+  /** Converts the given object to string. */
   @Override
   public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class LocalePolicyTab {\n");
-    
+
     sb.append("    addressFormat: ").append(toIndentedString(addressFormat)).append("\n");
     sb.append("    calendarType: ").append(toIndentedString(calendarType)).append("\n");
     sb.append("    cultureName: ").append(toIndentedString(cultureName)).append("\n");
     sb.append("    currencyCode: ").append(toIndentedString(currencyCode)).append("\n");
-    sb.append("    currencyNegativeFormat: ").append(toIndentedString(currencyNegativeFormat)).append("\n");
-    sb.append("    currencyPositiveFormat: ").append(toIndentedString(currencyPositiveFormat)).append("\n");
+    sb.append("    currencyNegativeFormat: ")
+        .append(toIndentedString(currencyNegativeFormat))
+        .append("\n");
+    sb.append("    currencyPositiveFormat: ")
+        .append(toIndentedString(currencyPositiveFormat))
+        .append("\n");
     sb.append("    customDateFormat: ").append(toIndentedString(customDateFormat)).append("\n");
     sb.append("    customTimeFormat: ").append(toIndentedString(customTimeFormat)).append("\n");
     sb.append("    dateFormat: ").append(toIndentedString(dateFormat)).append("\n");
@@ -494,14 +471,15 @@ public class LocalePolicyTab {
     sb.append("    nameFormat: ").append(toIndentedString(nameFormat)).append("\n");
     sb.append("    timeFormat: ").append(toIndentedString(timeFormat)).append("\n");
     sb.append("    timeZone: ").append(toIndentedString(timeZone)).append("\n");
-    sb.append("    useLongCurrencyFormat: ").append(toIndentedString(useLongCurrencyFormat)).append("\n");
+    sb.append("    useLongCurrencyFormat: ")
+        .append(toIndentedString(useLongCurrencyFormat))
+        .append("\n");
     sb.append("}");
     return sb.toString();
   }
 
   /**
-   * Convert the given object to string with each line indented by 4 spaces
-   * (except the first line).
+   * Convert the given object to string with each line indented by 4 spaces (except the first line).
    */
   private String toIndentedString(java.lang.Object o) {
     if (o == null) {
@@ -509,6 +487,4 @@ public class LocalePolicyTab {
     }
     return o.toString().replace("\n", "\n    ");
   }
-
 }
-

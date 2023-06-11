@@ -1,18 +1,10 @@
 package com.docusign.esign.model;
 
-import java.util.Objects;
-import java.util.Arrays;
+import com.docusign.esign.override.swagger.Schema;
 import com.fasterxml.jackson.annotation.JsonProperty;
-import com.fasterxml.jackson.annotation.JsonCreator;
-import com.fasterxml.jackson.annotation.JsonValue;
-import io.swagger.v3.oas.annotations.media.Schema;
-import io.swagger.v3.oas.annotations.media.Schema;
+import java.util.Objects;
 
-/**
- * BulkRecipientTabLabel.
- *
- */
-
+/** BulkRecipientTabLabel. */
 public class BulkRecipientTabLabel {
   @JsonProperty("name")
   private String name = null;
@@ -24,7 +16,7 @@ public class BulkRecipientTabLabel {
    * name.
    *
    * @return BulkRecipientTabLabel
-   **/
+   */
   public BulkRecipientTabLabel name(String name) {
     this.name = name;
     return this;
@@ -32,17 +24,15 @@ public class BulkRecipientTabLabel {
 
   /**
    * .
-   * 
+   *
    * @return name
-   **/
+   */
   @Schema(description = "")
   public String getName() {
     return name;
   }
 
-  /**
-   * setName.
-   **/
+  /** setName. */
   public void setName(String name) {
     this.name = name;
   }
@@ -51,7 +41,7 @@ public class BulkRecipientTabLabel {
    * value.
    *
    * @return BulkRecipientTabLabel
-   **/
+   */
   public BulkRecipientTabLabel value(String value) {
     this.value = value;
     return this;
@@ -59,17 +49,15 @@ public class BulkRecipientTabLabel {
 
   /**
    * Specifies the value of the tab. .
-   * 
+   *
    * @return value
-   **/
+   */
   @Schema(description = "Specifies the value of the tab. ")
   public String getValue() {
     return value;
   }
 
-  /**
-   * setValue.
-   **/
+  /** setValue. */
   public void setValue(String value) {
     this.value = value;
   }
@@ -88,21 +76,17 @@ public class BulkRecipientTabLabel {
       return false;
     }
     BulkRecipientTabLabel bulkRecipientTabLabel = (BulkRecipientTabLabel) o;
-    return Objects.equals(this.name, bulkRecipientTabLabel.name) &&
-        Objects.equals(this.value, bulkRecipientTabLabel.value);
+    return Objects.equals(this.name, bulkRecipientTabLabel.name)
+        && Objects.equals(this.value, bulkRecipientTabLabel.value);
   }
 
-  /**
-   * Returns the HashCode.
-   */
+  /** Returns the HashCode. */
   @Override
   public int hashCode() {
     return Objects.hash(name, value);
   }
 
-  /**
-   * Converts the given object to string.
-   */
+  /** Converts the given object to string. */
   @Override
   public String toString() {
     StringBuilder sb = new StringBuilder();
@@ -115,8 +99,7 @@ public class BulkRecipientTabLabel {
   }
 
   /**
-   * Convert the given object to string with each line indented by 4 spaces
-   * (except the first line).
+   * Convert the given object to string with each line indented by 4 spaces (except the first line).
    */
   private String toIndentedString(java.lang.Object o) {
     if (o == null) {
@@ -124,5 +107,4 @@ public class BulkRecipientTabLabel {
     }
     return o.toString().replace("\n", "\n    ");
   }
-
 }

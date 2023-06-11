@@ -1,17 +1,10 @@
 package com.docusign.esign.model;
 
-import java.util.Objects;
-import java.util.Arrays;
+import com.docusign.esign.override.swagger.Schema;
 import com.fasterxml.jackson.annotation.JsonProperty;
-import com.fasterxml.jackson.annotation.JsonCreator;
-import com.fasterxml.jackson.annotation.JsonValue;
-import io.swagger.v3.oas.annotations.media.Schema;
+import java.util.Objects;
 
-/**
- * NotaryJournalCredibleWitness.
- *
- */
-
+/** NotaryJournalCredibleWitness. */
 public class NotaryJournalCredibleWitness {
   @JsonProperty("address")
   private String address = null;
@@ -22,12 +15,11 @@ public class NotaryJournalCredibleWitness {
   @JsonProperty("signatureImage")
   private String signatureImage = null;
 
-
   /**
    * address.
    *
    * @return NotaryJournalCredibleWitness
-   **/
+   */
   public NotaryJournalCredibleWitness address(String address) {
     this.address = address;
     return this;
@@ -35,26 +27,24 @@ public class NotaryJournalCredibleWitness {
 
   /**
    * .
+   *
    * @return address
-   **/
+   */
   @Schema(description = "")
   public String getAddress() {
     return address;
   }
 
-  /**
-   * setAddress.
-   **/
+  /** setAddress. */
   public void setAddress(String address) {
     this.address = address;
   }
-
 
   /**
    * name.
    *
    * @return NotaryJournalCredibleWitness
-   **/
+   */
   public NotaryJournalCredibleWitness name(String name) {
     this.name = name;
     return this;
@@ -62,26 +52,24 @@ public class NotaryJournalCredibleWitness {
 
   /**
    * .
+   *
    * @return name
-   **/
+   */
   @Schema(description = "")
   public String getName() {
     return name;
   }
 
-  /**
-   * setName.
-   **/
+  /** setName. */
   public void setName(String name) {
     this.name = name;
   }
-
 
   /**
    * signatureImage.
    *
    * @return NotaryJournalCredibleWitness
-   **/
+   */
   public NotaryJournalCredibleWitness signatureImage(String signatureImage) {
     this.signatureImage = signatureImage;
     return this;
@@ -89,20 +77,18 @@ public class NotaryJournalCredibleWitness {
 
   /**
    * .
+   *
    * @return signatureImage
-   **/
+   */
   @Schema(description = "")
   public String getSignatureImage() {
     return signatureImage;
   }
 
-  /**
-   * setSignatureImage.
-   **/
+  /** setSignatureImage. */
   public void setSignatureImage(String signatureImage) {
     this.signatureImage = signatureImage;
   }
-
 
   /**
    * Compares objects.
@@ -118,28 +104,23 @@ public class NotaryJournalCredibleWitness {
       return false;
     }
     NotaryJournalCredibleWitness notaryJournalCredibleWitness = (NotaryJournalCredibleWitness) o;
-    return Objects.equals(this.address, notaryJournalCredibleWitness.address) &&
-        Objects.equals(this.name, notaryJournalCredibleWitness.name) &&
-        Objects.equals(this.signatureImage, notaryJournalCredibleWitness.signatureImage);
+    return Objects.equals(this.address, notaryJournalCredibleWitness.address)
+        && Objects.equals(this.name, notaryJournalCredibleWitness.name)
+        && Objects.equals(this.signatureImage, notaryJournalCredibleWitness.signatureImage);
   }
 
-  /**
-   * Returns the HashCode.
-   */
+  /** Returns the HashCode. */
   @Override
   public int hashCode() {
     return Objects.hash(address, name, signatureImage);
   }
 
-
-  /**
-   * Converts the given object to string.
-   */
+  /** Converts the given object to string. */
   @Override
   public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class NotaryJournalCredibleWitness {\n");
-    
+
     sb.append("    address: ").append(toIndentedString(address)).append("\n");
     sb.append("    name: ").append(toIndentedString(name)).append("\n");
     sb.append("    signatureImage: ").append(toIndentedString(signatureImage)).append("\n");
@@ -148,8 +129,7 @@ public class NotaryJournalCredibleWitness {
   }
 
   /**
-   * Convert the given object to string with each line indented by 4 spaces
-   * (except the first line).
+   * Convert the given object to string with each line indented by 4 spaces (except the first line).
    */
   private String toIndentedString(java.lang.Object o) {
     if (o == null) {
@@ -157,6 +137,4 @@ public class NotaryJournalCredibleWitness {
     }
     return o.toString().replace("\n", "\n    ");
   }
-
 }
-

@@ -1,18 +1,10 @@
 package com.docusign.esign.model;
 
-import java.util.Objects;
-import java.util.Arrays;
-import com.docusign.esign.model.EnvelopeDelayRule;
+import com.docusign.esign.override.swagger.Schema;
 import com.fasterxml.jackson.annotation.JsonProperty;
-import com.fasterxml.jackson.annotation.JsonCreator;
-import com.fasterxml.jackson.annotation.JsonValue;
-import io.swagger.v3.oas.annotations.media.Schema;
+import java.util.Objects;
 
-/**
- * ScheduledSending.
- *
- */
-
+/** ScheduledSending. */
 public class ScheduledSending {
   @JsonProperty("bulkListId")
   private String bulkListId = null;
@@ -26,12 +18,11 @@ public class ScheduledSending {
   @JsonProperty("status")
   private String status = null;
 
-
   /**
    * bulkListId.
    *
    * @return ScheduledSending
-   **/
+   */
   public ScheduledSending bulkListId(String bulkListId) {
     this.bulkListId = bulkListId;
     return this;
@@ -39,63 +30,62 @@ public class ScheduledSending {
 
   /**
    * .
+   *
    * @return bulkListId
-   **/
+   */
   @Schema(description = "")
   public String getBulkListId() {
     return bulkListId;
   }
 
-  /**
-   * setBulkListId.
-   **/
+  /** setBulkListId. */
   public void setBulkListId(String bulkListId) {
     this.bulkListId = bulkListId;
   }
-
 
   /**
    * resumeDate.
    *
    * @return ScheduledSending
-   **/
+   */
   public ScheduledSending resumeDate(String resumeDate) {
     this.resumeDate = resumeDate;
     return this;
   }
 
   /**
-   * An ISO 8601 formatted datetime string indicating the date and time that the envelope is (or was) scheduled to be sent or null if the envelope has not yet been sent..
+   * An ISO 8601 formatted datetime string indicating the date and time that the envelope is (or
+   * was) scheduled to be sent or null if the envelope has not yet been sent..
+   *
    * @return resumeDate
-   **/
-  @Schema(description = "An ISO 8601 formatted datetime string indicating the date and time that the envelope is (or was) scheduled to be sent or null if the envelope has not yet been sent.")
+   */
+  @Schema(
+      description =
+          "An ISO 8601 formatted datetime string indicating the date and time that the envelope is (or was) scheduled to be sent or null if the envelope has not yet been sent.")
   public String getResumeDate() {
     return resumeDate;
   }
 
-  /**
-   * setResumeDate.
-   **/
+  /** setResumeDate. */
   public void setResumeDate(String resumeDate) {
     this.resumeDate = resumeDate;
   }
-
 
   /**
    * rules.
    *
    * @return ScheduledSending
-   **/
+   */
   public ScheduledSending rules(java.util.List<EnvelopeDelayRule> rules) {
     this.rules = rules;
     return this;
   }
-  
+
   /**
    * addRulesItem.
    *
    * @return ScheduledSending
-   **/
+   */
   public ScheduledSending addRulesItem(EnvelopeDelayRule rulesItem) {
     if (this.rules == null) {
       this.rules = new java.util.ArrayList<>();
@@ -105,48 +95,51 @@ public class ScheduledSending {
   }
 
   /**
-   * A list of envelope delay rules specified by the user indicating how and when the envelope should be scheduled for sending in the future. Currently only 1 rule may be specified..
+   * A list of envelope delay rules specified by the user indicating how and when the envelope
+   * should be scheduled for sending in the future. Currently only 1 rule may be specified..
+   *
    * @return rules
-   **/
-  @Schema(description = "A list of envelope delay rules specified by the user indicating how and when the envelope should be scheduled for sending in the future. Currently only 1 rule may be specified.")
+   */
+  @Schema(
+      description =
+          "A list of envelope delay rules specified by the user indicating how and when the envelope should be scheduled for sending in the future. Currently only 1 rule may be specified.")
   public java.util.List<EnvelopeDelayRule> getRules() {
     return rules;
   }
 
-  /**
-   * setRules.
-   **/
+  /** setRules. */
   public void setRules(java.util.List<EnvelopeDelayRule> rules) {
     this.rules = rules;
   }
-
 
   /**
    * status.
    *
    * @return ScheduledSending
-   **/
+   */
   public ScheduledSending status(String status) {
     this.status = status;
     return this;
   }
 
   /**
-   * \\\"pending\\\" if the envelope has not yet been sent and the scheduled sending delay has not iniaited. \\\"started\\\" if the scheduled sending delay is in progress. \\\"completed\\\" if the scheduled sending delay has elapsed and the envelope has been sent..
+   * \\\"pending\\\" if the envelope has not yet been sent and the scheduled sending delay has not
+   * iniaited. \\\"started\\\" if the scheduled sending delay is in progress. \\\"completed\\\" if
+   * the scheduled sending delay has elapsed and the envelope has been sent..
+   *
    * @return status
-   **/
-  @Schema(description = "\\\"pending\\\" if the envelope has not yet been sent and the scheduled sending delay has not iniaited. \\\"started\\\" if the scheduled sending delay is in progress. \\\"completed\\\" if the scheduled sending delay has elapsed and the envelope has been sent.")
+   */
+  @Schema(
+      description =
+          "\\\"pending\\\" if the envelope has not yet been sent and the scheduled sending delay has not iniaited. \\\"started\\\" if the scheduled sending delay is in progress. \\\"completed\\\" if the scheduled sending delay has elapsed and the envelope has been sent.")
   public String getStatus() {
     return status;
   }
 
-  /**
-   * setStatus.
-   **/
+  /** setStatus. */
   public void setStatus(String status) {
     this.status = status;
   }
-
 
   /**
    * Compares objects.
@@ -162,29 +155,24 @@ public class ScheduledSending {
       return false;
     }
     ScheduledSending scheduledSending = (ScheduledSending) o;
-    return Objects.equals(this.bulkListId, scheduledSending.bulkListId) &&
-        Objects.equals(this.resumeDate, scheduledSending.resumeDate) &&
-        Objects.equals(this.rules, scheduledSending.rules) &&
-        Objects.equals(this.status, scheduledSending.status);
+    return Objects.equals(this.bulkListId, scheduledSending.bulkListId)
+        && Objects.equals(this.resumeDate, scheduledSending.resumeDate)
+        && Objects.equals(this.rules, scheduledSending.rules)
+        && Objects.equals(this.status, scheduledSending.status);
   }
 
-  /**
-   * Returns the HashCode.
-   */
+  /** Returns the HashCode. */
   @Override
   public int hashCode() {
     return Objects.hash(bulkListId, resumeDate, rules, status);
   }
 
-
-  /**
-   * Converts the given object to string.
-   */
+  /** Converts the given object to string. */
   @Override
   public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class ScheduledSending {\n");
-    
+
     sb.append("    bulkListId: ").append(toIndentedString(bulkListId)).append("\n");
     sb.append("    resumeDate: ").append(toIndentedString(resumeDate)).append("\n");
     sb.append("    rules: ").append(toIndentedString(rules)).append("\n");
@@ -194,8 +182,7 @@ public class ScheduledSending {
   }
 
   /**
-   * Convert the given object to string with each line indented by 4 spaces
-   * (except the first line).
+   * Convert the given object to string with each line indented by 4 spaces (except the first line).
    */
   private String toIndentedString(java.lang.Object o) {
     if (o == null) {
@@ -203,6 +190,4 @@ public class ScheduledSending {
     }
     return o.toString().replace("\n", "\n    ");
   }
-
 }
-

@@ -1,19 +1,11 @@
 package com.docusign.esign.model;
 
-import java.util.Objects;
-import java.util.Arrays;
-import com.docusign.esign.model.ErrorDetails;
+import com.docusign.esign.override.swagger.Schema;
 import com.fasterxml.jackson.annotation.JsonProperty;
-import com.fasterxml.jackson.annotation.JsonCreator;
-import com.fasterxml.jackson.annotation.JsonValue;
-import io.swagger.v3.oas.annotations.media.Schema;
+import java.util.Objects;
 
-/**
- * This object provides details about a custom field..
- *
- */
+/** This object provides details about a custom field.. */
 @Schema(description = "This object provides details about a custom field.")
-
 public class CustomField {
   @JsonProperty("customFieldType")
   private String customFieldType = null;
@@ -39,12 +31,11 @@ public class CustomField {
   @JsonProperty("value")
   private String value = null;
 
-
   /**
    * customFieldType.
    *
    * @return CustomField
-   **/
+   */
   public CustomField customFieldType(String customFieldType) {
     this.customFieldType = customFieldType;
     return this;
@@ -52,26 +43,24 @@ public class CustomField {
 
   /**
    * .
+   *
    * @return customFieldType
-   **/
+   */
   @Schema(description = "")
   public String getCustomFieldType() {
     return customFieldType;
   }
 
-  /**
-   * setCustomFieldType.
-   **/
+  /** setCustomFieldType. */
   public void setCustomFieldType(String customFieldType) {
     this.customFieldType = customFieldType;
   }
-
 
   /**
    * errorDetails.
    *
    * @return CustomField
-   **/
+   */
   public CustomField errorDetails(ErrorDetails errorDetails) {
     this.errorDetails = errorDetails;
     return this;
@@ -79,26 +68,24 @@ public class CustomField {
 
   /**
    * Array or errors..
+   *
    * @return errorDetails
-   **/
+   */
   @Schema(description = "Array or errors.")
   public ErrorDetails getErrorDetails() {
     return errorDetails;
   }
 
-  /**
-   * setErrorDetails.
-   **/
+  /** setErrorDetails. */
   public void setErrorDetails(ErrorDetails errorDetails) {
     this.errorDetails = errorDetails;
   }
-
 
   /**
    * fieldId.
    *
    * @return CustomField
-   **/
+   */
   public CustomField fieldId(String fieldId) {
     this.fieldId = fieldId;
     return this;
@@ -106,36 +93,34 @@ public class CustomField {
 
   /**
    * .
+   *
    * @return fieldId
-   **/
+   */
   @Schema(description = "")
   public String getFieldId() {
     return fieldId;
   }
 
-  /**
-   * setFieldId.
-   **/
+  /** setFieldId. */
   public void setFieldId(String fieldId) {
     this.fieldId = fieldId;
   }
-
 
   /**
    * listItems.
    *
    * @return CustomField
-   **/
+   */
   public CustomField listItems(java.util.List<String> listItems) {
     this.listItems = listItems;
     return this;
   }
-  
+
   /**
    * addListItemsItem.
    *
    * @return CustomField
-   **/
+   */
   public CustomField addListItemsItem(String listItemsItem) {
     if (this.listItems == null) {
       this.listItems = new java.util.ArrayList<>();
@@ -146,26 +131,24 @@ public class CustomField {
 
   /**
    * .
+   *
    * @return listItems
-   **/
+   */
   @Schema(description = "")
   public java.util.List<String> getListItems() {
     return listItems;
   }
 
-  /**
-   * setListItems.
-   **/
+  /** setListItems. */
   public void setListItems(java.util.List<String> listItems) {
     this.listItems = listItems;
   }
-
 
   /**
    * name.
    *
    * @return CustomField
-   **/
+   */
   public CustomField name(String name) {
     this.name = name;
     return this;
@@ -173,26 +156,24 @@ public class CustomField {
 
   /**
    * .
+   *
    * @return name
-   **/
+   */
   @Schema(description = "")
   public String getName() {
     return name;
   }
 
-  /**
-   * setName.
-   **/
+  /** setName. */
   public void setName(String name) {
     this.name = name;
   }
-
 
   /**
    * required.
    *
    * @return CustomField
-   **/
+   */
   public CustomField required(String required) {
     this.required = required;
     return this;
@@ -200,26 +181,24 @@ public class CustomField {
 
   /**
    * When set to **true**, the signer is required to fill out this tab.
+   *
    * @return required
-   **/
+   */
   @Schema(description = "When set to **true**, the signer is required to fill out this tab")
   public String getRequired() {
     return required;
   }
 
-  /**
-   * setRequired.
-   **/
+  /** setRequired. */
   public void setRequired(String required) {
     this.required = required;
   }
-
 
   /**
    * show.
    *
    * @return CustomField
-   **/
+   */
   public CustomField show(String show) {
     this.show = show;
     return this;
@@ -227,26 +206,24 @@ public class CustomField {
 
   /**
    * .
+   *
    * @return show
-   **/
+   */
   @Schema(description = "")
   public String getShow() {
     return show;
   }
 
-  /**
-   * setShow.
-   **/
+  /** setShow. */
   public void setShow(String show) {
     this.show = show;
   }
-
 
   /**
    * value.
    *
    * @return CustomField
-   **/
+   */
   public CustomField value(String value) {
     this.value = value;
     return this;
@@ -254,20 +231,18 @@ public class CustomField {
 
   /**
    * Specifies the value of the tab. .
+   *
    * @return value
-   **/
+   */
   @Schema(description = "Specifies the value of the tab. ")
   public String getValue() {
     return value;
   }
 
-  /**
-   * setValue.
-   **/
+  /** setValue. */
   public void setValue(String value) {
     this.value = value;
   }
-
 
   /**
    * Compares objects.
@@ -283,33 +258,29 @@ public class CustomField {
       return false;
     }
     CustomField customField = (CustomField) o;
-    return Objects.equals(this.customFieldType, customField.customFieldType) &&
-        Objects.equals(this.errorDetails, customField.errorDetails) &&
-        Objects.equals(this.fieldId, customField.fieldId) &&
-        Objects.equals(this.listItems, customField.listItems) &&
-        Objects.equals(this.name, customField.name) &&
-        Objects.equals(this.required, customField.required) &&
-        Objects.equals(this.show, customField.show) &&
-        Objects.equals(this.value, customField.value);
+    return Objects.equals(this.customFieldType, customField.customFieldType)
+        && Objects.equals(this.errorDetails, customField.errorDetails)
+        && Objects.equals(this.fieldId, customField.fieldId)
+        && Objects.equals(this.listItems, customField.listItems)
+        && Objects.equals(this.name, customField.name)
+        && Objects.equals(this.required, customField.required)
+        && Objects.equals(this.show, customField.show)
+        && Objects.equals(this.value, customField.value);
   }
 
-  /**
-   * Returns the HashCode.
-   */
+  /** Returns the HashCode. */
   @Override
   public int hashCode() {
-    return Objects.hash(customFieldType, errorDetails, fieldId, listItems, name, required, show, value);
+    return Objects.hash(
+        customFieldType, errorDetails, fieldId, listItems, name, required, show, value);
   }
 
-
-  /**
-   * Converts the given object to string.
-   */
+  /** Converts the given object to string. */
   @Override
   public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class CustomField {\n");
-    
+
     sb.append("    customFieldType: ").append(toIndentedString(customFieldType)).append("\n");
     sb.append("    errorDetails: ").append(toIndentedString(errorDetails)).append("\n");
     sb.append("    fieldId: ").append(toIndentedString(fieldId)).append("\n");
@@ -323,8 +294,7 @@ public class CustomField {
   }
 
   /**
-   * Convert the given object to string with each line indented by 4 spaces
-   * (except the first line).
+   * Convert the given object to string with each line indented by 4 spaces (except the first line).
    */
   private String toIndentedString(java.lang.Object o) {
     if (o == null) {
@@ -332,6 +302,4 @@ public class CustomField {
     }
     return o.toString().replace("\n", "\n    ");
   }
-
 }
-

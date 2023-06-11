@@ -1,7 +1,7 @@
 package com.docusign.esign.model;
 
+import com.docusign.esign.override.swagger.Schema;
 import com.fasterxml.jackson.annotation.JsonProperty;
-import io.swagger.v3.oas.annotations.media.Schema;
 import java.util.Objects;
 
 /** ScheduledSendingApiModel. */
@@ -26,13 +26,14 @@ public class ScheduledSendingApiModel {
   }
 
   /**
-   * An ISO 8601 formatted datetime string indicating the date and time that the
-   * envelope is (or
+   * An ISO 8601 formatted datetime string indicating the date and time that the envelope is (or
    * was) scheduled to be sent or null if the envelope has not yet been sent..
    *
    * @return resumeDate
    */
-  @Schema(description = "An ISO 8601 formatted datetime string indicating the date and time that the envelope is (or was) scheduled to be sent or null if the envelope has not yet been sent.")
+  @Schema(
+      description =
+          "An ISO 8601 formatted datetime string indicating the date and time that the envelope is (or was) scheduled to be sent or null if the envelope has not yet been sent.")
   public String getResumeDate() {
     return resumeDate;
   }
@@ -66,14 +67,14 @@ public class ScheduledSendingApiModel {
   }
 
   /**
-   * A list of envelope delay rules specified by the user indicating how and when
-   * the envelope
-   * should be scheduled for sending in the future. Currently only 1 rule may be
-   * specified..
+   * A list of envelope delay rules specified by the user indicating how and when the envelope
+   * should be scheduled for sending in the future. Currently only 1 rule may be specified..
    *
    * @return rules
    */
-  @Schema(description = "A list of envelope delay rules specified by the user indicating how and when the envelope should be scheduled for sending in the future. Currently only 1 rule may be specified.")
+  @Schema(
+      description =
+          "A list of envelope delay rules specified by the user indicating how and when the envelope should be scheduled for sending in the future. Currently only 1 rule may be specified.")
   public java.util.List<EnvelopeDelayRuleApiModel> getRules() {
     return rules;
   }
@@ -94,15 +95,15 @@ public class ScheduledSendingApiModel {
   }
 
   /**
-   * \"pending\" if the envelope has not yet been sent and the scheduled sending
-   * delay has not
-   * iniaited. \"started\" if the scheduled sending delay is in progress.
-   * \"completed\" if the
+   * \"pending\" if the envelope has not yet been sent and the scheduled sending delay has not
+   * iniaited. \"started\" if the scheduled sending delay is in progress. \"completed\" if the
    * scheduled sending delay has elapsed and the envelope has been sent..
    *
    * @return status
    */
-  @Schema(description = "\"pending\" if the envelope has not yet been sent and the scheduled sending delay has not iniaited. \"started\" if the scheduled sending delay is in progress. \"completed\" if the scheduled sending delay has elapsed and the envelope has been sent.")
+  @Schema(
+      description =
+          "\"pending\" if the envelope has not yet been sent and the scheduled sending delay has not iniaited. \"started\" if the scheduled sending delay is in progress. \"completed\" if the scheduled sending delay has elapsed and the envelope has been sent.")
   public String getStatus() {
     return status;
   }
@@ -151,8 +152,7 @@ public class ScheduledSendingApiModel {
   }
 
   /**
-   * Convert the given object to string with each line indented by 4 spaces
-   * (except the first line).
+   * Convert the given object to string with each line indented by 4 spaces (except the first line).
    */
   private String toIndentedString(java.lang.Object o) {
     if (o == null) {

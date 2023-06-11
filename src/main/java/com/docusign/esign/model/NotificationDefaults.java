@@ -1,18 +1,10 @@
 package com.docusign.esign.model;
 
-import java.util.Objects;
-import java.util.Arrays;
-import com.docusign.esign.model.NotificationDefaultSettings;
+import com.docusign.esign.override.swagger.Schema;
 import com.fasterxml.jackson.annotation.JsonProperty;
-import com.fasterxml.jackson.annotation.JsonCreator;
-import com.fasterxml.jackson.annotation.JsonValue;
-import io.swagger.v3.oas.annotations.media.Schema;
+import java.util.Objects;
 
-/**
- * NotificationDefaults.
- *
- */
-
+/** NotificationDefaults. */
 public class NotificationDefaults {
   @JsonProperty("apiEmailNotifications")
   private NotificationDefaultSettings apiEmailNotifications = null;
@@ -20,39 +12,38 @@ public class NotificationDefaults {
   @JsonProperty("emailNotifications")
   private NotificationDefaultSettings emailNotifications = null;
 
-
   /**
    * apiEmailNotifications.
    *
    * @return NotificationDefaults
-   **/
-  public NotificationDefaults apiEmailNotifications(NotificationDefaultSettings apiEmailNotifications) {
+   */
+  public NotificationDefaults apiEmailNotifications(
+      NotificationDefaultSettings apiEmailNotifications) {
     this.apiEmailNotifications = apiEmailNotifications;
     return this;
   }
 
   /**
    * The default notification settings for envelopes sent by using the console..
+   *
    * @return apiEmailNotifications
-   **/
-  @Schema(description = "The default notification settings for envelopes sent by using the console.")
+   */
+  @Schema(
+      description = "The default notification settings for envelopes sent by using the console.")
   public NotificationDefaultSettings getApiEmailNotifications() {
     return apiEmailNotifications;
   }
 
-  /**
-   * setApiEmailNotifications.
-   **/
+  /** setApiEmailNotifications. */
   public void setApiEmailNotifications(NotificationDefaultSettings apiEmailNotifications) {
     this.apiEmailNotifications = apiEmailNotifications;
   }
-
 
   /**
    * emailNotifications.
    *
    * @return NotificationDefaults
-   **/
+   */
   public NotificationDefaults emailNotifications(NotificationDefaultSettings emailNotifications) {
     this.emailNotifications = emailNotifications;
     return this;
@@ -60,20 +51,18 @@ public class NotificationDefaults {
 
   /**
    * The default notification settings for envelopes sent by using the API..
+   *
    * @return emailNotifications
-   **/
+   */
   @Schema(description = "The default notification settings for envelopes sent by using the API.")
   public NotificationDefaultSettings getEmailNotifications() {
     return emailNotifications;
   }
 
-  /**
-   * setEmailNotifications.
-   **/
+  /** setEmailNotifications. */
   public void setEmailNotifications(NotificationDefaultSettings emailNotifications) {
     this.emailNotifications = emailNotifications;
   }
-
 
   /**
    * Compares objects.
@@ -89,36 +78,32 @@ public class NotificationDefaults {
       return false;
     }
     NotificationDefaults notificationDefaults = (NotificationDefaults) o;
-    return Objects.equals(this.apiEmailNotifications, notificationDefaults.apiEmailNotifications) &&
-        Objects.equals(this.emailNotifications, notificationDefaults.emailNotifications);
+    return Objects.equals(this.apiEmailNotifications, notificationDefaults.apiEmailNotifications)
+        && Objects.equals(this.emailNotifications, notificationDefaults.emailNotifications);
   }
 
-  /**
-   * Returns the HashCode.
-   */
+  /** Returns the HashCode. */
   @Override
   public int hashCode() {
     return Objects.hash(apiEmailNotifications, emailNotifications);
   }
 
-
-  /**
-   * Converts the given object to string.
-   */
+  /** Converts the given object to string. */
   @Override
   public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class NotificationDefaults {\n");
-    
-    sb.append("    apiEmailNotifications: ").append(toIndentedString(apiEmailNotifications)).append("\n");
+
+    sb.append("    apiEmailNotifications: ")
+        .append(toIndentedString(apiEmailNotifications))
+        .append("\n");
     sb.append("    emailNotifications: ").append(toIndentedString(emailNotifications)).append("\n");
     sb.append("}");
     return sb.toString();
   }
 
   /**
-   * Convert the given object to string with each line indented by 4 spaces
-   * (except the first line).
+   * Convert the given object to string with each line indented by 4 spaces (except the first line).
    */
   private String toIndentedString(java.lang.Object o) {
     if (o == null) {
@@ -126,6 +111,4 @@ public class NotificationDefaults {
     }
     return o.toString().replace("\n", "\n    ");
   }
-
 }
-

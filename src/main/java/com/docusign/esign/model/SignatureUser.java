@@ -1,17 +1,10 @@
 package com.docusign.esign.model;
 
-import java.util.Objects;
-import java.util.Arrays;
+import com.docusign.esign.override.swagger.Schema;
 import com.fasterxml.jackson.annotation.JsonProperty;
-import com.fasterxml.jackson.annotation.JsonCreator;
-import com.fasterxml.jackson.annotation.JsonValue;
-import io.swagger.v3.oas.annotations.media.Schema;
+import java.util.Objects;
 
-/**
- * SignatureUser.
- *
- */
-
+/** SignatureUser. */
 public class SignatureUser {
   @JsonProperty("isDefault")
   private String isDefault = null;
@@ -25,12 +18,11 @@ public class SignatureUser {
   @JsonProperty("userName")
   private String userName = null;
 
-
   /**
    * isDefault.
    *
    * @return SignatureUser
-   **/
+   */
   public SignatureUser isDefault(String isDefault) {
     this.isDefault = isDefault;
     return this;
@@ -38,26 +30,24 @@ public class SignatureUser {
 
   /**
    * .
+   *
    * @return isDefault
-   **/
+   */
   @Schema(description = "")
   public String getIsDefault() {
     return isDefault;
   }
 
-  /**
-   * setIsDefault.
-   **/
+  /** setIsDefault. */
   public void setIsDefault(String isDefault) {
     this.isDefault = isDefault;
   }
-
 
   /**
    * rights.
    *
    * @return SignatureUser
-   **/
+   */
   public SignatureUser rights(String rights) {
     this.rights = rights;
     return this;
@@ -65,26 +55,24 @@ public class SignatureUser {
 
   /**
    * .
+   *
    * @return rights
-   **/
+   */
   @Schema(description = "")
   public String getRights() {
     return rights;
   }
 
-  /**
-   * setRights.
-   **/
+  /** setRights. */
   public void setRights(String rights) {
     this.rights = rights;
   }
-
 
   /**
    * userId.
    *
    * @return SignatureUser
-   **/
+   */
   public SignatureUser userId(String userId) {
     this.userId = userId;
     return this;
@@ -92,26 +80,24 @@ public class SignatureUser {
 
   /**
    * .
+   *
    * @return userId
-   **/
+   */
   @Schema(description = "")
   public String getUserId() {
     return userId;
   }
 
-  /**
-   * setUserId.
-   **/
+  /** setUserId. */
   public void setUserId(String userId) {
     this.userId = userId;
   }
-
 
   /**
    * userName.
    *
    * @return SignatureUser
-   **/
+   */
   public SignatureUser userName(String userName) {
     this.userName = userName;
     return this;
@@ -119,20 +105,18 @@ public class SignatureUser {
 
   /**
    * .
+   *
    * @return userName
-   **/
+   */
   @Schema(description = "")
   public String getUserName() {
     return userName;
   }
 
-  /**
-   * setUserName.
-   **/
+  /** setUserName. */
   public void setUserName(String userName) {
     this.userName = userName;
   }
-
 
   /**
    * Compares objects.
@@ -148,29 +132,24 @@ public class SignatureUser {
       return false;
     }
     SignatureUser signatureUser = (SignatureUser) o;
-    return Objects.equals(this.isDefault, signatureUser.isDefault) &&
-        Objects.equals(this.rights, signatureUser.rights) &&
-        Objects.equals(this.userId, signatureUser.userId) &&
-        Objects.equals(this.userName, signatureUser.userName);
+    return Objects.equals(this.isDefault, signatureUser.isDefault)
+        && Objects.equals(this.rights, signatureUser.rights)
+        && Objects.equals(this.userId, signatureUser.userId)
+        && Objects.equals(this.userName, signatureUser.userName);
   }
 
-  /**
-   * Returns the HashCode.
-   */
+  /** Returns the HashCode. */
   @Override
   public int hashCode() {
     return Objects.hash(isDefault, rights, userId, userName);
   }
 
-
-  /**
-   * Converts the given object to string.
-   */
+  /** Converts the given object to string. */
   @Override
   public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class SignatureUser {\n");
-    
+
     sb.append("    isDefault: ").append(toIndentedString(isDefault)).append("\n");
     sb.append("    rights: ").append(toIndentedString(rights)).append("\n");
     sb.append("    userId: ").append(toIndentedString(userId)).append("\n");
@@ -180,8 +159,7 @@ public class SignatureUser {
   }
 
   /**
-   * Convert the given object to string with each line indented by 4 spaces
-   * (except the first line).
+   * Convert the given object to string with each line indented by 4 spaces (except the first line).
    */
   private String toIndentedString(java.lang.Object o) {
     if (o == null) {
@@ -189,6 +167,4 @@ public class SignatureUser {
     }
     return o.toString().replace("\n", "\n    ");
   }
-
 }
-

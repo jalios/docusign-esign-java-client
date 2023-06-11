@@ -1,7 +1,7 @@
 package com.docusign.esign.model;
 
+import com.docusign.esign.override.swagger.Schema;
 import com.fasterxml.jackson.annotation.JsonProperty;
-import io.swagger.v3.oas.annotations.media.Schema;
 import java.util.Objects;
 
 /** NotaryCertificate */
@@ -268,13 +268,14 @@ public class NotaryCertificate {
   }
 
   /**
-   * When set to **true**, the anchor string does not consider case when matching
-   * strings in the
+   * When set to **true**, the anchor string does not consider case when matching strings in the
    * document. The default value is **true**.
    *
    * @return anchorCaseSensitive
    */
-  @Schema(description = "When set to **true**, the anchor string does not consider case when matching strings in the document. The default value is **true**.")
+  @Schema(
+      description =
+          "When set to **true**, the anchor string does not consider case when matching strings in the document. The default value is **true**.")
   public String getAnchorCaseSensitive() {
     return anchorCaseSensitive;
   }
@@ -309,13 +310,14 @@ public class NotaryCertificate {
   }
 
   /**
-   * Specifies the alignment of anchor tabs with anchor strings. Possible values
-   * are **left** or
+   * Specifies the alignment of anchor tabs with anchor strings. Possible values are **left** or
    * **right**. The default value is **left**.
    *
    * @return anchorHorizontalAlignment
    */
-  @Schema(description = "Specifies the alignment of anchor tabs with anchor strings. Possible values are **left** or **right**. The default value is **left**.")
+  @Schema(
+      description =
+          "Specifies the alignment of anchor tabs with anchor strings. Possible values are **left** or **right**. The default value is **left**.")
   public String getAnchorHorizontalAlignment() {
     return anchorHorizontalAlignment;
   }
@@ -351,12 +353,13 @@ public class NotaryCertificate {
   }
 
   /**
-   * When set to **true**, this tab is ignored if anchorString is not found in the
-   * document.
+   * When set to **true**, this tab is ignored if anchorString is not found in the document.
    *
    * @return anchorIgnoreIfNotPresent
    */
-  @Schema(description = "When set to **true**, this tab is ignored if anchorString is not found in the document.")
+  @Schema(
+      description =
+          "When set to **true**, this tab is ignored if anchorString is not found in the document.")
   public String getAnchorIgnoreIfNotPresent() {
     return anchorIgnoreIfNotPresent;
   }
@@ -392,13 +395,14 @@ public class NotaryCertificate {
   }
 
   /**
-   * When set to **true**, the anchor string in this tab matches whole words only
-   * (strings embedded
+   * When set to **true**, the anchor string in this tab matches whole words only (strings embedded
    * in other strings are ignored.) The default value is **true**.
    *
    * @return anchorMatchWholeWord
    */
-  @Schema(description = "When set to **true**, the anchor string in this tab matches whole words only (strings embedded in other strings are ignored.) The default value is **true**.")
+  @Schema(
+      description =
+          "When set to **true**, the anchor string in this tab matches whole words only (strings embedded in other strings are ignored.) The default value is **true**.")
   public String getAnchorMatchWholeWord() {
     return anchorMatchWholeWord;
   }
@@ -507,13 +511,14 @@ public class NotaryCertificate {
   }
 
   /**
-   * Specifies units of the X and Y offset. Units could be pixels, millimeters,
-   * centimeters, or
+   * Specifies units of the X and Y offset. Units could be pixels, millimeters, centimeters, or
    * inches.
    *
    * @return anchorUnits
    */
-  @Schema(description = "Specifies units of the X and Y offset. Units could be pixels, millimeters, centimeters, or inches.")
+  @Schema(
+      description =
+          "Specifies units of the X and Y offset. Units could be pixels, millimeters, centimeters, or inches.")
   public String getAnchorUnits() {
     return anchorUnits;
   }
@@ -547,12 +552,13 @@ public class NotaryCertificate {
   }
 
   /**
-   * Specifies the X axis location of the tab, in anchorUnits, relative to the
-   * anchorString.
+   * Specifies the X axis location of the tab, in anchorUnits, relative to the anchorString.
    *
    * @return anchorXOffset
    */
-  @Schema(description = "Specifies the X axis location of the tab, in anchorUnits, relative to the anchorString.")
+  @Schema(
+      description =
+          "Specifies the X axis location of the tab, in anchorUnits, relative to the anchorString.")
   public String getAnchorXOffset() {
     return anchorXOffset;
   }
@@ -586,12 +592,13 @@ public class NotaryCertificate {
   }
 
   /**
-   * Specifies the Y axis location of the tab, in anchorUnits, relative to the
-   * anchorString.
+   * Specifies the Y axis location of the tab, in anchorUnits, relative to the anchorString.
    *
    * @return anchorYOffset
    */
-  @Schema(description = "Specifies the Y axis location of the tab, in anchorUnits, relative to the anchorString.")
+  @Schema(
+      description =
+          "Specifies the Y axis location of the tab, in anchorUnits, relative to the anchorString.")
   public String getAnchorYOffset() {
     return anchorYOffset;
   }
@@ -625,13 +632,14 @@ public class NotaryCertificate {
   }
 
   /**
-   * For conditional fields this is the TabLabel of the parent tab that controls
-   * this tab's
+   * For conditional fields this is the TabLabel of the parent tab that controls this tab's
    * visibility.
    *
    * @return conditionalParentLabel
    */
-  @Schema(description = "For conditional fields this is the TabLabel of the parent tab that controls this tab's visibility.")
+  @Schema(
+      description =
+          "For conditional fields this is the TabLabel of the parent tab that controls this tab's visibility.")
   public String getConditionalParentLabel() {
     return conditionalParentLabel;
   }
@@ -666,15 +674,15 @@ public class NotaryCertificate {
   }
 
   /**
-   * For conditional fields, this is the value of the parent tab that controls the
-   * tab's visibility.
-   * If the parent tab is a Checkbox, Radio button, Optional Signature, or
-   * Optional Initial use
+   * For conditional fields, this is the value of the parent tab that controls the tab's visibility.
+   * If the parent tab is a Checkbox, Radio button, Optional Signature, or Optional Initial use
    * \"on\" as the value to show that the parent tab is active.
    *
    * @return conditionalParentValue
    */
-  @Schema(description = "For conditional fields, this is the value of the parent tab that controls the tab's visibility.  If the parent tab is a Checkbox, Radio button, Optional Signature, or Optional Initial use \"on\" as the value to show that the parent tab is active. ")
+  @Schema(
+      description =
+          "For conditional fields, this is the value of the parent tab that controls the tab's visibility.  If the parent tab is a Checkbox, Radio button, Optional Signature, or Optional Initial use \"on\" as the value to show that the parent tab is active. ")
   public String getConditionalParentValue() {
     return conditionalParentValue;
   }
@@ -709,15 +717,15 @@ public class NotaryCertificate {
   }
 
   /**
-   * The DocuSign generated custom tab ID for the custom tab to be applied. This
-   * can only be used
-   * when adding new tabs for a recipient. When used, the new tab inherits all the
-   * custom tab
+   * The DocuSign generated custom tab ID for the custom tab to be applied. This can only be used
+   * when adding new tabs for a recipient. When used, the new tab inherits all the custom tab
    * properties.
    *
    * @return customTabId
    */
-  @Schema(description = "The DocuSign generated custom tab ID for the custom tab to be applied. This can only be used when adding new tabs for a recipient. When used, the new tab inherits all the custom tab properties.")
+  @Schema(
+      description =
+          "The DocuSign generated custom tab ID for the custom tab to be applied. This can only be used when adding new tabs for a recipient. When used, the new tab inherits all the custom tab properties.")
   public String getCustomTabId() {
     return customTabId;
   }
@@ -751,13 +759,14 @@ public class NotaryCertificate {
   }
 
   /**
-   * Specifies the document ID number that the tab is placed on. This must refer
-   * to an existing
+   * Specifies the document ID number that the tab is placed on. This must refer to an existing
    * Document's ID attribute.
    *
    * @return documentId
    */
-  @Schema(description = "Specifies the document ID number that the tab is placed on. This must refer to an existing Document's ID attribute.")
+  @Schema(
+      description =
+          "Specifies the document ID number that the tab is placed on. This must refer to an existing Document's ID attribute.")
   public String getDocumentId() {
     return documentId;
   }
@@ -954,7 +963,8 @@ public class NotaryCertificate {
    *
    * @return locked
    */
-  @Schema(description = "When set to **true**, the signer cannot change the data of the custom tab.")
+  @Schema(
+      description = "When set to **true**, the signer cannot change the data of the custom tab.")
   public String getLocked() {
     return locked;
   }
@@ -1060,13 +1070,14 @@ public class NotaryCertificate {
   }
 
   /**
-   * Unique for the recipient. It is used by the tab element to indicate which
-   * recipient is to sign
+   * Unique for the recipient. It is used by the tab element to indicate which recipient is to sign
    * the Document.
    *
    * @return recipientId
    */
-  @Schema(description = "Unique for the recipient. It is used by the tab element to indicate which recipient is to sign the Document.")
+  @Schema(
+      description =
+          "Unique for the recipient. It is used by the tab element to indicate which recipient is to sign the Document.")
   public String getRecipientId() {
     return recipientId;
   }
@@ -1192,14 +1203,14 @@ public class NotaryCertificate {
   }
 
   /**
-   * Indicates the envelope status. Valid values are: * sent - The envelope is
-   * sent to the
-   * recipients. * created - The envelope is saved as a draft and can be modified
-   * and sent later.
+   * Indicates the envelope status. Valid values are: * sent - The envelope is sent to the
+   * recipients. * created - The envelope is saved as a draft and can be modified and sent later.
    *
    * @return status
    */
-  @Schema(description = "Indicates the envelope status. Valid values are:  * sent - The envelope is sent to the recipients.  * created - The envelope is saved as a draft and can be modified and sent later.")
+  @Schema(
+      description =
+          "Indicates the envelope status. Valid values are:  * sent - The envelope is sent to the recipients.  * created - The envelope is saved as a draft and can be modified and sent later.")
   public String getStatus() {
     return status;
   }
@@ -1275,12 +1286,13 @@ public class NotaryCertificate {
   }
 
   /**
-   * The unique identifier for the tab. The tabid can be retrieved with the
-   * [ML:GET call].
+   * The unique identifier for the tab. The tabid can be retrieved with the [ML:GET call].
    *
    * @return tabId
    */
-  @Schema(description = "The unique identifier for the tab. The tabid can be retrieved with the [ML:GET call].     ")
+  @Schema(
+      description =
+          "The unique identifier for the tab. The tabid can be retrieved with the [ML:GET call].     ")
   public String getTabId() {
     return tabId;
   }
@@ -1401,13 +1413,14 @@ public class NotaryCertificate {
   }
 
   /**
-   * When set to **true**, the sender cannot change any attributes of the
-   * recipient. Used only when
+   * When set to **true**, the sender cannot change any attributes of the recipient. Used only when
    * working with template recipients.
    *
    * @return templateLocked
    */
-  @Schema(description = "When set to **true**, the sender cannot change any attributes of the recipient. Used only when working with template recipients. ")
+  @Schema(
+      description =
+          "When set to **true**, the sender cannot change any attributes of the recipient. Used only when working with template recipients. ")
   public String getTemplateLocked() {
     return templateLocked;
   }
@@ -1441,13 +1454,14 @@ public class NotaryCertificate {
   }
 
   /**
-   * When set to **true**, the sender may not remove the recipient. Used only when
-   * working with
+   * When set to **true**, the sender may not remove the recipient. Used only when working with
    * template recipients.
    *
    * @return templateRequired
    */
-  @Schema(description = "When set to **true**, the sender may not remove the recipient. Used only when working with template recipients.")
+  @Schema(
+      description =
+          "When set to **true**, the sender may not remove the recipient. Used only when working with template recipients.")
   public String getTemplateRequired() {
     return templateRequired;
   }
@@ -1553,13 +1567,14 @@ public class NotaryCertificate {
   }
 
   /**
-   * This indicates the horizontal offset of the object on the page. DocuSign uses
-   * 72 DPI when
+   * This indicates the horizontal offset of the object on the page. DocuSign uses 72 DPI when
    * determining position.
    *
    * @return xPosition
    */
-  @Schema(description = "This indicates the horizontal offset of the object on the page. DocuSign uses 72 DPI when determining position.")
+  @Schema(
+      description =
+          "This indicates the horizontal offset of the object on the page. DocuSign uses 72 DPI when determining position.")
   public String getXPosition() {
     return xPosition;
   }
@@ -1593,13 +1608,14 @@ public class NotaryCertificate {
   }
 
   /**
-   * This indicates the vertical offset of the object on the page. DocuSign uses
-   * 72 DPI when
+   * This indicates the vertical offset of the object on the page. DocuSign uses 72 DPI when
    * determining position.
    *
    * @return yPosition
    */
-  @Schema(description = "This indicates the vertical offset of the object on the page. DocuSign uses 72 DPI when determining position.")
+  @Schema(
+      description =
+          "This indicates the vertical offset of the object on the page. DocuSign uses 72 DPI when determining position.")
   public String getYPosition() {
     return yPosition;
   }
@@ -1637,8 +1653,8 @@ public class NotaryCertificate {
     }
     NotaryCertificate notaryCertificate = (NotaryCertificate) o;
     return Objects.equals(
-        this.anchorAllowWhiteSpaceInCharacters,
-        notaryCertificate.anchorAllowWhiteSpaceInCharacters)
+            this.anchorAllowWhiteSpaceInCharacters,
+            notaryCertificate.anchorAllowWhiteSpaceInCharacters)
         && Objects.equals(
             this.anchorAllowWhiteSpaceInCharactersMetadata,
             notaryCertificate.anchorAllowWhiteSpaceInCharactersMetadata)
@@ -1946,8 +1962,7 @@ public class NotaryCertificate {
   }
 
   /**
-   * Convert the given object to string with each line indented by 4 spaces
-   * (except the first line).
+   * Convert the given object to string with each line indented by 4 spaces (except the first line).
    */
   private String toIndentedString(java.lang.Object o) {
     if (o == null) {

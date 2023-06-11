@@ -1,18 +1,10 @@
 package com.docusign.esign.model;
 
-import java.util.Objects;
-import java.util.Arrays;
-import com.docusign.esign.model.ErrorDetails;
+import com.docusign.esign.override.swagger.Schema;
 import com.fasterxml.jackson.annotation.JsonProperty;
-import com.fasterxml.jackson.annotation.JsonCreator;
-import com.fasterxml.jackson.annotation.JsonValue;
-import io.swagger.v3.oas.annotations.media.Schema;
+import java.util.Objects;
 
-/**
- * EnvelopeAttachment.
- *
- */
-
+/** EnvelopeAttachment. */
 public class EnvelopeAttachment {
   @JsonProperty("accessControl")
   private String accessControl = null;
@@ -32,12 +24,11 @@ public class EnvelopeAttachment {
   @JsonProperty("name")
   private String name = null;
 
-
   /**
    * accessControl.
    *
    * @return EnvelopeAttachment
-   **/
+   */
   public EnvelopeAttachment accessControl(String accessControl) {
     this.accessControl = accessControl;
     return this;
@@ -45,26 +36,24 @@ public class EnvelopeAttachment {
 
   /**
    * .
+   *
    * @return accessControl
-   **/
+   */
   @Schema(description = "")
   public String getAccessControl() {
     return accessControl;
   }
 
-  /**
-   * setAccessControl.
-   **/
+  /** setAccessControl. */
   public void setAccessControl(String accessControl) {
     this.accessControl = accessControl;
   }
-
 
   /**
    * attachmentId.
    *
    * @return EnvelopeAttachment
-   **/
+   */
   public EnvelopeAttachment attachmentId(String attachmentId) {
     this.attachmentId = attachmentId;
     return this;
@@ -72,26 +61,24 @@ public class EnvelopeAttachment {
 
   /**
    * .
+   *
    * @return attachmentId
-   **/
+   */
   @Schema(description = "")
   public String getAttachmentId() {
     return attachmentId;
   }
 
-  /**
-   * setAttachmentId.
-   **/
+  /** setAttachmentId. */
   public void setAttachmentId(String attachmentId) {
     this.attachmentId = attachmentId;
   }
-
 
   /**
    * attachmentType.
    *
    * @return EnvelopeAttachment
-   **/
+   */
   public EnvelopeAttachment attachmentType(String attachmentType) {
     this.attachmentType = attachmentType;
     return this;
@@ -99,26 +86,24 @@ public class EnvelopeAttachment {
 
   /**
    * .
+   *
    * @return attachmentType
-   **/
+   */
   @Schema(description = "")
   public String getAttachmentType() {
     return attachmentType;
   }
 
-  /**
-   * setAttachmentType.
-   **/
+  /** setAttachmentType. */
   public void setAttachmentType(String attachmentType) {
     this.attachmentType = attachmentType;
   }
-
 
   /**
    * errorDetails.
    *
    * @return EnvelopeAttachment
-   **/
+   */
   public EnvelopeAttachment errorDetails(ErrorDetails errorDetails) {
     this.errorDetails = errorDetails;
     return this;
@@ -126,26 +111,24 @@ public class EnvelopeAttachment {
 
   /**
    * Array or errors..
+   *
    * @return errorDetails
-   **/
+   */
   @Schema(description = "Array or errors.")
   public ErrorDetails getErrorDetails() {
     return errorDetails;
   }
 
-  /**
-   * setErrorDetails.
-   **/
+  /** setErrorDetails. */
   public void setErrorDetails(ErrorDetails errorDetails) {
     this.errorDetails = errorDetails;
   }
-
 
   /**
    * label.
    *
    * @return EnvelopeAttachment
-   **/
+   */
   public EnvelopeAttachment label(String label) {
     this.label = label;
     return this;
@@ -153,26 +136,24 @@ public class EnvelopeAttachment {
 
   /**
    * .
+   *
    * @return label
-   **/
+   */
   @Schema(description = "")
   public String getLabel() {
     return label;
   }
 
-  /**
-   * setLabel.
-   **/
+  /** setLabel. */
   public void setLabel(String label) {
     this.label = label;
   }
-
 
   /**
    * name.
    *
    * @return EnvelopeAttachment
-   **/
+   */
   public EnvelopeAttachment name(String name) {
     this.name = name;
     return this;
@@ -180,20 +161,18 @@ public class EnvelopeAttachment {
 
   /**
    * .
+   *
    * @return name
-   **/
+   */
   @Schema(description = "")
   public String getName() {
     return name;
   }
 
-  /**
-   * setName.
-   **/
+  /** setName. */
   public void setName(String name) {
     this.name = name;
   }
-
 
   /**
    * Compares objects.
@@ -209,31 +188,26 @@ public class EnvelopeAttachment {
       return false;
     }
     EnvelopeAttachment envelopeAttachment = (EnvelopeAttachment) o;
-    return Objects.equals(this.accessControl, envelopeAttachment.accessControl) &&
-        Objects.equals(this.attachmentId, envelopeAttachment.attachmentId) &&
-        Objects.equals(this.attachmentType, envelopeAttachment.attachmentType) &&
-        Objects.equals(this.errorDetails, envelopeAttachment.errorDetails) &&
-        Objects.equals(this.label, envelopeAttachment.label) &&
-        Objects.equals(this.name, envelopeAttachment.name);
+    return Objects.equals(this.accessControl, envelopeAttachment.accessControl)
+        && Objects.equals(this.attachmentId, envelopeAttachment.attachmentId)
+        && Objects.equals(this.attachmentType, envelopeAttachment.attachmentType)
+        && Objects.equals(this.errorDetails, envelopeAttachment.errorDetails)
+        && Objects.equals(this.label, envelopeAttachment.label)
+        && Objects.equals(this.name, envelopeAttachment.name);
   }
 
-  /**
-   * Returns the HashCode.
-   */
+  /** Returns the HashCode. */
   @Override
   public int hashCode() {
     return Objects.hash(accessControl, attachmentId, attachmentType, errorDetails, label, name);
   }
 
-
-  /**
-   * Converts the given object to string.
-   */
+  /** Converts the given object to string. */
   @Override
   public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class EnvelopeAttachment {\n");
-    
+
     sb.append("    accessControl: ").append(toIndentedString(accessControl)).append("\n");
     sb.append("    attachmentId: ").append(toIndentedString(attachmentId)).append("\n");
     sb.append("    attachmentType: ").append(toIndentedString(attachmentType)).append("\n");
@@ -245,8 +219,7 @@ public class EnvelopeAttachment {
   }
 
   /**
-   * Convert the given object to string with each line indented by 4 spaces
-   * (except the first line).
+   * Convert the given object to string with each line indented by 4 spaces (except the first line).
    */
   private String toIndentedString(java.lang.Object o) {
     if (o == null) {
@@ -254,6 +227,4 @@ public class EnvelopeAttachment {
     }
     return o.toString().replace("\n", "\n    ");
   }
-
 }
-

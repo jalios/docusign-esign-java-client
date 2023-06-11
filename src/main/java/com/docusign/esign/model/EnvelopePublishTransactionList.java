@@ -1,7 +1,7 @@
 package com.docusign.esign.model;
 
+import com.docusign.esign.override.swagger.Schema;
 import com.fasterxml.jackson.annotation.JsonProperty;
-import io.swagger.v3.oas.annotations.media.Schema;
 import java.util.Objects;
 
 /** EnvelopePublishTransactionList */
@@ -10,7 +10,8 @@ public class EnvelopePublishTransactionList {
   private String endPosition = null;
 
   @JsonProperty("envelopePublishTransactions")
-  private java.util.List<EnvelopePublishTransaction> envelopePublishTransactions = new java.util.ArrayList<EnvelopePublishTransaction>();
+  private java.util.List<EnvelopePublishTransaction> envelopePublishTransactions =
+      new java.util.ArrayList<EnvelopePublishTransaction>();
 
   @JsonProperty("nextUri")
   private String nextUri = null;
@@ -75,13 +76,15 @@ public class EnvelopePublishTransactionList {
   }
 
   /**
-   * The URI to the next chunk of records based on the search request. If the
-   * endPosition is the
+   * The URI to the next chunk of records based on the search request. If the endPosition is the
    * entire results of the search, this is null.
    *
    * @return nextUri
    */
-  @Schema(example = "null", description = "The URI to the next chunk of records based on the search request. If the endPosition is the entire results of the search, this is null. ")
+  @Schema(
+      example = "null",
+      description =
+          "The URI to the next chunk of records based on the search request. If the endPosition is the entire results of the search, this is null. ")
   public String getNextUri() {
     return nextUri;
   }
@@ -153,14 +156,15 @@ public class EnvelopePublishTransactionList {
   }
 
   /**
-   * The total number of items available in the result set. This will always be
-   * greater than or
-   * equal to the value of the property returning the results in the in the
-   * response.
+   * The total number of items available in the result set. This will always be greater than or
+   * equal to the value of the property returning the results in the in the response.
    *
    * @return totalSetSize
    */
-  @Schema(example = "null", description = "The total number of items available in the result set. This will always be greater than or equal to the value of the property returning the results in the in the response.")
+  @Schema(
+      example = "null",
+      description =
+          "The total number of items available in the result set. This will always be greater than or equal to the value of the property returning the results in the in the response.")
   public String getTotalSetSize() {
     return totalSetSize;
   }
@@ -177,7 +181,8 @@ public class EnvelopePublishTransactionList {
     if (o == null || getClass() != o.getClass()) {
       return false;
     }
-    EnvelopePublishTransactionList envelopePublishTransactionList = (EnvelopePublishTransactionList) o;
+    EnvelopePublishTransactionList envelopePublishTransactionList =
+        (EnvelopePublishTransactionList) o;
     return Objects.equals(this.endPosition, envelopePublishTransactionList.endPosition)
         && Objects.equals(
             this.envelopePublishTransactions,
@@ -220,8 +225,7 @@ public class EnvelopePublishTransactionList {
   }
 
   /**
-   * Convert the given object to string with each line indented by 4 spaces
-   * (except the first line).
+   * Convert the given object to string with each line indented by 4 spaces (except the first line).
    */
   private String toIndentedString(java.lang.Object o) {
     if (o == null) {

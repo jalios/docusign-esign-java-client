@@ -1,38 +1,29 @@
 package com.docusign.esign.model;
 
-import java.util.Objects;
-import java.util.Arrays;
-import com.docusign.esign.model.NameValue;
+import com.docusign.esign.override.swagger.Schema;
 import com.fasterxml.jackson.annotation.JsonProperty;
-import com.fasterxml.jackson.annotation.JsonCreator;
-import com.fasterxml.jackson.annotation.JsonValue;
-import io.swagger.v3.oas.annotations.media.Schema;
+import java.util.Objects;
 
-/**
- * EnvelopeAuditEvent.
- *
- */
-
+/** EnvelopeAuditEvent. */
 public class EnvelopeAuditEvent {
   @JsonProperty("eventFields")
   private java.util.List<NameValue> eventFields = null;
-
 
   /**
    * eventFields.
    *
    * @return EnvelopeAuditEvent
-   **/
+   */
   public EnvelopeAuditEvent eventFields(java.util.List<NameValue> eventFields) {
     this.eventFields = eventFields;
     return this;
   }
-  
+
   /**
    * addEventFieldsItem.
    *
    * @return EnvelopeAuditEvent
-   **/
+   */
   public EnvelopeAuditEvent addEventFieldsItem(NameValue eventFieldsItem) {
     if (this.eventFields == null) {
       this.eventFields = new java.util.ArrayList<>();
@@ -43,20 +34,18 @@ public class EnvelopeAuditEvent {
 
   /**
    * .
+   *
    * @return eventFields
-   **/
+   */
   @Schema(description = "")
   public java.util.List<NameValue> getEventFields() {
     return eventFields;
   }
 
-  /**
-   * setEventFields.
-   **/
+  /** setEventFields. */
   public void setEventFields(java.util.List<NameValue> eventFields) {
     this.eventFields = eventFields;
   }
-
 
   /**
    * Compares objects.
@@ -75,31 +64,25 @@ public class EnvelopeAuditEvent {
     return Objects.equals(this.eventFields, envelopeAuditEvent.eventFields);
   }
 
-  /**
-   * Returns the HashCode.
-   */
+  /** Returns the HashCode. */
   @Override
   public int hashCode() {
     return Objects.hash(eventFields);
   }
 
-
-  /**
-   * Converts the given object to string.
-   */
+  /** Converts the given object to string. */
   @Override
   public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class EnvelopeAuditEvent {\n");
-    
+
     sb.append("    eventFields: ").append(toIndentedString(eventFields)).append("\n");
     sb.append("}");
     return sb.toString();
   }
 
   /**
-   * Convert the given object to string with each line indented by 4 spaces
-   * (except the first line).
+   * Convert the given object to string with each line indented by 4 spaces (except the first line).
    */
   private String toIndentedString(java.lang.Object o) {
     if (o == null) {
@@ -107,6 +90,4 @@ public class EnvelopeAuditEvent {
     }
     return o.toString().replace("\n", "\n    ");
   }
-
 }
-

@@ -1,6 +1,11 @@
 # DocuSign Java Client Changelog
 See [DocuSign Support Center](https://support.docusign.com/en/releasenotes/) for Product Release Notes.
 
+## [v4.3.0-JALIOS-1] - eSignature API v2.1-23.2.00.00 - 2023-06-09
+### Breaking Changes
+- Only compatible with JPlatform 10.0.8 dependencies (see pom.xml).
+- Remove Jakarta and unnecessary dependencies
+
 ## [v4.3.0] - eSignature API v2.1-23.2.00.00 - 2023-05-15
 ### Changed
 - Added support for version v2.1-23.2.00.00 of the DocuSign ESignature API.

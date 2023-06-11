@@ -1,17 +1,10 @@
 package com.docusign.esign.model;
 
-import java.util.Objects;
-import java.util.Arrays;
+import com.docusign.esign.override.swagger.Schema;
 import com.fasterxml.jackson.annotation.JsonProperty;
-import com.fasterxml.jackson.annotation.JsonCreator;
-import com.fasterxml.jackson.annotation.JsonValue;
-import io.swagger.v3.oas.annotations.media.Schema;
+import java.util.Objects;
 
-/**
- * AuthorizationUser.
- *
- */
-
+/** AuthorizationUser. */
 public class AuthorizationUser {
   @JsonProperty("accountId")
   private String accountId = null;
@@ -25,12 +18,11 @@ public class AuthorizationUser {
   @JsonProperty("userId")
   private String userId = null;
 
-
   /**
    * accountId.
    *
    * @return AuthorizationUser
-   **/
+   */
   public AuthorizationUser accountId(String accountId) {
     this.accountId = accountId;
     return this;
@@ -38,26 +30,24 @@ public class AuthorizationUser {
 
   /**
    * The account ID associated with the envelope..
+   *
    * @return accountId
-   **/
+   */
   @Schema(description = "The account ID associated with the envelope.")
   public String getAccountId() {
     return accountId;
   }
 
-  /**
-   * setAccountId.
-   **/
+  /** setAccountId. */
   public void setAccountId(String accountId) {
     this.accountId = accountId;
   }
-
 
   /**
    * email.
    *
    * @return AuthorizationUser
-   **/
+   */
   public AuthorizationUser email(String email) {
     this.email = email;
     return this;
@@ -65,26 +55,24 @@ public class AuthorizationUser {
 
   /**
    * .
+   *
    * @return email
-   **/
+   */
   @Schema(description = "")
   public String getEmail() {
     return email;
   }
 
-  /**
-   * setEmail.
-   **/
+  /** setEmail. */
   public void setEmail(String email) {
     this.email = email;
   }
-
 
   /**
    * name.
    *
    * @return AuthorizationUser
-   **/
+   */
   public AuthorizationUser name(String name) {
     this.name = name;
     return this;
@@ -92,26 +80,24 @@ public class AuthorizationUser {
 
   /**
    * .
+   *
    * @return name
-   **/
+   */
   @Schema(description = "")
   public String getName() {
     return name;
   }
 
-  /**
-   * setName.
-   **/
+  /** setName. */
   public void setName(String name) {
     this.name = name;
   }
-
 
   /**
    * userId.
    *
    * @return AuthorizationUser
-   **/
+   */
   public AuthorizationUser userId(String userId) {
     this.userId = userId;
     return this;
@@ -119,20 +105,18 @@ public class AuthorizationUser {
 
   /**
    * .
+   *
    * @return userId
-   **/
+   */
   @Schema(description = "")
   public String getUserId() {
     return userId;
   }
 
-  /**
-   * setUserId.
-   **/
+  /** setUserId. */
   public void setUserId(String userId) {
     this.userId = userId;
   }
-
 
   /**
    * Compares objects.
@@ -148,29 +132,24 @@ public class AuthorizationUser {
       return false;
     }
     AuthorizationUser authorizationUser = (AuthorizationUser) o;
-    return Objects.equals(this.accountId, authorizationUser.accountId) &&
-        Objects.equals(this.email, authorizationUser.email) &&
-        Objects.equals(this.name, authorizationUser.name) &&
-        Objects.equals(this.userId, authorizationUser.userId);
+    return Objects.equals(this.accountId, authorizationUser.accountId)
+        && Objects.equals(this.email, authorizationUser.email)
+        && Objects.equals(this.name, authorizationUser.name)
+        && Objects.equals(this.userId, authorizationUser.userId);
   }
 
-  /**
-   * Returns the HashCode.
-   */
+  /** Returns the HashCode. */
   @Override
   public int hashCode() {
     return Objects.hash(accountId, email, name, userId);
   }
 
-
-  /**
-   * Converts the given object to string.
-   */
+  /** Converts the given object to string. */
   @Override
   public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class AuthorizationUser {\n");
-    
+
     sb.append("    accountId: ").append(toIndentedString(accountId)).append("\n");
     sb.append("    email: ").append(toIndentedString(email)).append("\n");
     sb.append("    name: ").append(toIndentedString(name)).append("\n");
@@ -180,8 +159,7 @@ public class AuthorizationUser {
   }
 
   /**
-   * Convert the given object to string with each line indented by 4 spaces
-   * (except the first line).
+   * Convert the given object to string with each line indented by 4 spaces (except the first line).
    */
   private String toIndentedString(java.lang.Object o) {
     if (o == null) {
@@ -189,6 +167,4 @@ public class AuthorizationUser {
     }
     return o.toString().replace("\n", "\n    ");
   }
-
 }
-

@@ -1,17 +1,10 @@
 package com.docusign.esign.model;
 
-import java.util.Objects;
-import java.util.Arrays;
+import com.docusign.esign.override.swagger.Schema;
 import com.fasterxml.jackson.annotation.JsonProperty;
-import com.fasterxml.jackson.annotation.JsonCreator;
-import com.fasterxml.jackson.annotation.JsonValue;
-import io.swagger.v3.oas.annotations.media.Schema;
+import java.util.Objects;
 
-/**
- * UserAuthorizationUpdateRequest.
- *
- */
-
+/** UserAuthorizationUpdateRequest. */
 public class UserAuthorizationUpdateRequest {
   @JsonProperty("endDate")
   private String endDate = null;
@@ -19,12 +12,11 @@ public class UserAuthorizationUpdateRequest {
   @JsonProperty("startDate")
   private String startDate = null;
 
-
   /**
    * endDate.
    *
    * @return UserAuthorizationUpdateRequest
-   **/
+   */
   public UserAuthorizationUpdateRequest endDate(String endDate) {
     this.endDate = endDate;
     return this;
@@ -32,26 +24,24 @@ public class UserAuthorizationUpdateRequest {
 
   /**
    * .
+   *
    * @return endDate
-   **/
+   */
   @Schema(description = "")
   public String getEndDate() {
     return endDate;
   }
 
-  /**
-   * setEndDate.
-   **/
+  /** setEndDate. */
   public void setEndDate(String endDate) {
     this.endDate = endDate;
   }
-
 
   /**
    * startDate.
    *
    * @return UserAuthorizationUpdateRequest
-   **/
+   */
   public UserAuthorizationUpdateRequest startDate(String startDate) {
     this.startDate = startDate;
     return this;
@@ -59,20 +49,18 @@ public class UserAuthorizationUpdateRequest {
 
   /**
    * .
+   *
    * @return startDate
-   **/
+   */
   @Schema(description = "")
   public String getStartDate() {
     return startDate;
   }
 
-  /**
-   * setStartDate.
-   **/
+  /** setStartDate. */
   public void setStartDate(String startDate) {
     this.startDate = startDate;
   }
-
 
   /**
    * Compares objects.
@@ -87,28 +75,24 @@ public class UserAuthorizationUpdateRequest {
     if (o == null || getClass() != o.getClass()) {
       return false;
     }
-    UserAuthorizationUpdateRequest userAuthorizationUpdateRequest = (UserAuthorizationUpdateRequest) o;
-    return Objects.equals(this.endDate, userAuthorizationUpdateRequest.endDate) &&
-        Objects.equals(this.startDate, userAuthorizationUpdateRequest.startDate);
+    UserAuthorizationUpdateRequest userAuthorizationUpdateRequest =
+        (UserAuthorizationUpdateRequest) o;
+    return Objects.equals(this.endDate, userAuthorizationUpdateRequest.endDate)
+        && Objects.equals(this.startDate, userAuthorizationUpdateRequest.startDate);
   }
 
-  /**
-   * Returns the HashCode.
-   */
+  /** Returns the HashCode. */
   @Override
   public int hashCode() {
     return Objects.hash(endDate, startDate);
   }
 
-
-  /**
-   * Converts the given object to string.
-   */
+  /** Converts the given object to string. */
   @Override
   public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class UserAuthorizationUpdateRequest {\n");
-    
+
     sb.append("    endDate: ").append(toIndentedString(endDate)).append("\n");
     sb.append("    startDate: ").append(toIndentedString(startDate)).append("\n");
     sb.append("}");
@@ -116,8 +100,7 @@ public class UserAuthorizationUpdateRequest {
   }
 
   /**
-   * Convert the given object to string with each line indented by 4 spaces
-   * (except the first line).
+   * Convert the given object to string with each line indented by 4 spaces (except the first line).
    */
   private String toIndentedString(java.lang.Object o) {
     if (o == null) {
@@ -125,6 +108,4 @@ public class UserAuthorizationUpdateRequest {
     }
     return o.toString().replace("\n", "\n    ");
   }
-
 }
-

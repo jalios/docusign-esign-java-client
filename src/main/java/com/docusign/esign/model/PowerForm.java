@@ -1,21 +1,11 @@
 package com.docusign.esign.model;
 
-import java.util.Objects;
-import java.util.Arrays;
-import com.docusign.esign.model.Envelope;
-import com.docusign.esign.model.ErrorDetails;
-import com.docusign.esign.model.PowerFormRecipient;
+import com.docusign.esign.override.swagger.Schema;
 import com.fasterxml.jackson.annotation.JsonProperty;
-import com.fasterxml.jackson.annotation.JsonCreator;
-import com.fasterxml.jackson.annotation.JsonValue;
-import io.swagger.v3.oas.annotations.media.Schema;
+import java.util.Objects;
 
-/**
- * Contains details about a PowerForm..
- *
- */
+/** Contains details about a PowerForm.. */
 @Schema(description = "Contains details about a PowerForm.")
-
 public class PowerForm {
   @JsonProperty("createdBy")
   private String createdBy = null;
@@ -92,12 +82,11 @@ public class PowerForm {
   @JsonProperty("usesRemaining")
   private String usesRemaining = null;
 
-
   /**
    * createdBy.
    *
    * @return PowerForm
-   **/
+   */
   public PowerForm createdBy(String createdBy) {
     this.createdBy = createdBy;
     return this;
@@ -105,26 +94,24 @@ public class PowerForm {
 
   /**
    * .
+   *
    * @return createdBy
-   **/
+   */
   @Schema(description = "")
   public String getCreatedBy() {
     return createdBy;
   }
 
-  /**
-   * setCreatedBy.
-   **/
+  /** setCreatedBy. */
   public void setCreatedBy(String createdBy) {
     this.createdBy = createdBy;
   }
-
 
   /**
    * createdDateTime.
    *
    * @return PowerForm
-   **/
+   */
   public PowerForm createdDateTime(String createdDateTime) {
     this.createdDateTime = createdDateTime;
     return this;
@@ -132,90 +119,91 @@ public class PowerForm {
 
   /**
    * Indicates the date and time the item was created..
+   *
    * @return createdDateTime
-   **/
+   */
   @Schema(description = "Indicates the date and time the item was created.")
   public String getCreatedDateTime() {
     return createdDateTime;
   }
 
-  /**
-   * setCreatedDateTime.
-   **/
+  /** setCreatedDateTime. */
   public void setCreatedDateTime(String createdDateTime) {
     this.createdDateTime = createdDateTime;
   }
-
 
   /**
    * emailBody.
    *
    * @return PowerForm
-   **/
+   */
   public PowerForm emailBody(String emailBody) {
     this.emailBody = emailBody;
     return this;
   }
 
   /**
-   * Specifies the email body of the message sent to the recipient.   Maximum length: 10000 characters. .
+   * Specifies the email body of the message sent to the recipient. Maximum length: 10000
+   * characters. .
+   *
    * @return emailBody
-   **/
-  @Schema(description = "Specifies the email body of the message sent to the recipient.   Maximum length: 10000 characters. ")
+   */
+  @Schema(
+      description =
+          "Specifies the email body of the message sent to the recipient.   Maximum length: 10000 characters. ")
   public String getEmailBody() {
     return emailBody;
   }
 
-  /**
-   * setEmailBody.
-   **/
+  /** setEmailBody. */
   public void setEmailBody(String emailBody) {
     this.emailBody = emailBody;
   }
-
 
   /**
    * emailSubject.
    *
    * @return PowerForm
-   **/
+   */
   public PowerForm emailSubject(String emailSubject) {
     this.emailSubject = emailSubject;
     return this;
   }
 
   /**
-   * Specifies the subject of the email that is sent to all recipients.  See [ML:Template Email Subject Merge Fields] for information about adding merge field information to the email subject..
+   * Specifies the subject of the email that is sent to all recipients. See [ML:Template Email
+   * Subject Merge Fields] for information about adding merge field information to the email
+   * subject..
+   *
    * @return emailSubject
-   **/
-  @Schema(description = "Specifies the subject of the email that is sent to all recipients.  See [ML:Template Email Subject Merge Fields] for information about adding merge field information to the email subject.")
+   */
+  @Schema(
+      description =
+          "Specifies the subject of the email that is sent to all recipients.  See [ML:Template Email Subject Merge Fields] for information about adding merge field information to the email subject.")
   public String getEmailSubject() {
     return emailSubject;
   }
 
-  /**
-   * setEmailSubject.
-   **/
+  /** setEmailSubject. */
   public void setEmailSubject(String emailSubject) {
     this.emailSubject = emailSubject;
   }
-
 
   /**
    * envelopes.
    *
    * @return PowerForm
-   **/
+   */
   public PowerForm envelopes(java.util.List<Envelope> envelopes) {
     this.envelopes = envelopes;
     return this;
   }
-  
+
   /**
    * addEnvelopesItem.
    *
    * @return PowerForm
-   **/
+   */
   public PowerForm addEnvelopesItem(Envelope envelopesItem) {
     if (this.envelopes == null) {
       this.envelopes = new java.util.ArrayList<>();
@@ -226,26 +214,24 @@ public class PowerForm {
 
   /**
    * .
+   *
    * @return envelopes
-   **/
+   */
   @Schema(description = "")
   public java.util.List<Envelope> getEnvelopes() {
     return envelopes;
   }
 
-  /**
-   * setEnvelopes.
-   **/
+  /** setEnvelopes. */
   public void setEnvelopes(java.util.List<Envelope> envelopes) {
     this.envelopes = envelopes;
   }
-
 
   /**
    * errorDetails.
    *
    * @return PowerForm
-   **/
+   */
   public PowerForm errorDetails(ErrorDetails errorDetails) {
     this.errorDetails = errorDetails;
     return this;
@@ -253,26 +239,24 @@ public class PowerForm {
 
   /**
    * Array or errors..
+   *
    * @return errorDetails
-   **/
+   */
   @Schema(description = "Array or errors.")
   public ErrorDetails getErrorDetails() {
     return errorDetails;
   }
 
-  /**
-   * setErrorDetails.
-   **/
+  /** setErrorDetails. */
   public void setErrorDetails(ErrorDetails errorDetails) {
     this.errorDetails = errorDetails;
   }
-
 
   /**
    * instructions.
    *
    * @return PowerForm
-   **/
+   */
   public PowerForm instructions(String instructions) {
     this.instructions = instructions;
     return this;
@@ -280,26 +264,24 @@ public class PowerForm {
 
   /**
    * .
+   *
    * @return instructions
-   **/
+   */
   @Schema(description = "")
   public String getInstructions() {
     return instructions;
   }
 
-  /**
-   * setInstructions.
-   **/
+  /** setInstructions. */
   public void setInstructions(String instructions) {
     this.instructions = instructions;
   }
-
 
   /**
    * isActive.
    *
    * @return PowerForm
-   **/
+   */
   public PowerForm isActive(String isActive) {
     this.isActive = isActive;
     return this;
@@ -307,26 +289,24 @@ public class PowerForm {
 
   /**
    * .
+   *
    * @return isActive
-   **/
+   */
   @Schema(description = "")
   public String getIsActive() {
     return isActive;
   }
 
-  /**
-   * setIsActive.
-   **/
+  /** setIsActive. */
   public void setIsActive(String isActive) {
     this.isActive = isActive;
   }
-
 
   /**
    * lastUsed.
    *
    * @return PowerForm
-   **/
+   */
   public PowerForm lastUsed(String lastUsed) {
     this.lastUsed = lastUsed;
     return this;
@@ -334,26 +314,24 @@ public class PowerForm {
 
   /**
    * .
+   *
    * @return lastUsed
-   **/
+   */
   @Schema(description = "")
   public String getLastUsed() {
     return lastUsed;
   }
 
-  /**
-   * setLastUsed.
-   **/
+  /** setLastUsed. */
   public void setLastUsed(String lastUsed) {
     this.lastUsed = lastUsed;
   }
-
 
   /**
    * limitUseInterval.
    *
    * @return PowerForm
-   **/
+   */
   public PowerForm limitUseInterval(String limitUseInterval) {
     this.limitUseInterval = limitUseInterval;
     return this;
@@ -361,26 +339,24 @@ public class PowerForm {
 
   /**
    * .
+   *
    * @return limitUseInterval
-   **/
+   */
   @Schema(description = "")
   public String getLimitUseInterval() {
     return limitUseInterval;
   }
 
-  /**
-   * setLimitUseInterval.
-   **/
+  /** setLimitUseInterval. */
   public void setLimitUseInterval(String limitUseInterval) {
     this.limitUseInterval = limitUseInterval;
   }
-
 
   /**
    * limitUseIntervalEnabled.
    *
    * @return PowerForm
-   **/
+   */
   public PowerForm limitUseIntervalEnabled(String limitUseIntervalEnabled) {
     this.limitUseIntervalEnabled = limitUseIntervalEnabled;
     return this;
@@ -388,26 +364,24 @@ public class PowerForm {
 
   /**
    * .
+   *
    * @return limitUseIntervalEnabled
-   **/
+   */
   @Schema(description = "")
   public String getLimitUseIntervalEnabled() {
     return limitUseIntervalEnabled;
   }
 
-  /**
-   * setLimitUseIntervalEnabled.
-   **/
+  /** setLimitUseIntervalEnabled. */
   public void setLimitUseIntervalEnabled(String limitUseIntervalEnabled) {
     this.limitUseIntervalEnabled = limitUseIntervalEnabled;
   }
-
 
   /**
    * limitUseIntervalUnits.
    *
    * @return PowerForm
-   **/
+   */
   public PowerForm limitUseIntervalUnits(String limitUseIntervalUnits) {
     this.limitUseIntervalUnits = limitUseIntervalUnits;
     return this;
@@ -415,26 +389,24 @@ public class PowerForm {
 
   /**
    * .
+   *
    * @return limitUseIntervalUnits
-   **/
+   */
   @Schema(description = "")
   public String getLimitUseIntervalUnits() {
     return limitUseIntervalUnits;
   }
 
-  /**
-   * setLimitUseIntervalUnits.
-   **/
+  /** setLimitUseIntervalUnits. */
   public void setLimitUseIntervalUnits(String limitUseIntervalUnits) {
     this.limitUseIntervalUnits = limitUseIntervalUnits;
   }
-
 
   /**
    * maxUseEnabled.
    *
    * @return PowerForm
-   **/
+   */
   public PowerForm maxUseEnabled(String maxUseEnabled) {
     this.maxUseEnabled = maxUseEnabled;
     return this;
@@ -442,26 +414,24 @@ public class PowerForm {
 
   /**
    * .
+   *
    * @return maxUseEnabled
-   **/
+   */
   @Schema(description = "")
   public String getMaxUseEnabled() {
     return maxUseEnabled;
   }
 
-  /**
-   * setMaxUseEnabled.
-   **/
+  /** setMaxUseEnabled. */
   public void setMaxUseEnabled(String maxUseEnabled) {
     this.maxUseEnabled = maxUseEnabled;
   }
-
 
   /**
    * name.
    *
    * @return PowerForm
-   **/
+   */
   public PowerForm name(String name) {
     this.name = name;
     return this;
@@ -469,26 +439,24 @@ public class PowerForm {
 
   /**
    * .
+   *
    * @return name
-   **/
+   */
   @Schema(description = "")
   public String getName() {
     return name;
   }
 
-  /**
-   * setName.
-   **/
+  /** setName. */
   public void setName(String name) {
     this.name = name;
   }
-
 
   /**
    * powerFormId.
    *
    * @return PowerForm
-   **/
+   */
   public PowerForm powerFormId(String powerFormId) {
     this.powerFormId = powerFormId;
     return this;
@@ -496,26 +464,24 @@ public class PowerForm {
 
   /**
    * .
+   *
    * @return powerFormId
-   **/
+   */
   @Schema(description = "")
   public String getPowerFormId() {
     return powerFormId;
   }
 
-  /**
-   * setPowerFormId.
-   **/
+  /** setPowerFormId. */
   public void setPowerFormId(String powerFormId) {
     this.powerFormId = powerFormId;
   }
-
 
   /**
    * powerFormUrl.
    *
    * @return PowerForm
-   **/
+   */
   public PowerForm powerFormUrl(String powerFormUrl) {
     this.powerFormUrl = powerFormUrl;
     return this;
@@ -523,36 +489,34 @@ public class PowerForm {
 
   /**
    * .
+   *
    * @return powerFormUrl
-   **/
+   */
   @Schema(description = "")
   public String getPowerFormUrl() {
     return powerFormUrl;
   }
 
-  /**
-   * setPowerFormUrl.
-   **/
+  /** setPowerFormUrl. */
   public void setPowerFormUrl(String powerFormUrl) {
     this.powerFormUrl = powerFormUrl;
   }
-
 
   /**
    * recipients.
    *
    * @return PowerForm
-   **/
+   */
   public PowerForm recipients(java.util.List<PowerFormRecipient> recipients) {
     this.recipients = recipients;
     return this;
   }
-  
+
   /**
    * addRecipientsItem.
    *
    * @return PowerForm
-   **/
+   */
   public PowerForm addRecipientsItem(PowerFormRecipient recipientsItem) {
     if (this.recipients == null) {
       this.recipients = new java.util.ArrayList<>();
@@ -563,26 +527,24 @@ public class PowerForm {
 
   /**
    * An array of powerform recipients..
+   *
    * @return recipients
-   **/
+   */
   @Schema(description = "An array of powerform recipients.")
   public java.util.List<PowerFormRecipient> getRecipients() {
     return recipients;
   }
 
-  /**
-   * setRecipients.
-   **/
+  /** setRecipients. */
   public void setRecipients(java.util.List<PowerFormRecipient> recipients) {
     this.recipients = recipients;
   }
-
 
   /**
    * senderName.
    *
    * @return PowerForm
-   **/
+   */
   public PowerForm senderName(String senderName) {
     this.senderName = senderName;
     return this;
@@ -590,26 +552,24 @@ public class PowerForm {
 
   /**
    * .
+   *
    * @return senderName
-   **/
+   */
   @Schema(description = "")
   public String getSenderName() {
     return senderName;
   }
 
-  /**
-   * setSenderName.
-   **/
+  /** setSenderName. */
   public void setSenderName(String senderName) {
     this.senderName = senderName;
   }
-
 
   /**
    * senderUserId.
    *
    * @return PowerForm
-   **/
+   */
   public PowerForm senderUserId(String senderUserId) {
     this.senderUserId = senderUserId;
     return this;
@@ -617,26 +577,24 @@ public class PowerForm {
 
   /**
    * .
+   *
    * @return senderUserId
-   **/
+   */
   @Schema(description = "")
   public String getSenderUserId() {
     return senderUserId;
   }
 
-  /**
-   * setSenderUserId.
-   **/
+  /** setSenderUserId. */
   public void setSenderUserId(String senderUserId) {
     this.senderUserId = senderUserId;
   }
-
 
   /**
    * signingMode.
    *
    * @return PowerForm
-   **/
+   */
   public PowerForm signingMode(String signingMode) {
     this.signingMode = signingMode;
     return this;
@@ -644,53 +602,52 @@ public class PowerForm {
 
   /**
    * .
+   *
    * @return signingMode
-   **/
+   */
   @Schema(description = "")
   public String getSigningMode() {
     return signingMode;
   }
 
-  /**
-   * setSigningMode.
-   **/
+  /** setSigningMode. */
   public void setSigningMode(String signingMode) {
     this.signingMode = signingMode;
   }
-
 
   /**
    * templateId.
    *
    * @return PowerForm
-   **/
+   */
   public PowerForm templateId(String templateId) {
     this.templateId = templateId;
     return this;
   }
 
   /**
-   * The unique identifier of the template. If this is not provided, DocuSign will generate a value. .
+   * The unique identifier of the template. If this is not provided, DocuSign will generate a value.
+   * .
+   *
    * @return templateId
-   **/
-  @Schema(description = "The unique identifier of the template. If this is not provided, DocuSign will generate a value. ")
+   */
+  @Schema(
+      description =
+          "The unique identifier of the template. If this is not provided, DocuSign will generate a value. ")
   public String getTemplateId() {
     return templateId;
   }
 
-  /**
-   * setTemplateId.
-   **/
+  /** setTemplateId. */
   public void setTemplateId(String templateId) {
     this.templateId = templateId;
   }
-
 
   /**
    * templateName.
    *
    * @return PowerForm
-   **/
+   */
   public PowerForm templateName(String templateName) {
     this.templateName = templateName;
     return this;
@@ -698,26 +655,24 @@ public class PowerForm {
 
   /**
    * .
+   *
    * @return templateName
-   **/
+   */
   @Schema(description = "")
   public String getTemplateName() {
     return templateName;
   }
 
-  /**
-   * setTemplateName.
-   **/
+  /** setTemplateName. */
   public void setTemplateName(String templateName) {
     this.templateName = templateName;
   }
-
 
   /**
    * timesUsed.
    *
    * @return PowerForm
-   **/
+   */
   public PowerForm timesUsed(String timesUsed) {
     this.timesUsed = timesUsed;
     return this;
@@ -725,26 +680,24 @@ public class PowerForm {
 
   /**
    * .
+   *
    * @return timesUsed
-   **/
+   */
   @Schema(description = "")
   public String getTimesUsed() {
     return timesUsed;
   }
 
-  /**
-   * setTimesUsed.
-   **/
+  /** setTimesUsed. */
   public void setTimesUsed(String timesUsed) {
     this.timesUsed = timesUsed;
   }
-
 
   /**
    * uri.
    *
    * @return PowerForm
-   **/
+   */
   public PowerForm uri(String uri) {
     this.uri = uri;
     return this;
@@ -752,26 +705,24 @@ public class PowerForm {
 
   /**
    * .
+   *
    * @return uri
-   **/
+   */
   @Schema(description = "")
   public String getUri() {
     return uri;
   }
 
-  /**
-   * setUri.
-   **/
+  /** setUri. */
   public void setUri(String uri) {
     this.uri = uri;
   }
-
 
   /**
    * usesRemaining.
    *
    * @return PowerForm
-   **/
+   */
   public PowerForm usesRemaining(String usesRemaining) {
     this.usesRemaining = usesRemaining;
     return this;
@@ -779,20 +730,18 @@ public class PowerForm {
 
   /**
    * .
+   *
    * @return usesRemaining
-   **/
+   */
   @Schema(description = "")
   public String getUsesRemaining() {
     return usesRemaining;
   }
 
-  /**
-   * setUsesRemaining.
-   **/
+  /** setUsesRemaining. */
   public void setUsesRemaining(String usesRemaining) {
     this.usesRemaining = usesRemaining;
   }
-
 
   /**
    * Compares objects.
@@ -808,50 +757,70 @@ public class PowerForm {
       return false;
     }
     PowerForm powerForm = (PowerForm) o;
-    return Objects.equals(this.createdBy, powerForm.createdBy) &&
-        Objects.equals(this.createdDateTime, powerForm.createdDateTime) &&
-        Objects.equals(this.emailBody, powerForm.emailBody) &&
-        Objects.equals(this.emailSubject, powerForm.emailSubject) &&
-        Objects.equals(this.envelopes, powerForm.envelopes) &&
-        Objects.equals(this.errorDetails, powerForm.errorDetails) &&
-        Objects.equals(this.instructions, powerForm.instructions) &&
-        Objects.equals(this.isActive, powerForm.isActive) &&
-        Objects.equals(this.lastUsed, powerForm.lastUsed) &&
-        Objects.equals(this.limitUseInterval, powerForm.limitUseInterval) &&
-        Objects.equals(this.limitUseIntervalEnabled, powerForm.limitUseIntervalEnabled) &&
-        Objects.equals(this.limitUseIntervalUnits, powerForm.limitUseIntervalUnits) &&
-        Objects.equals(this.maxUseEnabled, powerForm.maxUseEnabled) &&
-        Objects.equals(this.name, powerForm.name) &&
-        Objects.equals(this.powerFormId, powerForm.powerFormId) &&
-        Objects.equals(this.powerFormUrl, powerForm.powerFormUrl) &&
-        Objects.equals(this.recipients, powerForm.recipients) &&
-        Objects.equals(this.senderName, powerForm.senderName) &&
-        Objects.equals(this.senderUserId, powerForm.senderUserId) &&
-        Objects.equals(this.signingMode, powerForm.signingMode) &&
-        Objects.equals(this.templateId, powerForm.templateId) &&
-        Objects.equals(this.templateName, powerForm.templateName) &&
-        Objects.equals(this.timesUsed, powerForm.timesUsed) &&
-        Objects.equals(this.uri, powerForm.uri) &&
-        Objects.equals(this.usesRemaining, powerForm.usesRemaining);
+    return Objects.equals(this.createdBy, powerForm.createdBy)
+        && Objects.equals(this.createdDateTime, powerForm.createdDateTime)
+        && Objects.equals(this.emailBody, powerForm.emailBody)
+        && Objects.equals(this.emailSubject, powerForm.emailSubject)
+        && Objects.equals(this.envelopes, powerForm.envelopes)
+        && Objects.equals(this.errorDetails, powerForm.errorDetails)
+        && Objects.equals(this.instructions, powerForm.instructions)
+        && Objects.equals(this.isActive, powerForm.isActive)
+        && Objects.equals(this.lastUsed, powerForm.lastUsed)
+        && Objects.equals(this.limitUseInterval, powerForm.limitUseInterval)
+        && Objects.equals(this.limitUseIntervalEnabled, powerForm.limitUseIntervalEnabled)
+        && Objects.equals(this.limitUseIntervalUnits, powerForm.limitUseIntervalUnits)
+        && Objects.equals(this.maxUseEnabled, powerForm.maxUseEnabled)
+        && Objects.equals(this.name, powerForm.name)
+        && Objects.equals(this.powerFormId, powerForm.powerFormId)
+        && Objects.equals(this.powerFormUrl, powerForm.powerFormUrl)
+        && Objects.equals(this.recipients, powerForm.recipients)
+        && Objects.equals(this.senderName, powerForm.senderName)
+        && Objects.equals(this.senderUserId, powerForm.senderUserId)
+        && Objects.equals(this.signingMode, powerForm.signingMode)
+        && Objects.equals(this.templateId, powerForm.templateId)
+        && Objects.equals(this.templateName, powerForm.templateName)
+        && Objects.equals(this.timesUsed, powerForm.timesUsed)
+        && Objects.equals(this.uri, powerForm.uri)
+        && Objects.equals(this.usesRemaining, powerForm.usesRemaining);
   }
 
-  /**
-   * Returns the HashCode.
-   */
+  /** Returns the HashCode. */
   @Override
   public int hashCode() {
-    return Objects.hash(createdBy, createdDateTime, emailBody, emailSubject, envelopes, errorDetails, instructions, isActive, lastUsed, limitUseInterval, limitUseIntervalEnabled, limitUseIntervalUnits, maxUseEnabled, name, powerFormId, powerFormUrl, recipients, senderName, senderUserId, signingMode, templateId, templateName, timesUsed, uri, usesRemaining);
+    return Objects.hash(
+        createdBy,
+        createdDateTime,
+        emailBody,
+        emailSubject,
+        envelopes,
+        errorDetails,
+        instructions,
+        isActive,
+        lastUsed,
+        limitUseInterval,
+        limitUseIntervalEnabled,
+        limitUseIntervalUnits,
+        maxUseEnabled,
+        name,
+        powerFormId,
+        powerFormUrl,
+        recipients,
+        senderName,
+        senderUserId,
+        signingMode,
+        templateId,
+        templateName,
+        timesUsed,
+        uri,
+        usesRemaining);
   }
 
-
-  /**
-   * Converts the given object to string.
-   */
+  /** Converts the given object to string. */
   @Override
   public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class PowerForm {\n");
-    
+
     sb.append("    createdBy: ").append(toIndentedString(createdBy)).append("\n");
     sb.append("    createdDateTime: ").append(toIndentedString(createdDateTime)).append("\n");
     sb.append("    emailBody: ").append(toIndentedString(emailBody)).append("\n");
@@ -862,8 +831,12 @@ public class PowerForm {
     sb.append("    isActive: ").append(toIndentedString(isActive)).append("\n");
     sb.append("    lastUsed: ").append(toIndentedString(lastUsed)).append("\n");
     sb.append("    limitUseInterval: ").append(toIndentedString(limitUseInterval)).append("\n");
-    sb.append("    limitUseIntervalEnabled: ").append(toIndentedString(limitUseIntervalEnabled)).append("\n");
-    sb.append("    limitUseIntervalUnits: ").append(toIndentedString(limitUseIntervalUnits)).append("\n");
+    sb.append("    limitUseIntervalEnabled: ")
+        .append(toIndentedString(limitUseIntervalEnabled))
+        .append("\n");
+    sb.append("    limitUseIntervalUnits: ")
+        .append(toIndentedString(limitUseIntervalUnits))
+        .append("\n");
     sb.append("    maxUseEnabled: ").append(toIndentedString(maxUseEnabled)).append("\n");
     sb.append("    name: ").append(toIndentedString(name)).append("\n");
     sb.append("    powerFormId: ").append(toIndentedString(powerFormId)).append("\n");
@@ -882,8 +855,7 @@ public class PowerForm {
   }
 
   /**
-   * Convert the given object to string with each line indented by 4 spaces
-   * (except the first line).
+   * Convert the given object to string with each line indented by 4 spaces (except the first line).
    */
   private String toIndentedString(java.lang.Object o) {
     if (o == null) {
@@ -891,6 +863,4 @@ public class PowerForm {
     }
     return o.toString().replace("\n", "\n    ");
   }
-
 }
-

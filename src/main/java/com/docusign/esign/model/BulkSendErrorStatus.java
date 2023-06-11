@@ -1,18 +1,11 @@
 package com.docusign.esign.model;
 
-import java.util.Objects;
-import java.util.Arrays;
+import com.docusign.esign.override.swagger.Schema;
 import com.fasterxml.jackson.annotation.JsonProperty;
-import com.fasterxml.jackson.annotation.JsonCreator;
-import com.fasterxml.jackson.annotation.JsonValue;
-import io.swagger.v3.oas.annotations.media.Schema;
+import java.util.Objects;
 
-/**
- * A single bulk send error report..
- *
- */
+/** A single bulk send error report.. */
 @Schema(description = "A single bulk send error report.")
-
 public class BulkSendErrorStatus {
   @JsonProperty("created")
   private String created = null;
@@ -26,12 +19,11 @@ public class BulkSendErrorStatus {
   @JsonProperty("recipientEmails")
   private java.util.List<String> recipientEmails = null;
 
-
   /**
    * created.
    *
    * @return BulkSendErrorStatus
-   **/
+   */
   public BulkSendErrorStatus created(String created) {
     this.created = created;
     return this;
@@ -39,26 +31,24 @@ public class BulkSendErrorStatus {
 
   /**
    * .
+   *
    * @return created
-   **/
+   */
   @Schema(description = "")
   public String getCreated() {
     return created;
   }
 
-  /**
-   * setCreated.
-   **/
+  /** setCreated. */
   public void setCreated(String created) {
     this.created = created;
   }
-
 
   /**
    * envelopeId.
    *
    * @return BulkSendErrorStatus
-   **/
+   */
   public BulkSendErrorStatus envelopeId(String envelopeId) {
     this.envelopeId = envelopeId;
     return this;
@@ -66,26 +56,24 @@ public class BulkSendErrorStatus {
 
   /**
    * The envelope ID of the envelope status that failed to post..
+   *
    * @return envelopeId
-   **/
+   */
   @Schema(description = "The envelope ID of the envelope status that failed to post.")
   public String getEnvelopeId() {
     return envelopeId;
   }
 
-  /**
-   * setEnvelopeId.
-   **/
+  /** setEnvelopeId. */
   public void setEnvelopeId(String envelopeId) {
     this.envelopeId = envelopeId;
   }
-
 
   /**
    * errorMessage.
    *
    * @return BulkSendErrorStatus
-   **/
+   */
   public BulkSendErrorStatus errorMessage(String errorMessage) {
     this.errorMessage = errorMessage;
     return this;
@@ -93,36 +81,34 @@ public class BulkSendErrorStatus {
 
   /**
    * .
+   *
    * @return errorMessage
-   **/
+   */
   @Schema(description = "")
   public String getErrorMessage() {
     return errorMessage;
   }
 
-  /**
-   * setErrorMessage.
-   **/
+  /** setErrorMessage. */
   public void setErrorMessage(String errorMessage) {
     this.errorMessage = errorMessage;
   }
-
 
   /**
    * recipientEmails.
    *
    * @return BulkSendErrorStatus
-   **/
+   */
   public BulkSendErrorStatus recipientEmails(java.util.List<String> recipientEmails) {
     this.recipientEmails = recipientEmails;
     return this;
   }
-  
+
   /**
    * addRecipientEmailsItem.
    *
    * @return BulkSendErrorStatus
-   **/
+   */
   public BulkSendErrorStatus addRecipientEmailsItem(String recipientEmailsItem) {
     if (this.recipientEmails == null) {
       this.recipientEmails = new java.util.ArrayList<>();
@@ -133,20 +119,18 @@ public class BulkSendErrorStatus {
 
   /**
    * .
+   *
    * @return recipientEmails
-   **/
+   */
   @Schema(description = "")
   public java.util.List<String> getRecipientEmails() {
     return recipientEmails;
   }
 
-  /**
-   * setRecipientEmails.
-   **/
+  /** setRecipientEmails. */
   public void setRecipientEmails(java.util.List<String> recipientEmails) {
     this.recipientEmails = recipientEmails;
   }
-
 
   /**
    * Compares objects.
@@ -162,29 +146,24 @@ public class BulkSendErrorStatus {
       return false;
     }
     BulkSendErrorStatus bulkSendErrorStatus = (BulkSendErrorStatus) o;
-    return Objects.equals(this.created, bulkSendErrorStatus.created) &&
-        Objects.equals(this.envelopeId, bulkSendErrorStatus.envelopeId) &&
-        Objects.equals(this.errorMessage, bulkSendErrorStatus.errorMessage) &&
-        Objects.equals(this.recipientEmails, bulkSendErrorStatus.recipientEmails);
+    return Objects.equals(this.created, bulkSendErrorStatus.created)
+        && Objects.equals(this.envelopeId, bulkSendErrorStatus.envelopeId)
+        && Objects.equals(this.errorMessage, bulkSendErrorStatus.errorMessage)
+        && Objects.equals(this.recipientEmails, bulkSendErrorStatus.recipientEmails);
   }
 
-  /**
-   * Returns the HashCode.
-   */
+  /** Returns the HashCode. */
   @Override
   public int hashCode() {
     return Objects.hash(created, envelopeId, errorMessage, recipientEmails);
   }
 
-
-  /**
-   * Converts the given object to string.
-   */
+  /** Converts the given object to string. */
   @Override
   public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class BulkSendErrorStatus {\n");
-    
+
     sb.append("    created: ").append(toIndentedString(created)).append("\n");
     sb.append("    envelopeId: ").append(toIndentedString(envelopeId)).append("\n");
     sb.append("    errorMessage: ").append(toIndentedString(errorMessage)).append("\n");
@@ -194,8 +173,7 @@ public class BulkSendErrorStatus {
   }
 
   /**
-   * Convert the given object to string with each line indented by 4 spaces
-   * (except the first line).
+   * Convert the given object to string with each line indented by 4 spaces (except the first line).
    */
   private String toIndentedString(java.lang.Object o) {
     if (o == null) {
@@ -203,6 +181,4 @@ public class BulkSendErrorStatus {
     }
     return o.toString().replace("\n", "\n    ");
   }
-
 }
-

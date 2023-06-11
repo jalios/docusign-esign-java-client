@@ -1,18 +1,10 @@
 package com.docusign.esign.model;
 
-import java.util.Objects;
-import java.util.Arrays;
-import com.docusign.esign.model.ConnectCustomConfiguration;
+import com.docusign.esign.override.swagger.Schema;
 import com.fasterxml.jackson.annotation.JsonProperty;
-import com.fasterxml.jackson.annotation.JsonCreator;
-import com.fasterxml.jackson.annotation.JsonValue;
-import io.swagger.v3.oas.annotations.media.Schema;
+import java.util.Objects;
 
-/**
- * ConnectHistoricalEnvelopeRepublish.
- *
- */
-
+/** ConnectHistoricalEnvelopeRepublish. */
 public class ConnectHistoricalEnvelopeRepublish {
   @JsonProperty("config")
   private ConnectCustomConfiguration config = null;
@@ -20,12 +12,11 @@ public class ConnectHistoricalEnvelopeRepublish {
   @JsonProperty("envelopes")
   private java.util.List<String> envelopes = null;
 
-
   /**
    * config.
    *
    * @return ConnectHistoricalEnvelopeRepublish
-   **/
+   */
   public ConnectHistoricalEnvelopeRepublish config(ConnectCustomConfiguration config) {
     this.config = config;
     return this;
@@ -33,36 +24,34 @@ public class ConnectHistoricalEnvelopeRepublish {
 
   /**
    * .
+   *
    * @return config
-   **/
+   */
   @Schema(description = "")
   public ConnectCustomConfiguration getConfig() {
     return config;
   }
 
-  /**
-   * setConfig.
-   **/
+  /** setConfig. */
   public void setConfig(ConnectCustomConfiguration config) {
     this.config = config;
   }
-
 
   /**
    * envelopes.
    *
    * @return ConnectHistoricalEnvelopeRepublish
-   **/
+   */
   public ConnectHistoricalEnvelopeRepublish envelopes(java.util.List<String> envelopes) {
     this.envelopes = envelopes;
     return this;
   }
-  
+
   /**
    * addEnvelopesItem.
    *
    * @return ConnectHistoricalEnvelopeRepublish
-   **/
+   */
   public ConnectHistoricalEnvelopeRepublish addEnvelopesItem(String envelopesItem) {
     if (this.envelopes == null) {
       this.envelopes = new java.util.ArrayList<>();
@@ -73,20 +62,18 @@ public class ConnectHistoricalEnvelopeRepublish {
 
   /**
    * .
+   *
    * @return envelopes
-   **/
+   */
   @Schema(description = "")
   public java.util.List<String> getEnvelopes() {
     return envelopes;
   }
 
-  /**
-   * setEnvelopes.
-   **/
+  /** setEnvelopes. */
   public void setEnvelopes(java.util.List<String> envelopes) {
     this.envelopes = envelopes;
   }
-
 
   /**
    * Compares objects.
@@ -101,28 +88,24 @@ public class ConnectHistoricalEnvelopeRepublish {
     if (o == null || getClass() != o.getClass()) {
       return false;
     }
-    ConnectHistoricalEnvelopeRepublish connectHistoricalEnvelopeRepublish = (ConnectHistoricalEnvelopeRepublish) o;
-    return Objects.equals(this.config, connectHistoricalEnvelopeRepublish.config) &&
-        Objects.equals(this.envelopes, connectHistoricalEnvelopeRepublish.envelopes);
+    ConnectHistoricalEnvelopeRepublish connectHistoricalEnvelopeRepublish =
+        (ConnectHistoricalEnvelopeRepublish) o;
+    return Objects.equals(this.config, connectHistoricalEnvelopeRepublish.config)
+        && Objects.equals(this.envelopes, connectHistoricalEnvelopeRepublish.envelopes);
   }
 
-  /**
-   * Returns the HashCode.
-   */
+  /** Returns the HashCode. */
   @Override
   public int hashCode() {
     return Objects.hash(config, envelopes);
   }
 
-
-  /**
-   * Converts the given object to string.
-   */
+  /** Converts the given object to string. */
   @Override
   public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class ConnectHistoricalEnvelopeRepublish {\n");
-    
+
     sb.append("    config: ").append(toIndentedString(config)).append("\n");
     sb.append("    envelopes: ").append(toIndentedString(envelopes)).append("\n");
     sb.append("}");
@@ -130,8 +113,7 @@ public class ConnectHistoricalEnvelopeRepublish {
   }
 
   /**
-   * Convert the given object to string with each line indented by 4 spaces
-   * (except the first line).
+   * Convert the given object to string with each line indented by 4 spaces (except the first line).
    */
   private String toIndentedString(java.lang.Object o) {
     if (o == null) {
@@ -139,6 +121,4 @@ public class ConnectHistoricalEnvelopeRepublish {
     }
     return o.toString().replace("\n", "\n    ");
   }
-
 }
-

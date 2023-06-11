@@ -1,18 +1,10 @@
 package com.docusign.esign.model;
 
-import java.util.Objects;
-import java.util.Arrays;
-import com.docusign.esign.model.AuthorizationUser;
+import com.docusign.esign.override.swagger.Schema;
 import com.fasterxml.jackson.annotation.JsonProperty;
-import com.fasterxml.jackson.annotation.JsonCreator;
-import com.fasterxml.jackson.annotation.JsonValue;
-import io.swagger.v3.oas.annotations.media.Schema;
+import java.util.Objects;
 
-/**
- * UserAuthorizationCreateRequestWithId.
- *
- */
-
+/** UserAuthorizationCreateRequestWithId. */
 public class UserAuthorizationCreateRequestWithId {
   @JsonProperty("agentUser")
   private AuthorizationUser agentUser = null;
@@ -29,12 +21,11 @@ public class UserAuthorizationCreateRequestWithId {
   @JsonProperty("startDate")
   private String startDate = null;
 
-
   /**
    * agentUser.
    *
    * @return UserAuthorizationCreateRequestWithId
-   **/
+   */
   public UserAuthorizationCreateRequestWithId agentUser(AuthorizationUser agentUser) {
     this.agentUser = agentUser;
     return this;
@@ -42,26 +33,24 @@ public class UserAuthorizationCreateRequestWithId {
 
   /**
    * .
+   *
    * @return agentUser
-   **/
+   */
   @Schema(description = "")
   public AuthorizationUser getAgentUser() {
     return agentUser;
   }
 
-  /**
-   * setAgentUser.
-   **/
+  /** setAgentUser. */
   public void setAgentUser(AuthorizationUser agentUser) {
     this.agentUser = agentUser;
   }
-
 
   /**
    * authorizationId.
    *
    * @return UserAuthorizationCreateRequestWithId
-   **/
+   */
   public UserAuthorizationCreateRequestWithId authorizationId(String authorizationId) {
     this.authorizationId = authorizationId;
     return this;
@@ -69,26 +58,24 @@ public class UserAuthorizationCreateRequestWithId {
 
   /**
    * .
+   *
    * @return authorizationId
-   **/
+   */
   @Schema(description = "")
   public String getAuthorizationId() {
     return authorizationId;
   }
 
-  /**
-   * setAuthorizationId.
-   **/
+  /** setAuthorizationId. */
   public void setAuthorizationId(String authorizationId) {
     this.authorizationId = authorizationId;
   }
-
 
   /**
    * endDate.
    *
    * @return UserAuthorizationCreateRequestWithId
-   **/
+   */
   public UserAuthorizationCreateRequestWithId endDate(String endDate) {
     this.endDate = endDate;
     return this;
@@ -96,26 +83,24 @@ public class UserAuthorizationCreateRequestWithId {
 
   /**
    * .
+   *
    * @return endDate
-   **/
+   */
   @Schema(description = "")
   public String getEndDate() {
     return endDate;
   }
 
-  /**
-   * setEndDate.
-   **/
+  /** setEndDate. */
   public void setEndDate(String endDate) {
     this.endDate = endDate;
   }
-
 
   /**
    * permission.
    *
    * @return UserAuthorizationCreateRequestWithId
-   **/
+   */
   public UserAuthorizationCreateRequestWithId permission(String permission) {
     this.permission = permission;
     return this;
@@ -123,26 +108,24 @@ public class UserAuthorizationCreateRequestWithId {
 
   /**
    * .
+   *
    * @return permission
-   **/
+   */
   @Schema(description = "")
   public String getPermission() {
     return permission;
   }
 
-  /**
-   * setPermission.
-   **/
+  /** setPermission. */
   public void setPermission(String permission) {
     this.permission = permission;
   }
-
 
   /**
    * startDate.
    *
    * @return UserAuthorizationCreateRequestWithId
-   **/
+   */
   public UserAuthorizationCreateRequestWithId startDate(String startDate) {
     this.startDate = startDate;
     return this;
@@ -150,20 +133,18 @@ public class UserAuthorizationCreateRequestWithId {
 
   /**
    * .
+   *
    * @return startDate
-   **/
+   */
   @Schema(description = "")
   public String getStartDate() {
     return startDate;
   }
 
-  /**
-   * setStartDate.
-   **/
+  /** setStartDate. */
   public void setStartDate(String startDate) {
     this.startDate = startDate;
   }
-
 
   /**
    * Compares objects.
@@ -178,31 +159,28 @@ public class UserAuthorizationCreateRequestWithId {
     if (o == null || getClass() != o.getClass()) {
       return false;
     }
-    UserAuthorizationCreateRequestWithId userAuthorizationCreateRequestWithId = (UserAuthorizationCreateRequestWithId) o;
-    return Objects.equals(this.agentUser, userAuthorizationCreateRequestWithId.agentUser) &&
-        Objects.equals(this.authorizationId, userAuthorizationCreateRequestWithId.authorizationId) &&
-        Objects.equals(this.endDate, userAuthorizationCreateRequestWithId.endDate) &&
-        Objects.equals(this.permission, userAuthorizationCreateRequestWithId.permission) &&
-        Objects.equals(this.startDate, userAuthorizationCreateRequestWithId.startDate);
+    UserAuthorizationCreateRequestWithId userAuthorizationCreateRequestWithId =
+        (UserAuthorizationCreateRequestWithId) o;
+    return Objects.equals(this.agentUser, userAuthorizationCreateRequestWithId.agentUser)
+        && Objects.equals(
+            this.authorizationId, userAuthorizationCreateRequestWithId.authorizationId)
+        && Objects.equals(this.endDate, userAuthorizationCreateRequestWithId.endDate)
+        && Objects.equals(this.permission, userAuthorizationCreateRequestWithId.permission)
+        && Objects.equals(this.startDate, userAuthorizationCreateRequestWithId.startDate);
   }
 
-  /**
-   * Returns the HashCode.
-   */
+  /** Returns the HashCode. */
   @Override
   public int hashCode() {
     return Objects.hash(agentUser, authorizationId, endDate, permission, startDate);
   }
 
-
-  /**
-   * Converts the given object to string.
-   */
+  /** Converts the given object to string. */
   @Override
   public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class UserAuthorizationCreateRequestWithId {\n");
-    
+
     sb.append("    agentUser: ").append(toIndentedString(agentUser)).append("\n");
     sb.append("    authorizationId: ").append(toIndentedString(authorizationId)).append("\n");
     sb.append("    endDate: ").append(toIndentedString(endDate)).append("\n");
@@ -213,8 +191,7 @@ public class UserAuthorizationCreateRequestWithId {
   }
 
   /**
-   * Convert the given object to string with each line indented by 4 spaces
-   * (except the first line).
+   * Convert the given object to string with each line indented by 4 spaces (except the first line).
    */
   private String toIndentedString(java.lang.Object o) {
     if (o == null) {
@@ -222,6 +199,4 @@ public class UserAuthorizationCreateRequestWithId {
     }
     return o.toString().replace("\n", "\n    ");
   }
-
 }
-

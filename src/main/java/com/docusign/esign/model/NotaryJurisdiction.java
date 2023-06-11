@@ -1,20 +1,11 @@
 package com.docusign.esign.model;
 
-import java.util.Objects;
-import java.util.Arrays;
-import com.docusign.esign.model.ErrorDetails;
-import com.docusign.esign.model.Jurisdiction;
+import com.docusign.esign.override.swagger.Schema;
 import com.fasterxml.jackson.annotation.JsonProperty;
-import com.fasterxml.jackson.annotation.JsonCreator;
-import com.fasterxml.jackson.annotation.JsonValue;
-import io.swagger.v3.oas.annotations.media.Schema;
+import java.util.Objects;
 
-/**
- * A notary jurisdiction..
- *
- */
+/** A notary jurisdiction.. */
 @Schema(description = "A notary jurisdiction.")
-
 public class NotaryJurisdiction {
   @JsonProperty("commissionExpiration")
   private String commissionExpiration = null;
@@ -37,12 +28,11 @@ public class NotaryJurisdiction {
   @JsonProperty("sealType")
   private String sealType = null;
 
-
   /**
    * commissionExpiration.
    *
    * @return NotaryJurisdiction
-   **/
+   */
   public NotaryJurisdiction commissionExpiration(String commissionExpiration) {
     this.commissionExpiration = commissionExpiration;
     return this;
@@ -50,26 +40,24 @@ public class NotaryJurisdiction {
 
   /**
    * .
+   *
    * @return commissionExpiration
-   **/
+   */
   @Schema(description = "")
   public String getCommissionExpiration() {
     return commissionExpiration;
   }
 
-  /**
-   * setCommissionExpiration.
-   **/
+  /** setCommissionExpiration. */
   public void setCommissionExpiration(String commissionExpiration) {
     this.commissionExpiration = commissionExpiration;
   }
-
 
   /**
    * commissionId.
    *
    * @return NotaryJurisdiction
-   **/
+   */
   public NotaryJurisdiction commissionId(String commissionId) {
     this.commissionId = commissionId;
     return this;
@@ -77,26 +65,24 @@ public class NotaryJurisdiction {
 
   /**
    * .
+   *
    * @return commissionId
-   **/
+   */
   @Schema(description = "")
   public String getCommissionId() {
     return commissionId;
   }
 
-  /**
-   * setCommissionId.
-   **/
+  /** setCommissionId. */
   public void setCommissionId(String commissionId) {
     this.commissionId = commissionId;
   }
-
 
   /**
    * county.
    *
    * @return NotaryJurisdiction
-   **/
+   */
   public NotaryJurisdiction county(String county) {
     this.county = county;
     return this;
@@ -104,26 +90,24 @@ public class NotaryJurisdiction {
 
   /**
    * .
+   *
    * @return county
-   **/
+   */
   @Schema(description = "")
   public String getCounty() {
     return county;
   }
 
-  /**
-   * setCounty.
-   **/
+  /** setCounty. */
   public void setCounty(String county) {
     this.county = county;
   }
-
 
   /**
    * errorDetails.
    *
    * @return NotaryJurisdiction
-   **/
+   */
   public NotaryJurisdiction errorDetails(ErrorDetails errorDetails) {
     this.errorDetails = errorDetails;
     return this;
@@ -131,26 +115,24 @@ public class NotaryJurisdiction {
 
   /**
    * Array or errors..
+   *
    * @return errorDetails
-   **/
+   */
   @Schema(description = "Array or errors.")
   public ErrorDetails getErrorDetails() {
     return errorDetails;
   }
 
-  /**
-   * setErrorDetails.
-   **/
+  /** setErrorDetails. */
   public void setErrorDetails(ErrorDetails errorDetails) {
     this.errorDetails = errorDetails;
   }
-
 
   /**
    * jurisdiction.
    *
    * @return NotaryJurisdiction
-   **/
+   */
   public NotaryJurisdiction jurisdiction(Jurisdiction jurisdiction) {
     this.jurisdiction = jurisdiction;
     return this;
@@ -158,26 +140,26 @@ public class NotaryJurisdiction {
 
   /**
    * Description of the jurisdiction for this notary. This is a read-only property..
+   *
    * @return jurisdiction
-   **/
-  @Schema(description = "Description of the jurisdiction for this notary. This is a read-only property.")
+   */
+  @Schema(
+      description =
+          "Description of the jurisdiction for this notary. This is a read-only property.")
   public Jurisdiction getJurisdiction() {
     return jurisdiction;
   }
 
-  /**
-   * setJurisdiction.
-   **/
+  /** setJurisdiction. */
   public void setJurisdiction(Jurisdiction jurisdiction) {
     this.jurisdiction = jurisdiction;
   }
-
 
   /**
    * registeredName.
    *
    * @return NotaryJurisdiction
-   **/
+   */
   public NotaryJurisdiction registeredName(String registeredName) {
     this.registeredName = registeredName;
     return this;
@@ -185,26 +167,24 @@ public class NotaryJurisdiction {
 
   /**
    * .
+   *
    * @return registeredName
-   **/
+   */
   @Schema(description = "")
   public String getRegisteredName() {
     return registeredName;
   }
 
-  /**
-   * setRegisteredName.
-   **/
+  /** setRegisteredName. */
   public void setRegisteredName(String registeredName) {
     this.registeredName = registeredName;
   }
-
 
   /**
    * sealType.
    *
    * @return NotaryJurisdiction
-   **/
+   */
   public NotaryJurisdiction sealType(String sealType) {
     this.sealType = sealType;
     return this;
@@ -212,20 +192,18 @@ public class NotaryJurisdiction {
 
   /**
    * .
+   *
    * @return sealType
-   **/
+   */
   @Schema(description = "")
   public String getSealType() {
     return sealType;
   }
 
-  /**
-   * setSealType.
-   **/
+  /** setSealType. */
   public void setSealType(String sealType) {
     this.sealType = sealType;
   }
-
 
   /**
    * Compares objects.
@@ -241,33 +219,37 @@ public class NotaryJurisdiction {
       return false;
     }
     NotaryJurisdiction notaryJurisdiction = (NotaryJurisdiction) o;
-    return Objects.equals(this.commissionExpiration, notaryJurisdiction.commissionExpiration) &&
-        Objects.equals(this.commissionId, notaryJurisdiction.commissionId) &&
-        Objects.equals(this.county, notaryJurisdiction.county) &&
-        Objects.equals(this.errorDetails, notaryJurisdiction.errorDetails) &&
-        Objects.equals(this.jurisdiction, notaryJurisdiction.jurisdiction) &&
-        Objects.equals(this.registeredName, notaryJurisdiction.registeredName) &&
-        Objects.equals(this.sealType, notaryJurisdiction.sealType);
+    return Objects.equals(this.commissionExpiration, notaryJurisdiction.commissionExpiration)
+        && Objects.equals(this.commissionId, notaryJurisdiction.commissionId)
+        && Objects.equals(this.county, notaryJurisdiction.county)
+        && Objects.equals(this.errorDetails, notaryJurisdiction.errorDetails)
+        && Objects.equals(this.jurisdiction, notaryJurisdiction.jurisdiction)
+        && Objects.equals(this.registeredName, notaryJurisdiction.registeredName)
+        && Objects.equals(this.sealType, notaryJurisdiction.sealType);
   }
 
-  /**
-   * Returns the HashCode.
-   */
+  /** Returns the HashCode. */
   @Override
   public int hashCode() {
-    return Objects.hash(commissionExpiration, commissionId, county, errorDetails, jurisdiction, registeredName, sealType);
+    return Objects.hash(
+        commissionExpiration,
+        commissionId,
+        county,
+        errorDetails,
+        jurisdiction,
+        registeredName,
+        sealType);
   }
 
-
-  /**
-   * Converts the given object to string.
-   */
+  /** Converts the given object to string. */
   @Override
   public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class NotaryJurisdiction {\n");
-    
-    sb.append("    commissionExpiration: ").append(toIndentedString(commissionExpiration)).append("\n");
+
+    sb.append("    commissionExpiration: ")
+        .append(toIndentedString(commissionExpiration))
+        .append("\n");
     sb.append("    commissionId: ").append(toIndentedString(commissionId)).append("\n");
     sb.append("    county: ").append(toIndentedString(county)).append("\n");
     sb.append("    errorDetails: ").append(toIndentedString(errorDetails)).append("\n");
@@ -279,8 +261,7 @@ public class NotaryJurisdiction {
   }
 
   /**
-   * Convert the given object to string with each line indented by 4 spaces
-   * (except the first line).
+   * Convert the given object to string with each line indented by 4 spaces (except the first line).
    */
   private String toIndentedString(java.lang.Object o) {
     if (o == null) {
@@ -288,6 +269,4 @@ public class NotaryJurisdiction {
     }
     return o.toString().replace("\n", "\n    ");
   }
-
 }
-

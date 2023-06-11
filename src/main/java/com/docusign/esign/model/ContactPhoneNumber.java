@@ -1,18 +1,11 @@
 package com.docusign.esign.model;
 
-import java.util.Objects;
-import java.util.Arrays;
+import com.docusign.esign.override.swagger.Schema;
 import com.fasterxml.jackson.annotation.JsonProperty;
-import com.fasterxml.jackson.annotation.JsonCreator;
-import com.fasterxml.jackson.annotation.JsonValue;
-import io.swagger.v3.oas.annotations.media.Schema;
+import java.util.Objects;
 
-/**
- * Details about the phone numbers associated with a specific contact..
- *
- */
+/** Details about the phone numbers associated with a specific contact.. */
 @Schema(description = "Details about the phone numbers associated with a specific contact.")
-
 public class ContactPhoneNumber {
   @JsonProperty("phoneNumber")
   private String phoneNumber = null;
@@ -20,12 +13,11 @@ public class ContactPhoneNumber {
   @JsonProperty("phoneType")
   private String phoneType = null;
 
-
   /**
    * phoneNumber.
    *
    * @return ContactPhoneNumber
-   **/
+   */
   public ContactPhoneNumber phoneNumber(String phoneNumber) {
     this.phoneNumber = phoneNumber;
     return this;
@@ -33,26 +25,24 @@ public class ContactPhoneNumber {
 
   /**
    * .
+   *
    * @return phoneNumber
-   **/
+   */
   @Schema(description = "")
   public String getPhoneNumber() {
     return phoneNumber;
   }
 
-  /**
-   * setPhoneNumber.
-   **/
+  /** setPhoneNumber. */
   public void setPhoneNumber(String phoneNumber) {
     this.phoneNumber = phoneNumber;
   }
-
 
   /**
    * phoneType.
    *
    * @return ContactPhoneNumber
-   **/
+   */
   public ContactPhoneNumber phoneType(String phoneType) {
     this.phoneType = phoneType;
     return this;
@@ -60,20 +50,18 @@ public class ContactPhoneNumber {
 
   /**
    * .
+   *
    * @return phoneType
-   **/
+   */
   @Schema(description = "")
   public String getPhoneType() {
     return phoneType;
   }
 
-  /**
-   * setPhoneType.
-   **/
+  /** setPhoneType. */
   public void setPhoneType(String phoneType) {
     this.phoneType = phoneType;
   }
-
 
   /**
    * Compares objects.
@@ -89,27 +77,22 @@ public class ContactPhoneNumber {
       return false;
     }
     ContactPhoneNumber contactPhoneNumber = (ContactPhoneNumber) o;
-    return Objects.equals(this.phoneNumber, contactPhoneNumber.phoneNumber) &&
-        Objects.equals(this.phoneType, contactPhoneNumber.phoneType);
+    return Objects.equals(this.phoneNumber, contactPhoneNumber.phoneNumber)
+        && Objects.equals(this.phoneType, contactPhoneNumber.phoneType);
   }
 
-  /**
-   * Returns the HashCode.
-   */
+  /** Returns the HashCode. */
   @Override
   public int hashCode() {
     return Objects.hash(phoneNumber, phoneType);
   }
 
-
-  /**
-   * Converts the given object to string.
-   */
+  /** Converts the given object to string. */
   @Override
   public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class ContactPhoneNumber {\n");
-    
+
     sb.append("    phoneNumber: ").append(toIndentedString(phoneNumber)).append("\n");
     sb.append("    phoneType: ").append(toIndentedString(phoneType)).append("\n");
     sb.append("}");
@@ -117,8 +100,7 @@ public class ContactPhoneNumber {
   }
 
   /**
-   * Convert the given object to string with each line indented by 4 spaces
-   * (except the first line).
+   * Convert the given object to string with each line indented by 4 spaces (except the first line).
    */
   private String toIndentedString(java.lang.Object o) {
     if (o == null) {
@@ -126,6 +108,4 @@ public class ContactPhoneNumber {
     }
     return o.toString().replace("\n", "\n    ");
   }
-
 }
-

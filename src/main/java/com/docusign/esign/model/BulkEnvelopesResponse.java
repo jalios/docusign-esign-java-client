@@ -1,7 +1,7 @@
 package com.docusign.esign.model;
 
+import com.docusign.esign.override.swagger.Schema;
 import com.fasterxml.jackson.annotation.JsonProperty;
-import io.swagger.v3.oas.annotations.media.Schema;
 import java.util.Objects;
 
 /** BulkEnvelopesResponse */
@@ -81,13 +81,14 @@ public class BulkEnvelopesResponse {
   }
 
   /**
-   * The URI to the next chunk of records based on the search request. If the
-   * endPosition is the
+   * The URI to the next chunk of records based on the search request. If the endPosition is the
    * entire results of the search, this is null.
    *
    * @return nextUri
    */
-  @Schema(description = "The URI to the next chunk of records based on the search request. If the endPosition is the entire results of the search, this is null. ")
+  @Schema(
+      description =
+          "The URI to the next chunk of records based on the search request. If the endPosition is the entire results of the search, this is null. ")
   public String getNextUri() {
     return nextUri;
   }
@@ -159,14 +160,14 @@ public class BulkEnvelopesResponse {
   }
 
   /**
-   * The total number of items available in the result set. This will always be
-   * greater than or
-   * equal to the value of the property returning the results in the in the
-   * response.
+   * The total number of items available in the result set. This will always be greater than or
+   * equal to the value of the property returning the results in the in the response.
    *
    * @return totalSetSize
    */
-  @Schema(description = "The total number of items available in the result set. This will always be greater than or equal to the value of the property returning the results in the in the response.")
+  @Schema(
+      description =
+          "The total number of items available in the result set. This will always be greater than or equal to the value of the property returning the results in the in the response.")
   public String getTotalSetSize() {
     return totalSetSize;
   }
@@ -224,8 +225,7 @@ public class BulkEnvelopesResponse {
   }
 
   /**
-   * Convert the given object to string with each line indented by 4 spaces
-   * (except the first line).
+   * Convert the given object to string with each line indented by 4 spaces (except the first line).
    */
   private String toIndentedString(java.lang.Object o) {
     if (o == null) {

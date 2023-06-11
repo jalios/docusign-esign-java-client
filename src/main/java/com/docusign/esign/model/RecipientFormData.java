@@ -1,18 +1,10 @@
 package com.docusign.esign.model;
 
-import java.util.Objects;
-import java.util.Arrays;
-import com.docusign.esign.model.FormDataItem;
+import com.docusign.esign.override.swagger.Schema;
 import com.fasterxml.jackson.annotation.JsonProperty;
-import com.fasterxml.jackson.annotation.JsonCreator;
-import com.fasterxml.jackson.annotation.JsonValue;
-import io.swagger.v3.oas.annotations.media.Schema;
+import java.util.Objects;
 
-/**
- * RecipientFormData.
- *
- */
-
+/** RecipientFormData. */
 public class RecipientFormData {
   @JsonProperty("DeclinedTime")
   private String declinedTime = null;
@@ -38,12 +30,11 @@ public class RecipientFormData {
   @JsonProperty("SignedTime")
   private String signedTime = null;
 
-
   /**
    * declinedTime.
    *
    * @return RecipientFormData
-   **/
+   */
   public RecipientFormData declinedTime(String declinedTime) {
     this.declinedTime = declinedTime;
     return this;
@@ -51,26 +42,24 @@ public class RecipientFormData {
 
   /**
    * .
+   *
    * @return declinedTime
-   **/
+   */
   @Schema(description = "")
   public String getDeclinedTime() {
     return declinedTime;
   }
 
-  /**
-   * setDeclinedTime.
-   **/
+  /** setDeclinedTime. */
   public void setDeclinedTime(String declinedTime) {
     this.declinedTime = declinedTime;
   }
-
 
   /**
    * deliveredTime.
    *
    * @return RecipientFormData
-   **/
+   */
   public RecipientFormData deliveredTime(String deliveredTime) {
     this.deliveredTime = deliveredTime;
     return this;
@@ -78,26 +67,24 @@ public class RecipientFormData {
 
   /**
    * .
+   *
    * @return deliveredTime
-   **/
+   */
   @Schema(description = "")
   public String getDeliveredTime() {
     return deliveredTime;
   }
 
-  /**
-   * setDeliveredTime.
-   **/
+  /** setDeliveredTime. */
   public void setDeliveredTime(String deliveredTime) {
     this.deliveredTime = deliveredTime;
   }
-
 
   /**
    * email.
    *
    * @return RecipientFormData
-   **/
+   */
   public RecipientFormData email(String email) {
     this.email = email;
     return this;
@@ -105,36 +92,34 @@ public class RecipientFormData {
 
   /**
    * .
+   *
    * @return email
-   **/
+   */
   @Schema(description = "")
   public String getEmail() {
     return email;
   }
 
-  /**
-   * setEmail.
-   **/
+  /** setEmail. */
   public void setEmail(String email) {
     this.email = email;
   }
-
 
   /**
    * formData.
    *
    * @return RecipientFormData
-   **/
+   */
   public RecipientFormData formData(java.util.List<FormDataItem> formData) {
     this.formData = formData;
     return this;
   }
-  
+
   /**
    * addFormDataItem.
    *
    * @return RecipientFormData
-   **/
+   */
   public RecipientFormData addFormDataItem(FormDataItem formDataItem) {
     if (this.formData == null) {
       this.formData = new java.util.ArrayList<>();
@@ -145,26 +130,24 @@ public class RecipientFormData {
 
   /**
    * .
+   *
    * @return formData
-   **/
+   */
   @Schema(description = "")
   public java.util.List<FormDataItem> getFormData() {
     return formData;
   }
 
-  /**
-   * setFormData.
-   **/
+  /** setFormData. */
   public void setFormData(java.util.List<FormDataItem> formData) {
     this.formData = formData;
   }
-
 
   /**
    * name.
    *
    * @return RecipientFormData
-   **/
+   */
   public RecipientFormData name(String name) {
     this.name = name;
     return this;
@@ -172,53 +155,52 @@ public class RecipientFormData {
 
   /**
    * .
+   *
    * @return name
-   **/
+   */
   @Schema(description = "")
   public String getName() {
     return name;
   }
 
-  /**
-   * setName.
-   **/
+  /** setName. */
   public void setName(String name) {
     this.name = name;
   }
-
 
   /**
    * recipientId.
    *
    * @return RecipientFormData
-   **/
+   */
   public RecipientFormData recipientId(String recipientId) {
     this.recipientId = recipientId;
     return this;
   }
 
   /**
-   * Unique for the recipient. It is used by the tab element to indicate which recipient is to sign the Document..
+   * Unique for the recipient. It is used by the tab element to indicate which recipient is to sign
+   * the Document..
+   *
    * @return recipientId
-   **/
-  @Schema(description = "Unique for the recipient. It is used by the tab element to indicate which recipient is to sign the Document.")
+   */
+  @Schema(
+      description =
+          "Unique for the recipient. It is used by the tab element to indicate which recipient is to sign the Document.")
   public String getRecipientId() {
     return recipientId;
   }
 
-  /**
-   * setRecipientId.
-   **/
+  /** setRecipientId. */
   public void setRecipientId(String recipientId) {
     this.recipientId = recipientId;
   }
-
 
   /**
    * sentTime.
    *
    * @return RecipientFormData
-   **/
+   */
   public RecipientFormData sentTime(String sentTime) {
     this.sentTime = sentTime;
     return this;
@@ -226,26 +208,24 @@ public class RecipientFormData {
 
   /**
    * .
+   *
    * @return sentTime
-   **/
+   */
   @Schema(description = "")
   public String getSentTime() {
     return sentTime;
   }
 
-  /**
-   * setSentTime.
-   **/
+  /** setSentTime. */
   public void setSentTime(String sentTime) {
     this.sentTime = sentTime;
   }
-
 
   /**
    * signedTime.
    *
    * @return RecipientFormData
-   **/
+   */
   public RecipientFormData signedTime(String signedTime) {
     this.signedTime = signedTime;
     return this;
@@ -253,20 +233,18 @@ public class RecipientFormData {
 
   /**
    * .
+   *
    * @return signedTime
-   **/
+   */
   @Schema(description = "")
   public String getSignedTime() {
     return signedTime;
   }
 
-  /**
-   * setSignedTime.
-   **/
+  /** setSignedTime. */
   public void setSignedTime(String signedTime) {
     this.signedTime = signedTime;
   }
-
 
   /**
    * Compares objects.
@@ -282,33 +260,29 @@ public class RecipientFormData {
       return false;
     }
     RecipientFormData recipientFormData = (RecipientFormData) o;
-    return Objects.equals(this.declinedTime, recipientFormData.declinedTime) &&
-        Objects.equals(this.deliveredTime, recipientFormData.deliveredTime) &&
-        Objects.equals(this.email, recipientFormData.email) &&
-        Objects.equals(this.formData, recipientFormData.formData) &&
-        Objects.equals(this.name, recipientFormData.name) &&
-        Objects.equals(this.recipientId, recipientFormData.recipientId) &&
-        Objects.equals(this.sentTime, recipientFormData.sentTime) &&
-        Objects.equals(this.signedTime, recipientFormData.signedTime);
+    return Objects.equals(this.declinedTime, recipientFormData.declinedTime)
+        && Objects.equals(this.deliveredTime, recipientFormData.deliveredTime)
+        && Objects.equals(this.email, recipientFormData.email)
+        && Objects.equals(this.formData, recipientFormData.formData)
+        && Objects.equals(this.name, recipientFormData.name)
+        && Objects.equals(this.recipientId, recipientFormData.recipientId)
+        && Objects.equals(this.sentTime, recipientFormData.sentTime)
+        && Objects.equals(this.signedTime, recipientFormData.signedTime);
   }
 
-  /**
-   * Returns the HashCode.
-   */
+  /** Returns the HashCode. */
   @Override
   public int hashCode() {
-    return Objects.hash(declinedTime, deliveredTime, email, formData, name, recipientId, sentTime, signedTime);
+    return Objects.hash(
+        declinedTime, deliveredTime, email, formData, name, recipientId, sentTime, signedTime);
   }
 
-
-  /**
-   * Converts the given object to string.
-   */
+  /** Converts the given object to string. */
   @Override
   public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class RecipientFormData {\n");
-    
+
     sb.append("    declinedTime: ").append(toIndentedString(declinedTime)).append("\n");
     sb.append("    deliveredTime: ").append(toIndentedString(deliveredTime)).append("\n");
     sb.append("    email: ").append(toIndentedString(email)).append("\n");
@@ -322,8 +296,7 @@ public class RecipientFormData {
   }
 
   /**
-   * Convert the given object to string with each line indented by 4 spaces
-   * (except the first line).
+   * Convert the given object to string with each line indented by 4 spaces (except the first line).
    */
   private String toIndentedString(java.lang.Object o) {
     if (o == null) {
@@ -331,6 +304,4 @@ public class RecipientFormData {
     }
     return o.toString().replace("\n", "\n    ");
   }
-
 }
-

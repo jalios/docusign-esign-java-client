@@ -1,14 +1,13 @@
-# The Official DocuSign eSignature Java Client SDK
+# The Official DocuSign eSignature Java Client SDK for JPlatform
 
-[![Build status][travis-image]][travis-url]
 [![Maven Central status][maven-image]][maven-url]
 
 ## Requirements
-*   Java 1.9+
+*   Java 1.8+
 *   Free [developer account](https://go.docusign.com/sandbox/productshot/?elqCampaignId=16531)
 
 ## Compatibility
-*   Java 1.9+
+*   Java 1.8+
 
 ## Installation
 This SDK is provided as open source, which enables you to customize its functionality to suit your particular use case. To do so, download or clone the repository. If the SDK’s given functionality meets your integration needs, or if you’re working through our [code examples](https://developers.docusign.com/docs/esign-rest-api/how-to/) from the [DocuSign Developer Center](https://developers.docusign.com/), you merely need to install it by following the instructions below.
@@ -27,24 +26,10 @@ This SDK is provided as open source, which enables you to customize its function
     <dependency>
       <groupId>com.docusign</groupId>
       <artifactId>docusign-esign-java</artifactId>
-      <version>3.18.0</version>
+      <version>v4.3.0-JALIOS-1</version>
     </dependency>
     ```
 8. If your project is still open, restart Eclipse.
-
-## Dependencies
-This client has the following external dependencies:
-*   io.swagger:swagger-annotations:jar:1.5.17
-*   org.glassfish.jersey.core:jersey-client:jar:2.29.1
-*   org.glassfish.jersey.media:jersey-media-multipart:jar:2.29.1
-*   org.glassfish.jersey.media:jersey-media-json-jackson:2.29.1
-*   com.fasterxml.jackson.core:jackson-core:jar:2.12.1
-*   com.fasterxml.jackson.core:jackson-annotations:jar:2.12.1
-*   com.fasterxml.jackson.core:jackson-databind:2.12.1
-*   junit:junit:jar:4.13.1
-*   com.apache.oltu.oauth2:org.apache.oltu.oauth2.client:1.0.2
-*   com.auth0:java-jwt:3.4.1
-*   org.bouncycastle:bcprov-jdk15on:1.60
 
 ## Code examples
 You can find on our GitHub a self-executing package of code examples for the eSignature Java SDK, called a [Launcher](https://github.com/docusign/code-examples-java/blob/master/README.md), that demonstrates common use cases. You can also download a version preconfigured for your DocuSign developer account from [Quickstart](https://developers.docusign.com/docs/esign-rest-api/quickstart/). These examples can use either the [Authorization Code Grant](https://developers.docusign.com/esign-rest-api/guides/authentication/oauth2-code-grant) or [JSON Web Token (JWT)](https://developers.docusign.com/esign-rest-api/guides/authentication/oauth2-jsonwebtoken) authentication workflows.
@@ -66,7 +51,5 @@ The DocuSign eSignature Java Client SDK is licensed under the [MIT License](http
 *   [DocuSign For Developers on LinkedIn](https://www.linkedin.com/showcase/docusign-for-developers/)
 *   [DocuSign For Developers on YouTube](https://www.youtube.com/channel/UCJSJ2kMs_qeQotmw4-lX2NQ)
 
-[travis-image]: https://api.travis-ci.com/docusign/docusign-esign-java-client.svg?branch=master
-[travis-url]: https://app.travis-ci.com/github/docusign/docusign-esign-java-client
 [maven-image]: https://img.shields.io/maven-central/v/com.docusign/docusign-esign-java.svg?style=flat
 [maven-url]: https://search.maven.org/#search%7Cga%7C1%7Cg%3A%22com.docusign%22

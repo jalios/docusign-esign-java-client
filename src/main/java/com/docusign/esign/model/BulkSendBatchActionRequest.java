@@ -1,18 +1,10 @@
 package com.docusign.esign.model;
 
-import java.util.Objects;
-import java.util.Arrays;
-import com.docusign.esign.model.Notification;
+import com.docusign.esign.override.swagger.Schema;
 import com.fasterxml.jackson.annotation.JsonProperty;
-import com.fasterxml.jackson.annotation.JsonCreator;
-import com.fasterxml.jackson.annotation.JsonValue;
-import io.swagger.v3.oas.annotations.media.Schema;
+import java.util.Objects;
 
-/**
- * BulkSendBatchActionRequest.
- *
- */
-
+/** BulkSendBatchActionRequest. */
 public class BulkSendBatchActionRequest {
   @JsonProperty("action")
   private String action = null;
@@ -23,12 +15,11 @@ public class BulkSendBatchActionRequest {
   @JsonProperty("voidReason")
   private String voidReason = null;
 
-
   /**
    * action.
    *
    * @return BulkSendBatchActionRequest
-   **/
+   */
   public BulkSendBatchActionRequest action(String action) {
     this.action = action;
     return this;
@@ -36,26 +27,24 @@ public class BulkSendBatchActionRequest {
 
   /**
    * .
+   *
    * @return action
-   **/
+   */
   @Schema(description = "")
   public String getAction() {
     return action;
   }
 
-  /**
-   * setAction.
-   **/
+  /** setAction. */
   public void setAction(String action) {
     this.action = action;
   }
-
 
   /**
    * notification.
    *
    * @return BulkSendBatchActionRequest
-   **/
+   */
   public BulkSendBatchActionRequest notification(Notification notification) {
     this.notification = notification;
     return this;
@@ -63,26 +52,24 @@ public class BulkSendBatchActionRequest {
 
   /**
    * .
+   *
    * @return notification
-   **/
+   */
   @Schema(description = "")
   public Notification getNotification() {
     return notification;
   }
 
-  /**
-   * setNotification.
-   **/
+  /** setNotification. */
   public void setNotification(Notification notification) {
     this.notification = notification;
   }
-
 
   /**
    * voidReason.
    *
    * @return BulkSendBatchActionRequest
-   **/
+   */
   public BulkSendBatchActionRequest voidReason(String voidReason) {
     this.voidReason = voidReason;
     return this;
@@ -90,20 +77,18 @@ public class BulkSendBatchActionRequest {
 
   /**
    * .
+   *
    * @return voidReason
-   **/
+   */
   @Schema(description = "")
   public String getVoidReason() {
     return voidReason;
   }
 
-  /**
-   * setVoidReason.
-   **/
+  /** setVoidReason. */
   public void setVoidReason(String voidReason) {
     this.voidReason = voidReason;
   }
-
 
   /**
    * Compares objects.
@@ -119,28 +104,23 @@ public class BulkSendBatchActionRequest {
       return false;
     }
     BulkSendBatchActionRequest bulkSendBatchActionRequest = (BulkSendBatchActionRequest) o;
-    return Objects.equals(this.action, bulkSendBatchActionRequest.action) &&
-        Objects.equals(this.notification, bulkSendBatchActionRequest.notification) &&
-        Objects.equals(this.voidReason, bulkSendBatchActionRequest.voidReason);
+    return Objects.equals(this.action, bulkSendBatchActionRequest.action)
+        && Objects.equals(this.notification, bulkSendBatchActionRequest.notification)
+        && Objects.equals(this.voidReason, bulkSendBatchActionRequest.voidReason);
   }
 
-  /**
-   * Returns the HashCode.
-   */
+  /** Returns the HashCode. */
   @Override
   public int hashCode() {
     return Objects.hash(action, notification, voidReason);
   }
 
-
-  /**
-   * Converts the given object to string.
-   */
+  /** Converts the given object to string. */
   @Override
   public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class BulkSendBatchActionRequest {\n");
-    
+
     sb.append("    action: ").append(toIndentedString(action)).append("\n");
     sb.append("    notification: ").append(toIndentedString(notification)).append("\n");
     sb.append("    voidReason: ").append(toIndentedString(voidReason)).append("\n");
@@ -149,8 +129,7 @@ public class BulkSendBatchActionRequest {
   }
 
   /**
-   * Convert the given object to string with each line indented by 4 spaces
-   * (except the first line).
+   * Convert the given object to string with each line indented by 4 spaces (except the first line).
    */
   private String toIndentedString(java.lang.Object o) {
     if (o == null) {
@@ -158,6 +137,4 @@ public class BulkSendBatchActionRequest {
     }
     return o.toString().replace("\n", "\n    ");
   }
-
 }
-

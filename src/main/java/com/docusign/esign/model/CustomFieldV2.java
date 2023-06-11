@@ -1,7 +1,7 @@
 package com.docusign.esign.model;
 
+import com.docusign.esign.override.swagger.Schema;
 import com.fasterxml.jackson.annotation.JsonProperty;
-import io.swagger.v3.oas.annotations.media.Schema;
 import java.util.Objects;
 
 /** CustomFieldV2 */
@@ -33,13 +33,15 @@ public class CustomFieldV2 {
   }
 
   /**
-   * If merge field's are being used, specifies the type of the merge field. The
-   * only supported
+   * If merge field's are being used, specifies the type of the merge field. The only supported
    * value is **salesforce**.
    *
    * @return configurationType
    */
-  @Schema(example = "null", description = "If merge field's are being used, specifies the type of the merge field. The only  supported value is **salesforce**.")
+  @Schema(
+      example = "null",
+      description =
+          "If merge field's are being used, specifies the type of the merge field. The only  supported value is **salesforce**.")
   public String getConfigurationType() {
     return configurationType;
   }
@@ -107,7 +109,9 @@ public class CustomFieldV2 {
    *
    * @return required
    */
-  @Schema(example = "null", description = "When set to **true**, the signer is required to fill out this tab")
+  @Schema(
+      example = "null",
+      description = "When set to **true**, the signer is required to fill out this tab")
   public String getRequired() {
     return required;
   }
@@ -190,8 +194,7 @@ public class CustomFieldV2 {
   }
 
   /**
-   * Convert the given object to string with each line indented by 4 spaces
-   * (except the first line).
+   * Convert the given object to string with each line indented by 4 spaces (except the first line).
    */
   private String toIndentedString(java.lang.Object o) {
     if (o == null) {

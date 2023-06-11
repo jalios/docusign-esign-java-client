@@ -1,18 +1,11 @@
 package com.docusign.esign.model;
 
-import java.util.Objects;
-import java.util.Arrays;
+import com.docusign.esign.override.swagger.Schema;
 import com.fasterxml.jackson.annotation.JsonProperty;
-import com.fasterxml.jackson.annotation.JsonCreator;
-import com.fasterxml.jackson.annotation.JsonValue;
-import io.swagger.v3.oas.annotations.media.Schema;
+import java.util.Objects;
 
-/**
- * Contains address information..
- *
- */
+/** Contains address information.. */
 @Schema(description = "Contains address information.")
-
 public class AddressInformation {
   @JsonProperty("address1")
   private String address1 = null;
@@ -41,12 +34,11 @@ public class AddressInformation {
   @JsonProperty("zipPlus4")
   private String zipPlus4 = null;
 
-
   /**
    * address1.
    *
    * @return AddressInformation
-   **/
+   */
   public AddressInformation address1(String address1) {
     this.address1 = address1;
     return this;
@@ -54,26 +46,24 @@ public class AddressInformation {
 
   /**
    * First Line of the address. Maximum length: 100 characters..
+   *
    * @return address1
-   **/
+   */
   @Schema(description = "First Line of the address. Maximum length: 100 characters.")
   public String getAddress1() {
     return address1;
   }
 
-  /**
-   * setAddress1.
-   **/
+  /** setAddress1. */
   public void setAddress1(String address1) {
     this.address1 = address1;
   }
-
 
   /**
    * address2.
    *
    * @return AddressInformation
-   **/
+   */
   public AddressInformation address2(String address2) {
     this.address2 = address2;
     return this;
@@ -81,26 +71,24 @@ public class AddressInformation {
 
   /**
    * Second Line of the address. Maximum length: 100 characters..
+   *
    * @return address2
-   **/
+   */
   @Schema(description = "Second Line of the address. Maximum length: 100 characters.")
   public String getAddress2() {
     return address2;
   }
 
-  /**
-   * setAddress2.
-   **/
+  /** setAddress2. */
   public void setAddress2(String address2) {
     this.address2 = address2;
   }
-
 
   /**
    * city.
    *
    * @return AddressInformation
-   **/
+   */
   public AddressInformation city(String city) {
     this.city = city;
     return this;
@@ -108,26 +96,24 @@ public class AddressInformation {
 
   /**
    * The city associated with the address..
+   *
    * @return city
-   **/
+   */
   @Schema(description = "The city associated with the address.")
   public String getCity() {
     return city;
   }
 
-  /**
-   * setCity.
-   **/
+  /** setCity. */
   public void setCity(String city) {
     this.city = city;
   }
-
 
   /**
    * country.
    *
    * @return AddressInformation
-   **/
+   */
   public AddressInformation country(String country) {
     this.country = country;
     return this;
@@ -135,26 +121,24 @@ public class AddressInformation {
 
   /**
    * Specifies the country associated with the address..
+   *
    * @return country
-   **/
+   */
   @Schema(description = "Specifies the country associated with the address.")
   public String getCountry() {
     return country;
   }
 
-  /**
-   * setCountry.
-   **/
+  /** setCountry. */
   public void setCountry(String country) {
     this.country = country;
   }
-
 
   /**
    * fax.
    *
    * @return AddressInformation
-   **/
+   */
   public AddressInformation fax(String fax) {
     this.fax = fax;
     return this;
@@ -162,26 +146,24 @@ public class AddressInformation {
 
   /**
    * A Fax number associated with the address if one is available..
+   *
    * @return fax
-   **/
+   */
   @Schema(description = "A Fax number associated with the address if one is available.")
   public String getFax() {
     return fax;
   }
 
-  /**
-   * setFax.
-   **/
+  /** setFax. */
   public void setFax(String fax) {
     this.fax = fax;
   }
-
 
   /**
    * phone.
    *
    * @return AddressInformation
-   **/
+   */
   public AddressInformation phone(String phone) {
     this.phone = phone;
     return this;
@@ -189,26 +171,24 @@ public class AddressInformation {
 
   /**
    * A phone number associated with the address..
+   *
    * @return phone
-   **/
+   */
   @Schema(description = "A phone number associated with the address.")
   public String getPhone() {
     return phone;
   }
 
-  /**
-   * setPhone.
-   **/
+  /** setPhone. */
   public void setPhone(String phone) {
     this.phone = phone;
   }
-
 
   /**
    * postalCode.
    *
    * @return AddressInformation
-   **/
+   */
   public AddressInformation postalCode(String postalCode) {
     this.postalCode = postalCode;
     return this;
@@ -216,26 +196,24 @@ public class AddressInformation {
 
   /**
    * .
+   *
    * @return postalCode
-   **/
+   */
   @Schema(description = "")
   public String getPostalCode() {
     return postalCode;
   }
 
-  /**
-   * setPostalCode.
-   **/
+  /** setPostalCode. */
   public void setPostalCode(String postalCode) {
     this.postalCode = postalCode;
   }
-
 
   /**
    * stateOrProvince.
    *
    * @return AddressInformation
-   **/
+   */
   public AddressInformation stateOrProvince(String stateOrProvince) {
     this.stateOrProvince = stateOrProvince;
     return this;
@@ -243,26 +221,24 @@ public class AddressInformation {
 
   /**
    * .
+   *
    * @return stateOrProvince
-   **/
+   */
   @Schema(description = "")
   public String getStateOrProvince() {
     return stateOrProvince;
   }
 
-  /**
-   * setStateOrProvince.
-   **/
+  /** setStateOrProvince. */
   public void setStateOrProvince(String stateOrProvince) {
     this.stateOrProvince = stateOrProvince;
   }
-
 
   /**
    * zipPlus4.
    *
    * @return AddressInformation
-   **/
+   */
   public AddressInformation zipPlus4(String zipPlus4) {
     this.zipPlus4 = zipPlus4;
     return this;
@@ -270,20 +246,18 @@ public class AddressInformation {
 
   /**
    * .
+   *
    * @return zipPlus4
-   **/
+   */
   @Schema(description = "")
   public String getZipPlus4() {
     return zipPlus4;
   }
 
-  /**
-   * setZipPlus4.
-   **/
+  /** setZipPlus4. */
   public void setZipPlus4(String zipPlus4) {
     this.zipPlus4 = zipPlus4;
   }
-
 
   /**
    * Compares objects.
@@ -299,34 +273,30 @@ public class AddressInformation {
       return false;
     }
     AddressInformation addressInformation = (AddressInformation) o;
-    return Objects.equals(this.address1, addressInformation.address1) &&
-        Objects.equals(this.address2, addressInformation.address2) &&
-        Objects.equals(this.city, addressInformation.city) &&
-        Objects.equals(this.country, addressInformation.country) &&
-        Objects.equals(this.fax, addressInformation.fax) &&
-        Objects.equals(this.phone, addressInformation.phone) &&
-        Objects.equals(this.postalCode, addressInformation.postalCode) &&
-        Objects.equals(this.stateOrProvince, addressInformation.stateOrProvince) &&
-        Objects.equals(this.zipPlus4, addressInformation.zipPlus4);
+    return Objects.equals(this.address1, addressInformation.address1)
+        && Objects.equals(this.address2, addressInformation.address2)
+        && Objects.equals(this.city, addressInformation.city)
+        && Objects.equals(this.country, addressInformation.country)
+        && Objects.equals(this.fax, addressInformation.fax)
+        && Objects.equals(this.phone, addressInformation.phone)
+        && Objects.equals(this.postalCode, addressInformation.postalCode)
+        && Objects.equals(this.stateOrProvince, addressInformation.stateOrProvince)
+        && Objects.equals(this.zipPlus4, addressInformation.zipPlus4);
   }
 
-  /**
-   * Returns the HashCode.
-   */
+  /** Returns the HashCode. */
   @Override
   public int hashCode() {
-    return Objects.hash(address1, address2, city, country, fax, phone, postalCode, stateOrProvince, zipPlus4);
+    return Objects.hash(
+        address1, address2, city, country, fax, phone, postalCode, stateOrProvince, zipPlus4);
   }
 
-
-  /**
-   * Converts the given object to string.
-   */
+  /** Converts the given object to string. */
   @Override
   public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class AddressInformation {\n");
-    
+
     sb.append("    address1: ").append(toIndentedString(address1)).append("\n");
     sb.append("    address2: ").append(toIndentedString(address2)).append("\n");
     sb.append("    city: ").append(toIndentedString(city)).append("\n");
@@ -341,8 +311,7 @@ public class AddressInformation {
   }
 
   /**
-   * Convert the given object to string with each line indented by 4 spaces
-   * (except the first line).
+   * Convert the given object to string with each line indented by 4 spaces (except the first line).
    */
   private String toIndentedString(java.lang.Object o) {
     if (o == null) {
@@ -350,6 +319,4 @@ public class AddressInformation {
     }
     return o.toString().replace("\n", "\n    ");
   }
-
 }
-

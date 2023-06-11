@@ -1,17 +1,10 @@
 package com.docusign.esign.model;
 
-import java.util.Objects;
-import java.util.Arrays;
+import com.docusign.esign.override.swagger.Schema;
 import com.fasterxml.jackson.annotation.JsonProperty;
-import com.fasterxml.jackson.annotation.JsonCreator;
-import com.fasterxml.jackson.annotation.JsonValue;
-import io.swagger.v3.oas.annotations.media.Schema;
+import java.util.Objects;
 
-/**
- * ConsentDetails.
- *
- */
-
+/** ConsentDetails. */
 public class ConsentDetails {
   @JsonProperty("consentKey")
   private String consentKey = null;
@@ -22,12 +15,11 @@ public class ConsentDetails {
   @JsonProperty("signerConsentStatus")
   private String signerConsentStatus = null;
 
-
   /**
    * consentKey.
    *
    * @return ConsentDetails
-   **/
+   */
   public ConsentDetails consentKey(String consentKey) {
     this.consentKey = consentKey;
     return this;
@@ -35,26 +27,24 @@ public class ConsentDetails {
 
   /**
    * .
+   *
    * @return consentKey
-   **/
+   */
   @Schema(description = "")
   public String getConsentKey() {
     return consentKey;
   }
 
-  /**
-   * setConsentKey.
-   **/
+  /** setConsentKey. */
   public void setConsentKey(String consentKey) {
     this.consentKey = consentKey;
   }
-
 
   /**
    * deliveryMethod.
    *
    * @return ConsentDetails
-   **/
+   */
   public ConsentDetails deliveryMethod(String deliveryMethod) {
     this.deliveryMethod = deliveryMethod;
     return this;
@@ -62,26 +52,24 @@ public class ConsentDetails {
 
   /**
    * Reserved: For DocuSign use only..
+   *
    * @return deliveryMethod
-   **/
+   */
   @Schema(description = "Reserved: For DocuSign use only.")
   public String getDeliveryMethod() {
     return deliveryMethod;
   }
 
-  /**
-   * setDeliveryMethod.
-   **/
+  /** setDeliveryMethod. */
   public void setDeliveryMethod(String deliveryMethod) {
     this.deliveryMethod = deliveryMethod;
   }
-
 
   /**
    * signerConsentStatus.
    *
    * @return ConsentDetails
-   **/
+   */
   public ConsentDetails signerConsentStatus(String signerConsentStatus) {
     this.signerConsentStatus = signerConsentStatus;
     return this;
@@ -89,20 +77,18 @@ public class ConsentDetails {
 
   /**
    * .
+   *
    * @return signerConsentStatus
-   **/
+   */
   @Schema(description = "")
   public String getSignerConsentStatus() {
     return signerConsentStatus;
   }
 
-  /**
-   * setSignerConsentStatus.
-   **/
+  /** setSignerConsentStatus. */
   public void setSignerConsentStatus(String signerConsentStatus) {
     this.signerConsentStatus = signerConsentStatus;
   }
-
 
   /**
    * Compares objects.
@@ -118,38 +104,34 @@ public class ConsentDetails {
       return false;
     }
     ConsentDetails consentDetails = (ConsentDetails) o;
-    return Objects.equals(this.consentKey, consentDetails.consentKey) &&
-        Objects.equals(this.deliveryMethod, consentDetails.deliveryMethod) &&
-        Objects.equals(this.signerConsentStatus, consentDetails.signerConsentStatus);
+    return Objects.equals(this.consentKey, consentDetails.consentKey)
+        && Objects.equals(this.deliveryMethod, consentDetails.deliveryMethod)
+        && Objects.equals(this.signerConsentStatus, consentDetails.signerConsentStatus);
   }
 
-  /**
-   * Returns the HashCode.
-   */
+  /** Returns the HashCode. */
   @Override
   public int hashCode() {
     return Objects.hash(consentKey, deliveryMethod, signerConsentStatus);
   }
 
-
-  /**
-   * Converts the given object to string.
-   */
+  /** Converts the given object to string. */
   @Override
   public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class ConsentDetails {\n");
-    
+
     sb.append("    consentKey: ").append(toIndentedString(consentKey)).append("\n");
     sb.append("    deliveryMethod: ").append(toIndentedString(deliveryMethod)).append("\n");
-    sb.append("    signerConsentStatus: ").append(toIndentedString(signerConsentStatus)).append("\n");
+    sb.append("    signerConsentStatus: ")
+        .append(toIndentedString(signerConsentStatus))
+        .append("\n");
     sb.append("}");
     return sb.toString();
   }
 
   /**
-   * Convert the given object to string with each line indented by 4 spaces
-   * (except the first line).
+   * Convert the given object to string with each line indented by 4 spaces (except the first line).
    */
   private String toIndentedString(java.lang.Object o) {
     if (o == null) {
@@ -157,6 +139,4 @@ public class ConsentDetails {
     }
     return o.toString().replace("\n", "\n    ");
   }
-
 }
-

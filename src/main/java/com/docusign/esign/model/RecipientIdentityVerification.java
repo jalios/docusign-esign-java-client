@@ -1,20 +1,21 @@
 package com.docusign.esign.model;
 
-import java.util.Objects;
-import java.util.Arrays;
-import com.docusign.esign.model.PropertyMetadata;
-import com.docusign.esign.model.RecipientIdentityInputOption;
+import com.docusign.esign.override.swagger.Schema;
 import com.fasterxml.jackson.annotation.JsonProperty;
-import com.fasterxml.jackson.annotation.JsonCreator;
-import com.fasterxml.jackson.annotation.JsonValue;
-import io.swagger.v3.oas.annotations.media.Schema;
+import java.util.Objects;
 
 /**
- * Specifies ID Verification applied on an envelope by workflow ID. See the [list](/docs/esign-rest-api/reference/accounts/identityverifications/list/) method in the [IdentityVerifications](/docs/esign-rest-api/reference/accounts/identityverifications/) resource for more information on how to retrieve workflow IDs available for an account. This can be used in addition to other [recipient authentication](https://support.docusign.com/en/guides/ndse-user-guide-recipient-authentication) methods..
- *
+ * Specifies ID Verification applied on an envelope by workflow ID. See the
+ * [list](/docs/esign-rest-api/reference/accounts/identityverifications/list/) method in the
+ * [IdentityVerifications](/docs/esign-rest-api/reference/accounts/identityverifications/) resource
+ * for more information on how to retrieve workflow IDs available for an account. This can be used
+ * in addition to other [recipient
+ * authentication](https://support.docusign.com/en/guides/ndse-user-guide-recipient-authentication)
+ * methods..
  */
-@Schema(description = "Specifies ID Verification applied on an envelope by workflow ID. See the [list](/docs/esign-rest-api/reference/accounts/identityverifications/list/) method in the [IdentityVerifications](/docs/esign-rest-api/reference/accounts/identityverifications/) resource for more information on how to retrieve workflow IDs available for an account. This can be used in addition to other [recipient authentication](https://support.docusign.com/en/guides/ndse-user-guide-recipient-authentication) methods.")
-
+@Schema(
+    description =
+        "Specifies ID Verification applied on an envelope by workflow ID. See the [list](/docs/esign-rest-api/reference/accounts/identityverifications/list/) method in the [IdentityVerifications](/docs/esign-rest-api/reference/accounts/identityverifications/) resource for more information on how to retrieve workflow IDs available for an account. This can be used in addition to other [recipient authentication](https://support.docusign.com/en/guides/ndse-user-guide-recipient-authentication) methods.")
 public class RecipientIdentityVerification {
   @JsonProperty("inputOptions")
   private java.util.List<RecipientIdentityInputOption> inputOptions = null;
@@ -28,23 +29,24 @@ public class RecipientIdentityVerification {
   @JsonProperty("workflowLabel")
   private String workflowLabel = null;
 
-
   /**
    * inputOptions.
    *
    * @return RecipientIdentityVerification
-   **/
-  public RecipientIdentityVerification inputOptions(java.util.List<RecipientIdentityInputOption> inputOptions) {
+   */
+  public RecipientIdentityVerification inputOptions(
+      java.util.List<RecipientIdentityInputOption> inputOptions) {
     this.inputOptions = inputOptions;
     return this;
   }
-  
+
   /**
    * addInputOptionsItem.
    *
    * @return RecipientIdentityVerification
-   **/
-  public RecipientIdentityVerification addInputOptionsItem(RecipientIdentityInputOption inputOptionsItem) {
+   */
+  public RecipientIdentityVerification addInputOptionsItem(
+      RecipientIdentityInputOption inputOptionsItem) {
     if (this.inputOptions == null) {
       this.inputOptions = new java.util.ArrayList<>();
     }
@@ -54,26 +56,24 @@ public class RecipientIdentityVerification {
 
   /**
    * .
+   *
    * @return inputOptions
-   **/
+   */
   @Schema(description = "")
   public java.util.List<RecipientIdentityInputOption> getInputOptions() {
     return inputOptions;
   }
 
-  /**
-   * setInputOptions.
-   **/
+  /** setInputOptions. */
   public void setInputOptions(java.util.List<RecipientIdentityInputOption> inputOptions) {
     this.inputOptions = inputOptions;
   }
-
 
   /**
    * workflowId.
    *
    * @return RecipientIdentityVerification
-   **/
+   */
   public RecipientIdentityVerification workflowId(String workflowId) {
     this.workflowId = workflowId;
     return this;
@@ -81,26 +81,24 @@ public class RecipientIdentityVerification {
 
   /**
    * .
+   *
    * @return workflowId
-   **/
+   */
   @Schema(description = "")
   public String getWorkflowId() {
     return workflowId;
   }
 
-  /**
-   * setWorkflowId.
-   **/
+  /** setWorkflowId. */
   public void setWorkflowId(String workflowId) {
     this.workflowId = workflowId;
   }
-
 
   /**
    * workflowIdMetadata.
    *
    * @return RecipientIdentityVerification
-   **/
+   */
   public RecipientIdentityVerification workflowIdMetadata(PropertyMetadata workflowIdMetadata) {
     this.workflowIdMetadata = workflowIdMetadata;
     return this;
@@ -108,26 +106,24 @@ public class RecipientIdentityVerification {
 
   /**
    * .
+   *
    * @return workflowIdMetadata
-   **/
+   */
   @Schema(description = "")
   public PropertyMetadata getWorkflowIdMetadata() {
     return workflowIdMetadata;
   }
 
-  /**
-   * setWorkflowIdMetadata.
-   **/
+  /** setWorkflowIdMetadata. */
   public void setWorkflowIdMetadata(PropertyMetadata workflowIdMetadata) {
     this.workflowIdMetadata = workflowIdMetadata;
   }
-
 
   /**
    * workflowLabel.
    *
    * @return RecipientIdentityVerification
-   **/
+   */
   public RecipientIdentityVerification workflowLabel(String workflowLabel) {
     this.workflowLabel = workflowLabel;
     return this;
@@ -135,20 +131,18 @@ public class RecipientIdentityVerification {
 
   /**
    * .
+   *
    * @return workflowLabel
-   **/
+   */
   @Schema(description = "")
   public String getWorkflowLabel() {
     return workflowLabel;
   }
 
-  /**
-   * setWorkflowLabel.
-   **/
+  /** setWorkflowLabel. */
   public void setWorkflowLabel(String workflowLabel) {
     this.workflowLabel = workflowLabel;
   }
-
 
   /**
    * Compares objects.
@@ -164,29 +158,24 @@ public class RecipientIdentityVerification {
       return false;
     }
     RecipientIdentityVerification recipientIdentityVerification = (RecipientIdentityVerification) o;
-    return Objects.equals(this.inputOptions, recipientIdentityVerification.inputOptions) &&
-        Objects.equals(this.workflowId, recipientIdentityVerification.workflowId) &&
-        Objects.equals(this.workflowIdMetadata, recipientIdentityVerification.workflowIdMetadata) &&
-        Objects.equals(this.workflowLabel, recipientIdentityVerification.workflowLabel);
+    return Objects.equals(this.inputOptions, recipientIdentityVerification.inputOptions)
+        && Objects.equals(this.workflowId, recipientIdentityVerification.workflowId)
+        && Objects.equals(this.workflowIdMetadata, recipientIdentityVerification.workflowIdMetadata)
+        && Objects.equals(this.workflowLabel, recipientIdentityVerification.workflowLabel);
   }
 
-  /**
-   * Returns the HashCode.
-   */
+  /** Returns the HashCode. */
   @Override
   public int hashCode() {
     return Objects.hash(inputOptions, workflowId, workflowIdMetadata, workflowLabel);
   }
 
-
-  /**
-   * Converts the given object to string.
-   */
+  /** Converts the given object to string. */
   @Override
   public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class RecipientIdentityVerification {\n");
-    
+
     sb.append("    inputOptions: ").append(toIndentedString(inputOptions)).append("\n");
     sb.append("    workflowId: ").append(toIndentedString(workflowId)).append("\n");
     sb.append("    workflowIdMetadata: ").append(toIndentedString(workflowIdMetadata)).append("\n");
@@ -196,8 +185,7 @@ public class RecipientIdentityVerification {
   }
 
   /**
-   * Convert the given object to string with each line indented by 4 spaces
-   * (except the first line).
+   * Convert the given object to string with each line indented by 4 spaces (except the first line).
    */
   private String toIndentedString(java.lang.Object o) {
     if (o == null) {
@@ -205,6 +193,4 @@ public class RecipientIdentityVerification {
     }
     return o.toString().replace("\n", "\n    ");
   }
-
 }
-

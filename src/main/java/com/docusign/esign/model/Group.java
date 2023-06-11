@@ -1,20 +1,11 @@
 package com.docusign.esign.model;
 
-import java.util.Objects;
-import java.util.Arrays;
-import com.docusign.esign.model.ErrorDetails;
-import com.docusign.esign.model.UserInfo;
+import com.docusign.esign.override.swagger.Schema;
 import com.fasterxml.jackson.annotation.JsonProperty;
-import com.fasterxml.jackson.annotation.JsonCreator;
-import com.fasterxml.jackson.annotation.JsonValue;
-import io.swagger.v3.oas.annotations.media.Schema;
+import java.util.Objects;
 
-/**
- * This object contains information about a group..
- *
- */
+/** This object contains information about a group.. */
 @Schema(description = "This object contains information about a group.")
-
 public class Group {
   @JsonProperty("dsGroupId")
   private String dsGroupId = null;
@@ -40,12 +31,11 @@ public class Group {
   @JsonProperty("usersCount")
   private String usersCount = null;
 
-
   /**
    * dsGroupId.
    *
    * @return Group
-   **/
+   */
   public Group dsGroupId(String dsGroupId) {
     this.dsGroupId = dsGroupId;
     return this;
@@ -53,26 +43,24 @@ public class Group {
 
   /**
    * .
+   *
    * @return dsGroupId
-   **/
+   */
   @Schema(description = "")
   public String getDsGroupId() {
     return dsGroupId;
   }
 
-  /**
-   * setDsGroupId.
-   **/
+  /** setDsGroupId. */
   public void setDsGroupId(String dsGroupId) {
     this.dsGroupId = dsGroupId;
   }
-
 
   /**
    * errorDetails.
    *
    * @return Group
-   **/
+   */
   public Group errorDetails(ErrorDetails errorDetails) {
     this.errorDetails = errorDetails;
     return this;
@@ -80,26 +68,24 @@ public class Group {
 
   /**
    * Array or errors..
+   *
    * @return errorDetails
-   **/
+   */
   @Schema(description = "Array or errors.")
   public ErrorDetails getErrorDetails() {
     return errorDetails;
   }
 
-  /**
-   * setErrorDetails.
-   **/
+  /** setErrorDetails. */
   public void setErrorDetails(ErrorDetails errorDetails) {
     this.errorDetails = errorDetails;
   }
-
 
   /**
    * groupId.
    *
    * @return Group
-   **/
+   */
   public Group groupId(String groupId) {
     this.groupId = groupId;
     return this;
@@ -107,26 +93,24 @@ public class Group {
 
   /**
    * The DocuSign group ID for the group..
+   *
    * @return groupId
-   **/
+   */
   @Schema(description = "The DocuSign group ID for the group.")
   public String getGroupId() {
     return groupId;
   }
 
-  /**
-   * setGroupId.
-   **/
+  /** setGroupId. */
   public void setGroupId(String groupId) {
     this.groupId = groupId;
   }
-
 
   /**
    * groupName.
    *
    * @return Group
-   **/
+   */
   public Group groupName(String groupName) {
     this.groupName = groupName;
     return this;
@@ -134,26 +118,24 @@ public class Group {
 
   /**
    * The name of the group..
+   *
    * @return groupName
-   **/
+   */
   @Schema(description = "The name of the group.")
   public String getGroupName() {
     return groupName;
   }
 
-  /**
-   * setGroupName.
-   **/
+  /** setGroupName. */
   public void setGroupName(String groupName) {
     this.groupName = groupName;
   }
-
 
   /**
    * groupType.
    *
    * @return Group
-   **/
+   */
   public Group groupType(String groupType) {
     this.groupType = groupType;
     return this;
@@ -161,26 +143,24 @@ public class Group {
 
   /**
    * The group type..
+   *
    * @return groupType
-   **/
+   */
   @Schema(description = "The group type.")
   public String getGroupType() {
     return groupType;
   }
 
-  /**
-   * setGroupType.
-   **/
+  /** setGroupType. */
   public void setGroupType(String groupType) {
     this.groupType = groupType;
   }
-
 
   /**
    * permissionProfileId.
    *
    * @return Group
-   **/
+   */
   public Group permissionProfileId(String permissionProfileId) {
     this.permissionProfileId = permissionProfileId;
     return this;
@@ -188,36 +168,34 @@ public class Group {
 
   /**
    * The ID of the permission profile associated with the group..
+   *
    * @return permissionProfileId
-   **/
+   */
   @Schema(description = "The ID of the permission profile associated with the group.")
   public String getPermissionProfileId() {
     return permissionProfileId;
   }
 
-  /**
-   * setPermissionProfileId.
-   **/
+  /** setPermissionProfileId. */
   public void setPermissionProfileId(String permissionProfileId) {
     this.permissionProfileId = permissionProfileId;
   }
-
 
   /**
    * users.
    *
    * @return Group
-   **/
+   */
   public Group users(java.util.List<UserInfo> users) {
     this.users = users;
     return this;
   }
-  
+
   /**
    * addUsersItem.
    *
    * @return Group
-   **/
+   */
   public Group addUsersItem(UserInfo usersItem) {
     if (this.users == null) {
       this.users = new java.util.ArrayList<>();
@@ -228,26 +206,24 @@ public class Group {
 
   /**
    * .
+   *
    * @return users
-   **/
+   */
   @Schema(description = "")
   public java.util.List<UserInfo> getUsers() {
     return users;
   }
 
-  /**
-   * setUsers.
-   **/
+  /** setUsers. */
   public void setUsers(java.util.List<UserInfo> users) {
     this.users = users;
   }
-
 
   /**
    * usersCount.
    *
    * @return Group
-   **/
+   */
   public Group usersCount(String usersCount) {
     this.usersCount = usersCount;
     return this;
@@ -255,20 +231,18 @@ public class Group {
 
   /**
    * .
+   *
    * @return usersCount
-   **/
+   */
   @Schema(description = "")
   public String getUsersCount() {
     return usersCount;
   }
 
-  /**
-   * setUsersCount.
-   **/
+  /** setUsersCount. */
   public void setUsersCount(String usersCount) {
     this.usersCount = usersCount;
   }
-
 
   /**
    * Compares objects.
@@ -284,39 +258,44 @@ public class Group {
       return false;
     }
     Group group = (Group) o;
-    return Objects.equals(this.dsGroupId, group.dsGroupId) &&
-        Objects.equals(this.errorDetails, group.errorDetails) &&
-        Objects.equals(this.groupId, group.groupId) &&
-        Objects.equals(this.groupName, group.groupName) &&
-        Objects.equals(this.groupType, group.groupType) &&
-        Objects.equals(this.permissionProfileId, group.permissionProfileId) &&
-        Objects.equals(this.users, group.users) &&
-        Objects.equals(this.usersCount, group.usersCount);
+    return Objects.equals(this.dsGroupId, group.dsGroupId)
+        && Objects.equals(this.errorDetails, group.errorDetails)
+        && Objects.equals(this.groupId, group.groupId)
+        && Objects.equals(this.groupName, group.groupName)
+        && Objects.equals(this.groupType, group.groupType)
+        && Objects.equals(this.permissionProfileId, group.permissionProfileId)
+        && Objects.equals(this.users, group.users)
+        && Objects.equals(this.usersCount, group.usersCount);
   }
 
-  /**
-   * Returns the HashCode.
-   */
+  /** Returns the HashCode. */
   @Override
   public int hashCode() {
-    return Objects.hash(dsGroupId, errorDetails, groupId, groupName, groupType, permissionProfileId, users, usersCount);
+    return Objects.hash(
+        dsGroupId,
+        errorDetails,
+        groupId,
+        groupName,
+        groupType,
+        permissionProfileId,
+        users,
+        usersCount);
   }
 
-
-  /**
-   * Converts the given object to string.
-   */
+  /** Converts the given object to string. */
   @Override
   public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class Group {\n");
-    
+
     sb.append("    dsGroupId: ").append(toIndentedString(dsGroupId)).append("\n");
     sb.append("    errorDetails: ").append(toIndentedString(errorDetails)).append("\n");
     sb.append("    groupId: ").append(toIndentedString(groupId)).append("\n");
     sb.append("    groupName: ").append(toIndentedString(groupName)).append("\n");
     sb.append("    groupType: ").append(toIndentedString(groupType)).append("\n");
-    sb.append("    permissionProfileId: ").append(toIndentedString(permissionProfileId)).append("\n");
+    sb.append("    permissionProfileId: ")
+        .append(toIndentedString(permissionProfileId))
+        .append("\n");
     sb.append("    users: ").append(toIndentedString(users)).append("\n");
     sb.append("    usersCount: ").append(toIndentedString(usersCount)).append("\n");
     sb.append("}");
@@ -324,8 +303,7 @@ public class Group {
   }
 
   /**
-   * Convert the given object to string with each line indented by 4 spaces
-   * (except the first line).
+   * Convert the given object to string with each line indented by 4 spaces (except the first line).
    */
   private String toIndentedString(java.lang.Object o) {
     if (o == null) {
@@ -333,6 +311,4 @@ public class Group {
     }
     return o.toString().replace("\n", "\n    ");
   }
-
 }
-

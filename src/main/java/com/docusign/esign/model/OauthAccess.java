@@ -1,18 +1,10 @@
 package com.docusign.esign.model;
 
-import java.util.Objects;
-import java.util.Arrays;
-import com.docusign.esign.model.NameValue;
+import com.docusign.esign.override.swagger.Schema;
 import com.fasterxml.jackson.annotation.JsonProperty;
-import com.fasterxml.jackson.annotation.JsonCreator;
-import com.fasterxml.jackson.annotation.JsonValue;
-import io.swagger.v3.oas.annotations.media.Schema;
+import java.util.Objects;
 
-/**
- * OauthAccess.
- *
- */
-
+/** OauthAccess. */
 public class OauthAccess {
   @JsonProperty("access_token")
   private String accessToken = null;
@@ -32,12 +24,11 @@ public class OauthAccess {
   @JsonProperty("token_type")
   private String tokenType = null;
 
-
   /**
    * accessToken.
    *
    * @return OauthAccess
-   **/
+   */
   public OauthAccess accessToken(String accessToken) {
     this.accessToken = accessToken;
     return this;
@@ -45,36 +36,34 @@ public class OauthAccess {
 
   /**
    * Access token information..
+   *
    * @return accessToken
-   **/
+   */
   @Schema(description = "Access token information.")
   public String getAccessToken() {
     return accessToken;
   }
 
-  /**
-   * setAccessToken.
-   **/
+  /** setAccessToken. */
   public void setAccessToken(String accessToken) {
     this.accessToken = accessToken;
   }
-
 
   /**
    * data.
    *
    * @return OauthAccess
-   **/
+   */
   public OauthAccess data(java.util.List<NameValue> data) {
     this.data = data;
     return this;
   }
-  
+
   /**
    * addDataItem.
    *
    * @return OauthAccess
-   **/
+   */
   public OauthAccess addDataItem(NameValue dataItem) {
     if (this.data == null) {
       this.data = new java.util.ArrayList<>();
@@ -85,26 +74,24 @@ public class OauthAccess {
 
   /**
    * .
+   *
    * @return data
-   **/
+   */
   @Schema(description = "")
   public java.util.List<NameValue> getData() {
     return data;
   }
 
-  /**
-   * setData.
-   **/
+  /** setData. */
   public void setData(java.util.List<NameValue> data) {
     this.data = data;
   }
-
 
   /**
    * expiresIn.
    *
    * @return OauthAccess
-   **/
+   */
   public OauthAccess expiresIn(String expiresIn) {
     this.expiresIn = expiresIn;
     return this;
@@ -112,26 +99,24 @@ public class OauthAccess {
 
   /**
    * .
+   *
    * @return expiresIn
-   **/
+   */
   @Schema(description = "")
   public String getExpiresIn() {
     return expiresIn;
   }
 
-  /**
-   * setExpiresIn.
-   **/
+  /** setExpiresIn. */
   public void setExpiresIn(String expiresIn) {
     this.expiresIn = expiresIn;
   }
-
 
   /**
    * refreshToken.
    *
    * @return OauthAccess
-   **/
+   */
   public OauthAccess refreshToken(String refreshToken) {
     this.refreshToken = refreshToken;
     return this;
@@ -139,26 +124,24 @@ public class OauthAccess {
 
   /**
    * .
+   *
    * @return refreshToken
-   **/
+   */
   @Schema(description = "")
   public String getRefreshToken() {
     return refreshToken;
   }
 
-  /**
-   * setRefreshToken.
-   **/
+  /** setRefreshToken. */
   public void setRefreshToken(String refreshToken) {
     this.refreshToken = refreshToken;
   }
-
 
   /**
    * scope.
    *
    * @return OauthAccess
-   **/
+   */
   public OauthAccess scope(String scope) {
     this.scope = scope;
     return this;
@@ -166,26 +149,24 @@ public class OauthAccess {
 
   /**
    * Must be set to \"api\"..
+   *
    * @return scope
-   **/
+   */
   @Schema(description = "Must be set to \"api\".")
   public String getScope() {
     return scope;
   }
 
-  /**
-   * setScope.
-   **/
+  /** setScope. */
   public void setScope(String scope) {
     this.scope = scope;
   }
-
 
   /**
    * tokenType.
    *
    * @return OauthAccess
-   **/
+   */
   public OauthAccess tokenType(String tokenType) {
     this.tokenType = tokenType;
     return this;
@@ -193,20 +174,18 @@ public class OauthAccess {
 
   /**
    * .
+   *
    * @return tokenType
-   **/
+   */
   @Schema(description = "")
   public String getTokenType() {
     return tokenType;
   }
 
-  /**
-   * setTokenType.
-   **/
+  /** setTokenType. */
   public void setTokenType(String tokenType) {
     this.tokenType = tokenType;
   }
-
 
   /**
    * Compares objects.
@@ -222,31 +201,26 @@ public class OauthAccess {
       return false;
     }
     OauthAccess oauthAccess = (OauthAccess) o;
-    return Objects.equals(this.accessToken, oauthAccess.accessToken) &&
-        Objects.equals(this.data, oauthAccess.data) &&
-        Objects.equals(this.expiresIn, oauthAccess.expiresIn) &&
-        Objects.equals(this.refreshToken, oauthAccess.refreshToken) &&
-        Objects.equals(this.scope, oauthAccess.scope) &&
-        Objects.equals(this.tokenType, oauthAccess.tokenType);
+    return Objects.equals(this.accessToken, oauthAccess.accessToken)
+        && Objects.equals(this.data, oauthAccess.data)
+        && Objects.equals(this.expiresIn, oauthAccess.expiresIn)
+        && Objects.equals(this.refreshToken, oauthAccess.refreshToken)
+        && Objects.equals(this.scope, oauthAccess.scope)
+        && Objects.equals(this.tokenType, oauthAccess.tokenType);
   }
 
-  /**
-   * Returns the HashCode.
-   */
+  /** Returns the HashCode. */
   @Override
   public int hashCode() {
     return Objects.hash(accessToken, data, expiresIn, refreshToken, scope, tokenType);
   }
 
-
-  /**
-   * Converts the given object to string.
-   */
+  /** Converts the given object to string. */
   @Override
   public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class OauthAccess {\n");
-    
+
     sb.append("    accessToken: ").append(toIndentedString(accessToken)).append("\n");
     sb.append("    data: ").append(toIndentedString(data)).append("\n");
     sb.append("    expiresIn: ").append(toIndentedString(expiresIn)).append("\n");
@@ -258,8 +232,7 @@ public class OauthAccess {
   }
 
   /**
-   * Convert the given object to string with each line indented by 4 spaces
-   * (except the first line).
+   * Convert the given object to string with each line indented by 4 spaces (except the first line).
    */
   private String toIndentedString(java.lang.Object o) {
     if (o == null) {
@@ -267,6 +240,4 @@ public class OauthAccess {
     }
     return o.toString().replace("\n", "\n    ");
   }
-
 }
-

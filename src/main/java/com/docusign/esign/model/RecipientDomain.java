@@ -1,17 +1,10 @@
 package com.docusign.esign.model;
 
-import java.util.Objects;
-import java.util.Arrays;
+import com.docusign.esign.override.swagger.Schema;
 import com.fasterxml.jackson.annotation.JsonProperty;
-import com.fasterxml.jackson.annotation.JsonCreator;
-import com.fasterxml.jackson.annotation.JsonValue;
-import io.swagger.v3.oas.annotations.media.Schema;
+import java.util.Objects;
 
-/**
- * RecipientDomain.
- *
- */
-
+/** RecipientDomain. */
 public class RecipientDomain {
   @JsonProperty("active")
   private String active = null;
@@ -25,12 +18,11 @@ public class RecipientDomain {
   @JsonProperty("recipientDomainId")
   private String recipientDomainId = null;
 
-
   /**
    * active.
    *
    * @return RecipientDomain
-   **/
+   */
   public RecipientDomain active(String active) {
     this.active = active;
     return this;
@@ -38,26 +30,24 @@ public class RecipientDomain {
 
   /**
    * .
+   *
    * @return active
-   **/
+   */
   @Schema(description = "")
   public String getActive() {
     return active;
   }
 
-  /**
-   * setActive.
-   **/
+  /** setActive. */
   public void setActive(String active) {
     this.active = active;
   }
-
 
   /**
    * domainCode.
    *
    * @return RecipientDomain
-   **/
+   */
   public RecipientDomain domainCode(String domainCode) {
     this.domainCode = domainCode;
     return this;
@@ -65,26 +55,24 @@ public class RecipientDomain {
 
   /**
    * .
+   *
    * @return domainCode
-   **/
+   */
   @Schema(description = "")
   public String getDomainCode() {
     return domainCode;
   }
 
-  /**
-   * setDomainCode.
-   **/
+  /** setDomainCode. */
   public void setDomainCode(String domainCode) {
     this.domainCode = domainCode;
   }
-
 
   /**
    * domainName.
    *
    * @return RecipientDomain
-   **/
+   */
   public RecipientDomain domainName(String domainName) {
     this.domainName = domainName;
     return this;
@@ -92,26 +80,24 @@ public class RecipientDomain {
 
   /**
    * .
+   *
    * @return domainName
-   **/
+   */
   @Schema(description = "")
   public String getDomainName() {
     return domainName;
   }
 
-  /**
-   * setDomainName.
-   **/
+  /** setDomainName. */
   public void setDomainName(String domainName) {
     this.domainName = domainName;
   }
-
 
   /**
    * recipientDomainId.
    *
    * @return RecipientDomain
-   **/
+   */
   public RecipientDomain recipientDomainId(String recipientDomainId) {
     this.recipientDomainId = recipientDomainId;
     return this;
@@ -119,20 +105,18 @@ public class RecipientDomain {
 
   /**
    * .
+   *
    * @return recipientDomainId
-   **/
+   */
   @Schema(description = "")
   public String getRecipientDomainId() {
     return recipientDomainId;
   }
 
-  /**
-   * setRecipientDomainId.
-   **/
+  /** setRecipientDomainId. */
   public void setRecipientDomainId(String recipientDomainId) {
     this.recipientDomainId = recipientDomainId;
   }
-
 
   /**
    * Compares objects.
@@ -148,29 +132,24 @@ public class RecipientDomain {
       return false;
     }
     RecipientDomain recipientDomain = (RecipientDomain) o;
-    return Objects.equals(this.active, recipientDomain.active) &&
-        Objects.equals(this.domainCode, recipientDomain.domainCode) &&
-        Objects.equals(this.domainName, recipientDomain.domainName) &&
-        Objects.equals(this.recipientDomainId, recipientDomain.recipientDomainId);
+    return Objects.equals(this.active, recipientDomain.active)
+        && Objects.equals(this.domainCode, recipientDomain.domainCode)
+        && Objects.equals(this.domainName, recipientDomain.domainName)
+        && Objects.equals(this.recipientDomainId, recipientDomain.recipientDomainId);
   }
 
-  /**
-   * Returns the HashCode.
-   */
+  /** Returns the HashCode. */
   @Override
   public int hashCode() {
     return Objects.hash(active, domainCode, domainName, recipientDomainId);
   }
 
-
-  /**
-   * Converts the given object to string.
-   */
+  /** Converts the given object to string. */
   @Override
   public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class RecipientDomain {\n");
-    
+
     sb.append("    active: ").append(toIndentedString(active)).append("\n");
     sb.append("    domainCode: ").append(toIndentedString(domainCode)).append("\n");
     sb.append("    domainName: ").append(toIndentedString(domainName)).append("\n");
@@ -180,8 +159,7 @@ public class RecipientDomain {
   }
 
   /**
-   * Convert the given object to string with each line indented by 4 spaces
-   * (except the first line).
+   * Convert the given object to string with each line indented by 4 spaces (except the first line).
    */
   private String toIndentedString(java.lang.Object o) {
     if (o == null) {
@@ -189,6 +167,4 @@ public class RecipientDomain {
     }
     return o.toString().replace("\n", "\n    ");
   }
-
 }
-

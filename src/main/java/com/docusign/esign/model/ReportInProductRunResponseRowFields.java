@@ -1,7 +1,7 @@
 package com.docusign.esign.model;
 
+import com.docusign.esign.override.swagger.Schema;
 import com.fasterxml.jackson.annotation.JsonProperty;
-import io.swagger.v3.oas.annotations.media.Schema;
 import java.util.Objects;
 
 /** ReportInProductRunResponseRowFields. */
@@ -2728,13 +2728,14 @@ public class ReportInProductRunResponseRowFields {
   }
 
   /**
-   * Unique for the recipient. It is used by the tab element to indicate which
-   * recipient is to sign
+   * Unique for the recipient. It is used by the tab element to indicate which recipient is to sign
    * the Document..
    *
    * @return recipientId
    */
-  @Schema(description = "Unique for the recipient. It is used by the tab element to indicate which recipient is to sign the Document.")
+  @Schema(
+      description =
+          "Unique for the recipient. It is used by the tab element to indicate which recipient is to sign the Document.")
   public String getRecipientId() {
     return recipientId;
   }
@@ -3356,14 +3357,14 @@ public class ReportInProductRunResponseRowFields {
   }
 
   /**
-   * Indicates the envelope status. Valid values are: * sent - The envelope is
-   * sent to the
-   * recipients. * created - The envelope is saved as a draft and can be modified
-   * and sent later..
+   * Indicates the envelope status. Valid values are: * sent - The envelope is sent to the
+   * recipients. * created - The envelope is saved as a draft and can be modified and sent later..
    *
    * @return status
    */
-  @Schema(description = "Indicates the envelope status. Valid values are:  * sent - The envelope is sent to the recipients.  * created - The envelope is saved as a draft and can be modified and sent later.")
+  @Schema(
+      description =
+          "Indicates the envelope status. Valid values are:  * sent - The envelope is sent to the recipients.  * created - The envelope is saved as a draft and can be modified and sent later.")
   public String getStatus() {
     return status;
   }
@@ -3509,13 +3510,14 @@ public class ReportInProductRunResponseRowFields {
   }
 
   /**
-   * The unique identifier of the template. If this is not provided, DocuSign will
-   * generate a value.
+   * The unique identifier of the template. If this is not provided, DocuSign will generate a value.
    * .
    *
    * @return templateId
    */
-  @Schema(description = "The unique identifier of the template. If this is not provided, DocuSign will generate a value. ")
+  @Schema(
+      description =
+          "The unique identifier of the template. If this is not provided, DocuSign will generate a value. ")
   public String getTemplateId() {
     return templateId;
   }
@@ -4063,9 +4065,10 @@ public class ReportInProductRunResponseRowFields {
     if (o == null || getClass() != o.getClass()) {
       return false;
     }
-    ReportInProductRunResponseRowFields reportInProductRunResponseRowFields = (ReportInProductRunResponseRowFields) o;
+    ReportInProductRunResponseRowFields reportInProductRunResponseRowFields =
+        (ReportInProductRunResponseRowFields) o;
     return Objects.equals(
-        this.accessCodeRequired, reportInProductRunResponseRowFields.accessCodeRequired)
+            this.accessCodeRequired, reportInProductRunResponseRowFields.accessCodeRequired)
         && Objects.equals(
             this.accessCodesAttempted, reportInProductRunResponseRowFields.accessCodesAttempted)
         && Objects.equals(
@@ -4622,8 +4625,7 @@ public class ReportInProductRunResponseRowFields {
   }
 
   /**
-   * Convert the given object to string with each line indented by 4 spaces
-   * (except the first line).
+   * Convert the given object to string with each line indented by 4 spaces (except the first line).
    */
   private String toIndentedString(java.lang.Object o) {
     if (o == null) {

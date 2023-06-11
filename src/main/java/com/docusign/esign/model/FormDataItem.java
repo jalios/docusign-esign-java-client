@@ -1,18 +1,10 @@
 package com.docusign.esign.model;
 
-import java.util.Objects;
-import java.util.Arrays;
-import com.docusign.esign.model.ErrorDetails;
+import com.docusign.esign.override.swagger.Schema;
 import com.fasterxml.jackson.annotation.JsonProperty;
-import com.fasterxml.jackson.annotation.JsonCreator;
-import com.fasterxml.jackson.annotation.JsonValue;
-import io.swagger.v3.oas.annotations.media.Schema;
+import java.util.Objects;
 
-/**
- * FormDataItem.
- *
- */
-
+/** FormDataItem. */
 public class FormDataItem {
   @JsonProperty("errorDetails")
   private ErrorDetails errorDetails = null;
@@ -35,12 +27,11 @@ public class FormDataItem {
   @JsonProperty("value")
   private String value = null;
 
-
   /**
    * errorDetails.
    *
    * @return FormDataItem
-   **/
+   */
   public FormDataItem errorDetails(ErrorDetails errorDetails) {
     this.errorDetails = errorDetails;
     return this;
@@ -48,26 +39,24 @@ public class FormDataItem {
 
   /**
    * Array or errors..
+   *
    * @return errorDetails
-   **/
+   */
   @Schema(description = "Array or errors.")
   public ErrorDetails getErrorDetails() {
     return errorDetails;
   }
 
-  /**
-   * setErrorDetails.
-   **/
+  /** setErrorDetails. */
   public void setErrorDetails(ErrorDetails errorDetails) {
     this.errorDetails = errorDetails;
   }
-
 
   /**
    * listSelectedValue.
    *
    * @return FormDataItem
-   **/
+   */
   public FormDataItem listSelectedValue(String listSelectedValue) {
     this.listSelectedValue = listSelectedValue;
     return this;
@@ -75,26 +64,24 @@ public class FormDataItem {
 
   /**
    * .
+   *
    * @return listSelectedValue
-   **/
+   */
   @Schema(description = "")
   public String getListSelectedValue() {
     return listSelectedValue;
   }
 
-  /**
-   * setListSelectedValue.
-   **/
+  /** setListSelectedValue. */
   public void setListSelectedValue(String listSelectedValue) {
     this.listSelectedValue = listSelectedValue;
   }
-
 
   /**
    * name.
    *
    * @return FormDataItem
-   **/
+   */
   public FormDataItem name(String name) {
     this.name = name;
     return this;
@@ -102,26 +89,24 @@ public class FormDataItem {
 
   /**
    * .
+   *
    * @return name
-   **/
+   */
   @Schema(description = "")
   public String getName() {
     return name;
   }
 
-  /**
-   * setName.
-   **/
+  /** setName. */
   public void setName(String name) {
     this.name = name;
   }
-
 
   /**
    * numericalValue.
    *
    * @return FormDataItem
-   **/
+   */
   public FormDataItem numericalValue(String numericalValue) {
     this.numericalValue = numericalValue;
     return this;
@@ -129,26 +114,24 @@ public class FormDataItem {
 
   /**
    * .
+   *
    * @return numericalValue
-   **/
+   */
   @Schema(description = "")
   public String getNumericalValue() {
     return numericalValue;
   }
 
-  /**
-   * setNumericalValue.
-   **/
+  /** setNumericalValue. */
   public void setNumericalValue(String numericalValue) {
     this.numericalValue = numericalValue;
   }
-
 
   /**
    * originalNumericalValue.
    *
    * @return FormDataItem
-   **/
+   */
   public FormDataItem originalNumericalValue(String originalNumericalValue) {
     this.originalNumericalValue = originalNumericalValue;
     return this;
@@ -156,26 +139,24 @@ public class FormDataItem {
 
   /**
    * .
+   *
    * @return originalNumericalValue
-   **/
+   */
   @Schema(description = "")
   public String getOriginalNumericalValue() {
     return originalNumericalValue;
   }
 
-  /**
-   * setOriginalNumericalValue.
-   **/
+  /** setOriginalNumericalValue. */
   public void setOriginalNumericalValue(String originalNumericalValue) {
     this.originalNumericalValue = originalNumericalValue;
   }
-
 
   /**
    * originalValue.
    *
    * @return FormDataItem
-   **/
+   */
   public FormDataItem originalValue(String originalValue) {
     this.originalValue = originalValue;
     return this;
@@ -183,26 +164,24 @@ public class FormDataItem {
 
   /**
    * The initial value of the tab when it was sent to the recipient. .
+   *
    * @return originalValue
-   **/
+   */
   @Schema(description = "The initial value of the tab when it was sent to the recipient. ")
   public String getOriginalValue() {
     return originalValue;
   }
 
-  /**
-   * setOriginalValue.
-   **/
+  /** setOriginalValue. */
   public void setOriginalValue(String originalValue) {
     this.originalValue = originalValue;
   }
-
 
   /**
    * value.
    *
    * @return FormDataItem
-   **/
+   */
   public FormDataItem value(String value) {
     this.value = value;
     return this;
@@ -210,20 +189,18 @@ public class FormDataItem {
 
   /**
    * Specifies the value of the tab. .
+   *
    * @return value
-   **/
+   */
   @Schema(description = "Specifies the value of the tab. ")
   public String getValue() {
     return value;
   }
 
-  /**
-   * setValue.
-   **/
+  /** setValue. */
   public void setValue(String value) {
     this.value = value;
   }
-
 
   /**
    * Compares objects.
@@ -239,37 +216,41 @@ public class FormDataItem {
       return false;
     }
     FormDataItem formDataItem = (FormDataItem) o;
-    return Objects.equals(this.errorDetails, formDataItem.errorDetails) &&
-        Objects.equals(this.listSelectedValue, formDataItem.listSelectedValue) &&
-        Objects.equals(this.name, formDataItem.name) &&
-        Objects.equals(this.numericalValue, formDataItem.numericalValue) &&
-        Objects.equals(this.originalNumericalValue, formDataItem.originalNumericalValue) &&
-        Objects.equals(this.originalValue, formDataItem.originalValue) &&
-        Objects.equals(this.value, formDataItem.value);
+    return Objects.equals(this.errorDetails, formDataItem.errorDetails)
+        && Objects.equals(this.listSelectedValue, formDataItem.listSelectedValue)
+        && Objects.equals(this.name, formDataItem.name)
+        && Objects.equals(this.numericalValue, formDataItem.numericalValue)
+        && Objects.equals(this.originalNumericalValue, formDataItem.originalNumericalValue)
+        && Objects.equals(this.originalValue, formDataItem.originalValue)
+        && Objects.equals(this.value, formDataItem.value);
   }
 
-  /**
-   * Returns the HashCode.
-   */
+  /** Returns the HashCode. */
   @Override
   public int hashCode() {
-    return Objects.hash(errorDetails, listSelectedValue, name, numericalValue, originalNumericalValue, originalValue, value);
+    return Objects.hash(
+        errorDetails,
+        listSelectedValue,
+        name,
+        numericalValue,
+        originalNumericalValue,
+        originalValue,
+        value);
   }
 
-
-  /**
-   * Converts the given object to string.
-   */
+  /** Converts the given object to string. */
   @Override
   public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class FormDataItem {\n");
-    
+
     sb.append("    errorDetails: ").append(toIndentedString(errorDetails)).append("\n");
     sb.append("    listSelectedValue: ").append(toIndentedString(listSelectedValue)).append("\n");
     sb.append("    name: ").append(toIndentedString(name)).append("\n");
     sb.append("    numericalValue: ").append(toIndentedString(numericalValue)).append("\n");
-    sb.append("    originalNumericalValue: ").append(toIndentedString(originalNumericalValue)).append("\n");
+    sb.append("    originalNumericalValue: ")
+        .append(toIndentedString(originalNumericalValue))
+        .append("\n");
     sb.append("    originalValue: ").append(toIndentedString(originalValue)).append("\n");
     sb.append("    value: ").append(toIndentedString(value)).append("\n");
     sb.append("}");
@@ -277,8 +258,7 @@ public class FormDataItem {
   }
 
   /**
-   * Convert the given object to string with each line indented by 4 spaces
-   * (except the first line).
+   * Convert the given object to string with each line indented by 4 spaces (except the first line).
    */
   private String toIndentedString(java.lang.Object o) {
     if (o == null) {
@@ -286,6 +266,4 @@ public class FormDataItem {
     }
     return o.toString().replace("\n", "\n    ");
   }
-
 }
-

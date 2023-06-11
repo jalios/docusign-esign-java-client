@@ -1,7 +1,7 @@
 package com.docusign.esign.model;
 
+import com.docusign.esign.override.swagger.Schema;
 import com.fasterxml.jackson.annotation.JsonProperty;
-import io.swagger.v3.oas.annotations.media.Schema;
 import java.util.Objects;
 
 /** DisplayApplianceDocument */
@@ -51,13 +51,15 @@ public class DisplayApplianceDocument {
   }
 
   /**
-   * Specifies the document ID number that the tab is placed on. This must refer
-   * to an existing
+   * Specifies the document ID number that the tab is placed on. This must refer to an existing
    * Document's ID attribute.
    *
    * @return documentId
    */
-  @Schema(example = "null", description = "Specifies the document ID number that the tab is placed on. This must refer to an existing Document's ID attribute.")
+  @Schema(
+      example = "null",
+      description =
+          "Specifies the document ID number that the tab is placed on. This must refer to an existing Document's ID attribute.")
   public String getDocumentId() {
     return documentId;
   }
@@ -91,7 +93,9 @@ public class DisplayApplianceDocument {
    *
    * @return envelopeId
    */
-  @Schema(example = "null", description = "The envelope ID of the envelope status that failed to post.")
+  @Schema(
+      example = "null",
+      description = "The envelope ID of the envelope status that failed to post.")
   public String getEnvelopeId() {
     return envelopeId;
   }
@@ -170,7 +174,7 @@ public class DisplayApplianceDocument {
     }
     DisplayApplianceDocument displayApplianceDocument = (DisplayApplianceDocument) o;
     return Objects.equals(
-        this.attachmentDescription, displayApplianceDocument.attachmentDescription)
+            this.attachmentDescription, displayApplianceDocument.attachmentDescription)
         && Objects.equals(this.documentId, displayApplianceDocument.documentId)
         && Objects.equals(this.documentType, displayApplianceDocument.documentType)
         && Objects.equals(this.envelopeId, displayApplianceDocument.envelopeId)
@@ -213,8 +217,7 @@ public class DisplayApplianceDocument {
   }
 
   /**
-   * Convert the given object to string with each line indented by 4 spaces
-   * (except the first line).
+   * Convert the given object to string with each line indented by 4 spaces (except the first line).
    */
   private String toIndentedString(java.lang.Object o) {
     if (o == null) {

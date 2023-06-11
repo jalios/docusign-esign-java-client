@@ -1,40 +1,38 @@
 package com.docusign.esign.model;
 
-import java.util.Objects;
-import java.util.Arrays;
-import com.docusign.esign.model.DocumentVisibility;
+import com.docusign.esign.override.swagger.Schema;
 import com.fasterxml.jackson.annotation.JsonProperty;
-import com.fasterxml.jackson.annotation.JsonCreator;
-import com.fasterxml.jackson.annotation.JsonValue;
-import io.swagger.v3.oas.annotations.media.Schema;
+import java.util.Objects;
 
 /**
- * A list of &#x60;documentVisibility&#x60; objects that specify whether the documents associated with a template are visible to recipients..
- *
+ * A list of &#x60;documentVisibility&#x60; objects that specify whether the documents associated
+ * with a template are visible to recipients..
  */
-@Schema(description = "A list of `documentVisibility` objects that specify whether the documents associated with a template are visible to recipients.")
-
+@Schema(
+    description =
+        "A list of `documentVisibility` objects that specify whether the documents associated with a template are visible to recipients.")
 public class TemplateDocumentVisibilityList {
   @JsonProperty("documentVisibility")
   private java.util.List<DocumentVisibility> documentVisibility = null;
-
 
   /**
    * documentVisibility.
    *
    * @return TemplateDocumentVisibilityList
-   **/
-  public TemplateDocumentVisibilityList documentVisibility(java.util.List<DocumentVisibility> documentVisibility) {
+   */
+  public TemplateDocumentVisibilityList documentVisibility(
+      java.util.List<DocumentVisibility> documentVisibility) {
     this.documentVisibility = documentVisibility;
     return this;
   }
-  
+
   /**
    * addDocumentVisibilityItem.
    *
    * @return TemplateDocumentVisibilityList
-   **/
-  public TemplateDocumentVisibilityList addDocumentVisibilityItem(DocumentVisibility documentVisibilityItem) {
+   */
+  public TemplateDocumentVisibilityList addDocumentVisibilityItem(
+      DocumentVisibility documentVisibilityItem) {
     if (this.documentVisibility == null) {
       this.documentVisibility = new java.util.ArrayList<>();
     }
@@ -44,20 +42,18 @@ public class TemplateDocumentVisibilityList {
 
   /**
    * .
+   *
    * @return documentVisibility
-   **/
+   */
   @Schema(description = "")
   public java.util.List<DocumentVisibility> getDocumentVisibility() {
     return documentVisibility;
   }
 
-  /**
-   * setDocumentVisibility.
-   **/
+  /** setDocumentVisibility. */
   public void setDocumentVisibility(java.util.List<DocumentVisibility> documentVisibility) {
     this.documentVisibility = documentVisibility;
   }
-
 
   /**
    * Compares objects.
@@ -72,35 +68,31 @@ public class TemplateDocumentVisibilityList {
     if (o == null || getClass() != o.getClass()) {
       return false;
     }
-    TemplateDocumentVisibilityList templateDocumentVisibilityList = (TemplateDocumentVisibilityList) o;
-    return Objects.equals(this.documentVisibility, templateDocumentVisibilityList.documentVisibility);
+    TemplateDocumentVisibilityList templateDocumentVisibilityList =
+        (TemplateDocumentVisibilityList) o;
+    return Objects.equals(
+        this.documentVisibility, templateDocumentVisibilityList.documentVisibility);
   }
 
-  /**
-   * Returns the HashCode.
-   */
+  /** Returns the HashCode. */
   @Override
   public int hashCode() {
     return Objects.hash(documentVisibility);
   }
 
-
-  /**
-   * Converts the given object to string.
-   */
+  /** Converts the given object to string. */
   @Override
   public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class TemplateDocumentVisibilityList {\n");
-    
+
     sb.append("    documentVisibility: ").append(toIndentedString(documentVisibility)).append("\n");
     sb.append("}");
     return sb.toString();
   }
 
   /**
-   * Convert the given object to string with each line indented by 4 spaces
-   * (except the first line).
+   * Convert the given object to string with each line indented by 4 spaces (except the first line).
    */
   private String toIndentedString(java.lang.Object o) {
     if (o == null) {
@@ -108,6 +100,4 @@ public class TemplateDocumentVisibilityList {
     }
     return o.toString().replace("\n", "\n    ");
   }
-
 }
-

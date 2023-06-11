@@ -1,17 +1,10 @@
 package com.docusign.esign.model;
 
-import java.util.Objects;
-import java.util.Arrays;
+import com.docusign.esign.override.swagger.Schema;
 import com.fasterxml.jackson.annotation.JsonProperty;
-import com.fasterxml.jackson.annotation.JsonCreator;
-import com.fasterxml.jackson.annotation.JsonValue;
-import io.swagger.v3.oas.annotations.media.Schema;
+import java.util.Objects;
 
-/**
- * ConnectUserInfo.
- *
- */
-
+/** ConnectUserInfo. */
 public class ConnectUserInfo {
   @JsonProperty("email")
   private String email = null;
@@ -25,12 +18,11 @@ public class ConnectUserInfo {
   @JsonProperty("userName")
   private String userName = null;
 
-
   /**
    * email.
    *
    * @return ConnectUserInfo
-   **/
+   */
   public ConnectUserInfo email(String email) {
     this.email = email;
     return this;
@@ -38,26 +30,24 @@ public class ConnectUserInfo {
 
   /**
    * .
+   *
    * @return email
-   **/
+   */
   @Schema(description = "")
   public String getEmail() {
     return email;
   }
 
-  /**
-   * setEmail.
-   **/
+  /** setEmail. */
   public void setEmail(String email) {
     this.email = email;
   }
-
 
   /**
    * isIncluded.
    *
    * @return ConnectUserInfo
-   **/
+   */
   public ConnectUserInfo isIncluded(String isIncluded) {
     this.isIncluded = isIncluded;
     return this;
@@ -65,26 +55,24 @@ public class ConnectUserInfo {
 
   /**
    * .
+   *
    * @return isIncluded
-   **/
+   */
   @Schema(description = "")
   public String getIsIncluded() {
     return isIncluded;
   }
 
-  /**
-   * setIsIncluded.
-   **/
+  /** setIsIncluded. */
   public void setIsIncluded(String isIncluded) {
     this.isIncluded = isIncluded;
   }
-
 
   /**
    * userId.
    *
    * @return ConnectUserInfo
-   **/
+   */
   public ConnectUserInfo userId(String userId) {
     this.userId = userId;
     return this;
@@ -92,26 +80,24 @@ public class ConnectUserInfo {
 
   /**
    * .
+   *
    * @return userId
-   **/
+   */
   @Schema(description = "")
   public String getUserId() {
     return userId;
   }
 
-  /**
-   * setUserId.
-   **/
+  /** setUserId. */
   public void setUserId(String userId) {
     this.userId = userId;
   }
-
 
   /**
    * userName.
    *
    * @return ConnectUserInfo
-   **/
+   */
   public ConnectUserInfo userName(String userName) {
     this.userName = userName;
     return this;
@@ -119,20 +105,18 @@ public class ConnectUserInfo {
 
   /**
    * .
+   *
    * @return userName
-   **/
+   */
   @Schema(description = "")
   public String getUserName() {
     return userName;
   }
 
-  /**
-   * setUserName.
-   **/
+  /** setUserName. */
   public void setUserName(String userName) {
     this.userName = userName;
   }
-
 
   /**
    * Compares objects.
@@ -148,29 +132,24 @@ public class ConnectUserInfo {
       return false;
     }
     ConnectUserInfo connectUserInfo = (ConnectUserInfo) o;
-    return Objects.equals(this.email, connectUserInfo.email) &&
-        Objects.equals(this.isIncluded, connectUserInfo.isIncluded) &&
-        Objects.equals(this.userId, connectUserInfo.userId) &&
-        Objects.equals(this.userName, connectUserInfo.userName);
+    return Objects.equals(this.email, connectUserInfo.email)
+        && Objects.equals(this.isIncluded, connectUserInfo.isIncluded)
+        && Objects.equals(this.userId, connectUserInfo.userId)
+        && Objects.equals(this.userName, connectUserInfo.userName);
   }
 
-  /**
-   * Returns the HashCode.
-   */
+  /** Returns the HashCode. */
   @Override
   public int hashCode() {
     return Objects.hash(email, isIncluded, userId, userName);
   }
 
-
-  /**
-   * Converts the given object to string.
-   */
+  /** Converts the given object to string. */
   @Override
   public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class ConnectUserInfo {\n");
-    
+
     sb.append("    email: ").append(toIndentedString(email)).append("\n");
     sb.append("    isIncluded: ").append(toIndentedString(isIncluded)).append("\n");
     sb.append("    userId: ").append(toIndentedString(userId)).append("\n");
@@ -180,8 +159,7 @@ public class ConnectUserInfo {
   }
 
   /**
-   * Convert the given object to string with each line indented by 4 spaces
-   * (except the first line).
+   * Convert the given object to string with each line indented by 4 spaces (except the first line).
    */
   private String toIndentedString(java.lang.Object o) {
     if (o == null) {
@@ -189,6 +167,4 @@ public class ConnectUserInfo {
     }
     return o.toString().replace("\n", "\n    ");
   }
-
 }
-

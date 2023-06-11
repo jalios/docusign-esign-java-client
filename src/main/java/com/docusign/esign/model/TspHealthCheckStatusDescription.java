@@ -1,7 +1,7 @@
 package com.docusign.esign.model;
 
+import com.docusign.esign.override.swagger.Schema;
 import com.fasterxml.jackson.annotation.JsonProperty;
-import io.swagger.v3.oas.annotations.media.Schema;
 import java.util.Objects;
 
 /** TspHealthCheckStatusDescription */
@@ -90,14 +90,14 @@ public class TspHealthCheckStatusDescription {
   }
 
   /**
-   * Indicates the envelope status. Valid values are: * sent - The envelope is
-   * sent to the
-   * recipients. * created - The envelope is saved as a draft and can be modified
-   * and sent later.
+   * Indicates the envelope status. Valid values are: * sent - The envelope is sent to the
+   * recipients. * created - The envelope is saved as a draft and can be modified and sent later.
    *
    * @return status
    */
-  @Schema(description = "Indicates the envelope status. Valid values are:  * sent - The envelope is sent to the recipients.  * created - The envelope is saved as a draft and can be modified and sent later.")
+  @Schema(
+      description =
+          "Indicates the envelope status. Valid values are:  * sent - The envelope is sent to the recipients.  * created - The envelope is saved as a draft and can be modified and sent later.")
   public String getStatus() {
     return status;
   }
@@ -129,7 +129,8 @@ public class TspHealthCheckStatusDescription {
     if (o == null || getClass() != o.getClass()) {
       return false;
     }
-    TspHealthCheckStatusDescription tspHealthCheckStatusDescription = (TspHealthCheckStatusDescription) o;
+    TspHealthCheckStatusDescription tspHealthCheckStatusDescription =
+        (TspHealthCheckStatusDescription) o;
     return Objects.equals(this.description, tspHealthCheckStatusDescription.description)
         && Objects.equals(this.error, tspHealthCheckStatusDescription.error)
         && Objects.equals(this.hostname, tspHealthCheckStatusDescription.hostname)
@@ -159,8 +160,7 @@ public class TspHealthCheckStatusDescription {
   }
 
   /**
-   * Convert the given object to string with each line indented by 4 spaces
-   * (except the first line).
+   * Convert the given object to string with each line indented by 4 spaces (except the first line).
    */
   private String toIndentedString(java.lang.Object o) {
     if (o == null) {

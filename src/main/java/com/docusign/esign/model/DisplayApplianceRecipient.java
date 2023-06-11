@@ -1,7 +1,7 @@
 package com.docusign.esign.model;
 
+import com.docusign.esign.override.swagger.Schema;
 import com.fasterxml.jackson.annotation.JsonProperty;
-import io.swagger.v3.oas.annotations.media.Schema;
 import java.util.Objects;
 
 /** DisplayApplianceRecipient */
@@ -255,13 +255,15 @@ public class DisplayApplianceRecipient {
   }
 
   /**
-   * Unique for the recipient. It is used by the tab element to indicate which
-   * recipient is to sign
+   * Unique for the recipient. It is used by the tab element to indicate which recipient is to sign
    * the Document.
    *
    * @return recipientId
    */
-  @Schema(example = "null", description = "Unique for the recipient. It is used by the tab element to indicate which recipient is to sign the Document.")
+  @Schema(
+      example = "null",
+      description =
+          "Unique for the recipient. It is used by the tab element to indicate which recipient is to sign the Document.")
   public String getRecipientId() {
     return recipientId;
   }
@@ -488,8 +490,7 @@ public class DisplayApplianceRecipient {
   }
 
   /**
-   * Convert the given object to string with each line indented by 4 spaces
-   * (except the first line).
+   * Convert the given object to string with each line indented by 4 spaces (except the first line).
    */
   private String toIndentedString(java.lang.Object o) {
     if (o == null) {

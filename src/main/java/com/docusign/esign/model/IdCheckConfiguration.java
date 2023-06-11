@@ -1,19 +1,11 @@
 package com.docusign.esign.model;
 
-import java.util.Objects;
-import java.util.Arrays;
-import com.docusign.esign.model.IdCheckSecurityStep;
+import com.docusign.esign.override.swagger.Schema;
 import com.fasterxml.jackson.annotation.JsonProperty;
-import com.fasterxml.jackson.annotation.JsonCreator;
-import com.fasterxml.jackson.annotation.JsonValue;
-import io.swagger.v3.oas.annotations.media.Schema;
+import java.util.Objects;
 
-/**
- * A complex object specifying ID check configuration..
- *
- */
+/** A complex object specifying ID check configuration.. */
 @Schema(description = "A complex object specifying ID check configuration.")
-
 public class IdCheckConfiguration {
   @JsonProperty("authSteps")
   private java.util.List<IdCheckSecurityStep> authSteps = null;
@@ -24,22 +16,21 @@ public class IdCheckConfiguration {
   @JsonProperty("name")
   private String name = null;
 
-
   /**
    * authSteps.
    *
    * @return IdCheckConfiguration
-   **/
+   */
   public IdCheckConfiguration authSteps(java.util.List<IdCheckSecurityStep> authSteps) {
     this.authSteps = authSteps;
     return this;
   }
-  
+
   /**
    * addAuthStepsItem.
    *
    * @return IdCheckConfiguration
-   **/
+   */
   public IdCheckConfiguration addAuthStepsItem(IdCheckSecurityStep authStepsItem) {
     if (this.authSteps == null) {
       this.authSteps = new java.util.ArrayList<>();
@@ -50,26 +41,24 @@ public class IdCheckConfiguration {
 
   /**
    * .
+   *
    * @return authSteps
-   **/
+   */
   @Schema(description = "")
   public java.util.List<IdCheckSecurityStep> getAuthSteps() {
     return authSteps;
   }
 
-  /**
-   * setAuthSteps.
-   **/
+  /** setAuthSteps. */
   public void setAuthSteps(java.util.List<IdCheckSecurityStep> authSteps) {
     this.authSteps = authSteps;
   }
-
 
   /**
    * isDefault.
    *
    * @return IdCheckConfiguration
-   **/
+   */
   public IdCheckConfiguration isDefault(String isDefault) {
     this.isDefault = isDefault;
     return this;
@@ -77,26 +66,24 @@ public class IdCheckConfiguration {
 
   /**
    * .
+   *
    * @return isDefault
-   **/
+   */
   @Schema(description = "")
   public String getIsDefault() {
     return isDefault;
   }
 
-  /**
-   * setIsDefault.
-   **/
+  /** setIsDefault. */
   public void setIsDefault(String isDefault) {
     this.isDefault = isDefault;
   }
-
 
   /**
    * name.
    *
    * @return IdCheckConfiguration
-   **/
+   */
   public IdCheckConfiguration name(String name) {
     this.name = name;
     return this;
@@ -104,20 +91,18 @@ public class IdCheckConfiguration {
 
   /**
    * .
+   *
    * @return name
-   **/
+   */
   @Schema(description = "")
   public String getName() {
     return name;
   }
 
-  /**
-   * setName.
-   **/
+  /** setName. */
   public void setName(String name) {
     this.name = name;
   }
-
 
   /**
    * Compares objects.
@@ -133,28 +118,23 @@ public class IdCheckConfiguration {
       return false;
     }
     IdCheckConfiguration idCheckConfiguration = (IdCheckConfiguration) o;
-    return Objects.equals(this.authSteps, idCheckConfiguration.authSteps) &&
-        Objects.equals(this.isDefault, idCheckConfiguration.isDefault) &&
-        Objects.equals(this.name, idCheckConfiguration.name);
+    return Objects.equals(this.authSteps, idCheckConfiguration.authSteps)
+        && Objects.equals(this.isDefault, idCheckConfiguration.isDefault)
+        && Objects.equals(this.name, idCheckConfiguration.name);
   }
 
-  /**
-   * Returns the HashCode.
-   */
+  /** Returns the HashCode. */
   @Override
   public int hashCode() {
     return Objects.hash(authSteps, isDefault, name);
   }
 
-
-  /**
-   * Converts the given object to string.
-   */
+  /** Converts the given object to string. */
   @Override
   public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class IdCheckConfiguration {\n");
-    
+
     sb.append("    authSteps: ").append(toIndentedString(authSteps)).append("\n");
     sb.append("    isDefault: ").append(toIndentedString(isDefault)).append("\n");
     sb.append("    name: ").append(toIndentedString(name)).append("\n");
@@ -163,8 +143,7 @@ public class IdCheckConfiguration {
   }
 
   /**
-   * Convert the given object to string with each line indented by 4 spaces
-   * (except the first line).
+   * Convert the given object to string with each line indented by 4 spaces (except the first line).
    */
   private String toIndentedString(java.lang.Object o) {
     if (o == null) {
@@ -172,6 +151,4 @@ public class IdCheckConfiguration {
     }
     return o.toString().replace("\n", "\n    ");
   }
-
 }
-

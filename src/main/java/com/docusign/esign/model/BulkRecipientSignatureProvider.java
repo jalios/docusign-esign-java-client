@@ -1,18 +1,10 @@
 package com.docusign.esign.model;
 
-import java.util.Objects;
-import java.util.Arrays;
+import com.docusign.esign.override.swagger.Schema;
 import com.fasterxml.jackson.annotation.JsonProperty;
-import com.fasterxml.jackson.annotation.JsonCreator;
-import com.fasterxml.jackson.annotation.JsonValue;
-import io.swagger.v3.oas.annotations.media.Schema;
-import io.swagger.v3.oas.annotations.media.Schema;
+import java.util.Objects;
 
-/**
- * BulkRecipientSignatureProvider.
- *
- */
-
+/** BulkRecipientSignatureProvider. */
 public class BulkRecipientSignatureProvider {
   @JsonProperty("name")
   private String name = null;
@@ -24,7 +16,7 @@ public class BulkRecipientSignatureProvider {
    * name.
    *
    * @return BulkRecipientSignatureProvider
-   **/
+   */
   public BulkRecipientSignatureProvider name(String name) {
     this.name = name;
     return this;
@@ -32,17 +24,15 @@ public class BulkRecipientSignatureProvider {
 
   /**
    * .
-   * 
+   *
    * @return name
-   **/
+   */
   @Schema(description = "")
   public String getName() {
     return name;
   }
 
-  /**
-   * setName.
-   **/
+  /** setName. */
   public void setName(String name) {
     this.name = name;
   }
@@ -51,7 +41,7 @@ public class BulkRecipientSignatureProvider {
    * value.
    *
    * @return BulkRecipientSignatureProvider
-   **/
+   */
   public BulkRecipientSignatureProvider value(String value) {
     this.value = value;
     return this;
@@ -59,17 +49,15 @@ public class BulkRecipientSignatureProvider {
 
   /**
    * Specifies the value of the tab. .
-   * 
+   *
    * @return value
-   **/
+   */
   @Schema(description = "Specifies the value of the tab. ")
   public String getValue() {
     return value;
   }
 
-  /**
-   * setValue.
-   **/
+  /** setValue. */
   public void setValue(String value) {
     this.value = value;
   }
@@ -87,22 +75,19 @@ public class BulkRecipientSignatureProvider {
     if (o == null || getClass() != o.getClass()) {
       return false;
     }
-    BulkRecipientSignatureProvider bulkRecipientSignatureProvider = (BulkRecipientSignatureProvider) o;
-    return Objects.equals(this.name, bulkRecipientSignatureProvider.name) &&
-        Objects.equals(this.value, bulkRecipientSignatureProvider.value);
+    BulkRecipientSignatureProvider bulkRecipientSignatureProvider =
+        (BulkRecipientSignatureProvider) o;
+    return Objects.equals(this.name, bulkRecipientSignatureProvider.name)
+        && Objects.equals(this.value, bulkRecipientSignatureProvider.value);
   }
 
-  /**
-   * Returns the HashCode.
-   */
+  /** Returns the HashCode. */
   @Override
   public int hashCode() {
     return Objects.hash(name, value);
   }
 
-  /**
-   * Converts the given object to string.
-   */
+  /** Converts the given object to string. */
   @Override
   public String toString() {
     StringBuilder sb = new StringBuilder();
@@ -115,8 +100,7 @@ public class BulkRecipientSignatureProvider {
   }
 
   /**
-   * Convert the given object to string with each line indented by 4 spaces
-   * (except the first line).
+   * Convert the given object to string with each line indented by 4 spaces (except the first line).
    */
   private String toIndentedString(java.lang.Object o) {
     if (o == null) {
@@ -124,5 +108,4 @@ public class BulkRecipientSignatureProvider {
     }
     return o.toString().replace("\n", "\n    ");
   }
-
 }

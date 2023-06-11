@@ -1,18 +1,11 @@
 package com.docusign.esign.model;
 
-import java.util.Objects;
-import java.util.Arrays;
+import com.docusign.esign.override.swagger.Schema;
 import com.fasterxml.jackson.annotation.JsonProperty;
-import com.fasterxml.jackson.annotation.JsonCreator;
-import com.fasterxml.jackson.annotation.JsonValue;
-import io.swagger.v3.oas.annotations.media.Schema;
+import java.util.Objects;
 
-/**
- * Contains information about an APP store receipt..
- *
- */
+/** Contains information about an APP store receipt.. */
 @Schema(description = "Contains information about an APP store receipt.")
-
 public class AppStoreReceipt {
   @JsonProperty("downgradeProductId")
   private String downgradeProductId = null;
@@ -26,12 +19,11 @@ public class AppStoreReceipt {
   @JsonProperty("receiptData")
   private String receiptData = null;
 
-
   /**
    * downgradeProductId.
    *
    * @return AppStoreReceipt
-   **/
+   */
   public AppStoreReceipt downgradeProductId(String downgradeProductId) {
     this.downgradeProductId = downgradeProductId;
     return this;
@@ -39,26 +31,24 @@ public class AppStoreReceipt {
 
   /**
    * .
+   *
    * @return downgradeProductId
-   **/
+   */
   @Schema(description = "")
   public String getDowngradeProductId() {
     return downgradeProductId;
   }
 
-  /**
-   * setDowngradeProductId.
-   **/
+  /** setDowngradeProductId. */
   public void setDowngradeProductId(String downgradeProductId) {
     this.downgradeProductId = downgradeProductId;
   }
-
 
   /**
    * isDowngradeCancellation.
    *
    * @return AppStoreReceipt
-   **/
+   */
   public AppStoreReceipt isDowngradeCancellation(String isDowngradeCancellation) {
     this.isDowngradeCancellation = isDowngradeCancellation;
     return this;
@@ -66,26 +56,24 @@ public class AppStoreReceipt {
 
   /**
    * .
+   *
    * @return isDowngradeCancellation
-   **/
+   */
   @Schema(description = "")
   public String getIsDowngradeCancellation() {
     return isDowngradeCancellation;
   }
 
-  /**
-   * setIsDowngradeCancellation.
-   **/
+  /** setIsDowngradeCancellation. */
   public void setIsDowngradeCancellation(String isDowngradeCancellation) {
     this.isDowngradeCancellation = isDowngradeCancellation;
   }
-
 
   /**
    * productId.
    *
    * @return AppStoreReceipt
-   **/
+   */
   public AppStoreReceipt productId(String productId) {
     this.productId = productId;
     return this;
@@ -93,26 +81,24 @@ public class AppStoreReceipt {
 
   /**
    * .
+   *
    * @return productId
-   **/
+   */
   @Schema(description = "")
   public String getProductId() {
     return productId;
   }
 
-  /**
-   * setProductId.
-   **/
+  /** setProductId. */
   public void setProductId(String productId) {
     this.productId = productId;
   }
-
 
   /**
    * receiptData.
    *
    * @return AppStoreReceipt
-   **/
+   */
   public AppStoreReceipt receiptData(String receiptData) {
     this.receiptData = receiptData;
     return this;
@@ -120,20 +106,18 @@ public class AppStoreReceipt {
 
   /**
    * Reserved: TBD.
+   *
    * @return receiptData
-   **/
+   */
   @Schema(description = "Reserved: TBD")
   public String getReceiptData() {
     return receiptData;
   }
 
-  /**
-   * setReceiptData.
-   **/
+  /** setReceiptData. */
   public void setReceiptData(String receiptData) {
     this.receiptData = receiptData;
   }
-
 
   /**
    * Compares objects.
@@ -149,31 +133,28 @@ public class AppStoreReceipt {
       return false;
     }
     AppStoreReceipt appStoreReceipt = (AppStoreReceipt) o;
-    return Objects.equals(this.downgradeProductId, appStoreReceipt.downgradeProductId) &&
-        Objects.equals(this.isDowngradeCancellation, appStoreReceipt.isDowngradeCancellation) &&
-        Objects.equals(this.productId, appStoreReceipt.productId) &&
-        Objects.equals(this.receiptData, appStoreReceipt.receiptData);
+    return Objects.equals(this.downgradeProductId, appStoreReceipt.downgradeProductId)
+        && Objects.equals(this.isDowngradeCancellation, appStoreReceipt.isDowngradeCancellation)
+        && Objects.equals(this.productId, appStoreReceipt.productId)
+        && Objects.equals(this.receiptData, appStoreReceipt.receiptData);
   }
 
-  /**
-   * Returns the HashCode.
-   */
+  /** Returns the HashCode. */
   @Override
   public int hashCode() {
     return Objects.hash(downgradeProductId, isDowngradeCancellation, productId, receiptData);
   }
 
-
-  /**
-   * Converts the given object to string.
-   */
+  /** Converts the given object to string. */
   @Override
   public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class AppStoreReceipt {\n");
-    
+
     sb.append("    downgradeProductId: ").append(toIndentedString(downgradeProductId)).append("\n");
-    sb.append("    isDowngradeCancellation: ").append(toIndentedString(isDowngradeCancellation)).append("\n");
+    sb.append("    isDowngradeCancellation: ")
+        .append(toIndentedString(isDowngradeCancellation))
+        .append("\n");
     sb.append("    productId: ").append(toIndentedString(productId)).append("\n");
     sb.append("    receiptData: ").append(toIndentedString(receiptData)).append("\n");
     sb.append("}");
@@ -181,8 +162,7 @@ public class AppStoreReceipt {
   }
 
   /**
-   * Convert the given object to string with each line indented by 4 spaces
-   * (except the first line).
+   * Convert the given object to string with each line indented by 4 spaces (except the first line).
    */
   private String toIndentedString(java.lang.Object o) {
     if (o == null) {
@@ -190,6 +170,4 @@ public class AppStoreReceipt {
     }
     return o.toString().replace("\n", "\n    ");
   }
-
 }
-

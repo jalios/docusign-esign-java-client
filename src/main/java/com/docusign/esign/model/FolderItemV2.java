@@ -1,19 +1,11 @@
 package com.docusign.esign.model;
 
-import java.util.Objects;
-import java.util.Arrays;
-import com.docusign.esign.model.Recipients;
+import com.docusign.esign.override.swagger.Schema;
 import com.fasterxml.jackson.annotation.JsonProperty;
-import com.fasterxml.jackson.annotation.JsonCreator;
-import com.fasterxml.jackson.annotation.JsonValue;
-import io.swagger.v3.oas.annotations.media.Schema;
+import java.util.Objects;
 
-/**
- * Information about folder item results..
- *
- */
+/** Information about folder item results.. */
 @Schema(description = "Information about folder item results.")
-
 public class FolderItemV2 {
   @JsonProperty("completedDateTime")
   private String completedDateTime = null;
@@ -78,12 +70,11 @@ public class FolderItemV2 {
   @JsonProperty("templateUri")
   private String templateUri = null;
 
-
   /**
    * completedDateTime.
    *
    * @return FolderItemV2
-   **/
+   */
   public FolderItemV2 completedDateTime(String completedDateTime) {
     this.completedDateTime = completedDateTime;
     return this;
@@ -91,26 +82,24 @@ public class FolderItemV2 {
 
   /**
    * Specifies the date and time this item was completed..
+   *
    * @return completedDateTime
-   **/
+   */
   @Schema(description = "Specifies the date and time this item was completed.")
   public String getCompletedDateTime() {
     return completedDateTime;
   }
 
-  /**
-   * setCompletedDateTime.
-   **/
+  /** setCompletedDateTime. */
   public void setCompletedDateTime(String completedDateTime) {
     this.completedDateTime = completedDateTime;
   }
-
 
   /**
    * createdDateTime.
    *
    * @return FolderItemV2
-   **/
+   */
   public FolderItemV2 createdDateTime(String createdDateTime) {
     this.createdDateTime = createdDateTime;
     return this;
@@ -118,26 +107,24 @@ public class FolderItemV2 {
 
   /**
    * Indicates the date and time the item was created..
+   *
    * @return createdDateTime
-   **/
+   */
   @Schema(description = "Indicates the date and time the item was created.")
   public String getCreatedDateTime() {
     return createdDateTime;
   }
 
-  /**
-   * setCreatedDateTime.
-   **/
+  /** setCreatedDateTime. */
   public void setCreatedDateTime(String createdDateTime) {
     this.createdDateTime = createdDateTime;
   }
-
 
   /**
    * envelopeId.
    *
    * @return FolderItemV2
-   **/
+   */
   public FolderItemV2 envelopeId(String envelopeId) {
     this.envelopeId = envelopeId;
     return this;
@@ -145,26 +132,24 @@ public class FolderItemV2 {
 
   /**
    * The envelope ID of the envelope status that failed to post..
+   *
    * @return envelopeId
-   **/
+   */
   @Schema(description = "The envelope ID of the envelope status that failed to post.")
   public String getEnvelopeId() {
     return envelopeId;
   }
 
-  /**
-   * setEnvelopeId.
-   **/
+  /** setEnvelopeId. */
   public void setEnvelopeId(String envelopeId) {
     this.envelopeId = envelopeId;
   }
-
 
   /**
    * envelopeUri.
    *
    * @return FolderItemV2
-   **/
+   */
   public FolderItemV2 envelopeUri(String envelopeUri) {
     this.envelopeUri = envelopeUri;
     return this;
@@ -172,26 +157,26 @@ public class FolderItemV2 {
 
   /**
    * Contains a URI for an endpoint that you can use to retrieve the envelope or envelopes..
+   *
    * @return envelopeUri
-   **/
-  @Schema(description = "Contains a URI for an endpoint that you can use to retrieve the envelope or envelopes.")
+   */
+  @Schema(
+      description =
+          "Contains a URI for an endpoint that you can use to retrieve the envelope or envelopes.")
   public String getEnvelopeUri() {
     return envelopeUri;
   }
 
-  /**
-   * setEnvelopeUri.
-   **/
+  /** setEnvelopeUri. */
   public void setEnvelopeUri(String envelopeUri) {
     this.envelopeUri = envelopeUri;
   }
-
 
   /**
    * expireDateTime.
    *
    * @return FolderItemV2
-   **/
+   */
   public FolderItemV2 expireDateTime(String expireDateTime) {
     this.expireDateTime = expireDateTime;
     return this;
@@ -199,26 +184,24 @@ public class FolderItemV2 {
 
   /**
    * The date and time the envelope is set to expire..
+   *
    * @return expireDateTime
-   **/
+   */
   @Schema(description = "The date and time the envelope is set to expire.")
   public String getExpireDateTime() {
     return expireDateTime;
   }
 
-  /**
-   * setExpireDateTime.
-   **/
+  /** setExpireDateTime. */
   public void setExpireDateTime(String expireDateTime) {
     this.expireDateTime = expireDateTime;
   }
-
 
   /**
    * folderId.
    *
    * @return FolderItemV2
-   **/
+   */
   public FolderItemV2 folderId(String folderId) {
     this.folderId = folderId;
     return this;
@@ -226,26 +209,24 @@ public class FolderItemV2 {
 
   /**
    * .
+   *
    * @return folderId
-   **/
+   */
   @Schema(description = "")
   public String getFolderId() {
     return folderId;
   }
 
-  /**
-   * setFolderId.
-   **/
+  /** setFolderId. */
   public void setFolderId(String folderId) {
     this.folderId = folderId;
   }
-
 
   /**
    * folderUri.
    *
    * @return FolderItemV2
-   **/
+   */
   public FolderItemV2 folderUri(String folderUri) {
     this.folderUri = folderUri;
     return this;
@@ -253,26 +234,24 @@ public class FolderItemV2 {
 
   /**
    * .
+   *
    * @return folderUri
-   **/
+   */
   @Schema(description = "")
   public String getFolderUri() {
     return folderUri;
   }
 
-  /**
-   * setFolderUri.
-   **/
+  /** setFolderUri. */
   public void setFolderUri(String folderUri) {
     this.folderUri = folderUri;
   }
-
 
   /**
    * is21CFRPart11.
    *
    * @return FolderItemV2
-   **/
+   */
   public FolderItemV2 is21CFRPart11(String is21CFRPart11) {
     this.is21CFRPart11 = is21CFRPart11;
     return this;
@@ -280,26 +259,25 @@ public class FolderItemV2 {
 
   /**
    * When set to **true**, indicates that this module is enabled on the account..
+   *
    * @return is21CFRPart11
-   **/
-  @Schema(description = "When set to **true**, indicates that this module is enabled on the account.")
+   */
+  @Schema(
+      description = "When set to **true**, indicates that this module is enabled on the account.")
   public String getIs21CFRPart11() {
     return is21CFRPart11;
   }
 
-  /**
-   * setIs21CFRPart11.
-   **/
+  /** setIs21CFRPart11. */
   public void setIs21CFRPart11(String is21CFRPart11) {
     this.is21CFRPart11 = is21CFRPart11;
   }
-
 
   /**
    * lastModifiedDateTime.
    *
    * @return FolderItemV2
-   **/
+   */
   public FolderItemV2 lastModifiedDateTime(String lastModifiedDateTime) {
     this.lastModifiedDateTime = lastModifiedDateTime;
     return this;
@@ -307,26 +285,24 @@ public class FolderItemV2 {
 
   /**
    * The date and time the item was last modified..
+   *
    * @return lastModifiedDateTime
-   **/
+   */
   @Schema(description = "The date and time the item was last modified.")
   public String getLastModifiedDateTime() {
     return lastModifiedDateTime;
   }
 
-  /**
-   * setLastModifiedDateTime.
-   **/
+  /** setLastModifiedDateTime. */
   public void setLastModifiedDateTime(String lastModifiedDateTime) {
     this.lastModifiedDateTime = lastModifiedDateTime;
   }
-
 
   /**
    * ownerName.
    *
    * @return FolderItemV2
-   **/
+   */
   public FolderItemV2 ownerName(String ownerName) {
     this.ownerName = ownerName;
     return this;
@@ -334,26 +310,24 @@ public class FolderItemV2 {
 
   /**
    * .
+   *
    * @return ownerName
-   **/
+   */
   @Schema(description = "")
   public String getOwnerName() {
     return ownerName;
   }
 
-  /**
-   * setOwnerName.
-   **/
+  /** setOwnerName. */
   public void setOwnerName(String ownerName) {
     this.ownerName = ownerName;
   }
-
 
   /**
    * recipients.
    *
    * @return FolderItemV2
-   **/
+   */
   public FolderItemV2 recipients(Recipients recipients) {
     this.recipients = recipients;
     return this;
@@ -361,26 +335,24 @@ public class FolderItemV2 {
 
   /**
    * An array of powerform recipients..
+   *
    * @return recipients
-   **/
+   */
   @Schema(description = "An array of powerform recipients.")
   public Recipients getRecipients() {
     return recipients;
   }
 
-  /**
-   * setRecipients.
-   **/
+  /** setRecipients. */
   public void setRecipients(Recipients recipients) {
     this.recipients = recipients;
   }
-
 
   /**
    * recipientsUri.
    *
    * @return FolderItemV2
-   **/
+   */
   public FolderItemV2 recipientsUri(String recipientsUri) {
     this.recipientsUri = recipientsUri;
     return this;
@@ -388,26 +360,25 @@ public class FolderItemV2 {
 
   /**
    * Contains a URI for an endpoint that you can use to retrieve the recipients..
+   *
    * @return recipientsUri
-   **/
-  @Schema(description = "Contains a URI for an endpoint that you can use to retrieve the recipients.")
+   */
+  @Schema(
+      description = "Contains a URI for an endpoint that you can use to retrieve the recipients.")
   public String getRecipientsUri() {
     return recipientsUri;
   }
 
-  /**
-   * setRecipientsUri.
-   **/
+  /** setRecipientsUri. */
   public void setRecipientsUri(String recipientsUri) {
     this.recipientsUri = recipientsUri;
   }
-
 
   /**
    * senderCompany.
    *
    * @return FolderItemV2
-   **/
+   */
   public FolderItemV2 senderCompany(String senderCompany) {
     this.senderCompany = senderCompany;
     return this;
@@ -415,26 +386,24 @@ public class FolderItemV2 {
 
   /**
    * .
+   *
    * @return senderCompany
-   **/
+   */
   @Schema(description = "")
   public String getSenderCompany() {
     return senderCompany;
   }
 
-  /**
-   * setSenderCompany.
-   **/
+  /** setSenderCompany. */
   public void setSenderCompany(String senderCompany) {
     this.senderCompany = senderCompany;
   }
-
 
   /**
    * senderEmail.
    *
    * @return FolderItemV2
-   **/
+   */
   public FolderItemV2 senderEmail(String senderEmail) {
     this.senderEmail = senderEmail;
     return this;
@@ -442,26 +411,24 @@ public class FolderItemV2 {
 
   /**
    * .
+   *
    * @return senderEmail
-   **/
+   */
   @Schema(description = "")
   public String getSenderEmail() {
     return senderEmail;
   }
 
-  /**
-   * setSenderEmail.
-   **/
+  /** setSenderEmail. */
   public void setSenderEmail(String senderEmail) {
     this.senderEmail = senderEmail;
   }
-
 
   /**
    * senderName.
    *
    * @return FolderItemV2
-   **/
+   */
   public FolderItemV2 senderName(String senderName) {
     this.senderName = senderName;
     return this;
@@ -469,26 +436,24 @@ public class FolderItemV2 {
 
   /**
    * .
+   *
    * @return senderName
-   **/
+   */
   @Schema(description = "")
   public String getSenderName() {
     return senderName;
   }
 
-  /**
-   * setSenderName.
-   **/
+  /** setSenderName. */
   public void setSenderName(String senderName) {
     this.senderName = senderName;
   }
-
 
   /**
    * senderUserId.
    *
    * @return FolderItemV2
-   **/
+   */
   public FolderItemV2 senderUserId(String senderUserId) {
     this.senderUserId = senderUserId;
     return this;
@@ -496,26 +461,24 @@ public class FolderItemV2 {
 
   /**
    * .
+   *
    * @return senderUserId
-   **/
+   */
   @Schema(description = "")
   public String getSenderUserId() {
     return senderUserId;
   }
 
-  /**
-   * setSenderUserId.
-   **/
+  /** setSenderUserId. */
   public void setSenderUserId(String senderUserId) {
     this.senderUserId = senderUserId;
   }
-
 
   /**
    * sentDateTime.
    *
    * @return FolderItemV2
-   **/
+   */
   public FolderItemV2 sentDateTime(String sentDateTime) {
     this.sentDateTime = sentDateTime;
     return this;
@@ -523,53 +486,52 @@ public class FolderItemV2 {
 
   /**
    * The date and time the envelope was sent..
+   *
    * @return sentDateTime
-   **/
+   */
   @Schema(description = "The date and time the envelope was sent.")
   public String getSentDateTime() {
     return sentDateTime;
   }
 
-  /**
-   * setSentDateTime.
-   **/
+  /** setSentDateTime. */
   public void setSentDateTime(String sentDateTime) {
     this.sentDateTime = sentDateTime;
   }
-
 
   /**
    * status.
    *
    * @return FolderItemV2
-   **/
+   */
   public FolderItemV2 status(String status) {
     this.status = status;
     return this;
   }
 
   /**
-   * Indicates the envelope status. Valid values are:  * sent - The envelope is sent to the recipients.  * created - The envelope is saved as a draft and can be modified and sent later..
+   * Indicates the envelope status. Valid values are: * sent - The envelope is sent to the
+   * recipients. * created - The envelope is saved as a draft and can be modified and sent later..
+   *
    * @return status
-   **/
-  @Schema(description = "Indicates the envelope status. Valid values are:  * sent - The envelope is sent to the recipients.  * created - The envelope is saved as a draft and can be modified and sent later.")
+   */
+  @Schema(
+      description =
+          "Indicates the envelope status. Valid values are:  * sent - The envelope is sent to the recipients.  * created - The envelope is saved as a draft and can be modified and sent later.")
   public String getStatus() {
     return status;
   }
 
-  /**
-   * setStatus.
-   **/
+  /** setStatus. */
   public void setStatus(String status) {
     this.status = status;
   }
-
 
   /**
    * subject.
    *
    * @return FolderItemV2
-   **/
+   */
   public FolderItemV2 subject(String subject) {
     this.subject = subject;
     return this;
@@ -577,53 +539,52 @@ public class FolderItemV2 {
 
   /**
    * .
+   *
    * @return subject
-   **/
+   */
   @Schema(description = "")
   public String getSubject() {
     return subject;
   }
 
-  /**
-   * setSubject.
-   **/
+  /** setSubject. */
   public void setSubject(String subject) {
     this.subject = subject;
   }
-
 
   /**
    * templateId.
    *
    * @return FolderItemV2
-   **/
+   */
   public FolderItemV2 templateId(String templateId) {
     this.templateId = templateId;
     return this;
   }
 
   /**
-   * The unique identifier of the template. If this is not provided, DocuSign will generate a value. .
+   * The unique identifier of the template. If this is not provided, DocuSign will generate a value.
+   * .
+   *
    * @return templateId
-   **/
-  @Schema(description = "The unique identifier of the template. If this is not provided, DocuSign will generate a value. ")
+   */
+  @Schema(
+      description =
+          "The unique identifier of the template. If this is not provided, DocuSign will generate a value. ")
   public String getTemplateId() {
     return templateId;
   }
 
-  /**
-   * setTemplateId.
-   **/
+  /** setTemplateId. */
   public void setTemplateId(String templateId) {
     this.templateId = templateId;
   }
-
 
   /**
    * templateUri.
    *
    * @return FolderItemV2
-   **/
+   */
   public FolderItemV2 templateUri(String templateUri) {
     this.templateUri = templateUri;
     return this;
@@ -631,20 +592,18 @@ public class FolderItemV2 {
 
   /**
    * .
+   *
    * @return templateUri
-   **/
+   */
   @Schema(description = "")
   public String getTemplateUri() {
     return templateUri;
   }
 
-  /**
-   * setTemplateUri.
-   **/
+  /** setTemplateUri. */
   public void setTemplateUri(String templateUri) {
     this.templateUri = templateUri;
   }
-
 
   /**
    * Compares objects.
@@ -660,46 +619,62 @@ public class FolderItemV2 {
       return false;
     }
     FolderItemV2 folderItemV2 = (FolderItemV2) o;
-    return Objects.equals(this.completedDateTime, folderItemV2.completedDateTime) &&
-        Objects.equals(this.createdDateTime, folderItemV2.createdDateTime) &&
-        Objects.equals(this.envelopeId, folderItemV2.envelopeId) &&
-        Objects.equals(this.envelopeUri, folderItemV2.envelopeUri) &&
-        Objects.equals(this.expireDateTime, folderItemV2.expireDateTime) &&
-        Objects.equals(this.folderId, folderItemV2.folderId) &&
-        Objects.equals(this.folderUri, folderItemV2.folderUri) &&
-        Objects.equals(this.is21CFRPart11, folderItemV2.is21CFRPart11) &&
-        Objects.equals(this.lastModifiedDateTime, folderItemV2.lastModifiedDateTime) &&
-        Objects.equals(this.ownerName, folderItemV2.ownerName) &&
-        Objects.equals(this.recipients, folderItemV2.recipients) &&
-        Objects.equals(this.recipientsUri, folderItemV2.recipientsUri) &&
-        Objects.equals(this.senderCompany, folderItemV2.senderCompany) &&
-        Objects.equals(this.senderEmail, folderItemV2.senderEmail) &&
-        Objects.equals(this.senderName, folderItemV2.senderName) &&
-        Objects.equals(this.senderUserId, folderItemV2.senderUserId) &&
-        Objects.equals(this.sentDateTime, folderItemV2.sentDateTime) &&
-        Objects.equals(this.status, folderItemV2.status) &&
-        Objects.equals(this.subject, folderItemV2.subject) &&
-        Objects.equals(this.templateId, folderItemV2.templateId) &&
-        Objects.equals(this.templateUri, folderItemV2.templateUri);
+    return Objects.equals(this.completedDateTime, folderItemV2.completedDateTime)
+        && Objects.equals(this.createdDateTime, folderItemV2.createdDateTime)
+        && Objects.equals(this.envelopeId, folderItemV2.envelopeId)
+        && Objects.equals(this.envelopeUri, folderItemV2.envelopeUri)
+        && Objects.equals(this.expireDateTime, folderItemV2.expireDateTime)
+        && Objects.equals(this.folderId, folderItemV2.folderId)
+        && Objects.equals(this.folderUri, folderItemV2.folderUri)
+        && Objects.equals(this.is21CFRPart11, folderItemV2.is21CFRPart11)
+        && Objects.equals(this.lastModifiedDateTime, folderItemV2.lastModifiedDateTime)
+        && Objects.equals(this.ownerName, folderItemV2.ownerName)
+        && Objects.equals(this.recipients, folderItemV2.recipients)
+        && Objects.equals(this.recipientsUri, folderItemV2.recipientsUri)
+        && Objects.equals(this.senderCompany, folderItemV2.senderCompany)
+        && Objects.equals(this.senderEmail, folderItemV2.senderEmail)
+        && Objects.equals(this.senderName, folderItemV2.senderName)
+        && Objects.equals(this.senderUserId, folderItemV2.senderUserId)
+        && Objects.equals(this.sentDateTime, folderItemV2.sentDateTime)
+        && Objects.equals(this.status, folderItemV2.status)
+        && Objects.equals(this.subject, folderItemV2.subject)
+        && Objects.equals(this.templateId, folderItemV2.templateId)
+        && Objects.equals(this.templateUri, folderItemV2.templateUri);
   }
 
-  /**
-   * Returns the HashCode.
-   */
+  /** Returns the HashCode. */
   @Override
   public int hashCode() {
-    return Objects.hash(completedDateTime, createdDateTime, envelopeId, envelopeUri, expireDateTime, folderId, folderUri, is21CFRPart11, lastModifiedDateTime, ownerName, recipients, recipientsUri, senderCompany, senderEmail, senderName, senderUserId, sentDateTime, status, subject, templateId, templateUri);
+    return Objects.hash(
+        completedDateTime,
+        createdDateTime,
+        envelopeId,
+        envelopeUri,
+        expireDateTime,
+        folderId,
+        folderUri,
+        is21CFRPart11,
+        lastModifiedDateTime,
+        ownerName,
+        recipients,
+        recipientsUri,
+        senderCompany,
+        senderEmail,
+        senderName,
+        senderUserId,
+        sentDateTime,
+        status,
+        subject,
+        templateId,
+        templateUri);
   }
 
-
-  /**
-   * Converts the given object to string.
-   */
+  /** Converts the given object to string. */
   @Override
   public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class FolderItemV2 {\n");
-    
+
     sb.append("    completedDateTime: ").append(toIndentedString(completedDateTime)).append("\n");
     sb.append("    createdDateTime: ").append(toIndentedString(createdDateTime)).append("\n");
     sb.append("    envelopeId: ").append(toIndentedString(envelopeId)).append("\n");
@@ -708,7 +683,9 @@ public class FolderItemV2 {
     sb.append("    folderId: ").append(toIndentedString(folderId)).append("\n");
     sb.append("    folderUri: ").append(toIndentedString(folderUri)).append("\n");
     sb.append("    is21CFRPart11: ").append(toIndentedString(is21CFRPart11)).append("\n");
-    sb.append("    lastModifiedDateTime: ").append(toIndentedString(lastModifiedDateTime)).append("\n");
+    sb.append("    lastModifiedDateTime: ")
+        .append(toIndentedString(lastModifiedDateTime))
+        .append("\n");
     sb.append("    ownerName: ").append(toIndentedString(ownerName)).append("\n");
     sb.append("    recipients: ").append(toIndentedString(recipients)).append("\n");
     sb.append("    recipientsUri: ").append(toIndentedString(recipientsUri)).append("\n");
@@ -726,8 +703,7 @@ public class FolderItemV2 {
   }
 
   /**
-   * Convert the given object to string with each line indented by 4 spaces
-   * (except the first line).
+   * Convert the given object to string with each line indented by 4 spaces (except the first line).
    */
   private String toIndentedString(java.lang.Object o) {
     if (o == null) {
@@ -735,6 +711,4 @@ public class FolderItemV2 {
     }
     return o.toString().replace("\n", "\n    ");
   }
-
 }
-

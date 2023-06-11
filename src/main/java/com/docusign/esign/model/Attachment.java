@@ -1,18 +1,11 @@
 package com.docusign.esign.model;
 
-import java.util.Objects;
-import java.util.Arrays;
+import com.docusign.esign.override.swagger.Schema;
 import com.fasterxml.jackson.annotation.JsonProperty;
-import com.fasterxml.jackson.annotation.JsonCreator;
-import com.fasterxml.jackson.annotation.JsonValue;
-import io.swagger.v3.oas.annotations.media.Schema;
+import java.util.Objects;
 
-/**
- * Contains information about an attachment..
- *
- */
+/** Contains information about an attachment.. */
 @Schema(description = "Contains information about an attachment.")
-
 public class Attachment {
   @JsonProperty("accessControl")
   private String accessControl = null;
@@ -35,12 +28,11 @@ public class Attachment {
   @JsonProperty("remoteUrl")
   private String remoteUrl = null;
 
-
   /**
    * accessControl.
    *
    * @return Attachment
-   **/
+   */
   public Attachment accessControl(String accessControl) {
     this.accessControl = accessControl;
     return this;
@@ -48,26 +40,24 @@ public class Attachment {
 
   /**
    * .
+   *
    * @return accessControl
-   **/
+   */
   @Schema(description = "")
   public String getAccessControl() {
     return accessControl;
   }
 
-  /**
-   * setAccessControl.
-   **/
+  /** setAccessControl. */
   public void setAccessControl(String accessControl) {
     this.accessControl = accessControl;
   }
-
 
   /**
    * attachmentId.
    *
    * @return Attachment
-   **/
+   */
   public Attachment attachmentId(String attachmentId) {
     this.attachmentId = attachmentId;
     return this;
@@ -75,26 +65,24 @@ public class Attachment {
 
   /**
    * .
+   *
    * @return attachmentId
-   **/
+   */
   @Schema(description = "")
   public String getAttachmentId() {
     return attachmentId;
   }
 
-  /**
-   * setAttachmentId.
-   **/
+  /** setAttachmentId. */
   public void setAttachmentId(String attachmentId) {
     this.attachmentId = attachmentId;
   }
-
 
   /**
    * attachmentType.
    *
    * @return Attachment
-   **/
+   */
   public Attachment attachmentType(String attachmentType) {
     this.attachmentType = attachmentType;
     return this;
@@ -102,26 +90,24 @@ public class Attachment {
 
   /**
    * Specifies the type of the attachment for the recipient..
+   *
    * @return attachmentType
-   **/
+   */
   @Schema(description = "Specifies the type of the attachment for the recipient.")
   public String getAttachmentType() {
     return attachmentType;
   }
 
-  /**
-   * setAttachmentType.
-   **/
+  /** setAttachmentType. */
   public void setAttachmentType(String attachmentType) {
     this.attachmentType = attachmentType;
   }
-
 
   /**
    * data.
    *
    * @return Attachment
-   **/
+   */
   public Attachment data(String data) {
     this.data = data;
     return this;
@@ -129,26 +115,24 @@ public class Attachment {
 
   /**
    * .
+   *
    * @return data
-   **/
+   */
   @Schema(description = "")
   public String getData() {
     return data;
   }
 
-  /**
-   * setData.
-   **/
+  /** setData. */
   public void setData(String data) {
     this.data = data;
   }
-
 
   /**
    * label.
    *
    * @return Attachment
-   **/
+   */
   public Attachment label(String label) {
     this.label = label;
     return this;
@@ -156,26 +140,24 @@ public class Attachment {
 
   /**
    * .
+   *
    * @return label
-   **/
+   */
   @Schema(description = "")
   public String getLabel() {
     return label;
   }
 
-  /**
-   * setLabel.
-   **/
+  /** setLabel. */
   public void setLabel(String label) {
     this.label = label;
   }
-
 
   /**
    * name.
    *
    * @return Attachment
-   **/
+   */
   public Attachment name(String name) {
     this.name = name;
     return this;
@@ -183,26 +165,24 @@ public class Attachment {
 
   /**
    * .
+   *
    * @return name
-   **/
+   */
   @Schema(description = "")
   public String getName() {
     return name;
   }
 
-  /**
-   * setName.
-   **/
+  /** setName. */
   public void setName(String name) {
     this.name = name;
   }
-
 
   /**
    * remoteUrl.
    *
    * @return Attachment
-   **/
+   */
   public Attachment remoteUrl(String remoteUrl) {
     this.remoteUrl = remoteUrl;
     return this;
@@ -210,20 +190,18 @@ public class Attachment {
 
   /**
    * .
+   *
    * @return remoteUrl
-   **/
+   */
   @Schema(description = "")
   public String getRemoteUrl() {
     return remoteUrl;
   }
 
-  /**
-   * setRemoteUrl.
-   **/
+  /** setRemoteUrl. */
   public void setRemoteUrl(String remoteUrl) {
     this.remoteUrl = remoteUrl;
   }
-
 
   /**
    * Compares objects.
@@ -239,32 +217,27 @@ public class Attachment {
       return false;
     }
     Attachment attachment = (Attachment) o;
-    return Objects.equals(this.accessControl, attachment.accessControl) &&
-        Objects.equals(this.attachmentId, attachment.attachmentId) &&
-        Objects.equals(this.attachmentType, attachment.attachmentType) &&
-        Objects.equals(this.data, attachment.data) &&
-        Objects.equals(this.label, attachment.label) &&
-        Objects.equals(this.name, attachment.name) &&
-        Objects.equals(this.remoteUrl, attachment.remoteUrl);
+    return Objects.equals(this.accessControl, attachment.accessControl)
+        && Objects.equals(this.attachmentId, attachment.attachmentId)
+        && Objects.equals(this.attachmentType, attachment.attachmentType)
+        && Objects.equals(this.data, attachment.data)
+        && Objects.equals(this.label, attachment.label)
+        && Objects.equals(this.name, attachment.name)
+        && Objects.equals(this.remoteUrl, attachment.remoteUrl);
   }
 
-  /**
-   * Returns the HashCode.
-   */
+  /** Returns the HashCode. */
   @Override
   public int hashCode() {
     return Objects.hash(accessControl, attachmentId, attachmentType, data, label, name, remoteUrl);
   }
 
-
-  /**
-   * Converts the given object to string.
-   */
+  /** Converts the given object to string. */
   @Override
   public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class Attachment {\n");
-    
+
     sb.append("    accessControl: ").append(toIndentedString(accessControl)).append("\n");
     sb.append("    attachmentId: ").append(toIndentedString(attachmentId)).append("\n");
     sb.append("    attachmentType: ").append(toIndentedString(attachmentType)).append("\n");
@@ -277,8 +250,7 @@ public class Attachment {
   }
 
   /**
-   * Convert the given object to string with each line indented by 4 spaces
-   * (except the first line).
+   * Convert the given object to string with each line indented by 4 spaces (except the first line).
    */
   private String toIndentedString(java.lang.Object o) {
     if (o == null) {
@@ -286,6 +258,4 @@ public class Attachment {
     }
     return o.toString().replace("\n", "\n    ");
   }
-
 }
-
